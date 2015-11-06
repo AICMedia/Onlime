@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ГУИ</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=1">
+	<link rel="stylesheet" href="css/style.css">
+	<script src="js/jquery.min.js"></script>
+	<script src="js/jquery.teslalign.js"></script>
+	<script src="js/jquery.circliful.min.js"></script>
+	<script src="js/jquery.formstyler.min.js"></script>
+	<script src="js/scripts.js"></script>
+	<!--[if lt IE 9]>
+	<link rel="stylesheet" href="css/ie.css">
+	<script src="js/html5.js"></script>
+	<![endif]-->
+</head>
+<body>
+	<div class="wrapper">
+		<section class="topbar">
+			<div class="topbar-container">
+				<div class="line clearfix">
+					<a href="#" class="topbar-link topbar-link__sibling">Корпоративным клиентам</a>
+					<a href="#" class="topbar-link">Проверка скорости</a>
+					<a href="#" class="topbar-link">Onlime-Бонус</a>
+					<div class="topbar-support">
+						<span><span>поддержка</span>/<span class="current">подключение</span></span>
+						<strong>8 800 707 80 01</strong>
+						<strong class="current">8 800 707 80 00</strong>
+					</div>
+				</div>
+				<!-- Шапка для мобилок -->
+				<div class="topbar-more">
+					<a href="#" class="topbar-more-link"><span>Еще разделы</span></a>
+					<div class="topbar-more-popup">
+						<nav>
+							<a href="#"><span>Корпоративным клиентам</span></a>
+							<a href="#"><span>Onlime-бонус</span></a>
+						</nav>
+						<ul>
+							<li><span>Поддержка</span> <a href="tel:88007078001">8 800 707 80 01</a></li>
+							<li><span>Подключение</span> <a href="tel:88007078000">8 800 707 80 00</a></li>
+						</ul>
+					</div>
+				</div>
+				<!-- Конец шапки для мобилок -->
+				<div class="right-links">
+					<div class="right-link popup-link" data-id="login-popup">
+						<span class="ico ico-profile">Личный кабинет</span>
+						<span class="bg"></span>
+					</div>
+					<div class="right-link popup-link" data-id="payment-popup">
+						<span class="ico ico-payment">Оплатить</span>
+						<span class="bg"></span>
+					</div>
+
+					<div class="fill-background"></div>
+					
+					<div id="payment-popup" class="popup">
+						<div class="popup-close"></div>
+						<div class="form-block">
+							<input type="text" class="form-text" placeholder="Номер лицевого счета">
+						</div>
+						<div class="form-block">
+							<input type="text" class="form-text" placeholder="Сумма (рубли)">
+						</div>
+						<div class="form-block">
+							<div class="other-item">
+								<label class="checkbox checker">
+									<input type="checkbox" id="rules-check">
+								</label>
+								<div for="other-1" class="other-content">
+									<div class="title">Я согласен</div>
+									<span class="description">с <a href="#" class="blue-link">Правилами оплаты услуг связи</a></span>
+								</div>
+							</div>
+						</div>
+						<div class="form-submit">
+							<button type="submit" class="btn"><span>Перейти к оплате</span></button>
+						</div>
+					</div>
+
+					<div id="login-popup" class="popup">
+						<div class="popup-close"></div>
+						<div class="form-block">
+							<input type="text" class="form-text" placeholder="Логин">
+						</div>
+						<div class="form-block">
+							<input type="password" class="form-text" placeholder="Пароль">
+						</div>
+						<div class="form-block form-block__remind">
+							<a href="#" class="blue-link">Забыли логин или пароль?</a>
+						</div>
+						<div class="form-submit">
+							<button type="submit" class="btn"><span>Войти в личный кабинет</span></button>
+						</div>
+					</div>
+
+					<!-- Всплывашки для мобилок -->
+					<div id="menu-popup" class="popup popup-parent">
+						<div class="popup-close"></div>
+						<h4>Меню</h4>
+						<ul>
+							<li class="current"><a href="#"><span>Интернет</span></a></li>
+							<li><a href="#"><span>Телевидение</span></a></li>
+							<li><a href="#" class="popup-link" data-id="menu-internet-tv"><span>Интернет+ТВ</span></a></li>
+							<li><a href="#"><span>Домашний телефон</span></a></li>
+							<li><a href="#"><span>Интернет-магазин</span></a></li>
+						</ul>
+					</div>
+
+					<div id="menu-internet-tv" class="popup popup-children">
+						<div class="popup-close"></div>
+						<h4>Интрнет+ТВ</h4>
+						<ul>
+							<li><a href="#"><span>Тарифы</span></a></li>
+							<li><a href="#"><span>Домашний телефон</span></a></li>
+							<li><a href="#"><span>Дополнительные телеканалы</span></a></li>
+							<li><a href="#"><span>Оборудование</span></a></li>
+							<li><a href="#"><span>Дополнительные услуги</span></a></li>
+						</ul>
+
+						<a href="#" class="offer">
+							<span class="offer-title">Приведи друга и выйграй iPad</span>
+							<span class="offer-description">Каждый месяц — новый победитель!</span>
+							
+							<span class="offer-btn">
+								<span><i>Подробнее</i></span>
+							</span>
+
+							<span class="offer-image" style="background-image: url('images/del/offer-4.png')"></span>
+							<span class="offer-image offer-image-hover" style="background-image: url('images/del/offer-4-hover.png')"></span>
+						</a>
+
+						<div class="popup-children-arrow"></div>
+					</div>
+					<!-- Конец всплывашек для мобилок -->
+
+				</div>
+			</div>
+		</section>
+
+		<header class="header">
+			<div class="line">
+				<a href="#" class="logo">
+					<img src="images/logo.png" width="208" height="60" alt="">
+				</a>
+				<div class="header-menu-small popup-link" data-id="menu-popup"></div>
+				<nav class="header-menu">
+					<ul>
+						<li><a href="#"><span>Интернет</span></a></li>
+						<li class="current"><a href="#"><span>Телевидение</span></a></li>
+						<li><a href="#internet-tv" class="open-link"><span>Интернет+ТВ</span></a></li>
+						<li><a href="#"><span>Домашний телефон</span></a></li>
+						<li><a href="#"><span>Интернет-магазин</span></a></li>
+					</ul>
+				</nav>
+			</div>
+			<div class="popup-nav" id="internet-tv">
+				<div class="line clearfix">
+					<div class="popup-nav-close"></div>
+					<h3>Интернет+ТВ</h3>
+					<nav>
+						<ul>
+							<li><a href="#"><span>Тарифы</span></a></li>
+							<li><a href="#"><span>Домашний телефон</span></a></li>
+							<li><a href="#"><span>Дополнительные телеканалы</span></a></li>
+							<li><a href="#"><span>Оборудование</span></a></li>
+							<li><a href="#"><span>Дополнительные услуги</span></a></li>
+						</ul>
+					</nav>
+					<div class="popup-questions">
+						<h4>Частые вопросы</h4>
+						<ul>
+							<li><a href="#" class="blue-link">Как можно проверить состояние Лицевого Счета?</a></li>
+							<li><a href="#" class="blue-link">Я хочу подключить второй компьютер к Интернету. Что мне для этого нужно?</a></li>
+						</ul>
+					</div>
+					<a href="#" class="offer">
+						<span class="offer-title">Приведи друга и выйграй iPad</span>
+						<span class="offer-description">Каждый месяц — новый победитель!</span>
+						
+						<span class="offer-btn">
+							<span><i>Подбробнее</i></span>
+						</span>
+
+						<span class="offer-image" style="background-image: url('images/del/offer-4.png')"></span>
+						<span class="offer-image offer-image-hover" style="background-image: url('images/del/offer-4-hover.png')"></span>
+					</a>
+				</div>
+			</div>
+		</header>
+
+		<section class="sub-header">
+			<div class="line">
+				<nav class="breadcrumb">
+					<a href="#" class="home"></a>
+					<a href="#"><span>Телевидение</span></a>
+					<a href="#"><span>Список каналов</span></a>
+				</nav>
+			</div>
+		</section>
+
+	
+		<section class="line change-title">
+			<div class="title title__big">Большой заголовок</div>
+		</section>
+		
+		<section class="line change-title">
+			<div class="title">Заголовок поменьше</div>
+			<div class="description">И неболшое описание под заголовоком</div>
+		</section>
+
+		<section class="line_small process">
+			<ul class="clearfix">
+				<li class="current"><span>Шаг 1: Проверка адреса и выбор тарифа</span></li>
+				<li><span>Шаг 2: Заявка на подключение</span></li>
+				<li><span>Шаг 3: Ожидайте нашего звонка</span></li>
+			</ul>
+		</section>
+
+		<section class="line_small process">
+			<ul class="clearfix">
+				<li class="active"><span>Шаг 1: Проверка адреса и выбор тарифа</span></li>
+				<li class="current"><span>Шаг 2: Заявка на подключение</span></li>
+				<li><span>Шаг 3: Ожидайте нашего звонка</span></li>
+			</ul>
+		</section>
+
+		<section class="line_small process">
+			<ul class="clearfix">
+				<li class="active"><span>Шаг 1: Проверка адреса и выбор тарифа</span></li>
+				<li class="active"><span>Шаг 2: Заявка на подключение</span></li>
+				<li class="current"><span>Шаг 3: Ожидайте нашего звонка</span></li>
+			</ul>
+		</section>
+		
+
+		<section class="line_small services-checklist">
+			<label class="service-check checker">
+				<span class="service-check-ico" style="background-image: url('images/del/service-1.png');"></span>
+				<span class="service-check-ico service-check-ico__checked" style="background-image: url('images/del/service-1-checked.png');"></span>
+				<span class="service-check-ico service-check-ico__disabled" style="background-image: url('images/del/service-1-disabled.png');"></span>
+				<input type="checkbox" checked>
+				<span class="fake-checkbox"></span>
+						<span class="service-check-text">
+							<span class="service-check-container"><span class="service-check-cont">
+								<span class="service-check-title">Интернет</span>
+							</span></span>
+						</span>
+			</label>
+			<label class="service-check checker">
+				<span class="service-check-ico" style="background-image: url('images/del/service-2.png');"></span>
+				<span class="service-check-ico service-check-ico__checked" style="background-image: url('images/del/service-2-checked.png');"></span>
+				<span class="service-check-ico service-check-ico__disabled" style="background-image: url('images/del/service-2-disabled.png');"></span>
+				<input type="checkbox">
+				<span class="fake-checkbox"></span>
+						<span class="service-check-text">
+							<span class="service-check-container"><span class="service-check-cont">
+								<span class="service-check-title">Телевидение</span>
+							</span></span>
+						</span>
+			</label>
+			<label class="service-check checker">
+				<span class="service-check-ico" style="background-image: url('images/del/service-3.png');"></span>
+				<span class="service-check-ico service-check-ico__checked" style="background-image: url('images/del/service-3-checked.png');"></span>
+				<span class="service-check-ico service-check-ico__disabled" style="background-image: url('images/del/service-3-disabled.png');"></span>
+				<input type="checkbox" disabled>
+				<span class="fake-checkbox"></span>
+						<span class="service-check-text">
+							<span class="service-check-container"><span class="service-check-cont">
+								<span class="service-check-title">Домашний телефон</span>
+								<span class="service-check-description">доступен только с интернетом</span>
+							</span></span>
+						</span>
+			</label>
+		</section>
+
+		<section class="line_small">
+			
+			<br><br><br><br>
+			
+			<a href="#" class="btn"><span>Ссылка в виде кнопки</span></a>
+			<button class="btn"><span>Кнопка</span></button>
+
+			<br><br><br>
+			
+			<form action="#">
+			<div class="radiobox">
+				<label class="checker">
+					<input type="radio" name="change-tariff">
+					<span>Цифровое ТВ</span>
+				</label>
+				<label class="checker checked">
+					<input type="radio" name="change-tariff" checked>
+					<span>Интерактивное ТВ</span>
+				</label>
+			</div>
+			</form>
+
+			<br><br><br>
+			
+			<form action="#">
+			<div class="check-radio checker">
+				<div class="check-radio-container">
+					<span>Выбран</span>
+				</div>
+				<input type="radio" name="tarif" checked>
+			</div>
+			<div class="check-radio checker">
+				<div class="check-radio-container">
+					<span>Выбран</span>
+				</div>
+				<input type="radio" name="tarif">
+			</div>
+			</form>
+			
+
+			<br><br><br>
+
+
+			<section class="tariff-section">
+				<div class="tariff-section-header">
+					<h3>Оборудование</h3>
+					<span class="product-selection"><span class="ps-num">1</span> <span class="ps-word">выбрано</span></span>
+					<span class="arrow-section"></span>
+				</div>
+				<div class="tariff-section-content">
+				<div class="tariff-section-description">Оборудование для интернета и подключения телевизора к цифровому ТВ. <a href="#" class="fake-link">Какое оборудование?</a></div>
+
+
+				<div class="tariff-line tariff-line-small clearfix">
+					<div class="tariff-title sevice-title">
+						<div class="tariff-title-container"><div class="tariff-title-cont">
+							<div class="title">ТВ-приставка</div>
+							<div class="description">для второго ТВ</div>
+						</div></div>
+					</div>
+					<div class="tariff-channels-num tariff-channels-change">
+						<div class="radiobox">
+							<label class="checker">
+								<input type="radio" name="change-2" checked>
+								<span>Аренда</span>
+							</label>
+							<label class="checker checked">
+								<input type="radio" name="change-2">
+								<span>Прокупка</span>
+							</label>
+							<label class="checker">
+								<input type="radio" name="change-2">
+								<span>Своё</span>
+							</label>
+						</div>
+					</div>
+					<div class="tariff-cost tariff-cost-phone">
+						<span class="tariff-numbers">
+							<span class="num">99</span>
+							<span class="unit">
+								<span class="unit-top">руб.</span>
+								<span class="unit-bottom">мес.</span>
+							</span>
+						</span>
+					</div>
+					<div class="tariff-small">
+						<div class="tariff-small-line strong">
+							<div class="left">Стоимость</div>
+							<div class="right">
+								<span class="tariff-numbers">
+									<span class="num">200</span>
+									<span class="unit">
+										<span class="unit-top">руб.</span>
+										<span class="unit-bottom">мес.</span>
+									</span>
+								</span>
+							</div>
+						</div>
+					</div>
+					<div class="tariff-radio">
+						<div class="check-radio checker">
+							<div class="check-radio-container">
+								<span>Выбран</span>
+							</div>
+							<input type="checkbox" checked>
+						</div>
+					</div>
+				</div>
+
+
+			</section>
+
+
+			<section class="tariff-section hidden hide">
+				<div class="tariff-section-header">
+					<h3>Оборудование</h3>
+					<span class="product-selection"><span class="ps-num">1</span> <span class="ps-word">выбрано</span></span>
+					<span class="arrow-section"></span>
+				</div>
+				<div class="tariff-section-content">
+				<div class="tariff-section-description">Оборудование для интернета и подключения телевизора к цифровому ТВ. <a href="#" class="fake-link">Какое оборудование?</a></div>
+			</section>
+
+
+			<br><br><br>
+
+			<a href="#" class="offer">
+				<span class="offer-title">Новый тариф «100 за 500»</span>
+				<span class="offer-description">Для всех абонентов Onlime</span>
+						<span class="offer-numbers offer-numbers__top">
+							<span class="num">100</span>
+							<span class="unit">
+								<span class="unit-top">мбит</span>
+								<span class="unit-bottom">сек</span>
+							</span>
+						</span>
+						<span class="offer-numbers">
+							<span class="num">500</span>
+							<span class="unit">
+								<span class="unit-top">руб</span>
+								<span class="unit-bottom">мес</span>
+							</span>
+						</span>
+				<span class="offer-image" style="background-image: url('images/del/offer-3.png')"></span>
+				<span class="offer-image offer-image-hover" style="background-image: url('images/del/offer-3-hover.png')"></span>
+			</a>
+
+
+			<br><br><br>
+
+			<section class="search-block clearfix">
+
+				<div class="field search-form-block">
+					<input type="text" class="form-text form-search" placeholder="Найти канал по названию или описанию">
+					<button class="search-btn"></button>
+				</div>
+			</section>
+
+
+			<br><br><br>
+
+			<a href="#" class="new">
+				<div class="new-date">23.01.2015</div>
+				<h4>Переадресация <br> теперь без абонентской платы</h4>
+						<span class="text">
+							С 01.02.2015 г. мы отменяем обязательную абонентскую плату за услугу «Переадресация».
+						</span>
+				<span href="#" class="more">Подробнее</span>
+			</a>
+
+			<br><br><br>
+
+			<select class="styler">
+				<option>Первый пункт</option>
+				<option>Второй пункт</option>
+				<option>Третий пункт</option>
+				<option>Четвертый пункт</option>
+			</select>
+
+			<br><br><br>
+
+			<a href="#" class="more-arrow">Узнать больше</a>
+
+			<br><br><br>
+
+
+				<div class="toltip toltip-ico">
+					<img src="images/del/bonus-ico-kasper.png" width="17" height="16" alt="">
+					<span class="tip">Антивирус Касперского<br>2 месяца бесплатно</span>
+				</div>
+
+
+			<br><br><br>
+
+			<input type="checkbox" class="styler" checked>
+			<input type="checkbox" class="styler">
+
+
+			<br><br><br>
+
+
+			<a href="#" class="fake-link">В чем разница?</a>
+
+			<br><br><br>
+
+			<a href="javascript://" class="map-link"><span>Карта покрытия</span></a>
+
+			<br><br><br>
+
+			<input type="text" class="search-text" placeholder="Что-то ищите?">
+
+			<br><br><br>
+
+			<div class="social-links">
+						<a href="#" class="facebook"></a>
+						<a href="#" class="twitter"></a>
+						<a href="#" class="vk"></a>
+						<a href="#" class="youtube"></a>
+					</div>
+
+			<br><br><br>
+
+			<h2>H2 — Myriad Pro Light — 28 / 36</h2>
+
+			<br><br>
+
+			<h3>H3 — Myriad Pro Regular — 24 / 36</h3>
+
+			<br><br>
+
+			<h4>H4 — Myriad Pro Regular — 18 / 28</h4>
+
+			<br><br>
+
+			<h5>H5 - Caps —  helvetica Neue bold — 10 / 15 — #6c747b</h5>
+
+			<br><br>
+
+			<h5 class="underline">H5 - Caps&amp;line</h5>
+
+			<br><br><br>
+
+			<table class="table">
+				<thead>
+					<tr>
+						<th>Тариф</th>
+						<th colspan="2">Входящая, исходящая скорости, мбит/с</th>
+						<th>Период действия</th>
+						<th>Стоимость, руб. вкл. НДС</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td class="black">Турбокнопка 1</td>
+						<td width="75">95</td>
+						<td width="230">95</td>
+						<td>1 час</td>
+						<td width="180">10</td>
+					</tr>
+					<tr>
+						<td class="black">Турбокнопка 3</td>
+						<td>95</td>
+						<td>95</td>
+						<td>3 часа</td>
+						<td>20</td>
+					</tr>
+					<tr>
+						<td class="black">Турбокнопка 6</td>
+						<td>95</td>
+						<td>95</td>
+						<td>6 часов</td>
+						<td>30</td>
+					</tr>
+					<tr>
+						<td class="black">Турбокнопка 24</td>
+						<td>95</td>
+						<td>95</td>
+						<td>24 часа</td>
+						<td>50</td>
+					</tr>
+				</tbody>
+			</table>
+
+			<br><br><br>
+
+			<article class="text-content">
+			<ul>
+				<li>Первый пункт</li>
+				<li>Второй пункт</li>
+				<li>Третий пункт</li>
+			</ul>
+			</article>
+
+			<br><br><br>
+
+			<span class="tariff-numbers">
+				<span class="num">200</span>
+				<span class="unit">
+					<span class="unit-top">руб.</span>
+					<span class="unit-bottom">мес.</span>
+				</span>
+			</span>
+
+			<br><br><br>
+
+			<label class="checkbox-label clearfix">
+				<input type="checkbox" class="styler">
+				<article>
+					<h4>Фильтрация трафика</h4>
+					<p>Позволяет исключить доступ к опасному контенту</p>
+				</article>
+			</label>
+
+			<br><br><br>
+
+			<div class="num-circle-animate" data-text="100" data-total="120" data-part="80"></div>
+
+			<br><br><br><br>
+
+		</section>
+
+
+
+
+
+
+		
+		
+
+		<footer class="footer">
+			<div class="line clearfix">
+				<div class="footer-right">
+					<div class="footer-search">
+						<input type="text" class="search-text" placeholder="Что-то ищите?">
+					</div>
+					<div class="social-links">
+						<a href="#" class="facebook"></a>
+						<a href="#" class="twitter"></a>
+						<a href="#" class="vk"></a>
+						<a href="#" class="youtube"></a>
+					</div>
+				</div>
+				<div class="footer-menus">
+					<nav>
+						<ul>
+							<li><a href="#">Тарифы и услуги</a></li>
+							<li><a href="#">Дополнительные услуги</a></li>
+							<li><a href="#">Оборудование</a></li>
+							<li><a href="#">Список каналов</a></li>
+							<li><a href="#">Onlime-бонус</a></li>
+						</ul>
+						<ul>
+							<li><a href="#">Офисы</a></li>
+							<li><a href="#">О компании</a></li>
+							<li><a href="#">Документы</a></li>
+							<li><a href="#">Вакансии</a></li>
+							<li><a href="#">Акции</a></li>
+						</ul>
+						<ul>
+							<li><a href="#">Помощь</a></li>
+							<li><a href="#">FAQ</a></li>
+							<li><a href="#">Форум</a></li>
+						</ul>
+					</nav>
+				</div>
+				<div class="footer-copy">© 2015 ОАО «Ростелеком». Все права защищены.</div>
+			</div>
+		</footer>
+	</div>
+</body>
+</html>

@@ -1,0 +1,979 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Способы оплаты</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=1">
+	<link rel="stylesheet" href="css/style.css">
+	<script src="js/jquery.min.js"></script>
+	<script src="js/jquery.teslalign.js"></script>
+	<script src="js/jquery.circliful.min.js"></script>
+	<script src="js/jquery.formstyler.min.js"></script>
+	<script src="js/scripts.js"></script>
+	<!--[if lt IE 9]>
+	<link rel="stylesheet" href="css/ie.css">
+	<script src="js/html5.js"></script>
+	<![endif]-->
+</head>
+<body>
+	<div class="wrapper">
+		<section class="topbar">
+			<div class="topbar-container">
+				<div class="line clearfix">
+					<a href="#" class="topbar-link topbar-link__sibling">Корпоративным клиентам</a>
+					<a href="#" class="topbar-link">Проверка скорости</a>
+					<a href="#" class="topbar-link">Onlime-Бонус</a>
+					<div class="topbar-support">
+						<span><span>поддержка</span>/<span class="current">подключение</span></span>
+						<strong>8 800 707 80 01</strong>
+						<strong class="current">8 800 707 80 00</strong>
+					</div>
+				</div>
+				<!-- Шапка для мобилок -->
+				<div class="topbar-more">
+					<a href="#" class="topbar-more-link"><span>Еще разделы</span></a>
+					<div class="topbar-more-popup">
+						<nav>
+							<a href="#"><span>Корпоративным клиентам</span></a>
+							<a href="#"><span>Onlime-бонус</span></a>
+						</nav>
+						<ul>
+							<li><span>Поддержка</span> <a href="tel:88007078001">8 800 707 80 01</a></li>
+							<li><span>Подключение</span> <a href="tel:88007078000">8 800 707 80 00</a></li>
+						</ul>
+					</div>
+				</div>
+				<!-- Конец шапки для мобилок -->
+				<div class="right-links">
+					<div class="right-link popup-link" data-id="login-popup">
+						<span class="ico ico-profile">Личный кабинет</span>
+						<span class="bg"></span>
+					</div>
+					<div class="right-link popup-link" data-id="payment-popup">
+						<span class="ico ico-payment">Оплатить</span>
+						<span class="bg"></span>
+					</div>
+
+					<div class="fill-background"></div>
+					
+					<div id="payment-popup" class="popup">
+						<div class="popup-close"></div>
+						<div class="form-block">
+							<input type="text" class="form-text" placeholder="Номер лицевого счета">
+						</div>
+						<div class="form-block">
+							<input type="text" class="form-text" placeholder="Сумма (рубли)">
+						</div>
+						<div class="form-block">
+							<div class="other-item">
+								<label class="checkbox checker">
+									<input type="checkbox" id="rules-check">
+								</label>
+								<div for="other-1" class="other-content">
+									<div class="title">Я согласен</div>
+									<span class="description">с <a href="#" class="blue-link">Правилами оплаты услуг связи</a></span>
+								</div>
+							</div>
+						</div>
+						<div class="form-submit">
+							<button type="submit" class="btn"><span>Перейти к оплате</span></button>
+						</div>
+					</div>
+
+					<div id="login-popup" class="popup">
+						<div class="popup-close"></div>
+						<div class="form-block">
+							<input type="text" class="form-text" placeholder="Логин">
+						</div>
+						<div class="form-block">
+							<input type="password" class="form-text" placeholder="Пароль">
+						</div>
+						<div class="form-block form-block__remind">
+							<a href="#" class="blue-link">Забыли логин или пароль?</a>
+						</div>
+						<div class="form-submit">
+							<button type="submit" class="btn"><span>Войти в личный кабинет</span></button>
+						</div>
+					</div>
+
+					<!-- Всплывашки для мобилок -->
+					<div id="menu-popup" class="popup popup-parent">
+						<div class="popup-close"></div>
+						<h4>Меню</h4>
+						<ul>
+							<li class="current"><a href="#"><span>Интернет</span></a></li>
+							<li><a href="#"><span>Телевидение</span></a></li>
+							<li><a href="#" class="popup-link" data-id="menu-internet-tv"><span>Интернет+ТВ</span></a></li>
+							<li><a href="#"><span>Домашний телефон</span></a></li>
+							<li><a href="#"><span>Интернет-магазин</span></a></li>
+						</ul>
+					</div>
+
+					<div id="menu-internet-tv" class="popup popup-children">
+						<div class="popup-close"></div>
+						<h4>Интрнет+ТВ</h4>
+						<ul>
+							<li><a href="#"><span>Тарифы</span></a></li>
+							<li><a href="#"><span>Домашний телефон</span></a></li>
+							<li><a href="#"><span>Дополнительные телеканалы</span></a></li>
+							<li><a href="#"><span>Оборудование</span></a></li>
+							<li><a href="#"><span>Дополнительные услуги</span></a></li>
+						</ul>
+
+						<a href="#" class="offer">
+							<span class="offer-title">Приведи друга и выйграй iPad</span>
+							<span class="offer-description">Каждый месяц — новый победитель!</span>
+							
+							<span class="offer-btn">
+								<span><i>Подробнее</i></span>
+							</span>
+
+							<span class="offer-image" style="background-image: url('images/del/offer-4.png')"></span>
+							<span class="offer-image offer-image-hover" style="background-image: url('images/del/offer-4-hover.png')"></span>
+						</a>
+
+						<div class="popup-children-arrow"></div>
+					</div>
+					<!-- Конец всплывашек для мобилок -->
+
+				</div>
+			</div>
+		</section>
+
+		<header class="header">
+			<div class="line">
+				<a href="#" class="logo">
+					<img src="images/logo.png" width="208" height="60" alt="">
+				</a>
+				<div class="header-menu-small popup-link" data-id="menu-popup"></div>
+				<nav class="header-menu">
+					<ul>
+						<li><a href="#"><span>Интернет</span></a></li>
+						<li><a href="#"><span>Телевидение</span></a></li>
+						<li><a href="#internet-tv" class="open-link"><span>Интернет+ТВ</span></a></li>
+						<li><a href="#"><span>Домашний телефон</span></a></li>
+						<li><a href="#"><span>Интернет-магазин</span></a></li>
+					</ul>
+				</nav>
+			</div>
+			<div class="popup-nav" id="internet-tv">
+				<div class="line clearfix">
+					<div class="popup-nav-close"></div>
+					<h3>Интернет+ТВ</h3>
+					<nav>
+						<ul>
+							<li><a href="#"><span>Тарифы</span></a></li>
+							<li><a href="#"><span>Домашний телефон</span></a></li>
+							<li><a href="#"><span>Дополнительные телеканалы</span></a></li>
+							<li><a href="#"><span>Оборудование</span></a></li>
+							<li><a href="#"><span>Дополнительные услуги</span></a></li>
+						</ul>
+					</nav>
+					<div class="popup-questions">
+						<h4>Частые вопросы</h4>
+						<ul>
+							<li><a href="#" class="blue-link">Как можно проверить состояние Лицевого Счета?</a></li>
+							<li><a href="#" class="blue-link">Я хочу подключить второй компьютер к Интернету. Что мне для этого нужно?</a></li>
+						</ul>
+					</div>
+					<a href="#" class="offer">
+						<span class="offer-title">Приведи друга и выйграй iPad</span>
+						<span class="offer-description">Каждый месяц — новый победитель!</span>
+						
+						<span class="offer-btn">
+							<span><i>Подбробнее</i></span>
+						</span>
+
+						<span class="offer-image" style="background-image: url('images/del/offer-4.png')"></span>
+						<span class="offer-image offer-image-hover" style="background-image: url('images/del/offer-4-hover.png')"></span>
+					</a>
+				</div>
+			</div>
+		</header>
+
+		<section class="sub-header">
+			<div class="line">
+				<nav class="breadcrumb">
+					<a href="#" class="home"></a>
+					<a href="#"><span>Абонентам</span></a>
+					<a href="#"><span>Способы оплаты</span></a>
+				</nav>
+			</div>
+		</section>
+
+		
+
+		<section class="line change-title">
+			<div class="title">Способы оплаты</div>
+		</section>
+
+
+
+
+		<section class="line_small section-top">
+			
+
+				
+			<div class="tabs-outline">
+
+
+				<div class="tab-area tab-area-content current">
+					<div class="help-list">
+						
+						<!-- Электронные кошельки -->
+						<div class="help-item">
+							<h3 class="fake-link">Электронные кошельки</h3>
+							<div class="answer text-content">
+								<div class="dropdown-list">
+
+									<!-- Айтем -->
+									<div class="dropdown-item">
+										<h4 class="fake-link">Сбербанк. Мобильные приложения</h4>
+										<article class="clearfix">
+											<p><img src="http://sberbank.ru/common/img/uploaded/banks/uploaded_szb/files/smi_sber_logo.jpg" width="300" height="62"></p>
+											<p>Удобный и простой сервис, позволяющий держателям банковских карт Сбербанка России с помощью смартфонов и iPad оплачивать услуги ОнЛайм.</p>
+											<p><a href="http://sberbank.ru/moscow/ru/person/dist_services/">sberbank.ru/moscow/ru/person/dist_services/</a></p>
+										</article>
+									</div>
+									<!-- Конец айтема -->
+
+									<!-- Айтем -->
+									<div class="dropdown-item">
+										<h4 class="fake-link">QIWI Wallet</h4>
+										<article class="clearfix">
+											<object width="400" height="120" data="https://w.qiwi.ru/flash/Banner_ONLIME.swf" type="application/x-shockwave-flash"><param name="src" value="https://w.qiwi.ru/flash/Banner_ONLIME.swf" /></object>
+											<ul>
+												<li>зачисление online</li>
+												<li>при оплате обращайте внимание на размер комиссии</li>
+											</ul>	
+										</article>
+									</div>
+									<!-- Конец айтема -->
+
+									<!-- Айтем -->
+									<div class="dropdown-item">
+										<h4 class="fake-link">Яндекс.Деньги</h4>
+										<article class="clearfix">
+											<p><img src="http://money.yandex.ru/img/yamoney_button.gif" width="88" height="31"></p>
+
+											<p><a href="#">Оплата услуг ОнЛайм через Яндекс.Деньги</a></p>
+
+											<p>Яндекс.Деньги - это сервис онлайн-платежей, который работает 24 часа в сутки и 7 дней в неделю. Пользоваться Яндекс.Деньгами легко. Все интерфейсы — сайт, его мобильная версия, приложения для смартфонов — простые и удобные.</p>
+
+											<p>Чтобы <a href="#">открыть кошелек</a>, нужна всего пара минут. Следующий шаг — <a href="#">пополнение</a> (например, наличными). Кроме того, к счету можно <a href="#">привязать банковскую карту</a>, чтобы платить прямо с нее: тогда не придется указывать реквизиты карты в интернете.</p>
+
+											<p>Платежи Яндекс.Деньгами выполняются мгновенно — в любое время дня и ночи.</p>
+										</article>
+									</div>
+									<!-- Конец айтема -->
+
+									<!-- Айтем -->
+									<div class="dropdown-item">
+										<h4 class="fake-link">Элекснет (без комиссии)</h4>
+										<article class="clearfix">
+											<div class="image-left">
+												<p><img src="http://www.onlime.ru/docs/img/elecsnet-logo.jpg" width="91" height="76" alt=""></p>
+												<p><a href="#">Что такое Кошелек Элекснет?</a></p>
+												<p><a href="#">Нет кошелька? Бесплатная регистрация за 1 минуту!</a></p>
+											</div>
+											<div class="text-content-left">
+												<p>Оплата производится на сайте Кошелька Элекснет.</p>
+
+												<p>Для проведения оплаты введите номер лицевого счета абонента Onlime и нажмите на кнопку «Оплатить», после чего откроется страница c готовой формой оплаты. Введите номер Кошелька Элекснет, сумму для пополнения и платежный пароль.</p>
+
+												<p>Оплата производится БЕЗ КОМИССИИ.</p>
+
+												<form action="https://1.elecsnet.ru/NotebookFront/services/0MHP/" method="post">
+												<table border="0" cellspacing="0" cellpadding="0"><tbody>
+												<tr><td>Номер лицевого счета<br /><input id="reqID" class="nomer form-text" title="введите номер лицевого счета абонента Onlime" type="text" name="reqID" value="" /></td>
+												<td style="padding-left: 10px;" valign="bottom"><input id="merchantID" type="hidden" name="merchantID" value="1158" /><input id="Amount" type="hidden" name="Amount" value="0" /><input id="MerchantBackUrl" type="hidden" name="MerchantBackUrl" value="http://www.onlime.ru/abonents/payment/" /><input title="оплатить Кошельком Элекснет" type="image" src="http://www.onlime.ru/docs/img/elecsnet-pay1.jpg" /></td>
+												</tr></tbody></table>
+												</form>
+											</div>
+										</article>
+									</div>
+									<!-- Конец айтема -->
+
+									<!-- Айтем -->
+									<div class="dropdown-item">
+										<h4 class="fake-link">Rapida Online</h4>
+										<article class="clearfix">
+											<p><img src="http://onlime.ru/docs/img/logo_rapida_online.jpg" width="482" height="85" alt=""></p>
+											<p>«Рапида» - удобный и безопасный способ оплаты услуг с помощью платежного сервиса «Rapida Online». Для совершения платежей через «Rapida Online» достаточно иметь доступ к сети Интернет и зарегистрировать в сервисе свойЛичный кабинет. Система позволяет настроить исполнение регулярных платежей в автоматическом режиме (раз в месяц, раз в неделю, либо в указанную дату).</p>
+
+											<p>Комиссия с абонентов «ОнЛайм» не взимается. Узнать о способах пополнения кошелька можно на сайте «Rapida Online».</p>
+
+											<p>
+												Служба поддержки клиентов:<br>
+												+7 (495) 380-15-55<br>
+												8-800-555-444-1 (горячая линия)<br>
+												<a href="mailto:support@rapida.ru">support@rapida.ru</a>
+											</p>
+										</article>
+									</div>
+									<!-- Конец айтема -->
+
+									<!-- Айтем -->
+									<div class="dropdown-item">
+										<h4 class="fake-link">WebMoney</h4>
+										<article class="clearfix">
+											<p>Для совершения оплаты необходимо:</p>
+
+											<ul>
+												<li>Убедиться, что приложение управления кошельками WebMoney Keeper запущено;</li>
+												<li>Зайти на <a href="#">Cервис пополнения счетов</a>;</li>
+												<li>Ввести номер лицевого счета и сумму пополнения;</li>
+												<li>Авторизоваться в системе WebMoney;</li>
+												<li>Проверить информацию о платеже (тип услуги, номер счета, сумму);</li>
+												<li>Выбрать кошелек для оплаты и подтвердить платеж.</li>
+											</ul>
+
+											<p>Зачисления в режиме on-line<br>Комиссия 0,8%</p>
+
+											<p>Способы пополнения кошелька, а также тарифы подробно описаны на сайте <a href="#">WebMoney</a>.</p>
+										</article>
+									</div>
+									<!-- Конец айтема -->
+
+									<!-- Айтем -->
+									<div class="dropdown-item">
+										<h4 class="fake-link">RuRu.ru</h4>
+										<article class="clearfix">
+											<p>Платежный мир RURU — это быстрый, удобный и безопасный способ оплаты самых популярных услуг. Вы можете оплатить услуги ОнЛайм на этом сайте, или использовать SMS—запросы для оплаты, если вы в дороге. Вы можете установить мобильное приложение «RURU платежный мир» в <a href="#">iPhone</a> или <a href="#">Android</a> телефон.</p>
+
+											<p>Вы можете оплачивать услуги для своих родных и знакомых, даже если сейчас вы живете в разных городах. Зачисления в режиме online.</p>
+
+											<p>При оплате обращайте внимание на размер комиссии.</p>
+										</article>
+									</div>
+									<!-- Конец айтема -->
+
+									<!-- Айтем -->
+									<div class="dropdown-item">
+										<h4 class="fake-link">РБК.Money</h4>
+										<article class="clearfix">
+											<p>Оплатить услуг OnLime с использованием платёжной системы <a href="#">РБК.Money</a>.<br>
+											Зачисления в режиме on-line<br>
+											При оплате обращайте внимание на размер комиссии</p>
+										</article>
+									</div>
+									<!-- Конец айтема -->
+
+									<!-- Айтем -->
+									<div class="dropdown-item">
+										<h4 class="fake-link">IntellectMoney</h4>
+										<article class="clearfix">
+											<p>IntellectMoney - это удобный и безопасный способ пополнить баланс лицевого счета для всех абонентов OnLime. Пополнение счета происходит в режиме реального времени на сайте платежной системы. Также через IntellectMoney можно оплачивать услуги более 750 компаний, совершать покупки в интернет-магазинах, совершать защищенные платежи с банковских карт, отправлять деньги на счета других пользователей и моментально выводить их из системы.</p>
+
+											<p>
+												Официальный сайт: <a href="http://www.intellectmoney.ru ">www.intellectmoney.ru</a><br>
+												Служба поддержки: +7 (495)649-86-81<br>
+												<a href="mailto:info@intellectmoney.ru">info@intellectmoney.ru</a>
+											</p>
+
+											<p>Зачисления в режиме on-line</p>
+										</article>
+									</div>
+									<!-- Конец айтема -->
+
+									<!-- Айтем -->
+									<div class="dropdown-item">
+										<h4 class="fake-link">Веб-кошелёк (ПСКБ)</h4>
+										<article class="clearfix">
+											<div class="image-left">
+												<img src="http://www.onlime.ru/docs/img/web_koshelek.png" width="160" height="137" alt="">
+											</div>
+											<div class="text-content-left">
+												<p><a href="#">«Веб-кошелек»</a> — платежная система, с помощью которой можно оплатить телефон, Интернет, коммунальные услуги и многое другое без комиссии,не выходя из дома. Вы можете воспользоваться возможностями платежной систему с мобильного телефона! Оплачивайте основные и дополнительные услуги ОнЛайм без комиссии.</p>
+
+												<p>Узнать, что такое Веб-кошелек, как его <a href="#">создать</a> и <a href="#">пополнить</a> можно на <a href="#">сайте банка «ПСКБ»</a>. Воспользоваться кошельком можно на сайте банка«ПСКБ» и через приложение на мобильном телефоне.</p>
+											</div>
+										</article>
+									</div>
+									<!-- Конец айтема -->
+
+									<!-- Айтем -->
+									<div class="dropdown-item">
+										<h4 class="fake-link">ClickAndPay</h4>
+										<article class="clearfix">
+											<p>Оплата со счета <a href="#">ClickAndPay.ru</a></p>
+											
+											<p>ClickAndPay.ru - простой, удобный и выгодный способ оплатить услуги ОнЛайм без комиссии. Введите номера вашего лицевого счета СlickAndPay.ru и сумму оплаты. С каждой покупки часть потраченных средств возвращается на ваш личный счет ClickAndPay.ru.</p>
+
+											<p>Пополнить счёт СlickAndPay вы можете любыми <a href="#">способами</a>.</p>
+										</article>
+									</div>
+									<!-- Конец айтема -->
+
+									<!-- Айтем -->
+									<div class="dropdown-item">
+										<h4 class="fake-link">Единый кошелек</h4>
+										<article class="clearfix">
+											<p>Оплатить услуги зарегистрированные пользователи сервиса могут:</p>
+
+											<ul>
+												<li>с мобильного телефона через приложение "W1 Java Mobile";</li>
+												<li>с мобильного устройства с операционной системой Windows Mobile через приложение "W1 Windows Mobile";</li>
+												<li>с мобильного устройства с операционной системой Symbian через приложение "W1 Symbian Mobile";</li>
+												<li>в личном кабинете на сайте www.w1.ru;</li>
+												<li>на wap-сайте wap.w1.ru;</li>
+												<li>с компьютера с операционной системой Windows Vista с помощью "W1 Vista Gadget".</li>
+											</ul>
+
+											<p>Для совершения оплаты необходимо:</p>
+
+											<ul>
+												<li>в любом приложении W1 выбрать "Оплата услуг";</li>
+												<li>найти провайдера с помощью поиска или в соответствующем разделе рубрикатора;</li>
+												<li>указать номер счета и сумму к зачислению;</li>
+												<li>проверить корректность введенных данных и подтвердить платеж.</li>
+											</ul>
+
+											<p>Зачисления в режиме on-line<br>Комиссия не взимается.</p>
+										</article>
+									</div>
+									<!-- Конец айтема -->
+
+								</div>
+							</div>
+						</div>
+						<!-- Конец электронных кошельков -->
+
+
+						<!-- Интернет-банки -->
+						<div class="help-item">
+							<h3 class="fake-link">Интернет-банки</h3>
+							<div class="answer text-content">
+								<div class="dropdown-list">
+									
+									<!-- Айтем -->
+									<div class="dropdown-item">
+										<h4 class="fake-link">Система WM Keeper Mobile</h4>
+										<article class="clearfix">
+											<p>Для совершения оплаты необходимо:</p>
+
+											<ul>
+												<li>Убедиться, что приложение управления кошельками WM Keeper Mobile запущено;</li>
+												<li>Зайти в пункт меню "Оплата услуг" и выбрать ОнЛайм,</li>
+												<li>Ввести номер лицевого счета и сумму</li>
+											</ul>
+
+											<p>Зачисления в режиме on-line.</p>
+											
+											<p>При оплате обращайте внимание на размер комиссии.</p>
+
+											<p>Способы пополнения кошелька, а также тарифы подробно описаны на сайте WebMoney</p>
+										</article>
+									</div>
+									<!-- Конец айтема -->
+
+									<!-- Айтем -->
+									<div class="dropdown-item">
+										<h4 class="fake-link">Система MOBI.Деньги</h4>
+										<article class="clearfix">
+											<p>Для пополнения счета не нужно устанавливать специальные приложения на телефон:</p>
+
+											<ul>
+												<li>оплата доступна всем абонентам "большой тройки": Билайн, МТС, МегаФон. Отправьте на номер 3116 SMS-команду rtm Телефон Тип_платежа Сумма</li>
+												<li>или воспользуйтесь формой оплаты на сайте MOBI.Деньги.</li>
+											</ul>
+
+											<p>Возможные значения поля «Тип платежа»:<br>
+											(Оплата по номеру телефона),  (), msk (Лицевой счет Москвы), mskob (Лицевой счет Московской области), onlime (Лицевой счет Onlime (Ростелеком)).</p>
+
+											<p>Средства будут списаны с вашего счета оператора сотовой связи или с зарегистрированной в системе MOBI.Деньги банковской карты.</p>
+
+											<p>Зачисления в режиме on-line.</p>
+										</article>
+									</div>
+									<!-- Конец айтема -->
+
+									<!-- Айтем -->
+									<div class="dropdown-item">
+										<h4 class="fake-link">Единый кошелек</h4>
+										<article class="clearfix">
+											<p>Оплатить услуги зарегистрированные пользователи сервиса могут:</p>
+
+											<ul>
+												<li>с мобильного телефона через приложение "W1 Java Mobile";</li>
+												<li>с мобильного устройства с операционной системой Windows Mobile через приложение "W1 Windows Mobile";</li>
+												<li>с мобильного устройства с операционной системой Symbian через приложение "W1 Symbian Mobile";</li>
+												<li>в личном кабинете на сайте www.w1.ru;</li>
+												<li>на wap-сайте wap.w1.ru;</li>
+												<li>с компьютера с операционной системой Windows Vista с помощью "W1 Vista Gadget".</li>
+											</ul>
+
+											<p>Для совершения оплаты необходимо:</p>
+
+											<ul>
+												<li>в любом приложении W1 выбрать "Оплата услуг";</li>
+												<li>найти провайдера с помощью поиска или в соответствующем разделе рубрикатора;</li>
+												<li>указать номер счета и сумму к зачислению;</li>
+												<li>проверить корректность введенных данных и подтвердить платеж.</li>
+											</ul>
+
+											<p>Зачисления в режиме on-line<br>Комиссия не взимается.</p>
+										</article>
+									</div>
+									<!-- Конец айтема -->
+
+									<!-- Айтем -->
+									<div class="dropdown-item">
+										<h4 class="fake-link">МТС-Банк (Интернет банк)</h4>
+										<article class="clearfix">
+											<p>Система дистанционного управления счетами банковских карт "Интернет банк". Для расчетов по операциям в системе можно использовать любую, из уже имеющихся у Вас банковских карт, либо открыть новую.</p>
+
+											<p>Зачисления в режиме on-line<br>При оплате обращайте внимание на размер комиссии</p>
+										</article>
+									</div>
+									<!-- Конец айтема -->
+
+									<!-- Айтем -->
+									<div class="dropdown-item">
+										<h4 class="fake-link">Сбербанк России</h4>
+										<article class="clearfix">
+											<p><img src="http://sberbank.ru/common/img/uploaded/banks/uploaded_szb/files/smi_sber_logo.jpg" width="300" height="62"></p>
+											<p>Удобный и простой сервис, позволяющий держателям банковских карт Сбербанка России с помощью смартфонов и iPad оплачивать услуги ОнЛайм.</p>
+											<p><a href="http://sberbank.ru/moscow/ru/person/dist_services/">sberbank.ru/moscow/ru/person/dist_services/</a></p>
+										</article>
+									</div>
+									<!-- Конец айтема -->
+
+									<!-- Айтем -->
+									<div class="dropdown-item">
+										<h4 class="fake-link">ВТБ 24</h4>
+										<article class="clearfix">
+											<p>
+												<a href="#">Система "Телебанк"</a><br>
+												<a href="#">Банкоматная сеть</a>
+											</p>
+
+											<p> Для оплаты услуг OnLime используйте код платежа 1414 (данный код используется только для оплаты услуг через банкоматы).</p>
+
+											<p>Зачисления в режиме on-line<br>Комиссия не взимается.</p>
+										</article>
+									</div>
+									<!-- Конец айтема -->
+
+									<!-- Айтем -->
+									<div class="dropdown-item">
+										<h4 class="fake-link">Интернет-банк «Альфа-Клик»</h4>
+										<article class="clearfix">
+											<p><a href="#">Интернет-банк «Альфа-Клик»</a> — это современный, удобный и практичный комплекс банковских услуг и возможность проведения электронных платежей через интернет с максимальной скоростью и надежностью.</p>
+
+											<p>Зачисления в режиме on-line<br>Комиссия не взимается.</p>
+										</article>
+									</div>
+									<!-- Конец айтема -->
+
+									<!-- Айтем -->
+									<div class="dropdown-item">
+										<h4 class="fake-link">Московский кредитный банк</h4>
+										<article class="clearfix">
+											<p>Внести средства можно через широкую <a href="#">сеть банкоматов и терминалов</a> банка с помощью банковских карт VISA, MasterCard любого банка. </p>
+
+											<p>Зачисления в режиме on-line.</p>
+										</article>
+									</div>
+									<!-- Конец айтема -->
+
+									<!-- Айтем -->
+									<div class="dropdown-item">
+										<h4 class="fake-link">Промсвязь банк</h4>
+										<article class="clearfix">
+											<p>Оплата на сайте банка Через cистему PSB-Retail (<a href="#">интернет-банк</a>).</p>
+
+											<p>Зачисления в режиме on-line<br>При оплате обращайте внимание на размер комиссии</p>
+										</article>
+									</div>
+									<!-- Конец айтема -->
+
+									<!-- Айтем -->
+									<div class="dropdown-item">
+										<h4 class="fake-link">Русский Стандарт (система Интернет-банкинг и банкоматы)</h4>
+										<article class="clearfix">
+											<p>Внести средства можно через систему <a href="#">Интернет-банк</a> Русский Стандарт, а также через сеть <a href="#">банкоматов</a> Банка.</p>
+
+											<p>Зачисления в режиме on-line<br>Комиссия не взимается.</p>
+										</article>
+									</div>
+									<!-- Конец айтема -->
+
+									<!-- Айтем -->
+									<div class="dropdown-item">
+										<h4 class="fake-link">ЮниКредит Банк/UniCredit Bank</h4>
+										<article class="clearfix">
+											<p>Оплата через <a href="#">Интернет-банкинг</a> и <a href="#">мобильное приложение</a>.</p>
+
+											<p>Зачисления в режиме on-line<br>Комиссия не взимается.</p>
+										</article>
+									</div>
+									<!-- Конец айтема -->
+
+									<!-- Айтем -->
+									<div class="dropdown-item">
+										<h4 class="fake-link">Райффайзен банк</h4>
+										<article class="clearfix">
+											<p>Интернет-банк Raiffeisen Connect!<br>Вы можете оплатить <a href="#">онлайн</a>.</p>
+										</article>
+									</div>
+									<!-- Конец айтема -->
+
+								</div>
+							</div>
+						</div>
+						<!-- Конец интернет-банков -->
+
+
+						<!-- Терминалы -->
+						<div class="help-item">
+							<h3 class="fake-link">Терминалы</h3>
+							<div class="answer text-content">
+								<div class="dropdown-list">
+									
+									<!-- Айтем -->
+									<div class="dropdown-item">
+										<h4 class="fake-link">Платеж.RU интернет-терминал</h4>
+										<article class="clearfix">
+											<p><a href="#">Платеж.RU</a> - это интернет-терминал, позволяющий удобно и безопасно оплачивать услуги в сети Интернет банковскими картами VISA и MasterCard российских банков.</p>
+
+											<p>Платеж.RU является продуктом ОКЕАН БАНК (ЗАО) и объединяет в себе надежность работы банковских карт и удобство электронных денег.</p>
+
+											<p>Зачисления в режиме on-line.<br>Комиссия 2,3%, минимум 10 рублей. С владельцев карт ЗАО "ОКЕАН БАНК" комиссия не взимается.</p>
+
+											<p>
+												Служба клиентской поддержки Платеж.RU: 8 (495) 981 55 00;<br>
+												8 (800) 100 55 11 (из любого региона России звонок бесплатный);<br>
+												help@platezh.ru
+											</p>
+										</article>
+									</div>
+									<!-- Конец айтема -->
+
+									<!-- Айтем -->
+									<div class="dropdown-item">
+										<h4 class="fake-link">Терминалы моментальной оплаты Сбербанка России</h4>
+										<article class="clearfix">
+											<p><img src="http://sberbank.ru/common/img/uploaded/banks/uploaded_szb/files/smi_sber_logo.jpg" width="300" height="62"></p>
+											<p>Оплата с помощью <a href="#">Устройств самообслуживания</a> Сбербанка России.</p>
+											<p>Зачисления в режиме on-line<br>При оплате обращайте внимание на размер комиссии</p>
+										</article>
+									</div>
+									<!-- Конец айтема -->
+
+									<!-- Айтем -->
+									<div class="dropdown-item">
+										<h4 class="fake-link">МЕТРОБАНК</h4>
+										<article class="clearfix">
+											<p><a href="http://www.metrobank.ru/">www.metrobank.ru</a></p>
+										</article>
+									</div>
+									<!-- Конец айтема -->
+
+									<!-- Айтем -->
+									<div class="dropdown-item">
+										<h4 class="fake-link">ОТКРЫТИЕ КБ ЗАО</h4>
+										<article class="clearfix">
+											<p><a href="http://www.openbank.ru/">www.openbank.ru</a></p>
+										</article>
+									</div>
+									<!-- Конец айтема -->
+
+									<!-- Айтем -->
+									<div class="dropdown-item">
+										<h4 class="fake-link">ПРИМСОЦБАНК ОАО</h4>
+										<article class="clearfix">
+											<p><a href="http://www.pskb.com/">www.pskb.com</a></p>
+										</article>
+									</div>
+									<!-- Конец айтема -->
+
+									<!-- Айтем -->
+									<div class="dropdown-item">
+										<h4 class="fake-link">ТОГОВОГО ФИНАНСИРОВАНИЯ БАНК</h4>
+										<article class="clearfix">
+											<p><a href="http://www.tfbank.ru/">www.tfbank.ru</a></p>
+										</article>
+									</div>
+									<!-- Конец айтема -->
+
+									<!-- Айтем -->
+									<div class="dropdown-item">
+										<h4 class="fake-link">БТА БАНК ООО</h4>
+										<article class="clearfix">
+											<p><a href="http://slavinvest.ru/ru/">slavinvest.ru/ru</a></p>
+										</article>
+									</div>
+									<!-- Конец айтема -->
+
+									<!-- Айтем -->
+									<div class="dropdown-item">
+										<h4 class="fake-link">ИННОВАЦИЙ И РАЗВИТИЯ БАНК АК ФБ</h4>
+										<article class="clearfix">
+											<p><a href="http://www.fbid.ru/">www.fbid.ru</a></p>
+										</article>
+									</div>
+									<!-- Конец айтема -->
+
+									<!-- Айтем -->
+									<div class="dropdown-item">
+										<h4 class="fake-link">МОБИЛ ЭЛЕМЕНТ</h4>
+										<article class="clearfix">
+											<p><a href="#">Адреса салонов и терминалов</a></p>
+											<p>Зачисления в режиме on-line<br>При оплате обращайте внимание на размер комиссии</p>
+										</article>
+									</div>
+									<!-- Конец айтема -->
+
+								</div>
+							</div>
+						</div>
+						<!-- Конец терминалов -->
+
+
+						<!-- ругие способы -->
+						<div class="help-item">
+							<h3 class="fake-link">Другие способы</h3>
+							<div class="answer text-content">
+								<div class="dropdown-list">
+									
+									<!-- Айтем -->
+									<div class="dropdown-item">
+										<h4 class="fake-link">Элекснет</h4>
+										<article class="clearfix">
+											<p><img src="http://onlime.ru/be459dbf3174521a2b14c3974fa64a42.jpg" width="434" height="133" alt=""></p>
+											<p>Адреса терминалов системы Элекснет. Большинство терминалов работает круглосуточно.</p>
+
+											<p>«Записная книжка» – это простой способ оплаты услуг, позволяющий создать свое персональное меню в сети «Элекснет». Благодаря этому сервису у Вас не будет необходимости каждый раз вводить платежные реквизиты на терминале. Вам нужно лишь указать короткий номер своей «Записной книжки» и пароль. </p>
+
+											<p>При оплате обращайте внимание на размер комиссии</p>
+										</article>
+									</div>
+									<!-- Конец айтема -->
+
+									<!-- Айтем -->
+									<div class="dropdown-item">
+										<h4 class="fake-link">Московский Кредитный Банк</h4>
+										<article class="clearfix">
+											<p><a href="#">Адреса терминалов</a></p>
+											<p>Зачисления в режиме on-line<br>При оплате обращайте внимание на размер комиссии</p>
+										</article>
+									</div>
+									<!-- Конец айтема -->
+
+									<!-- Айтем -->
+									<div class="dropdown-item">
+										<h4 class="fake-link">ЕСГП (Единая Система Городских Платежей)</h4>
+										<article class="clearfix">
+											<p><a href="#">Адреса терминалов системы ЕГСН</a></p>
+											<p>Зачисления в режиме on-line<br>При оплате обращайте внимание на размер комиссии</p>
+										</article>
+									</div>
+									<!-- Конец айтема -->
+
+									<!-- Айтем -->
+									<div class="dropdown-item">
+										<h4 class="fake-link">Киберплат</h4>
+										<article class="clearfix">
+											<p><a href="#">Точки приема платежей</a> через систему КиберПлат</p>
+											<p>Внести абонентскую плату можно через кассы магазинов.</p>
+											<p>Зачисление в течение 1–5 минут <br>При оплате обращайте внимание на размер комиссии</p>
+										</article>
+									</div>
+									<!-- Конец айтема -->
+
+									<!-- Айтем -->
+									<div class="dropdown-item">
+										<h4 class="fake-link">Comepay</h4>
+										<article class="clearfix">
+											<p><a href="#">Оплата в терминалах</a></p>
+											<p>Зачисления в режиме on-line<br>Комиссия от 0 до 10%</p>
+										</article>
+									</div>
+									<!-- Конец айтема -->
+
+									<!-- Айтем -->
+									<div class="dropdown-item">
+										<h4 class="fake-link">DeltaPay</h4>
+										<article class="clearfix">
+											<p><a href="#">Адреса терминалов</a> системы DeltaPay</p>
+											<p>Зачисления в режиме on-line<br>При оплате обращайте внимание на размер комиссии</p>
+										</article>
+									</div>
+									<!-- Конец айтема -->
+
+									<!-- Айтем -->
+									<div class="dropdown-item">
+										<h4 class="fake-link">CiberPay</h4>
+										<article class="clearfix">
+											<p>Зачисления в режиме on-line</p>
+											<p>При оплате обращайте внимание на размер комиссии</p>
+											<p>Большинство терминалов работает круглосуточно.</p>
+											<p>Адреса терминалов системы CiberPay</p>
+										</article>
+									</div>
+									<!-- Конец айтема -->
+
+									<!-- Айтем -->
+									<div class="dropdown-item">
+										<h4 class="fake-link">М.Видео</h4>
+										<article class="clearfix">
+											<p>Оплата услуг ОнЛайм в магазинах сети М.Видео <a href="#">адреса магазинов</a></p>
+											<p>Зачисления в режиме on-line<br>При оплате обращайте внимание на размер комиссии</p>
+										</article>
+									</div>
+									<!-- Конец айтема -->
+
+									<!-- Айтем -->
+									<div class="dropdown-item">
+										<h4 class="fake-link">Связной</h4>
+										<article class="clearfix">
+											<p><a href="#">Адреса салонов</a></p>
+											<p>Зачисления в режиме on-line<br>При оплате обращайте внимание на размер комиссии</p>
+										</article>
+									</div>
+									<!-- Конец айтема -->
+
+									<!-- Айтем -->
+									<div class="dropdown-item">
+										<h4 class="fake-link">Альт Телеком</h4>
+										<article class="clearfix">
+											<p><a href="#">Адреса салонов</a></p>
+											<p>Зачисления в режиме on-line<br>При оплате обращайте внимание на размер комиссии</p>
+										</article>
+									</div>
+									<!-- Конец айтема -->
+
+									<!-- Айтем -->
+									<div class="dropdown-item">
+										<h4 class="fake-link">МТС</h4>
+										<article class="clearfix">
+											<p><a href="#">Адреса салонов</a></p>
+											<p>Зачисления в режиме on-line<br>При оплате обращайте внимание на размер комиссии</p>
+										</article>
+									</div>
+									<!-- Конец айтема -->
+
+									<!-- Айтем -->
+									<div class="dropdown-item">
+										<h4 class="fake-link">Евросеть</h4>
+										<article class="clearfix">
+											<p><a href="#">Адреса салонов</a></p>
+											<p>Зачисления в режиме on-line<br>При оплате обращайте внимание на размер комиссии</p>
+										</article>
+									</div>
+									<!-- Конец айтема -->
+
+									<!-- Айтем -->
+									<div class="dropdown-item">
+										<h4 class="fake-link">Сбербанк России г. Москвы</h4>
+										<article class="clearfix">
+											<p><img src="http://sberbank.ru/common/img/uploaded/banks/uploaded_szb/files/smi_sber_logo.jpg" width="300" height="62"></p>
+											<p>«Платеж может быть осуществлен за наличный и безналичный расчёт по реквизитам, указанным в квитанции, в любом из московских отделении СБ РФ. Образец квитанции можно распечатать здесь. Зачисления в течение 2 рабочих дней с момента оплаты. При оплате обращайте внимание на размер комиссии».</p>
+
+											<p>Для возможности непрерывного предоставления услуг, просьба оплату производить заранее или воспользоваться услугами платежных систем с моментальным зачислением.</p>
+
+											<p>Вы можете осуществить оплату через любое отделение Сбербанка (список филиалов).</p>
+										</article>
+									</div>
+									<!-- Конец айтема -->
+
+									<!-- Айтем -->
+									<div class="dropdown-item">
+										<h4 class="fake-link">Евросеть</h4>
+										<article class="clearfix">
+											<p>Оплата в банкоматах банка, терминалах самообслуживания  и интернет-банкинг <a href="#">Связьбанка</a></p>
+											<p>Зачисления в режиме on-line<br>При оплате обращайте внимание на размер комиссии</p>
+										</article>
+									</div>
+									<!-- Конец айтема -->
+
+									<!-- Айтем -->
+									<div class="dropdown-item">
+										<h4 class="fake-link">МТС-Банк</h4>
+										<article class="clearfix">
+											<p><a href="#">Адреса офисов и банкоматов</a> с помощью пластиковых карт VISA, MasterCard любого банка. </p>
+											<p>Зачисления в режиме on-line<br>При оплате обращайте внимание на размер комиссии</p>
+										</article>
+									</div>
+									<!-- Конец айтема -->
+
+									<!-- Айтем -->
+									<div class="dropdown-item">
+										<h4 class="fake-link">Список адресов офисов ОнЛайм</h4>
+										<article class="clearfix">
+											<p>Оплата через кассу, без комиссии<br>Зачисление в режиме on-line.</p>
+											<p>ул. Нагатинская, д.1, стр. 23<br>
+											Проезд м. Нагатинская, последний вагон из центра.<br>
+											Режим работы: понедельник-воскресенье 9:00-20:30.</p>
+											<p><a href="#">Схема проезда</a></p>
+										</article>
+									</div>
+									<!-- Конец айтема -->
+
+									<!-- Айтем -->
+									<div class="dropdown-item">
+										<h4 class="fake-link">Нуби</h4>
+										<article class="clearfix">
+											<p><a href="#">Адреса салонов</a></p>
+											<p>Зачисления в режиме on-line<br>При оплате обращайте внимание на размер комиссии</p>
+										</article>
+									</div>
+									<!-- Конец айтема -->
+
+								</div>
+							</div>
+						</div>
+						<!-- Конец других способов -->
+
+						В случае, если Ваше подключение было заблокировано, с момента поступления денежных средств на лицевой счёт в полном объёме разблокировка произойдет в течение 1(одного) часа.
+
+					</div>
+				</div>
+
+
+			</div>
+		</section>
+
+		<footer class="footer">
+			<div class="line clearfix">
+				<div class="footer-right">
+					<div class="footer-search">
+						<input type="text" class="search-text" placeholder="Что-то ищите?">
+					</div>
+					<div class="social-links">
+						<a href="#" class="facebook"></a>
+						<a href="#" class="twitter"></a>
+						<a href="#" class="vk"></a>
+						<a href="#" class="youtube"></a>
+					</div>
+				</div>
+				<div class="footer-menus">
+					<nav>
+						<ul>
+							<li><a href="#">Тарифы и услуги</a></li>
+							<li><a href="#">Дополнительные услуги</a></li>
+							<li><a href="#">Оборудование</a></li>
+							<li><a href="#">Список каналов</a></li>
+							<li><a href="#">Onlime-бонус</a></li>
+						</ul>
+						<ul>
+							<li><a href="#">Офисы</a></li>
+							<li><a href="#">О компании</a></li>
+							<li><a href="#">Документы</a></li>
+							<li><a href="#">Вакансии</a></li>
+							<li><a href="#">Акции</a></li>
+						</ul>
+						<ul>
+							<li><a href="#">Помощь</a></li>
+							<li><a href="#">FAQ</a></li>
+							<li><a href="#">Форум</a></li>
+						</ul>
+					</nav>
+				</div>
+				<div class="footer-copy">© 2015 ОАО «Ростелеком». Все права защищены.</div>
+			</div>
+		</footer>
+	</div>
+</body>
+</html>

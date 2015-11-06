@@ -1,0 +1,1071 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Список каналов</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=1">
+	<link rel="stylesheet" href="css/style.css">
+	<script src="js/jquery.min.js"></script>
+	<script src="js/jquery.teslalign.js"></script>
+	<script src="js/jquery.circliful.min.js"></script>
+	<script src="js/jquery.formstyler.min.js"></script>
+	<script src="js/jquery.fancybox.pack.js"></script>
+	<script src="js/scripts.js"></script>
+	<!--[if lt IE 9]>
+	<link rel="stylesheet" href="css/ie.css">
+	<script src="js/html5.js"></script>
+	<![endif]-->
+</head>
+<body>
+	<div class="wrapper">
+		<section class="topbar">
+			<div class="topbar-container">
+				<div class="line clearfix">
+					<a href="#" class="topbar-link topbar-link__sibling">Корпоративным клиентам</a>
+					<a href="#" class="topbar-link">Проверка скорости</a>
+					<a href="#" class="topbar-link">Onlime-Бонус</a>
+					<div class="topbar-support">
+						<span><span>поддержка</span>/<span class="current">подключение</span></span>
+						<strong>8 800 707 80 01</strong>
+						<strong class="current">8 800 707 80 00</strong>
+					</div>
+				</div>
+				<!-- Шапка для мобилок -->
+				<div class="topbar-more">
+					<a href="#" class="topbar-more-link"><span>Еще разделы</span></a>
+					<div class="topbar-more-popup">
+						<nav>
+							<a href="#"><span>Корпоративным клиентам</span></a>
+							<a href="#"><span>Onlime-бонус</span></a>
+						</nav>
+						<ul>
+							<li><span>Поддержка</span> <a href="tel:88007078001">8 800 707 80 01</a></li>
+							<li><span>Подключение</span> <a href="tel:88007078000">8 800 707 80 00</a></li>
+						</ul>
+					</div>
+				</div>
+				<!-- Конец шапки для мобилок -->
+				<div class="right-links">
+					<div class="right-link popup-link" data-id="login-popup">
+						<span class="ico ico-profile">Личный кабинет</span>
+						<span class="bg"></span>
+					</div>
+					<div class="right-link popup-link" data-id="payment-popup">
+						<span class="ico ico-payment">Оплатить</span>
+						<span class="bg"></span>
+					</div>
+
+					<div class="fill-background"></div>
+					
+					<div id="payment-popup" class="popup">
+						<div class="popup-close"></div>
+						<div class="form-block">
+							<input type="text" class="form-text" placeholder="Номер лицевого счета">
+						</div>
+						<div class="form-block">
+							<input type="text" class="form-text" placeholder="Сумма (рубли)">
+						</div>
+						<div class="form-block">
+							<div class="other-item">
+								<label class="checkbox checker">
+									<input type="checkbox" id="rules-check">
+								</label>
+								<div for="other-1" class="other-content">
+									<div class="title">Я согласен</div>
+									<span class="description">с <a href="#" class="blue-link">Правилами оплаты услуг связи</a></span>
+								</div>
+							</div>
+						</div>
+						<div class="form-submit">
+							<button type="submit" class="btn"><span>Перейти к оплате</span></button>
+						</div>
+					</div>
+
+					<div id="login-popup" class="popup">
+						<div class="popup-close"></div>
+						<div class="form-block">
+							<input type="text" class="form-text" placeholder="Логин">
+						</div>
+						<div class="form-block">
+							<input type="password" class="form-text" placeholder="Пароль">
+						</div>
+						<div class="form-block form-block__remind">
+							<a href="#" class="blue-link">Забыли логин или пароль?</a>
+						</div>
+						<div class="form-submit">
+							<button type="submit" class="btn"><span>Войти в личный кабинет</span></button>
+						</div>
+					</div>
+
+					<!-- Всплывашки для мобилок -->
+					<div id="menu-popup" class="popup popup-parent">
+						<div class="popup-close"></div>
+						<h4>Меню</h4>
+						<ul>
+							<li class="current"><a href="#"><span>Интернет</span></a></li>
+							<li><a href="#"><span>Телевидение</span></a></li>
+							<li><a href="#" class="popup-link" data-id="menu-internet-tv"><span>Интернет+ТВ</span></a></li>
+							<li><a href="#"><span>Домашний телефон</span></a></li>
+							<li><a href="#"><span>Интернет-магазин</span></a></li>
+						</ul>
+					</div>
+
+					<div id="menu-internet-tv" class="popup popup-children">
+						<div class="popup-close"></div>
+						<h4>Интрнет+ТВ</h4>
+						<ul>
+							<li><a href="#"><span>Тарифы</span></a></li>
+							<li><a href="#"><span>Домашний телефон</span></a></li>
+							<li><a href="#"><span>Дополнительные телеканалы</span></a></li>
+							<li><a href="#"><span>Оборудование</span></a></li>
+							<li><a href="#"><span>Дополнительные услуги</span></a></li>
+						</ul>
+
+						<a href="#" class="offer">
+							<span class="offer-title">Приведи друга и выйграй iPad</span>
+							<span class="offer-description">Каждый месяц — новый победитель!</span>
+							
+							<span class="offer-btn">
+								<span><i>Подробнее</i></span>
+							</span>
+
+							<span class="offer-image" style="background-image: url('images/del/offer-4.png')"></span>
+							<span class="offer-image offer-image-hover" style="background-image: url('images/del/offer-4-hover.png')"></span>
+						</a>
+
+						<div class="popup-children-arrow"></div>
+					</div>
+					<!-- Конец всплывашек для мобилок -->
+
+				</div>
+			</div>
+		</section>
+
+		<header class="header">
+			<div class="line">
+				<a href="#" class="logo">
+					<img src="images/logo.png" width="208" height="60" alt="">
+				</a>
+				<div class="header-menu-small popup-link" data-id="menu-popup"></div>
+				<nav class="header-menu">
+					<ul>
+						<li><a href="#"><span>Интернет</span></a></li>
+						<li class="current"><a href="#"><span>Телевидение</span></a></li>
+						<li><a href="#internet-tv" class="open-link"><span>Интернет+ТВ</span></a></li>
+						<li><a href="#"><span>Домашний телефон</span></a></li>
+						<li><a href="#"><span>Интернет-магазин</span></a></li>
+					</ul>
+				</nav>
+			</div>
+			<div class="popup-nav" id="internet-tv">
+				<div class="line clearfix">
+					<div class="popup-nav-close"></div>
+					<h3>Интернет+ТВ</h3>
+					<nav>
+						<ul>
+							<li><a href="#"><span>Тарифы</span></a></li>
+							<li><a href="#"><span>Домашний телефон</span></a></li>
+							<li><a href="#"><span>Дополнительные телеканалы</span></a></li>
+							<li><a href="#"><span>Оборудование</span></a></li>
+							<li><a href="#"><span>Дополнительные услуги</span></a></li>
+						</ul>
+					</nav>
+					<div class="popup-questions">
+						<h4>Частые вопросы</h4>
+						<ul>
+							<li><a href="#" class="blue-link">Как можно проверить состояние Лицевого Счета?</a></li>
+							<li><a href="#" class="blue-link">Я хочу подключить второй компьютер к Интернету. Что мне для этого нужно?</a></li>
+						</ul>
+					</div>
+					<a href="#" class="offer">
+						<span class="offer-title">Приведи друга и выйграй iPad</span>
+						<span class="offer-description">Каждый месяц — новый победитель!</span>
+						
+						<span class="offer-btn">
+							<span><i>Подбробнее</i></span>
+						</span>
+
+						<span class="offer-image" style="background-image: url('images/del/offer-4.png')"></span>
+						<span class="offer-image offer-image-hover" style="background-image: url('images/del/offer-4-hover.png')"></span>
+					</a>
+				</div>
+			</div>
+		</header>
+
+		<section class="sub-header">
+			<div class="line">
+				<nav class="breadcrumb">
+					<a href="#" class="home"></a>
+					<a href="#"><span>Телевидение</span></a>
+					<a href="#"><span>Список каналов</span></a>
+				</nav>
+			</div>
+		</section>
+
+
+		<section class="line_small line-title">
+	  		<div class="line-title-controls">
+				
+				<div class="radiobox">
+					<form action="#">
+					<label class="checker">
+						<input type="radio" name="change-tariff" checked>
+						<span>Цифровое ТВ</span>
+					</label>
+					<label class="checker checked">
+						<input type="radio" name="change-tariff">
+						<span>Интерактивное ТВ</span>
+					</label>
+					</form>
+				</div>
+				<span class="service-other-link">
+					<a href="#" class="fake-link">В чем разница?</a>
+				</span>
+	  		</div>
+	  		<h1>Список каналов</h1>
+		</section>
+
+		<section class="line_small section-top">
+			<div class="second-title">
+				<h2>Тарифы</h2>
+				<a href="#compare" class="fake-link various">Сравнение тарифов</a>
+			</div>
+
+			<div class="channals-popup" id="compare">
+				<header>
+					<aside>
+						<ul class="legend">
+							<li><span></span> — интерактивное ТВ</li>
+							<li class="selected"><span></span> — цифровое ТВ</li>
+						</ul>
+						<select>
+							<option>Все категории</option>
+							<option>Кино и сериалы</option>
+							<option>Детям</option>
+							<option>Новости</option>
+							<option>Музыка</option>
+							<option>Спорт</option>
+							<option>Увлечения</option>
+						</select>
+					</aside>
+					<h2>Сравнение тарифов</h2>
+				</header>
+				<table class="table-compare">
+					<thead>
+						<tr>
+							<th>Наименование канала</th>
+							<th colspan="2">Популярный</th>
+							<th colspan="2">Оптимальный</th>
+							<th colspan="2">Продвинутый</th>
+							<th colspan="2">Максимальный</th>
+						</tr>
+					</thead>
+					<tbody>
+						<!-- Канал -->
+						<tr>
+							<td>
+								<div class="title">
+									<img src="images/del/channel-13.png" alt="">
+									<h4>ТНТ</h4>
+								</div>
+							</td>
+							<!-- Пупулярный -->
+							<td><img src="images/radio-tick.png" width="18" height="12" alt=""></td>
+							<td class="selected"><img src="images/radio-tick.png" width="18" height="12" alt=""></td>
+							<!-- Оптимальный -->
+							<td><img src="images/radio-tick.png" width="18" height="12" alt=""></td>
+							<td class="selected"></td>
+							<!-- Продвинутый -->
+							<td><img src="images/radio-tick.png" width="18" height="12" alt=""></td>
+							<td class="selected"><img src="images/radio-tick.png" width="18" height="12" alt=""></td>
+							<!-- Максимальный -->
+							<td><img src="images/radio-tick.png" width="18" height="12" alt=""></td>
+							<td class="selected"><img src="images/radio-tick.png" width="18" height="12" alt=""></td>
+						</tr>
+						<!-- Конец канала -->
+						<!-- Канал -->
+						<tr>
+							<td>
+								<div class="title">
+									<img src="images/del/channel-14.png" alt="">
+									<h4>Домашний</h4>
+								</div>
+							</td>
+							<!-- Пупулярный -->
+							<td><img src="images/radio-tick.png" width="18" height="12" alt=""></td>
+							<td class="selected"><img src="images/radio-tick.png" width="18" height="12" alt=""></td>
+							<!-- Оптимальный -->
+							<td><img src="images/radio-tick.png" width="18" height="12" alt=""></td>
+							<td class="selected"><img src="images/radio-tick.png" width="18" height="12" alt=""></td>
+							<!-- Продвинутый -->
+							<td></td>
+							<td class="selected"><img src="images/radio-tick.png" width="18" height="12" alt=""></td>
+							<!-- Максимальный -->
+							<td></td>
+							<td class="selected"></td>
+						</tr>
+						<!-- Конец канала -->
+						<!-- Канал -->
+						<tr>
+							<td>
+								<div class="title">
+									<img src="images/del/channel-15.png" alt="">
+									<h4>ТВ-3</h4>
+								</div>
+							</td>
+							<!-- Пупулярный -->
+							<td></td>
+							<td class="selected"><img src="images/radio-tick.png" width="18" height="12" alt=""></td>
+							<!-- Оптимальный -->
+							<td></td>
+							<td class="selected"><img src="images/radio-tick.png" width="18" height="12" alt=""></td>
+							<!-- Продвинутый -->
+							<td><img src="images/radio-tick.png" width="18" height="12" alt=""></td>
+							<td class="selected"><img src="images/radio-tick.png" width="18" height="12" alt=""></td>
+							<!-- Максимальный -->
+							<td><img src="images/radio-tick.png" width="18" height="12" alt=""></td>
+							<td class="selected"></td>
+						</tr>
+						<!-- Конец канала -->
+						<!-- Канал -->
+						<tr>
+							<td>
+								<div class="title">
+									<img src="images/del/channel-16.png" alt="">
+									<h4>Ю ТВ</h4>
+								</div>
+							</td>
+							<!-- Пупулярный -->
+							<td></td>
+							<td class="selected"></td>
+							<!-- Оптимальный -->
+							<td></td>
+							<td class="selected"></td>
+							<!-- Продвинутый -->
+							<td><img src="images/radio-tick.png" width="18" height="12" alt=""></td>
+							<td class="selected"><img src="images/radio-tick.png" width="18" height="12" alt=""></td>
+							<!-- Максимальный -->
+							<td><img src="images/radio-tick.png" width="18" height="12" alt=""></td>
+							<td class="selected"><img src="images/radio-tick.png" width="18" height="12" alt=""></td>
+						</tr>
+						<!-- Конец канала -->
+					</tbody>
+				</table>
+			</div>
+
+			<div class="channals-popup" id="all-channal">
+				<header>
+					<aside>
+						<select>
+							<option>Все категории</option>
+							<option>Кино и сериалы</option>
+							<option>Детям</option>
+							<option>Новости</option>
+							<option>Музыка</option>
+							<option>Спорт</option>
+							<option>Увлечения</option>
+						</select>
+					</aside>
+					<h2>Тариф «Продвинутый»</h2>
+				</header>
+				<table>
+					<thead>
+						<tr>
+							<th width="225">Популярные каналы</th>
+							<th>Описание</th>
+						</tr>
+					</thead>
+					<tbody>
+						<!-- Канал -->
+						<tr>
+							<td>
+								<div class="title">
+									<img src="images/del/channel-13.png" alt="">
+									<h4>ТНТ</h4>
+								</div>
+							</td>
+							<td>
+								<div class="description">
+									<div class="top">
+										<h4>Динамичный развлекательный телеканал.</h4>
+										<abbr class="ctv" title="Цифровое ТВ">ЦТВ</abbr>
+										<abbr class="itv" title="Интерактивное ТВ">ИТВ</abbr>
+										<span class="arrow"></span>
+									</div>
+									<article>
+										Тут нет политики, футбола и биатлона, тут нет криминала и жестокости. «Ю» — это любовь, красота, мода, искренность, комплименты, настроение и самосовершенствование.
+										<span class="num ctv">15</span>
+										<span class="num itv">8</span>
+										<span class="num txt">кнопки в сети</span>
+									</article>
+								</div>
+							</td>
+						</tr>
+						<!-- Конец канала -->
+
+						<!-- Канал -->
+						<tr>
+							<td>
+								<div class="title">
+									<img src="images/del/channel-14.png" alt="">
+									<h4>Домашний</h4>
+								</div>
+							</td>
+							<td>
+								<div class="description">
+									<div class="top">
+										<h4>Тематический канал, ориентированный на женскую аудиторию.</h4>
+										<abbr class="ctv" title="Цифровое ТВ">ЦТВ</abbr>
+										<span class="arrow"></span>
+									</div>
+									<article>
+										Тут нет политики, футбола и биатлона, тут нет криминала и жестокости. «Ю» — это любовь, красота, мода, искренность, комплименты, настроение и самосовершенствование.
+										<span class="num ctv">15</span>
+										<span class="num itv">8</span>
+										<span class="num txt">кнопки в сети</span>
+									</article>
+								</div>
+							</td>
+						</tr>
+						<!-- Конец канала -->
+
+						<!-- Канал -->
+						<tr>
+							<td>
+								<div class="title">
+									<img src="images/del/channel-15.png" alt="">
+									<h4>ТВ-3</h4>
+								</div>
+							</td>
+							<td>
+								<div class="description">
+									<div class="top">
+										<h4>Канал для поклонников мистики, фантастики и приключений.</h4>
+										<abbr class="itv" title="Интерактивное ТВ">ИТВ</abbr>
+										<span class="arrow"></span>
+									</div>
+									<article>
+										Тут нет политики, футбола и биатлона, тут нет криминала и жестокости. «Ю» — это любовь, красота, мода, искренность, комплименты, настроение и самосовершенствование.
+										<span class="num ctv">15</span>
+										<span class="num itv">8</span>
+										<span class="num txt">кнопки в сети</span>
+									</article>
+								</div>
+							</td>
+						</tr>
+						<!-- Конец канала -->
+
+						<!-- Канал -->
+						<tr>
+							<td>
+								<div class="title">
+									<img src="images/del/channel-16.png" alt="">
+									<h4>Ю ТВ</h4>
+									<p>
+										Русский<br>
+										<a href="#">u-tv.ru</a>
+									</p>
+								</div>
+							</td>
+							<td>
+								<div class="description">
+									<div class="top">
+										<h4>Единственный телеканал для девушек.</h4>
+										<abbr class="ctv" title="Цифровое ТВ">ЦТВ</abbr>
+										<abbr class="itv" title="Интерактивное ТВ">ИТВ</abbr>
+										<span class="arrow"></span>
+									</div>
+									<article>
+										Тут нет политики, футбола и биатлона, тут нет криминала и жестокости. «Ю» — это любовь, красота, мода, искренность, комплименты, настроение и самосовершенствование.
+										<span class="num ctv">15</span>
+										<span class="num itv">8</span>
+										<span class="num txt">кнопки в сети</span>
+									</article>
+								</div>
+							</td>
+						</tr>
+						<!-- Конец канала -->
+						<!-- Канал -->
+						<tr>
+							<td>
+								<div class="title">
+									<img src="images/del/channel-13.png" alt="">
+									<h4>ТНТ</h4>
+								</div>
+							</td>
+							<td>
+								<div class="description">
+									<div class="top">
+										<h4>Динамичный развлекательный телеканал.</h4>
+										<abbr class="ctv" title="Цифровое ТВ">ЦТВ</abbr>
+										<abbr class="itv" title="Интерактивное ТВ">ИТВ</abbr>
+										<span class="arrow"></span>
+									</div>
+									<article>
+										Тут нет политики, футбола и биатлона, тут нет криминала и жестокости. «Ю» — это любовь, красота, мода, искренность, комплименты, настроение и самосовершенствование.
+										<span class="num ctv">15</span>
+										<span class="num itv">8</span>
+										<span class="num txt">кнопки в сети</span>
+									</article>
+								</div>
+							</td>
+						</tr>
+						<!-- Конец канала -->
+
+						<!-- Канал -->
+						<tr>
+							<td>
+								<div class="title">
+									<img src="images/del/channel-14.png" alt="">
+									<h4>Домашний</h4>
+								</div>
+							</td>
+							<td>
+								<div class="description">
+									<div class="top">
+										<h4>Тематический канал, ориентированный на женскую аудиторию.</h4>
+										<abbr class="ctv" title="Цифровое ТВ">ЦТВ</abbr>
+										<span class="arrow"></span>
+									</div>
+									<article>
+										Тут нет политики, футбола и биатлона, тут нет криминала и жестокости. «Ю» — это любовь, красота, мода, искренность, комплименты, настроение и самосовершенствование.
+										<span class="num ctv">15</span>
+										<span class="num itv">8</span>
+										<span class="num txt">кнопки в сети</span>
+									</article>
+								</div>
+							</td>
+						</tr>
+						<!-- Конец канала -->
+
+						<!-- Канал -->
+						<tr>
+							<td>
+								<div class="title">
+									<img src="images/del/channel-15.png" alt="">
+									<h4>ТВ-3</h4>
+								</div>
+							</td>
+							<td>
+								<div class="description">
+									<div class="top">
+										<h4>Канал для поклонников мистики, фантастики и приключений.</h4>
+										<abbr class="itv" title="Интерактивное ТВ">ИТВ</abbr>
+										<span class="arrow"></span>
+									</div>
+									<article>
+										Тут нет политики, футбола и биатлона, тут нет криминала и жестокости. «Ю» — это любовь, красота, мода, искренность, комплименты, настроение и самосовершенствование.
+										<span class="num ctv">15</span>
+										<span class="num itv">8</span>
+										<span class="num txt">кнопки в сети</span>
+									</article>
+								</div>
+							</td>
+						</tr>
+						<!-- Конец канала -->
+
+						<!-- Канал -->
+						<tr>
+							<td>
+								<div class="title">
+									<img src="images/del/channel-16.png" alt="">
+									<h4>Ю ТВ</h4>
+									<p>
+										Русский<br>
+										<a href="#">u-tv.ru</a>
+									</p>
+								</div>
+							</td>
+							<td>
+								<div class="description">
+									<div class="top">
+										<h4>Единственный телеканал для девушек.</h4>
+										<abbr class="ctv" title="Цифровое ТВ">ЦТВ</abbr>
+										<abbr class="itv" title="Интерактивное ТВ">ИТВ</abbr>
+										<span class="arrow"></span>
+									</div>
+									<article>
+										Тут нет политики, футбола и биатлона, тут нет криминала и жестокости. «Ю» — это любовь, красота, мода, искренность, комплименты, настроение и самосовершенствование.
+										<span class="num ctv">15</span>
+										<span class="num itv">8</span>
+										<span class="num txt">кнопки в сети</span>
+									</article>
+								</div>
+							</td>
+						</tr>
+						<!-- Конец канала -->
+						<!-- Канал -->
+						<tr>
+							<td>
+								<div class="title">
+									<img src="images/del/channel-13.png" alt="">
+									<h4>ТНТ</h4>
+								</div>
+							</td>
+							<td>
+								<div class="description">
+									<div class="top">
+										<h4>Динамичный развлекательный телеканал.</h4>
+										<abbr class="ctv" title="Цифровое ТВ">ЦТВ</abbr>
+										<abbr class="itv" title="Интерактивное ТВ">ИТВ</abbr>
+										<span class="arrow"></span>
+									</div>
+									<article>
+										Тут нет политики, футбола и биатлона, тут нет криминала и жестокости. «Ю» — это любовь, красота, мода, искренность, комплименты, настроение и самосовершенствование.
+										<span class="num ctv">15</span>
+										<span class="num itv">8</span>
+										<span class="num txt">кнопки в сети</span>
+									</article>
+								</div>
+							</td>
+						</tr>
+						<!-- Конец канала -->
+
+						<!-- Канал -->
+						<tr>
+							<td>
+								<div class="title">
+									<img src="images/del/channel-14.png" alt="">
+									<h4>Домашний</h4>
+								</div>
+							</td>
+							<td>
+								<div class="description">
+									<div class="top">
+										<h4>Тематический канал, ориентированный на женскую аудиторию.</h4>
+										<abbr class="ctv" title="Цифровое ТВ">ЦТВ</abbr>
+										<span class="arrow"></span>
+									</div>
+									<article>
+										Тут нет политики, футбола и биатлона, тут нет криминала и жестокости. «Ю» — это любовь, красота, мода, искренность, комплименты, настроение и самосовершенствование.
+										<span class="num ctv">15</span>
+										<span class="num itv">8</span>
+										<span class="num txt">кнопки в сети</span>
+									</article>
+								</div>
+							</td>
+						</tr>
+						<!-- Конец канала -->
+
+						<!-- Канал -->
+						<tr>
+							<td>
+								<div class="title">
+									<img src="images/del/channel-15.png" alt="">
+									<h4>ТВ-3</h4>
+								</div>
+							</td>
+							<td>
+								<div class="description">
+									<div class="top">
+										<h4>Канал для поклонников мистики, фантастики и приключений.</h4>
+										<abbr class="itv" title="Интерактивное ТВ">ИТВ</abbr>
+										<span class="arrow"></span>
+									</div>
+									<article>
+										Тут нет политики, футбола и биатлона, тут нет криминала и жестокости. «Ю» — это любовь, красота, мода, искренность, комплименты, настроение и самосовершенствование.
+										<span class="num ctv">15</span>
+										<span class="num itv">8</span>
+										<span class="num txt">кнопки в сети</span>
+									</article>
+								</div>
+							</td>
+						</tr>
+						<!-- Конец канала -->
+
+						<!-- Канал -->
+						<tr>
+							<td>
+								<div class="title">
+									<img src="images/del/channel-16.png" alt="">
+									<h4>Ю ТВ</h4>
+									<p>
+										Русский<br>
+										<a href="#">u-tv.ru</a>
+									</p>
+								</div>
+							</td>
+							<td>
+								<div class="description">
+									<div class="top">
+										<h4>Единственный телеканал для девушек.</h4>
+										<abbr class="ctv" title="Цифровое ТВ">ЦТВ</abbr>
+										<abbr class="itv" title="Интерактивное ТВ">ИТВ</abbr>
+										<span class="arrow"></span>
+									</div>
+									<article>
+										Тут нет политики, футбола и биатлона, тут нет криминала и жестокости. «Ю» — это любовь, красота, мода, искренность, комплименты, настроение и самосовершенствование.
+										<span class="num ctv">15</span>
+										<span class="num itv">8</span>
+										<span class="num txt">кнопки в сети</span>
+									</article>
+								</div>
+							</td>
+						</tr>
+						<!-- Конец канала -->
+					</tbody>
+				</table>
+			</div>
+
+
+
+			<div class="pockets-list">
+				<!-- Начало пакета -->
+				<div class="pocket">
+					<h3>Стартовый</h3>
+					<p class="pocket-description">Каналы телевидения самых разных жанров и направлений — каждый найдет в то, что интересно именно ему. Только самые популярные и востребованные каналы, ничего лишнего!</p>
+					
+					<div class="pocket-info">
+						<div class="pocket-num pocket-indo__start">
+							<strong>108</strong>
+							<span>каналов</span>
+						</div>
+						<div class="pocket-info-content">
+							<ul>
+								<li class="green">Популярные каналы</li>
+							</ul>
+							<a href="#all-channal" class="fake-link various">Все каналы тарифа</a>
+						</div>
+					</div>
+
+					<footer>
+						<a href="#" class="btn"><span>Подключить</span></a>
+						<div class="tariff-total-item">
+							<div class="tariff-total-type">Ежемесячный платеж</div>
+							<span class="tariff-numbers">
+								<span class="num">320</span>
+								<span class="unit">
+									<span class="unit-top">руб.</span>
+									<span class="unit-bottom">мес</span>
+								</span>
+							</span>
+						</div>
+					</footer>
+				</div>
+				<!-- Конец пакета -->
+
+				<!-- Начало пакета -->
+				<div class="pocket">
+					<h3>Оптимальный</h3>
+					<p class="pocket-description">Каналы телевидения самых разных жанров и направлений — каждый найдет в то, что интересно именно ему. Только самые популярные и востребованные каналы, ничего лишнего!</p>
+					
+					<div class="pocket-info">
+						<div class="pocket-num pocket-indo__optimal">
+							<strong>133</strong>
+							<span>канала</span>
+						</div>
+						<div class="pocket-info-content">
+							<ul>
+								<li class="green">Популярные каналы</li>
+								<li class="orange">25 дополнительных каналов</li>
+							</ul>
+							<a href="#all-channal" class="fake-link various">Все каналы тарифа</a>
+						</div>
+					</div>
+
+					<footer>
+						<a href="#" class="btn"><span>Подключить</span></a>
+						<div class="tariff-total-item">
+							<div class="tariff-total-type">Ежемесячный платеж</div>
+							<span class="tariff-numbers">
+								<span class="num">450</span>
+								<span class="unit">
+									<span class="unit-top">руб.</span>
+									<span class="unit-bottom">мес</span>
+								</span>
+							</span>
+						</div>
+					</footer>
+				</div>
+				<!-- Конец пакета -->
+
+				<!-- Начало пакета -->
+				<div class="pocket">
+					<h3>Продвинутый</h3>
+					<p class="pocket-description">Каналы телевидения самых разных жанров и направлений — каждый найдет в то, что интересно именно ему. Только самые популярные и востребованные каналы, ничего лишнего!</p>
+					
+					<div class="pocket-info">
+						<div class="pocket-num pocket-indo__advanced">
+							<strong>161</strong>
+							<span>канал</span>
+						</div>
+						<div class="pocket-info-content">
+							<ul>
+								<li class="green">Популярные каналы</li>
+								<li class="orange">25 дополнительных каналов</li>
+								<li class="light-blue">«Твое кино» + 17 каналов</li>
+							</ul>
+							<a href="#all-channal" class="fake-link various">Все каналы тарифа</a>
+						</div>
+					</div>
+
+					<footer>
+						<a href="#" class="btn"><span>Подключить</span></a>
+						<div class="tariff-total-item">
+							<div class="tariff-total-type">Ежемесячный платеж</div>
+							<span class="tariff-numbers">
+								<span class="num">580</span>
+								<span class="unit">
+									<span class="unit-top">руб.</span>
+									<span class="unit-bottom">мес</span>
+								</span>
+							</span>
+						</div>
+					</footer>
+				</div>
+				<!-- Конец пакета -->
+
+				<!-- Начало пакета -->
+				<div class="pocket">
+					<h3>Максимальный</h3>
+					<p class="pocket-description">Каналы телевидения самых разных жанров и направлений.</p>
+					
+					<div class="pocket-info">
+						<div class="pocket-num pocket-indo__maximum">
+							<strong>200</strong>
+							<span>каналов</span>
+						</div>
+						<div class="pocket-info-content">
+							<ul>
+								<li class="green">Популярные каналы</li>
+								<li class="orange">25 дополнительных каналов</li>
+								<li class="light-blue">«Твое кино» + 17 каналов</li>
+								<li class="dark-blue">Все дополнительные пакеты</li>
+							</ul>
+							<a href="#all-channal" class="fake-link various">Все каналы тарифа</a>
+						</div>
+					</div>
+
+					<footer>
+						<a href="#" class="btn"><span>Подключить</span></a>
+						<div class="tariff-total-item">
+							<div class="tariff-total-type">Ежемесячный платеж</div>
+							<span class="tariff-numbers">
+								<span class="num">1700</span>
+								<span class="unit">
+									<span class="unit-top">руб.</span>
+									<span class="unit-bottom">мес</span>
+								</span>
+							</span>
+						</div>
+					</footer>
+				</div>
+				<!-- Конец пакета -->
+			</div>
+
+			<div class="second-title section-top-half">
+				<h2>Дополнительные пакеты</h2>
+			</div>
+			<div class="pockets-list">
+				<!-- Дополнительный канал -->
+				<div class="pocket">
+					<h3>Твое кино</h3>
+					<p class="pocket-description">Ничего лишнего, только фильмы. Классика, премьеры года, артхаус и анимация.</p>
+					<footer class="other-channels">
+						<span class="tariff-numbers">
+							<span class="num">200</span>
+							<span class="unit">
+								<span class="unit-top">руб.</span>
+								<span class="unit-bottom">мес</span>
+							</span>
+						</span>
+						<div class="tariff-channels-num">
+							<div class="tariff-value">+16</div>
+							<div class="tariff-big-description">
+								<span>
+									<span>Дополнительных<br><a href="#" class="fake-link">каналов</a></span>
+								</span>
+							</div>
+						</div>
+					</footer>
+				</div>
+				<!-- Конец дополнительного канала -->
+
+				<!-- Дополнительный канал -->
+				<div class="pocket">
+					<h3>HD</h3>
+					<p class="pocket-description">Популярные каналы в высоком качестве.</p>
+					<footer class="other-channels">
+						<span class="tariff-numbers">
+							<span class="num">200</span>
+							<span class="unit">
+								<span class="unit-top">руб.</span>
+								<span class="unit-bottom">мес</span>
+							</span>
+						</span>
+						<div class="tariff-channels-num">
+							<div class="tariff-value">+28</div>
+							<div class="tariff-big-description">
+								<span>
+									<span>Дополнительных<br><a href="#" class="fake-link">каналов</a></span>
+								</span>
+							</div>
+						</div>
+					</footer>
+				</div>
+				<!-- Конец дополнительного канала -->
+
+				<!-- Дополнительный канал -->
+				<div class="pocket">
+					<h3>Viasat Премиум HD</h3>
+					<p class="pocket-description">Просмотр в «Видеопрокате» Интерактивного ТВ и на любом мобильном устройстве с помощью сервиса Viaplay.</p>
+					<footer class="other-channels">
+						<span class="tariff-numbers">
+							<span class="num">200</span>
+							<span class="unit">
+								<span class="unit-top">руб.</span>
+								<span class="unit-bottom">мес</span>
+							</span>
+						</span>
+						<div class="tariff-channels-num">
+							<div class="tariff-value">+16</div>
+							<div class="tariff-big-description">
+								<span>
+									<span>Дополнительных<br><a href="#" class="fake-link">каналов</a></span>
+								</span>
+							</div>
+						</div>
+					</footer>
+				</div>
+				<!-- Конец дополнительного канала -->
+
+				<!-- Дополнительный канал -->
+				<div class="pocket">
+					<h3>Amedia Premium</h3>
+					<p class="pocket-description">Новый премиальный пакет телеканалов, передающих лучшие мировые сериалы.</p>
+					<footer class="other-channels">
+						<span class="tariff-numbers">
+							<span class="num">200</span>
+							<span class="unit">
+								<span class="unit-top">руб.</span>
+								<span class="unit-bottom">мес</span>
+							</span>
+						</span>
+						<div class="tariff-channels-num">
+							<div class="tariff-value">+2</div>
+							<div class="tariff-big-description">
+								<span>
+									<span>Дополнительных<br><a href="#" class="fake-link">канала</a></span>
+								</span>
+							</div>
+						</div>
+					</footer>
+				</div>
+				<!-- Конец дополнительного канала -->
+
+				<!-- Дополнительный канал -->
+				<div class="pocket">
+					<h3>Наш футбол</h3>
+					<p class="pocket-description">Пакет лучшего отечественного канала о российском футболе. Прямые трансляции матчей и многое другое.</p>
+					<footer class="other-channels">
+						<span class="tariff-numbers">
+							<span class="num">149</span>
+							<span class="unit">
+								<span class="unit-top">руб.</span>
+								<span class="unit-bottom">мес</span>
+							</span>
+						</span>
+						<div class="tariff-channels-num">
+							<div class="tariff-value">+2</div>
+							<div class="tariff-big-description">
+								<span>
+									<span>Дополнительных<br><a href="#" class="fake-link">канала</a></span>
+								</span>
+							</div>
+						</div>
+					</footer>
+				</div>
+				<!-- Конец дополнительного канала -->
+
+				<!-- Дополнительный канал -->
+				<div class="pocket">
+					<h3>Плюс футбол</h3>
+					<p class="pocket-description">Полное предложение лучшего мирового футбола в России. Только для интерактивного ТВ.</p>
+					<footer class="other-channels">
+						<span class="tariff-numbers">
+							<span class="num">380</span>
+							<span class="unit">
+								<span class="unit-top">руб.</span>
+								<span class="unit-bottom">мес</span>
+							</span>
+						</span>
+						<div class="tariff-channels-num">
+							<div class="tariff-value">+3</div>
+							<div class="tariff-big-description">
+								<span>
+									<span>Дополнительных<br><a href="#" class="fake-link">канала</a></span>
+								</span>
+							</div>
+						</div>
+					</footer>
+				</div>
+				<!-- Конец дополнительного канала -->
+
+				<!-- Дополнительный канал -->
+				<div class="pocket">
+					<h3>Для взрослых</h3>
+					<p class="pocket-description">Пять лучших эротических телеканалов. С каналами пакета «Взрослый» вы можете забыть про сон.</p>
+					<footer class="other-channels">
+						<span class="tariff-numbers">
+							<span class="num">200</span>
+							<span class="unit">
+								<span class="unit-top">руб.</span>
+								<span class="unit-bottom">мес</span>
+							</span>
+						</span>
+						<div class="tariff-channels-num">
+							<div class="tariff-value">+5</div>
+							<div class="tariff-big-description">
+								<span>
+									<span>Дополнительных<br><a href="#" class="fake-link">каналов</a></span>
+								</span>
+							</div>
+						</div>
+					</footer>
+				</div>
+				<!-- Конец дополнительного канала -->
+			</div>
+		</section>
+
+		<footer class="footer">
+			<div class="line clearfix">
+				<div class="footer-right">
+					<div class="footer-search">
+						<input type="text" class="search-text" placeholder="Что-то ищите?">
+					</div>
+					<div class="social-links">
+						<a href="#" class="facebook"></a>
+						<a href="#" class="twitter"></a>
+						<a href="#" class="vk"></a>
+						<a href="#" class="youtube"></a>
+					</div>
+				</div>
+				<div class="footer-menus">
+					<nav>
+						<ul>
+							<li><a href="#">Тарифы и услуги</a></li>
+							<li><a href="#">Дополнительные услуги</a></li>
+							<li><a href="#">Оборудование</a></li>
+							<li><a href="#">Список каналов</a></li>
+							<li><a href="#">Onlime-бонус</a></li>
+						</ul>
+						<ul>
+							<li><a href="#">Офисы</a></li>
+							<li><a href="#">О компании</a></li>
+							<li><a href="#">Документы</a></li>
+							<li><a href="#">Вакансии</a></li>
+							<li><a href="#">Акции</a></li>
+						</ul>
+						<ul>
+							<li><a href="#">Помощь</a></li>
+							<li><a href="#">FAQ</a></li>
+							<li><a href="#">Форум</a></li>
+						</ul>
+					</nav>
+				</div>
+				<div class="footer-copy">© 2015 ОАО «Ростелеком». Все права защищены.</div>
+			</div>
+		</footer>
+	</div>
+</body>
+</html>

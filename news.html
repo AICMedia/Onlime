@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Интернет+ТВ</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=1">
+	<link rel="stylesheet" href="css/style.css">
+	<script src="js/jquery.min.js"></script>
+	<script src="js/jquery.teslalign.js"></script>
+	<script src="js/jquery.circliful.min.js"></script>
+	<script src="js/jquery.formstyler.min.js"></script>
+	<script src="js/scripts.js"></script>
+	<!--[if lt IE 9]>
+	<link rel="stylesheet" href="css/ie.css">
+	<script src="js/html5.js"></script>
+	<![endif]-->
+</head>
+<body>
+	<div class="wrapper">
+		<section class="topbar">
+			<div class="topbar-container">
+				<div class="line clearfix">
+					<a href="#" class="topbar-link topbar-link__sibling">Корпоративным клиентам</a>
+					<a href="#" class="topbar-link">Проверка скорости</a>
+					<a href="#" class="topbar-link">Onlime-Бонус</a>
+					<div class="topbar-support">
+						<span><span>поддержка</span>/<span class="current">подключение</span></span>
+						<strong>8 800 707 80 01</strong>
+						<strong class="current">8 800 707 80 00</strong>
+					</div>
+				</div>
+				<!-- Шапка для мобилок -->
+				<div class="topbar-more">
+					<a href="#" class="topbar-more-link"><span>Еще разделы</span></a>
+					<div class="topbar-more-popup">
+						<nav>
+							<a href="#"><span>Корпоративным клиентам</span></a>
+							<a href="#"><span>Onlime-бонус</span></a>
+						</nav>
+						<ul>
+							<li><span>Поддержка</span> <a href="tel:88007078001">8 800 707 80 01</a></li>
+							<li><span>Подключение</span> <a href="tel:88007078000">8 800 707 80 00</a></li>
+						</ul>
+					</div>
+				</div>
+				<!-- Конец шапки для мобилок -->
+				<div class="right-links">
+					<div class="right-link popup-link" data-id="login-popup">
+						<span class="ico ico-profile">Личный кабинет</span>
+						<span class="bg"></span>
+					</div>
+					<div class="right-link popup-link" data-id="payment-popup">
+						<span class="ico ico-payment">Оплатить</span>
+						<span class="bg"></span>
+					</div>
+
+					<div class="fill-background"></div>
+					
+					<div id="payment-popup" class="popup">
+						<div class="popup-close"></div>
+						<h4>Оплатить</h4>
+						<div class="form-block">
+							<input type="text" class="form-text" placeholder="Номер лицевого счета">
+						</div>
+						<div class="form-block">
+							<input type="text" class="form-text" placeholder="Сумма (рубли)">
+						</div>
+						<div class="form-block">
+							<div class="other-item">
+								<label class="checkbox checker">
+									<input type="checkbox" id="rules-check">
+								</label>
+								<div for="other-1" class="other-content">
+									<div class="title">Я согласен</div>
+									<span class="description">с <a href="#" class="blue-link">Правилами оплаты услуг связи</a></span>
+								</div>
+							</div>
+						</div>
+						<div class="form-submit">
+							<button type="submit" class="btn"><span>Перейти к оплате</span></button>
+						</div>
+					</div>
+
+					<div id="login-popup" class="popup">
+						<div class="popup-close"></div>
+						<h4>Личный кабинет</h4>
+						<div class="form-block">
+							<input type="text" class="form-text" placeholder="Логин">
+						</div>
+						<div class="form-block">
+							<input type="password" class="form-text" placeholder="Пароль">
+						</div>
+						<div class="form-block form-block__remind">
+							<a href="#" class="blue-link">Забыли логин или пароль?</a>
+						</div>
+						<div class="form-submit">
+							<button type="submit" class="btn"><span>Войти в личный кабинет</span></button>
+						</div>
+					</div>
+
+					<!-- Всплывашки для мобилок -->
+					<div id="menu-popup" class="popup popup-parent">
+						<div class="popup-close"></div>
+						<h4>Меню</h4>
+						<ul>
+							<li class="current"><a href="#"><span>Интернет</span></a></li>
+							<li><a href="#"><span>Телевидение</span></a></li>
+							<li><a href="#" class="popup-link" data-id="menu-internet-tv"><span>Интернет+ТВ</span></a></li>
+							<li><a href="#"><span>Домашний телефон</span></a></li>
+							<li><a href="#"><span>Интернет-магазин</span></a></li>
+						</ul>
+					</div>
+
+					<div id="menu-internet-tv" class="popup popup-children">
+						<div class="popup-close"></div>
+						<h4>Интрнет+ТВ</h4>
+						<ul>
+							<li><a href="#"><span>Тарифы</span></a></li>
+							<li><a href="#"><span>Домашний телефон</span></a></li>
+							<li><a href="#"><span>Дополнительные телеканалы</span></a></li>
+							<li><a href="#"><span>Оборудование</span></a></li>
+							<li><a href="#"><span>Дополнительные услуги</span></a></li>
+						</ul>
+
+						<a href="#" class="offer">
+							<span class="offer-title">Приведи друга и выйграй iPad</span>
+							<span class="offer-description">Каждый месяц — новый победитель!</span>
+							
+							<span class="offer-btn">
+								<span><i>Подробнее</i></span>
+							</span>
+
+							<span class="offer-image" style="background-image: url('images/del/offer-4.png')"></span>
+							<span class="offer-image offer-image-hover" style="background-image: url('images/del/offer-4-hover.png')"></span>
+						</a>
+
+						<div class="popup-children-arrow"></div>
+					</div>
+					<!-- Конец всплывашек для мобилок -->
+
+				</div>
+			</div>
+		</section>
+
+		<header class="header">
+			<div class="line">
+				<a href="#" class="logo">
+					<img src="images/logo.png" width="208" height="60" alt="">
+				</a>
+				<div class="header-menu-small popup-link" data-id="menu-popup"></div>
+
+				<nav class="header-menu">
+					<ul>
+						<li class="current"><a href="#"><span>Интернет</span></a></li>
+						<li><a href="#"><span>Телевидение</span></a></li>
+						<li><a href="#internet-tv" class="open-link"><span>Интернет+ТВ</span></a></li>
+						<li><a href="#"><span>Домашний телефон</span></a></li>
+						<li><a href="#"><span>Интернет-магазин</span></a></li>
+					</ul>
+				</nav>
+			</div>
+			<div class="popup-nav" id="internet-tv">
+				<div class="line clearfix">
+					<div class="popup-nav-close"></div>
+					<h3>Интернет+ТВ</h3>
+					<nav>
+						<ul>
+							<li><a href="#"><span>Тарифы</span></a></li>
+							<li><a href="#"><span>Домашний телефон</span></a></li>
+							<li><a href="#"><span>Дополнительные телеканалы</span></a></li>
+							<li><a href="#"><span>Оборудование</span></a></li>
+							<li><a href="#"><span>Дополнительные услуги</span></a></li>
+						</ul>
+					</nav>
+					<div class="popup-questions">
+						<h4>Частые вопросы</h4>
+						<ul>
+							<li><a href="#" class="blue-link">Как можно проверить состояние Лицевого Счета?</a></li>
+							<li><a href="#" class="blue-link">Я хочу подключить второй компьютер к Интернету. Что мне для этого нужно?</a></li>
+						</ul>
+					</div>
+					<a href="#" class="offer">
+						<span class="offer-title">Приведи друга и выйграй iPad</span>
+						<span class="offer-description">Каждый месяц — новый победитель!</span>
+						
+						<span class="offer-btn">
+							<span><i>Подробнее</i></span>
+						</span>
+
+						<span class="offer-image" style="background-image: url('images/del/offer-4.png')"></span>
+						<span class="offer-image offer-image-hover" style="background-image: url('images/del/offer-4-hover.png')"></span>
+					</a>
+				</div>
+			</div>
+		</header>
+
+		<section class="sub-header">
+			<div class="line">
+				<nav class="breadcrumb">
+					<a href="#" class="home"></a>
+					<a href="#"><span>Интернет+ТВ</span></a>
+				</nav>
+			</div>
+		</section>
+
+
+		<section class="line super-title">
+			<div class="title left">Новости</div>
+		</section>
+
+
+
+		<section class="page-news">
+			<b class="close"></b>
+			<div class="current_news">
+				<div class="new-date">23.01.2015</div>
+				<h4>Переадресация теперь без абонентской платы</h4>
+				<p>Уважаемые абоненты!</p>
+				<p>Сообщаем вам, об изменениях в составе действующих пакетов Интерактивного и Цифрового ТВ:</p>
+				<ul>
+					<li>Телеканал «Universal Channel» прекращает свое вещание с 27.04.2015 г. в Интерактивном ТВ и с 29.04.2015 в Цифровом ТВ и будет заменен на телеканал СТС Love – канал о реальных чувствах. Любимые сериалы, реалити и собственные проекты СТС Медиа о любви и отношениях, в которых все ситуации близки и знакомы, это сериалы  про нас. Это знакомые герои и позитивные эмоции для тех, кто во всем видит светлую сторону. СТС Love – твой канал о настоящих чувствах и переживаниях. СТС Love – твой канал о настоящей любви!
+
+					Параметры вещания остаются без изменений. Телеканал доступен в пакетах телеканалов «Твой стартовый», «Твой оптимальный», «Тв  tой продвинутый», «Твой максимальный» на кнопке 103 для Интерактивного ТВ и на кнопке 95 для Цифрового ТВ ОнЛайм.</li>
+
+					<li>С 29 мая в Интерактивном  и Цифровом ТВ будет доступен новый телеканал «Беларусь 24».
+					«Беларусь 24» — международный спутниковый телеканал Беларуси. Круглосуточно для зарубежных телезрителей телеканал освещает ключевые новости в стране и мире, знакомит с белорусской историей и культурой, показываем Беларусь такой, какой ее видит нация. Трансляции важнейших событий, самые рейтинговые передачи национальных каналов, ток-шоу и эксклюзивные интервью — обо всех событиях страны точно и своевременно.
+
+					Телеканал «Беларусь 24» доступен вам в пакетах телеканалов «Твой стартовый», «Твой оптимальный», «Твой продвинутый», «Твой максимальный» на кнопке 706 для Интерактивного ТВ и на кнопке 386 для Цифрового ТВ ОнЛайм.</li>
+
+
+					<li>Телеканал «E! Entertainment» прекращают свое вещание в Цифровом ТВ ОнЛайм. С 30 апреля телеканал будет не доступен в пакетах, в состав которых он входили ранее.</li>
+
+					<li>С 1 мая в сетку вещания Интерактивного и Цифрового ТВ будет  запущен телеканал «Живи HD»
+					«Живи HD» — Уникальный телеканал, с помощью которого каждый человек, не меняя привычного распорядка дня, может сформировать индивидуальную wellness-программу, чтобы существенно улучшить качество жизни. «Живи HD» помогает заботиться о себе и своем здоровье, создает комфортную среду для общения активных и любознательных людей. Теперь и в HD-качестве!
+
+					Телеканал «Живи HD» доступен вам в пакетах телеканалов «Твой стартовый», «Твой оптимальный», «Твой продвинутый», «Твой максимальный» на кнопке 935 для Интерактивного ТВ и на кнопке 416 для Цифрового ТВ ОнЛайм.</li>
+				</ul>
+				<p>Приятного просмотра!</p>
+			</div>
+			<div class="social_cover">
+				<span>Рассказать друзьям:</span>
+				<ul class="social-block">
+					<li><a class="facebook" href="#"></a></li>
+					<li><a class="twitter" href="#"></a></li>
+					<li><a class="vk" href="#"></a></li>
+				</ul>
+			</div>
+
+			<div class="prev-next-btn">
+				<b class="prev"></b><b class="next"></b>
+			</div>
+
+		</section>
+
+
+
+
+
+
+
+		<footer class="footer">
+			<div class="line clearfix">
+				<div class="footer-right">
+					<div class="footer-search">
+						<input type="text" class="search-text" placeholder="Что-то ищите?">
+					</div>
+					<div class="social-links">
+						<a href="#" class="facebook"></a>
+						<a href="#" class="twitter"></a>
+						<a href="#" class="vk"></a>
+						<a href="#" class="youtube"></a>
+					</div>
+				</div>
+				<div class="footer-menus">
+					<nav>
+						<ul>
+							<li><a href="#">Тарифы и услуги</a></li>
+							<li><a href="#">Дополнительные услуги</a></li>
+							<li><a href="#">Оборудование</a></li>
+							<li><a href="#">Список каналов</a></li>
+							<li><a href="#">Onlime-бонус</a></li>
+						</ul>
+						<ul>
+							<li><a href="#">Офисы</a></li>
+							<li><a href="#">О компании</a></li>
+							<li><a href="#">Документы</a></li>
+							<li><a href="#">Вакансии</a></li>
+							<li><a href="#">Акции</a></li>
+						</ul>
+						<ul>
+							<li><a href="#">Помощь</a></li>
+							<li><a href="#">FAQ</a></li>
+							<li><a href="#">Форум</a></li>
+						</ul>
+					</nav>
+				</div>
+				<div class="footer-copy">© 2015 ОАО «Ростелеком». Все права защищены.</div>
+			</div>
+		</footer>
+	</div>
+
+	<script src="http://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+</body>
+</html>

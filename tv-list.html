@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Список каналов</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=1">
+	<link rel="stylesheet" href="css/style.css">
+	<script src="js/jquery.min.js"></script>
+	<script src="js/jquery.teslalign.js"></script>
+	<script src="js/jquery.circliful.min.js"></script>
+	<script src="js/jquery.formstyler.min.js"></script>
+	<script src="js/scripts.js"></script>
+	<!--[if lt IE 9]>
+	<link rel="stylesheet" href="css/ie.css">
+	<script src="js/html5.js"></script>
+	<![endif]-->
+</head>
+<body>
+	<div class="wrapper">
+		<section class="topbar">
+			<div class="topbar-container">
+				<div class="line clearfix">
+					<a href="#" class="topbar-link topbar-link__sibling">Корпоративным клиентам</a>
+					<a href="#" class="topbar-link">Проверка скорости</a>
+					<a href="#" class="topbar-link">Onlime-Бонус</a>
+					<div class="topbar-support">
+						<span><span>поддержка</span>/<span class="current">подключение</span></span>
+						<strong>8 800 707 80 01</strong>
+						<strong class="current">8 800 707 80 00</strong>
+					</div>
+				</div>
+				<!-- Шапка для мобилок -->
+				<div class="topbar-more">
+					<a href="#" class="topbar-more-link"><span>Еще разделы</span></a>
+					<div class="topbar-more-popup">
+						<nav>
+							<a href="#"><span>Корпоративным клиентам</span></a>
+							<a href="#"><span>Onlime-бонус</span></a>
+						</nav>
+						<ul>
+							<li><span>Поддержка</span> <a href="tel:88007078001">8 800 707 80 01</a></li>
+							<li><span>Подключение</span> <a href="tel:88007078000">8 800 707 80 00</a></li>
+						</ul>
+					</div>
+				</div>
+				<!-- Конец шапки для мобилок -->
+				<div class="right-links">
+					<div class="right-link popup-link" data-id="login-popup">
+						<span class="ico ico-profile">Личный кабинет</span>
+						<span class="bg"></span>
+					</div>
+					<div class="right-link popup-link" data-id="payment-popup">
+						<span class="ico ico-payment">Оплатить</span>
+						<span class="bg"></span>
+					</div>
+
+					<div class="fill-background"></div>
+					
+					<div id="payment-popup" class="popup">
+						<div class="popup-close"></div>
+						<div class="form-block">
+							<input type="text" class="form-text" placeholder="Номер лицевого счета">
+						</div>
+						<div class="form-block">
+							<input type="text" class="form-text" placeholder="Сумма (рубли)">
+						</div>
+						<div class="form-block">
+							<div class="other-item">
+								<label class="checkbox checker">
+									<input type="checkbox" id="rules-check">
+								</label>
+								<div for="other-1" class="other-content">
+									<div class="title">Я согласен</div>
+									<span class="description">с <a href="#" class="blue-link">Правилами оплаты услуг связи</a></span>
+								</div>
+							</div>
+						</div>
+						<div class="form-submit">
+							<button type="submit" class="btn"><span>Перейти к оплате</span></button>
+						</div>
+					</div>
+
+					<div id="login-popup" class="popup">
+						<div class="popup-close"></div>
+						<div class="form-block">
+							<input type="text" class="form-text" placeholder="Логин">
+						</div>
+						<div class="form-block">
+							<input type="password" class="form-text" placeholder="Пароль">
+						</div>
+						<div class="form-block form-block__remind">
+							<a href="#" class="blue-link">Забыли логин или пароль?</a>
+						</div>
+						<div class="form-submit">
+							<button type="submit" class="btn"><span>Войти в личный кабинет</span></button>
+						</div>
+					</div>
+
+					<!-- Всплывашки для мобилок -->
+					<div id="menu-popup" class="popup popup-parent">
+						<div class="popup-close"></div>
+						<h4>Меню</h4>
+						<ul>
+							<li class="current"><a href="#"><span>Интернет</span></a></li>
+							<li><a href="#"><span>Телевидение</span></a></li>
+							<li><a href="#" class="popup-link" data-id="menu-internet-tv"><span>Интернет+ТВ</span></a></li>
+							<li><a href="#"><span>Домашний телефон</span></a></li>
+							<li><a href="#"><span>Интернет-магазин</span></a></li>
+						</ul>
+					</div>
+
+					<div id="menu-internet-tv" class="popup popup-children">
+						<div class="popup-close"></div>
+						<h4>Интрнет+ТВ</h4>
+						<ul>
+							<li><a href="#"><span>Тарифы</span></a></li>
+							<li><a href="#"><span>Домашний телефон</span></a></li>
+							<li><a href="#"><span>Дополнительные телеканалы</span></a></li>
+							<li><a href="#"><span>Оборудование</span></a></li>
+							<li><a href="#"><span>Дополнительные услуги</span></a></li>
+						</ul>
+
+						<a href="#" class="offer">
+							<span class="offer-title">Приведи друга и выйграй iPad</span>
+							<span class="offer-description">Каждый месяц — новый победитель!</span>
+							
+							<span class="offer-btn">
+								<span><i>Подробнее</i></span>
+							</span>
+
+							<span class="offer-image" style="background-image: url('images/del/offer-4.png')"></span>
+							<span class="offer-image offer-image-hover" style="background-image: url('images/del/offer-4-hover.png')"></span>
+						</a>
+
+						<div class="popup-children-arrow"></div>
+					</div>
+					<!-- Конец всплывашек для мобилок -->
+
+				</div>
+			</div>
+		</section>
+
+		<header class="header">
+			<div class="line">
+				<a href="#" class="logo">
+					<img src="images/logo.png" width="208" height="60" alt="">
+				</a>
+				<div class="header-menu-small popup-link" data-id="menu-popup"></div>
+				<nav class="header-menu">
+					<ul>
+						<li><a href="#"><span>Интернет</span></a></li>
+						<li class="current"><a href="#"><span>Телевидение</span></a></li>
+						<li><a href="#internet-tv" class="open-link"><span>Интернет+ТВ</span></a></li>
+						<li><a href="#"><span>Домашний телефон</span></a></li>
+						<li><a href="#"><span>Интернет-магазин</span></a></li>
+					</ul>
+				</nav>
+			</div>
+			<div class="popup-nav" id="internet-tv">
+				<div class="line clearfix">
+					<div class="popup-nav-close"></div>
+					<h3>Интернет+ТВ</h3>
+					<nav>
+						<ul>
+							<li><a href="#"><span>Тарифы</span></a></li>
+							<li><a href="#"><span>Домашний телефон</span></a></li>
+							<li><a href="#"><span>Дополнительные телеканалы</span></a></li>
+							<li><a href="#"><span>Оборудование</span></a></li>
+							<li><a href="#"><span>Дополнительные услуги</span></a></li>
+						</ul>
+					</nav>
+					<div class="popup-questions">
+						<h4>Частые вопросы</h4>
+						<ul>
+							<li><a href="#" class="blue-link">Как можно проверить состояние Лицевого Счета?</a></li>
+							<li><a href="#" class="blue-link">Я хочу подключить второй компьютер к Интернету. Что мне для этого нужно?</a></li>
+						</ul>
+					</div>
+					<a href="#" class="offer">
+						<span class="offer-title">Приведи друга и выйграй iPad</span>
+						<span class="offer-description">Каждый месяц — новый победитель!</span>
+						
+						<span class="offer-btn">
+							<span><i>Подбробнее</i></span>
+						</span>
+
+						<span class="offer-image" style="background-image: url('images/del/offer-4.png')"></span>
+						<span class="offer-image offer-image-hover" style="background-image: url('images/del/offer-4-hover.png')"></span>
+					</a>
+				</div>
+			</div>
+		</header>
+
+		<section class="sub-header">
+			<div class="line">
+				<nav class="breadcrumb">
+					<a href="#" class="home"></a>
+					<a href="#"><span>Телевидение</span></a>
+					<a href="#"><span>Список каналов</span></a>
+				</nav>
+			</div>
+		</section>
+
+
+
+		<section class="line_small change-title">
+			<div class="title">Список каналов</div>
+			<div class="description">В каталоге телевидения Onlime вы найдете более 200 мировых и отечественных каналов. Вы можете посмотреть весь список целиком, либо посмотреть каналы определенного тарифа. Каждый тариф дополняет друг друга — популярные каналы всегда с вами. Обратите внимание на возможности цифрового и интерактивного телевидения: от выбора <a href="#">способа подключения</a> зависит итоговое количество каналов.</div>
+		</section>
+
+
+		<section class="line_small tv-search search-block clearfix">
+			<div class="type">
+				<select class="styler">
+					<option>Все категории</option>
+					<option>Спорт</option>
+					<option>Кино</option>
+					<option>Детям</option>
+				</select>
+			</div>
+			<div class="field search-form-block">
+				<input type="text" class="form-text form-search" placeholder="Найти канал по названию или описанию">
+				<button class="search-btn"></button>
+			</div>
+		</section>
+
+
+		<section class="line_small tabs-block channels-parent">
+			<nav class="tabs-nav tabs-nav-four">
+				<a href="#" class="current" data-type="popular">
+					<span class="out"><span class="in">
+						<span class="title">Популярный</span>
+						<span class="hint">108 интерактивных, 116 цифровых</span>
+					</span></span>
+				</a>
+				<a href="#"data-type="optimal">
+					<span class="out"><span class="in">
+						<span class="title">Оптимальный</span>
+						<span class="hint">143 интерактивных, 131 цифровой</span>
+					</span></span>
+				</a>
+				<a href="#"data-type="advanced">
+					<span class="out"><span class="in">
+						<span class="title">Продвинутый</span>
+						<span class="hint">176 интерактивных, 161 цифровой</span>
+					</span></span>
+				</a>
+				<a href="#"data-type="maximum">
+					<span class="out"><span class="in">
+						<span class="title">Максимальный</span>
+						<span class="hint">196 интерактивных, 208 цифровых</span>
+					</span></span>
+				</a>
+			</nav>
+
+			<div class="tabs-outline tabs-outline-toggle">
+				<!-- Популярный -->
+				<div class="tab-area current">
+					<div class="tv-tab">
+						<header>
+							<article class="text-content">
+								<p>Каналы телевидения самых разных жанров и направлений — каждый найдет в то, что интересно именно ему. Только самые популярные и востребованные каналы, ничего лишнего!</p>
+							</article>
+
+							<section class="tariff-total">
+								<a href="#" class="btn"><span>Подключить</span></a>
+								<div class="tariff-total-container clearfix">
+									<div class="tariff-total-item">
+										<div class="tariff-total-type">Количество каналов</div>
+										<ul>
+											<li><strong>108</strong> <span>интерактивных</span></li>
+											<li><strong>116</strong> <span>цифровых</span></li>
+										</ul>
+									</div>
+									<div class="tariff-total-item">
+										<div class="tariff-total-type">Ежемесячный платеж</div>
+										<span class="tariff-numbers">
+											<span class="num">320</span>
+											<span class="unit">
+												<span class="unit-top">руб.</span>
+												<span class="unit-bottom">мес.</span>
+											</span>
+										</span>
+									</div>
+								</div>
+							</section>
+						</header>
+					</div>
+				</div>
+				<!-- Конец популярного -->
+
+				<!-- Оптимальный -->
+				<div class="tab-area">
+					<div class="tv-tab">
+						<header>
+							<article class="text-content">
+								<p>Каналы телевидения самых разных жанров и направлений — каждый найдет в то, что интересно именно ему. Только самые популярные и востребованные каналы, ничего лишнего!</p>
+							</article>
+
+							<section class="tariff-total">
+								<a href="#" class="btn"><span>Подключить</span></a>
+								<div class="tariff-total-container clearfix">
+									<div class="tariff-total-item">
+										<div class="tariff-total-type">Количество каналов</div>
+										<ul>
+											<li><strong>143</strong> <span>интерактивных</span></li>
+											<li><strong>131</strong> <span>цифровой</span></li>
+										</ul>
+									</div>
+									<div class="tariff-total-item">
+										<div class="tariff-total-type">Ежемесячный платеж</div>
+										<span class="tariff-numbers">
+											<span class="num">320</span>
+											<span class="unit">
+												<span class="unit-top">руб.</span>
+												<span class="unit-bottom">мес.</span>
+											</span>
+										</span>
+									</div>
+								</div>
+							</section>
+						</header>
+					</div>
+				</div>
+				<!-- Конец оптимального -->
+
+				<!-- Продвинутый -->
+				<div class="tab-area">
+					<div class="tv-tab">
+						<header>
+							<article class="text-content">
+								<p>Каналы телевидения самых разных жанров и направлений — каждый найдет в то, что интересно именно ему. Только самые популярные и востребованные каналы, ничего лишнего!</p>
+							</article>
+
+							<section class="tariff-total">
+								<a href="#" class="btn"><span>Подключить</span></a>
+								<div class="tariff-total-container clearfix">
+									<div class="tariff-total-item">
+										<div class="tariff-total-type">Количество каналов</div>
+										<ul>
+											<li><strong>176</strong> <span>интерактивных</span></li>
+											<li><strong>161</strong> <span>цифровой</span></li>
+										</ul>
+									</div>
+									<div class="tariff-total-item">
+										<div class="tariff-total-type">Ежемесячный платеж</div>
+										<span class="tariff-numbers">
+											<span class="num">320</span>
+											<span class="unit">
+												<span class="unit-top">руб.</span>
+												<span class="unit-bottom">мес.</span>
+											</span>
+										</span>
+									</div>
+								</div>
+							</section>
+						</header>
+					</div>
+				</div>
+				<!-- Конец продвинутого -->
+
+				<!-- Максимальный -->
+				<div class="tab-area">
+					<div class="tv-tab">
+						<header>
+							<article class="text-content">
+								<p>Каналы телевидения самых разных жанров и направлений — каждый найдет в то, что интересно именно ему. Только самые популярные и востребованные каналы, ничего лишнего!</p>
+							</article>
+
+							<section class="tariff-total">
+								<a href="#" class="btn"><span>Подключить</span></a>
+								<div class="tariff-total-container clearfix">
+									<div class="tariff-total-item">
+										<div class="tariff-total-type">Количество каналов</div>
+										<ul>
+											<li><strong>196</strong> <span>интерактивных</span></li>
+											<li><strong>208</strong> <span>цифровых</span></li>
+										</ul>
+									</div>
+									<div class="tariff-total-item">
+										<div class="tariff-total-type">Ежемесячный платеж</div>
+										<span class="tariff-numbers">
+											<span class="num">320</span>
+											<span class="unit">
+												<span class="unit-top">руб.</span>
+												<span class="unit-bottom">мес.</span>
+											</span>
+										</span>
+									</div>
+								</div>
+							</section>
+						</header>
+					</div>
+				</div>
+				<!-- Конец максимального -->
+			</div>
+			
+
+			<div class="channels-list clearfix"><div class="channels-list-container">
+				<div class="channel" data-type="popular optimal advanced maximum">
+					<a href="#" class="channel-logo">
+						<img src="images/del/channel-1.png" width="33" height="43" alt="">
+					</a>
+				</div>
+				<div class="channel" data-type="optimal advanced maximum">
+					<a href="#" class="channel-logo">
+						<img src="images/del/channel-2.png" width="51" height="34" alt="">
+					</a>
+				</div>
+				<div class="channel" data-type="maximum">
+					<a href="#" class="channel-logo">
+						<img src="images/del/channel-3.png" width="43" height="50" alt="">
+					</a>
+				</div>
+				<div class="channel" data-type="optimal advanced maximum">
+					<a href="#" class="channel-logo">
+						<img src="images/del/channel-4.png" width="58" height="28" alt="">
+					</a>
+				</div>
+				<div class="channel" data-type="advanced maximum">
+					<a href="#" class="channel-logo">
+						<img src="images/del/channel-5.png" width="36" height="46" alt="">
+					</a>
+				</div>
+				<div class="channel" data-type="maximum">
+					<a href="#" class="channel-logo">
+						<img src="images/del/channel-6.png" width="64" height="15" alt="">
+					</a>
+				</div>
+				<div class="channel" data-type="optimal advanced maximum">
+					<a href="#" class="channel-logo">
+						<img src="images/del/channel-7.png" width="56" height="33" alt="">
+					</a>
+				</div>
+				<div class="channel" data-type="advanced maximum">
+					<a href="#" class="channel-logo">
+						<img src="images/del/channel-8.png" width="63" height="41" alt="">
+					</a>
+				</div>
+				<div class="channel" data-type="maximum">
+					<a href="#" class="channel-logo">
+						<img src="images/del/channel-9.png" width="78" height="17" alt="">
+					</a>
+				</div>
+				<div class="channel" data-type="popular optimal advanced maximum">
+					<a href="#" class="channel-logo">
+						<img src="images/del/channel-10.png" width="79" height="31" alt="">
+					</a>
+				</div>
+				<div class="channel" data-type="popular optimal advanced maximum">
+					<a href="#" class="channel-logo">
+						<img src="images/del/channel-11.png" width="106" height="13" alt="">
+					</a>
+				</div>
+				<div class="channel" data-type="advanced maximum">
+					<a href="#" class="channel-logo">
+						<img src="images/del/channel-12.png" width="93" height="33" alt="">
+					</a>
+				</div>
+				<div class="channel" data-type="popular optimal advanced maximum">
+					<a href="#" class="channel-logo">
+						<img src="images/del/channel-1.png" width="33" height="43" alt="">
+					</a>
+				</div>
+				<div class="channel" data-type="optimal advanced maximum">
+					<a href="#" class="channel-logo">
+						<img src="images/del/channel-2.png" width="51" height="34" alt="">
+					</a>
+				</div>
+				<div class="channel" data-type="maximum">
+					<a href="#" class="channel-logo">
+						<img src="images/del/channel-3.png" width="43" height="50" alt="">
+					</a>
+				</div>
+				<div class="channel" data-type="optimal advanced maximum">
+					<a href="#" class="channel-logo">
+						<img src="images/del/channel-4.png" width="58" height="28" alt="">
+					</a>
+				</div>
+				<div class="channel" data-type="advanced maximum">
+					<a href="#" class="channel-logo">
+						<img src="images/del/channel-5.png" width="36" height="46" alt="">
+					</a>
+				</div>
+				<div class="channel" data-type="maximum">
+					<a href="#" class="channel-logo">
+						<img src="images/del/channel-6.png" width="64" height="15" alt="">
+					</a>
+				</div>
+				<div class="channel" data-type="optimal advanced maximum">
+					<a href="#" class="channel-logo">
+						<img src="images/del/channel-7.png" width="56" height="33" alt="">
+					</a>
+				</div>
+				<div class="channel" data-type="advanced maximum">
+					<a href="#" class="channel-logo">
+						<img src="images/del/channel-8.png" width="63" height="41" alt="">
+					</a>
+				</div>
+				<div class="channel" data-type="maximum">
+					<a href="#" class="channel-logo">
+						<img src="images/del/channel-9.png" width="78" height="17" alt="">
+					</a>
+				</div>
+				<div class="channel" data-type="popular optimal advanced maximum">
+					<a href="#" class="channel-logo">
+						<img src="images/del/channel-10.png" width="79" height="31" alt="">
+					</a>
+				</div>
+				<div class="channel" data-type="popular optimal advanced maximum">
+					<a href="#" class="channel-logo">
+						<img src="images/del/channel-11.png" width="106" height="13" alt="">
+					</a>
+				</div>
+				<div class="channel" data-type="advanced maximum">
+					<a href="#" class="channel-logo">
+						<img src="images/del/channel-12.png" width="93" height="33" alt="">
+					</a>
+				</div>
+				<div class="channel" data-type="popular optimal advanced maximum">
+					<a href="#" class="channel-logo">
+						<img src="images/del/channel-1.png" width="33" height="43" alt="">
+					</a>
+				</div>
+				<div class="channel" data-type="optimal advanced maximum">
+					<a href="#" class="channel-logo">
+						<img src="images/del/channel-2.png" width="51" height="34" alt="">
+					</a>
+				</div>
+				<div class="channel" data-type="maximum">
+					<a href="#" class="channel-logo">
+						<img src="images/del/channel-3.png" width="43" height="50" alt="">
+					</a>
+				</div>
+				<div class="channel" data-type="optimal advanced maximum">
+					<a href="#" class="channel-logo">
+						<img src="images/del/channel-4.png" width="58" height="28" alt="">
+					</a>
+				</div>
+				<div class="channel" data-type="advanced maximum">
+					<a href="#" class="channel-logo">
+						<img src="images/del/channel-5.png" width="36" height="46" alt="">
+					</a>
+				</div>
+				<div class="channel" data-type="maximum">
+					<a href="#" class="channel-logo">
+						<img src="images/del/channel-6.png" width="64" height="15" alt="">
+					</a>
+				</div>
+				<div class="channel" data-type="optimal advanced maximum">
+					<a href="#" class="channel-logo">
+						<img src="images/del/channel-7.png" width="56" height="33" alt="">
+					</a>
+				</div>
+				<div class="channel" data-type="advanced maximum">
+					<a href="#" class="channel-logo">
+						<img src="images/del/channel-8.png" width="63" height="41" alt="">
+					</a>
+				</div>
+				<div class="channel" data-type="maximum">
+					<a href="#" class="channel-logo">
+						<img src="images/del/channel-9.png" width="78" height="17" alt="">
+					</a>
+				</div>
+				<div class="channel" data-type="popular optimal advanced maximum">
+					<a href="#" class="channel-logo">
+						<img src="images/del/channel-10.png" width="79" height="31" alt="">
+					</a>
+				</div>
+				<div class="channel" data-type="popular optimal advanced maximum">
+					<a href="#" class="channel-logo">
+						<img src="images/del/channel-11.png" width="106" height="13" alt="">
+					</a>
+				</div>
+				<div class="channel" data-type="advanced maximum">
+					<a href="#" class="channel-logo">
+						<img src="images/del/channel-12.png" width="93" height="33" alt="">
+					</a>
+				</div>
+			</div></div>
+		</section>
+
+
+		
+		
+
+		<footer class="footer">
+			<div class="line clearfix">
+				<div class="footer-right">
+					<div class="footer-search">
+						<input type="text" class="search-text" placeholder="Что-то ищите?">
+					</div>
+					<div class="social-links">
+						<a href="#" class="facebook"></a>
+						<a href="#" class="twitter"></a>
+						<a href="#" class="vk"></a>
+						<a href="#" class="youtube"></a>
+					</div>
+				</div>
+				<div class="footer-menus">
+					<nav>
+						<ul>
+							<li><a href="#">Тарифы и услуги</a></li>
+							<li><a href="#">Дополнительные услуги</a></li>
+							<li><a href="#">Оборудование</a></li>
+							<li><a href="#">Список каналов</a></li>
+							<li><a href="#">Onlime-бонус</a></li>
+						</ul>
+						<ul>
+							<li><a href="#">Офисы</a></li>
+							<li><a href="#">О компании</a></li>
+							<li><a href="#">Документы</a></li>
+							<li><a href="#">Вакансии</a></li>
+							<li><a href="#">Акции</a></li>
+						</ul>
+						<ul>
+							<li><a href="#">Помощь</a></li>
+							<li><a href="#">FAQ</a></li>
+							<li><a href="#">Форум</a></li>
+						</ul>
+					</nav>
+				</div>
+				<div class="footer-copy">© 2015 ОАО «Ростелеком». Все права защищены.</div>
+			</div>
+		</footer>
+	</div>
+</body>
+</html>

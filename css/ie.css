@@ -1,0 +1,114 @@
+.topbar-link {
+	filter: alpha(opacity=70);
+}
+.topbar-link:hover {
+	filter: alpha(opacity=100);
+}
+.right-links .right-link .bg {
+	filter: alpha(opacity=0);
+}
+.right-links .right-link:hover .bg {
+	filter: alpha(opacity=100);
+}
+.fill {
+	filter: alpha(opacity=40);
+}
+.btn:after,
+.btn:before {
+	display: none;
+}
+.btn:hover:before,
+.btn:active:after {
+	display: block;
+}
+.offer-btn:before,
+.offer-btn:after {
+	display: none;
+}
+.offer:hover .offer-btn:before,
+.offer:hover .offer-btn:after {
+	display: block;
+}
+.offer-image-hover {
+	display: none;
+}
+.offer:hover .offer-image {
+	display: none;
+}
+.offer:hover .offer-image-hover {
+	display: block;
+}
+.service-check:before {
+	display: none;
+}
+.service-check:hover:before {
+	display: block;
+}
+.service-check.disabled:before {
+	display: none;
+}
+.tariff-big-description,
+.tariff-numbers .unit-top:before {
+	filter: alpha(opacity=50);
+}
+.tariff-cost .tariff-numbers .unit {
+	filter: alpha(opacity=100);
+}
+.tariff-cost .tariff-numbers .unit-top:before {
+	filter: alpha(opacity=50);
+}
+.check-radio-container:before,
+.check-radio-container:after {
+	display: none;
+}
+.check-radio:hover .check-radio-container:before {
+	display: block;
+}
+.check-radio:active .check-radio-container:after {
+	display: block;
+}
+.check-radio.checked .check-radio-container:before,
+.check-radio.checked .check-radio-container:after {
+	display: none;
+}
+.breadcrumb a {
+	filter: alpha(opacity=50);
+}
+.breadcrumb a:hover,
+.breadcrumb .home {
+	filter: alpha(opacity=100);
+}
+.radiobox label:before {
+	display: none;
+}
+.radiobox label:hover:before {
+	display: block;
+}
+.radiobox label.checked:before {
+	display: none;
+}
+.product-selection {
+	display: none;
+}
+.hidden .product-selection {
+	display: block;
+}
+.bonus-ico img {
+	filter: alpha(opacity=70);
+}
+.bonus-ico:hover img {
+	filter: alpha(opacity=100);
+}
+.toltip.hover .tip {
+	background: rgb(36, 41, 42);
+}
+.toltip.hover .tip:after {
+	content: '';
+	border-top: 11px solid rgb(36, 41, 42);
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+	position: absolute;
+	top: 100%;
+	left: 50%;
+	margin-left: -11px;
+}

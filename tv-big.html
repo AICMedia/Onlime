@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Телевидение</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=1">
+	<link rel="stylesheet" href="css/style.css">
+	<script src="js/jquery.min.js"></script>
+	<script src="js/jquery.teslalign.js"></script>
+	<script src="js/jquery.circliful.min.js"></script>
+	<script src="js/jquery.formstyler.min.js"></script>
+	<script src="js/scripts.js"></script>
+	<!--[if lt IE 9]>
+	<link rel="stylesheet" href="css/ie.css">
+	<script src="js/html5.js"></script>
+	<![endif]-->
+</head>
+<body>
+	<div class="wrapper">
+		<section class="topbar">
+			<div class="topbar-container">
+				<div class="line clearfix">
+					<a href="#" class="topbar-link topbar-link__sibling">Корпоративным клиентам</a>
+					<a href="#" class="topbar-link">Проверка скорости</a>
+					<a href="#" class="topbar-link">Onlime-Бонус</a>
+					<div class="topbar-support">
+						<span><span>поддержка</span>/<span class="current">подключение</span></span>
+						<strong>8 800 707 80 01</strong>
+						<strong class="current">8 800 707 80 00</strong>
+					</div>
+				</div>
+				<!-- Шапка для мобилок -->
+				<div class="topbar-more">
+					<a href="#" class="topbar-more-link"><span>Еще разделы</span></a>
+					<div class="topbar-more-popup">
+						<nav>
+							<a href="#"><span>Корпоративным клиентам</span></a>
+							<a href="#"><span>Onlime-бонус</span></a>
+						</nav>
+						<ul>
+							<li><span>Поддержка</span> <a href="tel:88007078001">8 800 707 80 01</a></li>
+							<li><span>Подключение</span> <a href="tel:88007078000">8 800 707 80 00</a></li>
+						</ul>
+					</div>
+				</div>
+				<!-- Конец шапки для мобилок -->
+				<div class="right-links">
+					<div class="right-link popup-link" data-id="login-popup">
+						<span class="ico ico-profile">Личный кабинет</span>
+						<span class="bg"></span>
+					</div>
+					<div class="right-link popup-link" data-id="payment-popup">
+						<span class="ico ico-payment">Оплатить</span>
+						<span class="bg"></span>
+					</div>
+
+					<div class="fill-background"></div>
+					
+					<div id="payment-popup" class="popup">
+						<div class="popup-close"></div>
+						<div class="form-block">
+							<input type="text" class="form-text" placeholder="Номер лицевого счета">
+						</div>
+						<div class="form-block">
+							<input type="text" class="form-text" placeholder="Сумма (рубли)">
+						</div>
+						<div class="form-block">
+							<div class="other-item">
+								<label class="checkbox checker">
+									<input type="checkbox" id="rules-check">
+								</label>
+								<div for="other-1" class="other-content">
+									<div class="title">Я согласен</div>
+									<span class="description">с <a href="#" class="blue-link">Правилами оплаты услуг связи</a></span>
+								</div>
+							</div>
+						</div>
+						<div class="form-submit">
+							<button type="submit" class="btn"><span>Перейти к оплате</span></button>
+						</div>
+					</div>
+
+					<div id="login-popup" class="popup">
+						<div class="popup-close"></div>
+						<div class="form-block">
+							<input type="text" class="form-text" placeholder="Логин">
+						</div>
+						<div class="form-block">
+							<input type="password" class="form-text" placeholder="Пароль">
+						</div>
+						<div class="form-block form-block__remind">
+							<a href="#" class="blue-link">Забыли логин или пароль?</a>
+						</div>
+						<div class="form-submit">
+							<button type="submit" class="btn"><span>Войти в личный кабинет</span></button>
+						</div>
+					</div>
+
+					<!-- Всплывашки для мобилок -->
+					<div id="menu-popup" class="popup popup-parent">
+						<div class="popup-close"></div>
+						<h4>Меню</h4>
+						<ul>
+							<li class="current"><a href="#"><span>Интернет</span></a></li>
+							<li><a href="#"><span>Телевидение</span></a></li>
+							<li><a href="#" class="popup-link" data-id="menu-internet-tv"><span>Интернет+ТВ</span></a></li>
+							<li><a href="#"><span>Домашний телефон</span></a></li>
+							<li><a href="#"><span>Интернет-магазин</span></a></li>
+						</ul>
+					</div>
+
+					<div id="menu-internet-tv" class="popup popup-children">
+						<div class="popup-close"></div>
+						<h4>Интрнет+ТВ</h4>
+						<ul>
+							<li><a href="#"><span>Тарифы</span></a></li>
+							<li><a href="#"><span>Домашний телефон</span></a></li>
+							<li><a href="#"><span>Дополнительные телеканалы</span></a></li>
+							<li><a href="#"><span>Оборудование</span></a></li>
+							<li><a href="#"><span>Дополнительные услуги</span></a></li>
+						</ul>
+
+						<a href="#" class="offer">
+							<span class="offer-title">Приведи друга и выйграй iPad</span>
+							<span class="offer-description">Каждый месяц — новый победитель!</span>
+							
+							<span class="offer-btn">
+								<span><i>Подробнее</i></span>
+							</span>
+
+							<span class="offer-image" style="background-image: url('images/del/offer-4.png')"></span>
+							<span class="offer-image offer-image-hover" style="background-image: url('images/del/offer-4-hover.png')"></span>
+						</a>
+
+						<div class="popup-children-arrow"></div>
+					</div>
+					<!-- Конец всплывашек для мобилок -->
+
+				</div>
+			</div>
+		</section>
+
+		<header class="header">
+			<div class="line">
+				<a href="#" class="logo">
+					<img src="images/logo.png" width="208" height="60" alt="">
+				</a>
+				<div class="header-menu-small popup-link" data-id="menu-popup"></div>
+				<nav class="header-menu">
+					<ul>
+						<li class="current"><a href="#"><span>Интернет</span></a></li>
+						<li><a href="#"><span>Телевидение</span></a></li>
+						<li><a href="#internet-tv" class="open-link"><span>Интернет+ТВ</span></a></li>
+						<li><a href="#"><span>Домашний телефон</span></a></li>
+						<li><a href="#"><span>Интернет-магазин</span></a></li>
+					</ul>
+				</nav>
+			</div>
+			<div class="popup-nav" id="internet-tv">
+				<div class="line clearfix">
+					<div class="popup-nav-close"></div>
+					<h3>Интернет+ТВ</h3>
+					<nav>
+						<ul>
+							<li><a href="#"><span>Тарифы</span></a></li>
+							<li><a href="#"><span>Домашний телефон</span></a></li>
+							<li><a href="#"><span>Дополнительные телеканалы</span></a></li>
+							<li><a href="#"><span>Оборудование</span></a></li>
+							<li><a href="#"><span>Дополнительные услуги</span></a></li>
+						</ul>
+					</nav>
+					<div class="popup-questions">
+						<h4>Частые вопросы</h4>
+						<ul>
+							<li><a href="#" class="blue-link">Как можно проверить состояние Лицевого Счета?</a></li>
+							<li><a href="#" class="blue-link">Я хочу подключить второй компьютер к Интернету. Что мне для этого нужно?</a></li>
+						</ul>
+					</div>
+					<a href="#" class="offer">
+						<span class="offer-title">Приведи друга и выйграй iPad</span>
+						<span class="offer-description">Каждый месяц — новый победитель!</span>
+						
+						<span class="offer-btn">
+							<span><i>Подбробнее</i></span>
+						</span>
+
+						<span class="offer-image" style="background-image: url('images/del/offer-4.png')"></span>
+						<span class="offer-image offer-image-hover" style="background-image: url('images/del/offer-4-hover.png')"></span>
+					</a>
+				</div>
+			</div>
+		</header>
+
+		<section class="sub-header">
+			<div class="line">
+				<nav class="breadcrumb">
+					<a href="#" class="home"></a>
+					<a href="#"><span>Телевидение</span></a>
+				</nav>
+			</div>
+		</section>
+
+
+		<section class="line_small change-title">
+			<div class="title">Телевидение</div>
+		</section>
+		
+
+		<section class="line_small section-top">
+			<div class="tabs-outline">
+				<div class="tab-area tab-area-content current">
+					<div class="offers-block clearfix">
+						<a href="#" class="offer">
+							<span class="offer-title">Интерактивное ТВ</span>
+							<span class="offer-description">Для удобного и увлекательного просмотра.</span>
+							<span class="offer-btn"><span><i>Подключить</i></span></span>
+							<span class="offer-image" style="background-image: url('images/del/offer-5.png')"></span>
+							<span class="offer-image offer-image-hover" style="background-image: url('images/del/offer-5-hover.png')"></span>
+						</a>
+
+						<a href="#" class="offer">
+							<span class="offer-title">Цифровое ТВ</span>
+							<span class="offer-description">Превосходное качество изображения и звука.</span>
+							<span class="offer-btn"><span><i>Подключить</i></span></span>
+							<span class="offer-image" style="background-image: url('images/del/offer-6.png')"></span>
+							<span class="offer-image offer-image-hover" style="background-image: url('images/del/offer-6-hover.png')"></span>
+						</a>
+					</div>
+				</div>
+
+				<div class="tab-area tab-area-content current">
+					<table class="table">
+						<thead>
+							<tr>
+								<th></th>
+								<th>Интерактивное ТВ</th>
+								<th>Цифровое ТВ</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>Более 190 каналов в цифровом качестве</td>
+								<td><img src="images/radio-tick.png" width="18" height="12" alt=""></td>
+								<td><img src="images/radio-tick.png" width="18" height="12" alt=""></td>
+							</tr>
+							<tr>
+								<td>Поддержка формата HD</td>
+								<td><img src="images/radio-tick.png" width="18" height="12" alt=""></td>
+								<td><img src="images/radio-tick.png" width="18" height="12" alt=""></td>
+							</tr>
+							<tr>
+								<td>Подключение без приставки к телевизору</td>
+								<td></td>
+								<td><img src="images/radio-tick.png" width="18" height="12" alt=""></td>
+							</tr>
+							<tr>
+								<td>Управление просмотром (запись, перемотка, постановка на паузу)</td>
+								<td><img src="images/radio-tick.png" width="18" height="12" alt=""></td>
+								<td></td>
+							</tr>
+							<tr>
+								<td>Прогноз погоды, курс валюты, социальные сети</td>
+								<td><img src="images/radio-tick.png" width="18" height="12" alt=""></td>
+								<td></td>
+							</tr>
+							<tr>
+								<td>Управление с пульта телевизора</td>
+								<td></td>
+								<td><img src="images/radio-tick.png" width="18" height="12" alt=""></td>
+							</tr>
+							<tr>
+								<td>Архив передач</td>
+								<td><img src="images/radio-tick.png" width="18" height="12" alt=""></td>
+								<td></td>
+							</tr>
+							<tr>
+								<td>Видеопрокат</td>
+								<td><img src="images/radio-tick.png" width="18" height="12" alt=""></td>
+								<td></td>
+							</tr>
+							<tr>
+								<td>Мультирум</td>
+								<td><img src="images/radio-tick.png" width="18" height="12" alt=""></td>
+								<td><img src="images/radio-tick.png" width="18" height="12" alt=""></td>
+							</tr>
+							<tr>
+								<td>Мультискрин</td>
+								<td><img src="images/radio-tick.png" width="18" height="12" alt=""></td>
+								<td></td>
+							</tr>
+							<tr>
+								<td>Караоке</td>
+								<td><img src="images/radio-tick.png" width="18" height="12" alt=""></td>
+								<td></td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</section>
+
+
+		<section class="line_small change-title">
+			<div class="title">Интерактивное ТВ</div>
+		</section>
+
+		<section class="line_small section-top">
+			<div class="tabs-outline">
+				<div class="tab-area tab-area-content current">
+					<div class="banner-tv-first text-content clearfix">
+						<img src="images/banner-tv-first.jpg" width="320" height="200" alt="">
+						<h3>ТВ-приставка «Стандарт» с поддержкой HD и 3D без встроенного жесткого диска</h3>
+						<p>Основные функции:</p>
+						<ul>
+							<li>поддержка изображения в цифровом формате стандартной (SD) и высокой (HD) четкости, стереозвук;</li>
+							<li>поддержка интерактивных сервисов;</li>
+							<li>управление просмотром: пауза, запись, перемотка, архив передач;</li>
+						</ul>
+						<a href="#" class="btn"><span>Подробнее</span></a>
+					</div>
+				</div>
+			</div>
+			<div class="tabs-outline">
+				<div class="tab-area tab-area-content current">
+					<div class="text-content clearfix">
+						<h3>Как подключить Интерактивное ТВ</h3>
+						<p>Для работы Интерактивного ТВ необходимы только ТВ-приставка и соединение с Интернетом. Приставка соединяется с Вашим ТВ с помощью HDMI или S-video кабеля. Управление Интерактивным ТВ производится с помощью пульта дистанционного управления.</p>
+						<p><a href="#" class="btn"><span>Подключить</span></a></p>
+					</div>
+				</div>
+			</div>
+
+			<div class="tabs-outline">
+				<div class="tab-area tab-area-content current">
+					<div class="banner-tv-second text-content">
+						<img src="images/banner-tv-second.jpg" width="400" height="296" alt="">
+						<h3>Управляйте просмотром</h3>
+						<p>С услугой «Управление просмотром» Вы не пропустите ни одного мгновения любимой передачи, а также получите ряд дополнительных возможностей: функции паузы, перемотки, записи и архива.</p>
+						<p><a href="#" class="btn"><span>Подключить</span></a></p>
+					</div>
+
+					<div class="tv-advantages-list">
+						<div class="tv-advantage">
+							<img src="images/del/tv-advantage-1.jpg" width="266" height="150" alt="">
+							<h4>Перематывайте и ставьте на паузу</h4>
+							<p>Если на самом интересном месте возникла необходимость отлучиться или ответить на звонок, Вы всегда можете приостановить просмотр и продолжить его позже. А если вдруг не поверите своим глазам — перемотайте и посмотрите еще раз.</p>
+						</div>
+
+						<div class="tv-advantage">
+							<img src="images/del/tv-advantage-2.jpg" width="266" height="150" alt="">
+							<h4>Записывайте</h4>
+							<p>Не расстраивайтесь, если обстоятельства заставят Вас пропустить долгожданную премьеру. Просто поставьте ее в очередь для записи — сможете посмотреть, когда появится время.</p>
+						</div>
+
+						<div class="tv-advantage">
+							<img src="images/del/tv-advantage-3.jpg" width="266" height="150" alt="">
+							<h4>Пользуйтесь архивом</h4>
+							<p>Если Вы пропустили передачу, то можете ее посмотреть в Архиве. Вам доступен архив передач.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="tabs-outline">
+				<div class="tab-area tab-area-content current">
+					<div class="banner-tv-first text-content clearfix">
+						<img src="images/banner-tv-third.jpg" width="400" height="250" alt="">
+						<h3>Видеопрокат</h3>
+						<p>К Вашим услугам обширная, регулярно обновляемая коллекция кино, — от горячих новинок до нестареющей классики.</p>
+					</div>
+					<div class="banner-tv-video-list">
+						<div class="banner-tv-video">
+							<img src="images/banner-tv-video-1.png" width="138" height="138" alt="">
+							<h4>Фильмы в HD качестве</h4>
+							Сделать лучшие фильмы еще лучше могут только высочайшее качество и отменный звук.
+						</div>
+						<div class="banner-tv-video">
+							<img src="images/banner-tv-video-2.png" width="138" height="138" alt="">
+							<h4>Фильмы в 3D формате</h4>
+							Смотрите кино в трех измерениях: стереокартинка сделает фильм по-настоящему реалистичным и объемным.
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="tabs-outline">
+				<div class="tab-area tab-area-content current">
+					<div class="banner-tv-second text-content">
+						<img src="images/banner-tv-fourth.png" width="400" height="250" alt="">
+						<h3>Мультискрин</h3>
+						<p>Мультискрин – сервис Интерактивного ТВ, позволяющий объединить различные экраны для просмотра ТВ: телевизор с приставкой "Интерактивного ТВ", планшеты с операционными системами Android и iOS, ТВ с поддержкой функции Smart TV LG и Samsung. Всего к "Мультискрину" можно подключить до пяти устройств, то есть девайсы всех членов семьи. Мультискрин – ТВ на всех экранах</p>
+						<p><a href="#" class="btn"><span>Подробнее об услуге</span></a></p>
+					</div>
+				</div>
+			</div>
+
+			<div class="tabs-outline">
+				<div class="tab-area tab-area-content current">
+					<div class="banner-tv-first text-content clearfix">
+						<img src="images/banner-tv-fifth.png" width="400" height="251" alt="">
+						<h3>Дополнительные сервисы Интерактивного ТВ</h3>
+						<p>Интерактивное ТВ — это больше, чем просто цифровое эфирное телевидение. С помощью дополнительных сервисов Вы можете сделать его таким, каким сами захотите..</p>
+					</div>
+
+					<div class="tv-advantages-list">
+						<div class="tv-advantage">
+							<img src="images/del/tv-advantage-4.jpg" width="266" height="150" alt="">
+							<h4>Караоке у вас дома</h4>
+							<p>2000 песен различных жанров в отличном звучании. Удобные поиск и сортировка. Любой праздник станет еще ярче и веселее!<br>Доступ на 48 часов ко всему каталогу Караоке — 150 руб.</p>
+						</div>
+
+						<div class="tv-advantage">
+							<img src="images/del/tv-advantage-5.jpg" width="266" height="150" alt="">
+							<h4>Удобные сервисы и приложения</h4>
+							<p>Узнавайте прогноз погоды и курсы валют, выходите в Facebook и ВКонтакте прямо с экрана телевизора.</p>
+						</div>
+
+						<div class="tv-advantage">
+							<img src="images/del/tv-advantage-6.jpg" width="266" height="150" alt="">
+							<h4>Родительский контроль</h4>
+							<p>Вы можете заблокировать нежелательные для просмотра детьми телепередачи и каналы.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+
+		<section class="line_small change-title">
+			<div class="title">Цифровое ТВ</div>
+		</section>
+
+		<section class="line_small section-top">
+			<div class="tabs-outline">
+				<div class="tab-area tab-area-content current">
+					<div class="tv-equip-list">
+						<div class="tv-equip text-content">
+							<div class="image"><img src="images/del/tv-equip-1.jpg" alt=""></div>
+							<h4>OnLime TeleCARD</h4>
+							<p>Plug&amp;play решение для подключения и приема эфирного телевидения</p>
+							<ul>
+								<li>Компактное оборудование размером с карточку</li>
+								<li>Прием цифрового телевидения без дополнительных проводов</li>
+								<li>Управление с ТВ-пульта</li>
+							</ul>
+						</div>
+
+						<div class="tv-equip text-content">
+							<div class="image"><img src="images/del/tv-equip-2.jpg" alt=""></div>
+							<h4>HD-ресивер</h4>
+							<p>Цифровой ресивер с возможностью использования в качестве мультимедийного плеера. Доступен в двух модификациях:</p>
+
+							<ul>
+								<li>со встроенным жестким диском</li>
+								<li>без жесткого диска</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="tabs-outline">
+				<div class="tab-area tab-area-content current">
+					<div class="text-content clearfix">
+						<h3>Как подключить цифровое ТВ с OnLime TeleCARD</h3>
+						<p>Установите OnLime TeleCARD в слот CI или CI+ телевизора, активируйте услугу цифрового ТВ и смотрите более 170 цифровых и HD-каналов.</p>
+						<p><a href="#" class="btn"><span>Подключить</span></a></p>
+					</div>
+				</div>
+			</div>
+		</section>
+					
+
+
+
+
+
+
+
+
+		<footer class="footer">
+			<div class="line clearfix">
+				<div class="footer-right">
+					<div class="footer-search">
+						<input type="text" class="search-text" placeholder="Что-то ищите?">
+					</div>
+					<div class="social-links">
+						<a href="#" class="facebook"></a>
+						<a href="#" class="twitter"></a>
+						<a href="#" class="vk"></a>
+						<a href="#" class="youtube"></a>
+					</div>
+				</div>
+				<div class="footer-menus">
+					<nav>
+						<ul>
+							<li><a href="#">Тарифы и услуги</a></li>
+							<li><a href="#">Дополнительные услуги</a></li>
+							<li><a href="#">Оборудование</a></li>
+							<li><a href="#">Список каналов</a></li>
+							<li><a href="#">Onlime-бонус</a></li>
+						</ul>
+						<ul>
+							<li><a href="#">Офисы</a></li>
+							<li><a href="#">О компании</a></li>
+							<li><a href="#">Документы</a></li>
+							<li><a href="#">Вакансии</a></li>
+							<li><a href="#">Акции</a></li>
+						</ul>
+						<ul>
+							<li><a href="#">Помощь</a></li>
+							<li><a href="#">FAQ</a></li>
+							<li><a href="#">Форум</a></li>
+						</ul>
+					</nav>
+				</div>
+				<div class="footer-copy">© 2015 ОАО «Ростелеком». Все права защищены.</div>
+			</div>
+		</footer>
+	</div>
+
+	<script src="http://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+</body>
+</html>

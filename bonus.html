@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Бонус</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=1">
+	<link rel="stylesheet" href="css/style.css">
+	<script src="js/jquery.min.js"></script>
+	<script src="js/jquery.teslalign.js"></script>
+	<script src="js/jquery.circliful.min.js"></script>
+	<script src="js/jquery.formstyler.min.js"></script>
+	<script src="js/scripts.js"></script>
+	<!--[if lt IE 9]>
+	<link rel="stylesheet" href="css/ie.css">
+	<script src="js/html5.js"></script>
+	<![endif]-->
+</head>
+<body>
+	<div class="wrapper">
+		<section class="topbar">
+			<div class="topbar-container">
+				<div class="line clearfix">
+					<a href="#" class="topbar-link topbar-link__sibling">Корпоративным клиентам</a>
+					<a href="#" class="topbar-link">Проверка скорости</a>
+					<a href="#" class="topbar-link">Onlime-Бонус</a>
+					<div class="topbar-support">
+						<span><span>поддержка</span>/<span class="current">подключение</span></span>
+						<strong>8 800 707 80 01</strong>
+						<strong class="current">8 800 707 80 00</strong>
+					</div>
+				</div>
+				<!-- Шапка для мобилок -->
+				<div class="topbar-more">
+					<a href="#" class="topbar-more-link"><span>Еще разделы</span></a>
+					<div class="topbar-more-popup">
+						<nav>
+							<a href="#"><span>Корпоративным клиентам</span></a>
+							<a href="#"><span>Onlime-бонус</span></a>
+						</nav>
+						<ul>
+							<li><span>Поддержка</span> <a href="tel:88007078001">8 800 707 80 01</a></li>
+							<li><span>Подключение</span> <a href="tel:88007078000">8 800 707 80 00</a></li>
+						</ul>
+					</div>
+				</div>
+				<!-- Конец шапки для мобилок -->
+				<div class="right-links">
+					<div class="right-link popup-link" data-id="login-popup">
+						<span class="ico ico-profile">Личный кабинет</span>
+						<span class="bg"></span>
+					</div>
+					<div class="right-link popup-link" data-id="payment-popup">
+						<span class="ico ico-payment">Оплатить</span>
+						<span class="bg"></span>
+					</div>
+
+					<div class="fill-background"></div>
+					
+					<div id="payment-popup" class="popup">
+						<div class="popup-close"></div>
+						<div class="form-block">
+							<input type="text" class="form-text" placeholder="Номер лицевого счета">
+						</div>
+						<div class="form-block">
+							<input type="text" class="form-text" placeholder="Сумма (рубли)">
+						</div>
+						<div class="form-block">
+							<div class="other-item">
+								<label class="checkbox checker">
+									<input type="checkbox" id="rules-check">
+								</label>
+								<div for="other-1" class="other-content">
+									<div class="title">Я согласен</div>
+									<span class="description">с <a href="#" class="blue-link">Правилами оплаты услуг связи</a></span>
+								</div>
+							</div>
+						</div>
+						<div class="form-submit">
+							<button type="submit" class="btn"><span>Перейти к оплате</span></button>
+						</div>
+					</div>
+
+					<div id="login-popup" class="popup">
+						<div class="popup-close"></div>
+						<div class="form-block">
+							<input type="text" class="form-text" placeholder="Логин">
+						</div>
+						<div class="form-block">
+							<input type="password" class="form-text" placeholder="Пароль">
+						</div>
+						<div class="form-block form-block__remind">
+							<a href="#" class="blue-link">Забыли логин или пароль?</a>
+						</div>
+						<div class="form-submit">
+							<button type="submit" class="btn"><span>Войти в личный кабинет</span></button>
+						</div>
+					</div>
+
+					<!-- Всплывашки для мобилок -->
+					<div id="menu-popup" class="popup popup-parent">
+						<div class="popup-close"></div>
+						<h4>Меню</h4>
+						<ul>
+							<li class="current"><a href="#"><span>Интернет</span></a></li>
+							<li><a href="#"><span>Телевидение</span></a></li>
+							<li><a href="#" class="popup-link" data-id="menu-internet-tv"><span>Интернет+ТВ</span></a></li>
+							<li><a href="#"><span>Домашний телефон</span></a></li>
+							<li><a href="#"><span>Интернет-магазин</span></a></li>
+						</ul>
+					</div>
+
+					<div id="menu-internet-tv" class="popup popup-children">
+						<div class="popup-close"></div>
+						<h4>Интрнет+ТВ</h4>
+						<ul>
+							<li><a href="#"><span>Тарифы</span></a></li>
+							<li><a href="#"><span>Домашний телефон</span></a></li>
+							<li><a href="#"><span>Дополнительные телеканалы</span></a></li>
+							<li><a href="#"><span>Оборудование</span></a></li>
+							<li><a href="#"><span>Дополнительные услуги</span></a></li>
+						</ul>
+
+						<a href="#" class="offer">
+							<span class="offer-title">Приведи друга и выйграй iPad</span>
+							<span class="offer-description">Каждый месяц — новый победитель!</span>
+							
+							<span class="offer-btn">
+								<span><i>Подробнее</i></span>
+							</span>
+
+							<span class="offer-image" style="background-image: url('images/del/offer-4.png')"></span>
+							<span class="offer-image offer-image-hover" style="background-image: url('images/del/offer-4-hover.png')"></span>
+						</a>
+
+						<div class="popup-children-arrow"></div>
+					</div>
+					<!-- Конец всплывашек для мобилок -->
+
+				</div>
+			</div>
+		</section>
+
+		<header class="header">
+			<div class="line">
+				<a href="#" class="logo">
+					<img src="images/logo.png" width="208" height="60" alt="">
+				</a>
+				<div class="header-menu-small popup-link" data-id="menu-popup"></div>
+				<nav class="header-menu">
+					<ul>
+						<li class="current"><a href="#"><span>Интернет</span></a></li>
+						<li><a href="#"><span>Телевидение</span></a></li>
+						<li><a href="#internet-tv" class="open-link"><span>Интернет+ТВ</span></a></li>
+						<li><a href="#"><span>Домашний телефон</span></a></li>
+						<li><a href="#"><span>Интернет-магазин</span></a></li>
+					</ul>
+				</nav>
+			</div>
+			<div class="popup-nav" id="internet-tv">
+				<div class="line clearfix">
+					<div class="popup-nav-close"></div>
+					<h3>Интернет+ТВ</h3>
+					<nav>
+						<ul>
+							<li><a href="#"><span>Тарифы</span></a></li>
+							<li><a href="#"><span>Домашний телефон</span></a></li>
+							<li><a href="#"><span>Дополнительные телеканалы</span></a></li>
+							<li><a href="#"><span>Оборудование</span></a></li>
+							<li><a href="#"><span>Дополнительные услуги</span></a></li>
+						</ul>
+					</nav>
+					<div class="popup-questions">
+						<h4>Частые вопросы</h4>
+						<ul>
+							<li><a href="#" class="blue-link">Как можно проверить состояние Лицевого Счета?</a></li>
+							<li><a href="#" class="blue-link">Я хочу подключить второй компьютер к Интернету. Что мне для этого нужно?</a></li>
+						</ul>
+					</div>
+					<a href="#" class="offer">
+						<span class="offer-title">Приведи друга и выйграй iPad</span>
+						<span class="offer-description">Каждый месяц — новый победитель!</span>
+						
+						<span class="offer-btn">
+							<span><i>Подбробнее</i></span>
+						</span>
+
+						<span class="offer-image" style="background-image: url('images/del/offer-4.png')"></span>
+						<span class="offer-image offer-image-hover" style="background-image: url('images/del/offer-4-hover.png')"></span>
+					</a>
+				</div>
+			</div>
+		</header>
+
+		<section class="sub-header">
+			<div class="line">
+				<nav class="breadcrumb">
+					<a href="#" class="home"></a>
+					<a href="#"><span>Onlime-бонус</span></a>
+				</nav>
+			</div>
+		</section>
+
+	   <section class="bottom-banner home-bonus">
+		   <div class="line banner">
+			   <div class="banner-image"></div>
+			   <div class="banner-content">
+				   <div class="banner-label">Onlime bonus</div> 
+				   <div class="banner-title">Onlime-бонус</div>
+				   <div class="banner-description">
+						Все абоненты ОнЛайм при подключении становятся участниками программы ОнЛайм Бонус автоматически. Пользуясь нашими услугами, совершая оплату и рекомендуя нас своим друзьям, вы получаете бонусные баллы.
+				   </div>
+				   <div class="banner-bottom banner-bottom__link">
+						<a href="#" class="btn">Правила программы</a>
+					</div>
+			   </div>
+		   </div>
+	   </section>
+
+
+	   <section class="line super-title">
+			<div class="title">Как заработать бонусы</div>
+		</section>
+
+
+		<section class="line_small bonuses">
+			<div class="bonuses-list">
+				<div class="bonus-block">
+					<div class="ico">
+						<i style="background-image: url('images/del/bonus-1.png'); width: 53px; height: 57px;"></i>
+					</div>
+					<h3>Приветственный бонус</h3>
+					<div class="text">Приветственные баллы начисляются единовременно каждому вновь подключившемуся к сети ОнЛайм абоненту. Бонусные баллы будут начислены на лицевые счета, на которые поступал хотя бы один платеж.</div>
+					<footer>
+						<div class="num"><span>+30</span></div>
+						<sup>баллов</sup>
+					</footer>
+				</div>
+
+				<div class="bonus-block">
+					<div class="ico">
+						<i style="background-image: url('images/del/bonus-2.png'); width: 51px; height: 61px;"></i>
+					</div>
+					<h3>Активный пользователь</h3>
+					<div class="text">Получайте бонусные баллы за все основные и дополнительные услуги, которыми вы пользуетесь каждый день. Все абоненты ОнЛайм получают бонусные баллы в размере 10% от суммы, потраченной на основные и дополнительные услуги ОнЛайм</div>
+					<footer>
+						<div class="num"><span>+10%</span></div>
+						<sup>от стоимости<br>услуг</sup>
+					</footer>
+				</div>
+
+				<div class="bonus-block">
+					<div class="ico">
+						<i style="background-image: url('images/del/bonus-3.png'); width: 59px; height: 52px;"></i>
+					</div>
+					<h3>Бонус за платеж</h3>
+					<div class="text">При единовременном пополнении счета на сумму не менее 1000 рублей вы получаете бонусные баллы в зависимости от суммы платежа.</div>
+					<footer>
+						<div class="num"><span>+1%</span></div>
+						<sup>от суммы</sup>
+					</footer>
+				</div>
+
+				<div class="bonus-block">
+					<div class="ico">
+						<i style="background-image: url('images/del/bonus-4.png'); width: 63px; height: 62px;"></i>
+					</div>
+					<h3>Бонус отКЛИКнувшимся!</h3>
+					<div class="text">
+						ОнЛайм дарит 20 бонусных баллов всем абонентам, присоединившимся к сообществам ОнЛайм в социальных сетях!
+
+						<ul class="social-block">
+							<li><a href="#" class="facebook"></a></li>
+							<li><a href="#" class="twitter"></a></li>
+							<li><a href="#" class="vk"></a></li>
+						</ul>
+					</div>
+					<footer>
+						<div class="num"><span>+20</span></div>
+						<sup>баллов</sup>
+					</footer>
+				</div>
+			</div>
+		</section>
+
+		<section class="line_small change-title">
+			<div class="title">На что потратить бонусы</div>
+			<div class="description">В каталоге Onlime-Бонус вы найдете множество вознаграждений. Вы можете оплатить услуг и товары Onlime бонусными баллами! А если баллов не хватает, например, на оплату месяца Интернета или цифрового телевидения Onlime, вы можете получить скидку 50%, также оплатив её баллами. Пользуйтесь услугами Onlime, накапливайте баллы и заказывайте вознаграждения из каталога Onlime-Бонус!</div>
+		</section>
+
+
+		<section class="line_small tabs-block">
+			<nav class="tabs-nav">
+				<a href="#" class="current">
+					<span class="out"><span class="in">
+						<span class="title">Услуги</span>
+					</span></span>
+				</a>
+				<a href="#">
+					<span class="out"><span class="in">
+						<span class="title">Впечатления</span>
+					</span></span>
+				</a>
+				<a href="#">
+					<span class="out"><span class="in">
+						<span class="title">Подписка на журналы</span>
+					</span></span>
+				</a>
+			</nav>
+			<div class="tabs-outline tabs-outline-toggle">
+				<!-- Услуги -->
+				<div class="tab-area current">
+					<div class="tab-accord opened">
+						<div class="title">
+							<h3>Интернет</h3>
+							<i></i>
+						</div>
+						<div class="accord-content">
+							<div class="serv-list">
+								<div class="serv" style="background-image: url('images/del/serv-1.png');">
+									<h4>Интернет</h4>
+									<article>Пользуйтесь Интернетом ОнЛайм бесплатно целый месяц</article>
+									<footer>
+										<div class="num"><span>от 300</span></div>
+										<sup>баллов</sup>
+									</footer>
+								</div>
+								<div class="serv" style="background-image: url('images/del/serv-2.png');">
+									<h4>Скидка 50% на Интернет</h4>
+									<article>Скидка на услугу Интернет ОнЛайм в течение месяца – 50%.</article>
+									<footer>
+										<div class="num"><span>от 200</span></div>
+										<sup>баллов</sup>
+									</footer>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="tab-accord">
+						<div class="title">
+							<h3>Телевидение</h3>
+							<i></i>
+						</div>
+						<div class="accord-content">
+							<div class="serv-list">
+								<div class="serv" style="background-image: url('images/del/serv-3.png');">
+									<h4>Цифровое телевидение</h4>
+									<article>Смотрите пакеты цифрового ТВ ОнЛайм бесплатно в течение месяца.</article>
+									<footer>
+										<div class="num"><span>от 300</span></div>
+										<sup>баллов</sup>
+									</footer>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="tab-accord">
+						<div class="title">
+							<h3>Интернет и телевидение</h3>
+							<i></i>
+						</div>
+						<div class="accord-content">
+							<div class="serv-list">
+								<div class="serv" style="background-image: url('images/del/serv-4.png');">
+									<h4>Интернет + <nobr>Цифровое телевидение</nobr></h4>
+									<article>Пользуйтесь Интернетом и цифровым ТВ бесплатно в течение месяца.</article>
+									<footer>
+										<div class="num"><span>от 300</span></div>
+										<sup>баллов</sup>
+									</footer>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="tab-accord">
+						<div class="title">
+							<h3>Дополнительные услуги</h3>
+							<i></i>
+						</div>
+						<div class="accord-content">
+							<div class="serv-list">
+								<div class="serv" style="background-image: url('images/del/serv-5.png');">
+									<h4>Турбокнопка</h4>
+									<article>Скачивайте кино, музыку, любые тяжелые файлы со скоростью 80 Мбит/с. Услуга действует от 1 до 6 часов.</article>
+									<footer>
+										<div class="num"><span>от 300</span></div>
+										<sup>баллов</sup>
+									</footer>
+								</div>
+								<div class="serv" style="background-image: url('images/del/serv-6.png');">
+									<h4>Родительский контроль</h4>
+									<article>Вы сможете установить время, когда доступ в Интернет будет возможен <nobr>только после</nobr> ввода пин-кода.</article>
+									<footer>
+										<div class="num"><span>от 200</span></div>
+										<sup>баллов</sup>
+									</footer>
+								</div>
+								<div class="serv" style="background-image: url('images/del/serv-7.png');">
+									<h4>Антивирус</h4>
+									<article>Защитите свой компьютер с помощью антивируса.</article>
+									<footer>
+										<div class="num"><span>от 300</span></div>
+										<sup>баллов</sup>
+									</footer>
+								</div>
+								<div class="serv" style="background-image: url('images/del/serv-8.png');">
+									<h4>Локальный драйв</h4>
+									<article>Отправляйте большие файлы своим друзьям на максимальной скорости <nobr>до 100 Мбит/с</nobr> внутри сети ОнЛайм!</article>
+									<footer>
+										<div class="num"><span>от 200</span></div>
+										<sup>баллов</sup>
+									</footer>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- Конец услуги -->
+				
+				<!-- Впечатления -->
+				<div class="tab-area">
+					<div class="tab-accord opened">
+						<div class="title">
+							<h3>Впечатления от P.S.BOX</h3>
+							<i></i>
+						</div>
+						<div class="accord-content">
+							<div class="serv-list">
+								<div class="serv" style="background-image: url('images/del/serv-9.png');">
+									<h4>Сертификат 1 000</h4>
+									<article>
+										<p>При активации сертификата вы можете выбрать одно из впечатлений:</p>
+										<ul class="list">
+											<li>5D кинотеатр для двоих;</li>
+											<li>зоопарк для двоих;</li>
+											<li>музей советских игровых автоматов для двоих;</li>
+											<li>Q-zar для двоих;</li>
+											<li>багги;</li>
+											<li>городская прогулка на теплоходе;</li>
+										</ul>
+										
+										<div class="more fake-link">Показать еще <span class="num">5</span> <span class="word">впечатлений</span></div>
+									</article>
+									<footer class="big">
+										<a href="#" class="btn"><span>Активировать</span></a>
+										<div class="points">
+											<div class="num"><span>1 000</span></div>
+											<sup>баллов</sup>
+										</div>
+									</footer>
+								</div>
+								<div class="serv" style="background-image: url('images/del/serv-9.png');">
+									<h4>Сертификат 1 350</h4>
+									<article>
+										<p>При активации сертификата вы можете выбрать одно из впечатлений:</p>
+										<ul class="list">
+											<li>музей советских игровых автоматов для двоих;</li>
+											<li>Q-zar для двоих;</li>
+											<li>багги;</li>
+											<li>городская прогулка на теплоходе;</li>
+										</ul>
+										
+										<div class="more fake-link">Показать еще <span class="num">5</span> <span class="word">впечатлений</span></div>
+									</article>
+									<footer class="big">
+										<a href="#" class="btn"><span>Активировать</span></a>
+										<div class="points">
+											<div class="num"><span>1 350</span></div>
+											<sup>баллов</sup>
+										</div>
+									</footer>
+								</div>
+								<div class="serv" style="background-image: url('images/del/serv-9.png');">
+									<h4>Сертификат 1 500</h4>
+									<article>
+										<p>При активации сертификата вы можете выбрать одно из впечатлений:</p>
+										<ul class="list">
+											<li>зоопарк для двоих;</li>
+											<li>музей советских игровых автоматов для двоих;</li>
+											<li>Q-zar для двоих;</li>
+											<li>багги;</li>
+											<li>городская прогулка на теплоходе;</li>
+										</ul>
+										
+										<div class="more fake-link">Показать еще <span class="num">5</span> <span class="word">впечатлений</span></div>
+									</article>
+									<footer class="big">
+										<a href="#" class="btn"><span>Активировать</span></a>
+										<div class="points">
+											<div class="num"><span>1 500</span></div>
+											<sup>баллов</sup>
+										</div>
+									</footer>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- Конец впечатлений -->
+
+				<!-- Подписка на журналы -->
+				<div class="tab-area">
+					Подписка на журналы
+				</div>
+				<!-- Конец подписки на журналы -->
+
+			</div>
+		</section>
+
+
+		<section class="line_small change-title">
+			<div class="title">Выигрывайте призы!</div>
+			<div class="description">Приглашаем всех активных абонентов Onlime принять участие в конкурсе с 6 октября 2014 по 5 апреля 2015 года и получить возможность выиграть ценные призы.</div>
+		</section>
+
+
+		<section class="line_small prizes">
+			<div class="prizes-list">
+				<div class="prize">
+					<div class="prize-image">
+						<img src="images/del/prize-1.jpg" width="282" height="130" alt="">
+					</div>
+					<h4>Приглашай друзей</h4>
+					<p>Пригласи друга подключиться к Onlime. Отправь электронное сообщение своим друзьям с этой страницы.</p>
+				</div>
+				<div class="prize">
+					<div class="prize-image">
+						<img src="images/del/prize-2.jpg" width="282" height="130" alt="">
+					</div>
+					<h4>Получай призы</h4>
+					<p>Каждый месяц пользователь Onlime, который приведет больше всех друзей в Onlime, выигрывает iPad Mini. Пользователь, который приведет больше всех друзей за весь период конкурса, выиграетсуперприз: 46-дюймовый 3D телевизор Samsung.</p>
+				</div>
+				<div class="prize">
+					<div class="prize-image">
+						<img src="images/del/prize-3.jpg" width="282" height="130" alt="">
+					</div>
+					<h4>Получай бонусы</h4>
+					<p>Получай в течение 3-х месяцев 30% от суммы, потраченной на услуги на свой бонусный счет. Твой друг получит  повышенный «Приветственный  бонус» — 60 баллов.</p>
+				</div>
+			</div>
+		</section>
+
+		<section class="line_small invite-line clearfix">
+			<form action="">
+				<div class="invite-who">
+					<h4>Кого вы хотите пригласить?</h4>
+					<div class="radiobox">
+						<label class="checker">
+							<input type="radio" name="invite-who" checked>
+							<span>Друга</span>
+						</label>
+						<label class="checker checked">
+							<input type="radio" name="invite-who">
+							<span>Организацию</span>
+						</label>
+					</div>
+				</div>
+				<div class="invite-btn">
+					<button type="submit" class="btn"><span>Пригласить</span></button>
+				</div>
+			</form>
+		</section>
+		
+
+
+		
+
+		<footer class="footer">
+			<div class="line clearfix">
+				<div class="footer-right">
+					<div class="footer-search">
+						<input type="text" class="search-text" placeholder="Что-то ищите?">
+					</div>
+					<div class="social-links">
+						<a href="#" class="facebook"></a>
+						<a href="#" class="twitter"></a>
+						<a href="#" class="vk"></a>
+						<a href="#" class="youtube"></a>
+					</div>
+				</div>
+				<div class="footer-menus">
+					<nav>
+						<ul>
+							<li><a href="#">Тарифы и услуги</a></li>
+							<li><a href="#">Дополнительные услуги</a></li>
+							<li><a href="#">Оборудование</a></li>
+							<li><a href="#">Список каналов</a></li>
+							<li><a href="#">Onlime-бонус</a></li>
+						</ul>
+						<ul>
+							<li><a href="#">Офисы</a></li>
+							<li><a href="#">О компании</a></li>
+							<li><a href="#">Документы</a></li>
+							<li><a href="#">Вакансии</a></li>
+							<li><a href="#">Акции</a></li>
+						</ul>
+						<ul>
+							<li><a href="#">Помощь</a></li>
+							<li><a href="#">FAQ</a></li>
+							<li><a href="#">Форум</a></li>
+						</ul>
+					</nav>
+				</div>
+				<div class="footer-copy">© 2015 ОАО «Ростелеком». Все права защищены.</div>
+			</div>
+		</footer>
+	</div>
+</body>
+</html>

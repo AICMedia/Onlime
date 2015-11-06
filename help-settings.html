@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Помощь и настройка</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=1">
+	<link rel="stylesheet" href="css/style.css">
+	<script src="js/jquery.min.js"></script>
+	<script src="js/jquery.teslalign.js"></script>
+	<script src="js/jquery.circliful.min.js"></script>
+	<script src="js/jquery.formstyler.min.js"></script>
+	<script src="js/scripts.js"></script>
+	<!--[if lt IE 9]>
+	<link rel="stylesheet" href="css/ie.css">
+	<script src="js/html5.js"></script>
+	<![endif]-->
+</head>
+<body>
+	<div class="wrapper">
+		<section class="topbar">
+			<div class="topbar-container">
+				<div class="line clearfix">
+					<a href="#" class="topbar-link topbar-link__sibling">Корпоративным клиентам</a>
+					<a href="#" class="topbar-link">Проверка скорости</a>
+					<a href="#" class="topbar-link">Onlime-Бонус</a>
+					<div class="topbar-support">
+						<span><span>поддержка</span>/<span class="current">подключение</span></span>
+						<strong>8 800 707 80 01</strong>
+						<strong class="current">8 800 707 80 00</strong>
+					</div>
+				</div>
+				<!-- Шапка для мобилок -->
+				<div class="topbar-more">
+					<a href="#" class="topbar-more-link"><span>Еще разделы</span></a>
+					<div class="topbar-more-popup">
+						<nav>
+							<a href="#"><span>Корпоративным клиентам</span></a>
+							<a href="#"><span>Onlime-бонус</span></a>
+						</nav>
+						<ul>
+							<li><span>Поддержка</span> <a href="tel:88007078001">8 800 707 80 01</a></li>
+							<li><span>Подключение</span> <a href="tel:88007078000">8 800 707 80 00</a></li>
+						</ul>
+					</div>
+				</div>
+				<!-- Конец шапки для мобилок -->
+				<div class="right-links">
+					<div class="right-link popup-link" data-id="login-popup">
+						<span class="ico ico-profile">Личный кабинет</span>
+						<span class="bg"></span>
+					</div>
+					<div class="right-link popup-link" data-id="payment-popup">
+						<span class="ico ico-payment">Оплатить</span>
+						<span class="bg"></span>
+					</div>
+
+					<div class="fill-background"></div>
+					
+					<div id="payment-popup" class="popup">
+						<div class="popup-close"></div>
+						<div class="form-block">
+							<input type="text" class="form-text" placeholder="Номер лицевого счета">
+						</div>
+						<div class="form-block">
+							<input type="text" class="form-text" placeholder="Сумма (рубли)">
+						</div>
+						<div class="form-block">
+							<div class="other-item">
+								<label class="checkbox checker">
+									<input type="checkbox" id="rules-check">
+								</label>
+								<div for="other-1" class="other-content">
+									<div class="title">Я согласен</div>
+									<span class="description">с <a href="#" class="blue-link">Правилами оплаты услуг связи</a></span>
+								</div>
+							</div>
+						</div>
+						<div class="form-submit">
+							<button type="submit" class="btn"><span>Перейти к оплате</span></button>
+						</div>
+					</div>
+
+					<div id="login-popup" class="popup">
+						<div class="popup-close"></div>
+						<div class="form-block">
+							<input type="text" class="form-text" placeholder="Логин">
+						</div>
+						<div class="form-block">
+							<input type="password" class="form-text" placeholder="Пароль">
+						</div>
+						<div class="form-block form-block__remind">
+							<a href="#" class="blue-link">Забыли логин или пароль?</a>
+						</div>
+						<div class="form-submit">
+							<button type="submit" class="btn"><span>Войти в личный кабинет</span></button>
+						</div>
+					</div>
+
+					<!-- Всплывашки для мобилок -->
+					<div id="menu-popup" class="popup popup-parent">
+						<div class="popup-close"></div>
+						<h4>Меню</h4>
+						<ul>
+							<li class="current"><a href="#"><span>Интернет</span></a></li>
+							<li><a href="#"><span>Телевидение</span></a></li>
+							<li><a href="#" class="popup-link" data-id="menu-internet-tv"><span>Интернет+ТВ</span></a></li>
+							<li><a href="#"><span>Домашний телефон</span></a></li>
+							<li><a href="#"><span>Интернет-магазин</span></a></li>
+						</ul>
+					</div>
+
+					<div id="menu-internet-tv" class="popup popup-children">
+						<div class="popup-close"></div>
+						<h4>Интрнет+ТВ</h4>
+						<ul>
+							<li><a href="#"><span>Тарифы</span></a></li>
+							<li><a href="#"><span>Домашний телефон</span></a></li>
+							<li><a href="#"><span>Дополнительные телеканалы</span></a></li>
+							<li><a href="#"><span>Оборудование</span></a></li>
+							<li><a href="#"><span>Дополнительные услуги</span></a></li>
+						</ul>
+
+						<a href="#" class="offer">
+							<span class="offer-title">Приведи друга и выйграй iPad</span>
+							<span class="offer-description">Каждый месяц — новый победитель!</span>
+							
+							<span class="offer-btn">
+								<span><i>Подробнее</i></span>
+							</span>
+
+							<span class="offer-image" style="background-image: url('images/del/offer-4.png')"></span>
+							<span class="offer-image offer-image-hover" style="background-image: url('images/del/offer-4-hover.png')"></span>
+						</a>
+
+						<div class="popup-children-arrow"></div>
+					</div>
+					<!-- Конец всплывашек для мобилок -->
+
+				</div>
+			</div>
+		</section>
+
+		<header class="header">
+			<div class="line">
+				<a href="#" class="logo">
+					<img src="images/logo.png" width="208" height="60" alt="">
+				</a>
+				<div class="header-menu-small popup-link" data-id="menu-popup"></div>
+				<nav class="header-menu">
+					<ul>
+						<li><a href="#"><span>Интернет</span></a></li>
+						<li><a href="#"><span>Телевидение</span></a></li>
+						<li><a href="#internet-tv" class="open-link"><span>Интернет+ТВ</span></a></li>
+						<li><a href="#"><span>Домашний телефон</span></a></li>
+						<li><a href="#"><span>Интернет-магазин</span></a></li>
+					</ul>
+				</nav>
+			</div>
+			<div class="popup-nav" id="internet-tv">
+				<div class="line clearfix">
+					<div class="popup-nav-close"></div>
+					<h3>Интернет+ТВ</h3>
+					<nav>
+						<ul>
+							<li><a href="#"><span>Тарифы</span></a></li>
+							<li><a href="#"><span>Домашний телефон</span></a></li>
+							<li><a href="#"><span>Дополнительные телеканалы</span></a></li>
+							<li><a href="#"><span>Оборудование</span></a></li>
+							<li><a href="#"><span>Дополнительные услуги</span></a></li>
+						</ul>
+					</nav>
+					<div class="popup-questions">
+						<h4>Частые вопросы</h4>
+						<ul>
+							<li><a href="#" class="blue-link">Как можно проверить состояние Лицевого Счета?</a></li>
+							<li><a href="#" class="blue-link">Я хочу подключить второй компьютер к Интернету. Что мне для этого нужно?</a></li>
+						</ul>
+					</div>
+					<a href="#" class="offer">
+						<span class="offer-title">Приведи друга и выйграй iPad</span>
+						<span class="offer-description">Каждый месяц — новый победитель!</span>
+						
+						<span class="offer-btn">
+							<span><i>Подбробнее</i></span>
+						</span>
+
+						<span class="offer-image" style="background-image: url('images/del/offer-4.png')"></span>
+						<span class="offer-image offer-image-hover" style="background-image: url('images/del/offer-4-hover.png')"></span>
+					</a>
+				</div>
+			</div>
+		</header>
+
+		<section class="sub-header">
+			<div class="line">
+				<nav class="breadcrumb">
+					<a href="#" class="home"></a>
+					<a href="#"><span>Помощь</span></a>
+					<a href="#"><span>Помощь и настройка</span></a>
+				</nav>
+			</div>
+		</section>
+
+		
+
+		<section class="line change-title">
+			<div class="title">Помощь и настройка</div>
+
+		</section>
+
+
+
+
+		<section class="line_small tabs-block help">
+			
+			<nav class="tabs-nav tabs-nav-four">
+				<a href="#" class="current">
+					<span class="out"><span class="in">
+						<span class="title">Дополнительные услуги</span>
+					</span></span>
+				</a>
+				<a href="#">
+					<span class="out"><span class="in">
+						<span class="title">Цифровое ТВ</span>
+					</span></span>
+				</a>
+				<a href="#">
+					<span class="out"><span class="in">
+						<span class="title">Интернет</span>
+					</span></span>
+				</a>
+				<a href="#">
+					<span class="out"><span class="in">
+						<span class="title">Домашний телефон</span>
+					</span></span>
+				</a>
+			</nav>
+				
+			<div class="tabs-outline tabs-outline-toggle">
+			
+			
+				<!-- Дополнительные услуги -->
+				<div class="tab-area tab-area-content current">
+					<div class="help-list">
+						<!-- Вопрос -->
+						<div class="help-item">
+							<h3 class="fake-link">Фильтрация трафика</h3>
+							<div class="answer text-content">
+								<p>Для настройки сервиса необходимо внести конфигурации в браузере о наличии прокси-сервера <strong>proxy.ip.ncnet.ru,</strong> порт доступа — <strong>8080,</strong> протокол — <strong>http</strong></p>
+								<strong>Internet Explorer 6.0</strong>
+								<p>В меню браузера выбрать Сервис > Свойства обозревателя > Подключения</p>
+								<p><img src="http://www.onlime.ru/docs/img/nastr-filt-01.gif" width="416" height="477" alt=""></p>
+								<p>Войти в Настройка LAN, указать адрес и порт прокси-сервера.</p>
+								<p><img src="http://www.onlime.ru/docs/img/nastr-filt-02_.gif" width="416" height="477" alt=""></p>
+							</div>
+						</div>
+						<!-- Конец вопроса -->
+
+						<!-- Вопрос -->
+						<div class="help-item">
+							<h3 class="fake-link">Смена тарифного плана</h3>
+							<div class="answer text-content">
+								<p>Смена тарифа возможна только после разблокировки доступа в Интернет.</p>
+								<p>Для увеличения изображения, нажмите на указываемую кнопку ↑</p>
+								<p>Сменить тарифный план или подключить дополнительные услуги Вы можете:</p>
+								<ul>
+									<li>через свой <a href="#">Личный кабинет</a></li>
+									<li>позвонив в Службу поддержки клиентов ОнЛайм 8 800 707 12 12</li>
+									<li>приехав в один из офисов продаж</li>
+									<li>отправив заявку на <a href="mailto:onlime@rt.ru">onlime@rt.ru</a></li>
+								</ul>
+							</div>
+						</div>
+						<!-- Конец вопроса -->
+					</div>
+				</div>
+				<!-- Конец дополнительных услуг -->
+
+				<!-- Цифровое ТВ -->
+				<div class="tab-area tab-area-content">
+					<div class="help-list">
+						<!-- Вопрос -->
+						<div class="help-item">
+							<h3 class="fake-link">HD-ресивер OnLime станция</h3>
+							<div class="answer text-content">
+								<div class="image-left">
+									<img src="http://www.onlime.ru/images/content/products/2.jpg" width="120" height="46" alt="">
+								</div>
+								<div class="text-content-left">
+									<p>OnLime станция. Цифровой ресивер с функцией записи. Это современное и простое решение для подключения цифрового ТВ, которое подойдет для любой модели телевизора.</p>
+
+									<h4>Поддержка HD</h4>
+									<p>2 HD-канала включены в базовый пакет цифрового ТВ ОнЛайм!</p>
+
+									<h4>Запись передач на внешнее USB-устройство</h4>
+									<p>Подключите жесткий диск или флешку и записывайте любимые передачи.</p>
+
+									<h4>Управление эфиром</h4>
+									<p>Подключите жесткий диск или флешку и ставьте эфир на паузу, пользуйтесь перемоткой – вы ничего не пропустите!</p>
+
+									<h4>Электронная программа передач</h4>
+									<p>Ваш ТВ-гид на неделю.</p>
+
+									<h4>Родительский контроль</h4>
+									<p>Ограничьте доступ к нежелательному контенту PIN-кодом.</p>
+
+									<h4>Переключение звуковых дорожек</h4>
+									<p>Поддержка вещания на иностранных языках.</p>
+
+									<div class="links-list">
+										<a href="#" class="btn-light"><span>Инструкция</span></a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- Конец вопроса -->
+
+						<!-- Вопрос -->
+						<div class="help-item">
+							<h3 class="fake-link">OnLime станция. Цифровой ресивер со встроенным жестким диском</h3>
+							<div class="answer text-content">
+								<div class="image-left">
+									<img src="http://www.onlime.ru/images/content/products/card.jpg" width="116" height="163" alt="">
+								</div>
+								<div class="text-content-left">
+									<p>Инновационное решение для подключения цифрового телевидения!</p>
+									<ul>
+										<li>Компактное оборудование</li>
+										<li>Без дополнительных проводов</li>
+										<li>Управление с ТВ-пульта</li>
+									</ul>
+									<p>Вам не потребуется помощь специалиста: OnLime TeleCARD легко подключить и удобно использовать. Установите OnLime TeleCARD в слот CI или CI+ телевизора, активируйте услугу цифрового ТВ и смотрите более 100 цифровых и HD-каналов. В стоимость OnLime TeleCARD включены 250 рублей, которые поступят на Ваш лицевой счет после активации услуги.</p>
+
+									<p>В стоимость OnLime TeleCARD включены 250 рублей, которые поступят на Ваш лицевой счет после активации услуги.</p>
+								</div>
+							</div>
+						</div>
+						<!-- Конец вопроса -->
+
+						<!-- Вопрос -->
+						<div class="help-item">
+							<h3 class="fake-link">HD-ресивер OnLime станция</h3>
+							<div class="answer text-content">
+								<div class="image-left">
+									<img src="http://www.onlime.ru/images/content/products/7.jpg" width="120" height="55" alt="">
+								</div>
+								<div class="text-content-left">
+									<p>Цифровой ресивер со встроенным жестки диском на 500 Гб.</p>
+
+									<h4>Поддержка HD</h4>
+									<p>2 HD-канала включены в базовый пакет цифрового ТВ ОнЛайм!</p>
+
+									<h4>Встроенный жесткий диск</h4>
+									<p>Встроенный жесткий диск на 500 Гб – не нужно использовать внешние USB для записи.</p>
+
+									<h4>Запись передач</h4>
+									<p>Записывайте любимые программы и фильмы.</p>
+
+									<h4>2 тюнера</h4>
+									<p>Смотрите один канал и одновременно записывайте другой.</p>
+
+									<h4>Управление эфиром</h4>
+									<p>Ставьте просмотр на паузу и пользуйтесь перемоткой – вы ничего не пропустите!</p>
+
+									<h4>Универсальный пульт</h4>
+									<p>Управляйте не только ресивером, но и телевизором*.</p>
+
+									<h4>Электронная программа передач</h4>
+									<p>Ваш ТВ-гид на неделю</p>
+
+									<h4>Родительский контроль</h4>
+									<p>Ограничьте доступ к нежелательному контенту PIN-кодом</p>
+
+									<h4>Переключение звуковых дорожек</h4>
+									<p>Поддержка вещания на иностранных языках.</p>
+
+									<h4>В течение всего срока пользования предоставляется бесплатное сервисное обслуживание и гарантия на ресивер.</h4>
+									<p>* Пульт дистанционного управления совместим не со всеми марками и моделями телевизоров. Полный список поддерживаемых моделей указан в инструкции к ресиверу.</p>
+
+									<p>В стоимость OnLime TeleCARD включены 250 рублей, которые поступят на Ваш лицевой счет после активации услуги.</p>
+
+									<div class="links-list">
+										<a href="#" class="btn-light"><span>Инструкция</span></a>
+										<a href="#" class="btn-light"><span>Настройка универсального пульта ДУ</span></a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- Конец вопроса -->
+
+						<!-- Вопрос -->
+						<div class="help-item">
+							<h3 class="fake-link">Каналы со сменой звуковых дорожек</h3>
+							<div class="answer text-content">
+								<p>Список каналов, для которых доступна смена звуковых дорожек:</p>
+
+								<p>
+								<strong>Sony Entertainment Television -</strong> русский, английский<br>
+								<strong>Universal Channel -</strong> русский, английский<br>
+								<strong>TV1000 Action -</strong> русский, английский<br>
+								<strong>Fox Crime -</strong> русский, английский<br>
+								<strong>Fox Life -</strong> русский, английский<br>
+								<strong>DIVA Universal -</strong> русский, английский<br>
+								<strong>SyFy -</strong> русский, английский<br>
+								<strong>MGM -</strong> русский, английский<br>
+								<strong>Discovery Channel -</strong> русский, английский<br>
+								<strong>Animal Planet -</strong> русский, английский<br>
+								<strong>Viasat History -</strong> русский, английский<br>
+								<strong>Viasat Explorer -</strong> русский, английский<br>
+								<strong>Viasat Nature -</strong> русский, английский, польский, венгерский, словацкий<br>
+								<strong>Cartoon Network/TCM -</strong> русский, английский<br>
+								<strong>JimJam -</strong> русский, английский<br>
+								<strong>Nickelodeon -</strong> русский, английский<br>
+								<strong>Eurosport -</strong> русский, английский<br>
+								<strong>Eurosport 2 -</strong> русский, английский<br>
+								<strong>EurosportNews -</strong> русский, английский<br>
+								<strong>Viasat Sport -</strong> русский, английский<br>
+								<strong>Extreme Sports Channel -</strong> русский, английский, французский, голландский<br>
+								<strong>Sony Sci-Fi -</strong> русский, английский<br>
+								<strong>Discovery Science -</strong> русский, английский<br>
+								<strong>TLC -</strong> русский, английский<br>
+								<strong>MyZen HD -</strong> английский, французский<br>
+								<strong>Discovery Showcase HD -</strong> русский, английский<br>
+								<strong>Animal Planet HD -</strong> русский, английский<br>
+								<strong>Fox Life HD -</strong> русский, английский<br>
+								<strong>Eurosport HD -</strong> русский, английский<br>
+								<strong>Nathional Geographic HD -</strong> русский<br>
+								<strong>Sony Turbo -</strong> русский, английский
+								</p>
+							</div>
+						</div>
+						<!-- Конец вопроса -->
+
+						<!-- Вопрос -->
+						<div class="help-item">
+							<h3 class="fake-link">HD-ресивер OnLime со встроенным жестким диском</h3>
+							<div class="answer text-content">
+								<div class="image-left">
+									<img src="http://www.onlime.ru/images/content/products/11.jpg" width="130" height="149" alt="">
+								</div>
+								<div class="text-content-left">
+									<p>Цифровой HD-ресивер со встроенным жестким диском на 500 Гб, функциями мультимедийного плеера и доступом к услуге «Видеопрокат».</p>
+
+									<h4>Мультимедиа</h4>
+									<p>Слушайте музыку, смотрите видео и фотографии, сохраненные на жестком диске и совместимых запоминающих устройствах.</p>
+
+									<h4>Поддержка HD</h4>
+									<p>2 HD-канала включены в базовый пакет цифрового ТВ ОнЛайм!</p>
+
+									<h4>Встроенный жесткий диск</h4>
+									<p>Встроенный жесткий диск на 500 Гб – не нужно использовать внешние USB для записи.</p>
+
+									<h4>Запись передач</h4>
+									<p>Записывайте любимые программы и фильмы.</p>
+
+									<h4>2 тюнера</h4>
+									<p>Смотрите один канал и одновременно записывайте другой.</p>
+
+									<h4>Управление эфиром</h4>
+									<p>Ставьте просмотр на паузу и пользуйтесь перемоткой – вы ничего не пропустите!</p>
+
+									<h4>Универсальный пульт</h4>
+									<p>Управляйте не только ресивером, но и телевизором*.</p>
+
+									<h4>Электронная программа передач</h4>
+									<p>Ваш ТВ-гид на неделю</p>
+
+									<h4>Родительский контроль</h4>
+									<p>Ограничьте доступ к нежелательному контенту PIN-кодом</p>
+
+									<h4>Переключение звуковых дорожек</h4>
+									<p>Поддержка вещания на иностранных языках.</p>
+
+									<p>В течение всего срока пользования предоставляется бесплатное сервисное обслуживание и гарантия на ресивер</p>
+
+									<div class="links-list">
+										<a href="#" class="btn-light"><span>Инструкция</span></a>
+										<a href="#" class="btn-light"><span>Настройка универсального пульта ДУ</span></a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- Конец вопроса -->
+					</div>
+				</div>
+				<!-- Конец цифрового ТВ -->
+
+				<!-- Интернет -->
+				<div class="tab-area tab-area-content">
+					<div class="help-list">
+						<!-- Вопрос -->
+						<div class="help-item">
+							<h3 class="fake-link">Как настроить подключение для выхода в интернет</h3>
+							<div class="answer text-content">
+								<p><a href="#">Настройка сетевого соединения в Microsoft Windows</a></p>
+							</div>
+						</div>
+						<!-- Конец вопроса -->
+
+						<!-- Вопрос -->
+						<div class="help-item">
+							<h3 class="fake-link">Рекомендованные модели оборудования</h3>
+							<div class="answer text-content">
+								<p>Для устойчивого подключения к сети интернет мы рекомендуем следующее оборудование. Данные модели роутеров протестированы и отвечают следующим требованиям:</p>
+
+								<ul>
+									<li>скорость маршрутизации не менее 20 Мб/с на каждом LAN-порту</li>
+								</ul>
+
+								<p>Все роутеры со штатной прошивкой работают на сети Ростелеком и не требуют дополнительных настроек. Выберите производителя:</p>
+
+								<div class="links-list">
+									<a href="#" class="btn-light"><span>Asus</span></a>
+									<a href="#" class="btn-light"><span>D-Link</span></a>
+									<a href="#" class="btn-light"><span>Linksys</span></a>
+									<a href="#" class="btn-light"><span>Netgear</span></a>
+									<a href="#" class="btn-light"><span>TP-Link</span></a>
+									<a href="#" class="btn-light"><span>upvel</span></a>
+									<a href="#" class="btn-light"><span>Zyxel</span></a>
+									<a href="#" class="btn-light"><span>Apple</span></a>
+								</div>
+							</div>
+						</div>
+						<!-- Конец вопроса -->
+					</div>
+				</div>
+				<!-- Конец интернета -->
+
+				<!-- Домашний телефон -->
+				<div class="tab-area tab-area-content">
+					<div class="help-list">
+						<!-- Вопрос -->
+						<div class="help-item">
+							<h3 class="fake-link">Как настроить свое устройство</h3>
+							<div class="answer text-content">
+								<div class="links-list">
+									<a href="#" class="btn-light"><span>Инструкция по настройке телефона Gigaset IP</span></a>
+									<a href="#" class="btn-light"><span>Инструкция по настройке в Windows для X-Lite</span></a>
+									<a href="#" class="btn-light"><span>Инструкция по настройке в MacOS для Telephone</span></a>
+									<a href="#" class="btn-light"><span>Инструкция по настройке в iOS для Media 5</span></a>
+									<a href="#" class="btn-light"><span>Инструкция по настройке встроенного SIP телефона в Android устройстве</span></a>
+									<a href="#" class="btn-light"><span>Инструкция по настройке в Android устройстве для Sipdroid</span></a>
+									<a href="#" class="btn-light"><span>Инструкция по настройке телефона Panasonic</span></a>
+								</div>
+							</div>
+						</div>
+						<!-- Конец вопроса -->
+					</div>
+				</div>
+				<!-- Конец домашнего телефона -->
+
+			</div>
+		</section>
+
+		<footer class="footer">
+			<div class="line clearfix">
+				<div class="footer-right">
+					<div class="footer-search">
+						<input type="text" class="search-text" placeholder="Что-то ищите?">
+					</div>
+					<div class="social-links">
+						<a href="#" class="facebook"></a>
+						<a href="#" class="twitter"></a>
+						<a href="#" class="vk"></a>
+						<a href="#" class="youtube"></a>
+					</div>
+				</div>
+				<div class="footer-menus">
+					<nav>
+						<ul>
+							<li><a href="#">Тарифы и услуги</a></li>
+							<li><a href="#">Дополнительные услуги</a></li>
+							<li><a href="#">Оборудование</a></li>
+							<li><a href="#">Список каналов</a></li>
+							<li><a href="#">Onlime-бонус</a></li>
+						</ul>
+						<ul>
+							<li><a href="#">Офисы</a></li>
+							<li><a href="#">О компании</a></li>
+							<li><a href="#">Документы</a></li>
+							<li><a href="#">Вакансии</a></li>
+							<li><a href="#">Акции</a></li>
+						</ul>
+						<ul>
+							<li><a href="#">Помощь</a></li>
+							<li><a href="#">FAQ</a></li>
+							<li><a href="#">Форум</a></li>
+						</ul>
+					</nav>
+				</div>
+				<div class="footer-copy">© 2015 ОАО «Ростелеком». Все права защищены.</div>
+			</div>
+		</footer>
+	</div>
+</body>
+</html>
