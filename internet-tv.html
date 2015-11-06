@@ -4,16 +4,19 @@
 	<title>Интернет+ТВ</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=1">
+	<link rel="stylesheet" href="css/slick.css">
 	<link rel="stylesheet" href="css/style.css">
 	<script src="js/jquery.min.js"></script>
 	<script src="js/jquery.teslalign.js"></script>
 	<script src="js/jquery.circliful.min.js"></script>
 	<script src="js/jquery.formstyler.min.js"></script>
+	<script src="js/slick.min.js"></script>
 	<script src="js/scripts.js"></script>
 	<!--[if lt IE 9]>
 	<link rel="stylesheet" href="css/ie.css">
 	<script src="js/html5.js"></script>
 	<![endif]-->
+
 </head>
 <body>
 	<div class="wrapper">
@@ -55,7 +58,7 @@
 					</div>
 
 					<div class="fill-background"></div>
-					
+
 					<div id="payment-popup" class="popup">
 						<div class="popup-close"></div>
 						<h4>Оплатить</h4>
@@ -97,7 +100,7 @@
 							<button type="submit" class="btn"><span>Войти в личный кабинет</span></button>
 						</div>
 					</div>
-					
+
 					<!-- Всплывашки для мобилок -->
 					<div id="menu-popup" class="popup popup-parent">
 						<div class="popup-close"></div>
@@ -125,7 +128,7 @@
 						<a href="#" class="offer">
 							<span class="offer-title">Приведи друга и выйграй iPad</span>
 							<span class="offer-description">Каждый месяц — новый победитель!</span>
-							
+
 							<span class="offer-btn">
 								<span><i>Подробнее</i></span>
 							</span>
@@ -182,7 +185,7 @@
 					<a href="#" class="offer">
 						<span class="offer-title">Приведи друга и выйграй iPad</span>
 						<span class="offer-description">Каждый месяц — новый победитель!</span>
-						
+
 						<span class="offer-btn">
 							<span><i>Подробнее</i></span>
 						</span>
@@ -270,7 +273,7 @@
 					<div id="coating"></div>
 				</div>
 			</section>
-			
+
 			<form method="post" action="#">
 				<section class="tariff-section check-address">
 					<h3 class="big-margin">Выберите тариф</h3>
@@ -303,7 +306,7 @@
 						<div class="three">Каналы</div>
 						<div class="four">Стоимость</div>
 					</div>
-					<div class="tariff-line clearfix">
+					<div class="tariff-line tariff-line_selected clearfix">
 						<div class="tariff-title">
 							<div class="tariff-title-container"><div class="tariff-title-cont">
 								<div class="title">2 в 1 Продвинутый</div>
@@ -346,28 +349,38 @@
 							<span class="tariff-cost-hint">С 3 месяца 995 руб./мес.</span>
 						</div>
 						<div class="tariff-small">
+							<div class="tariff-small__gallery hidden">
+								<div class="tariff-small__carousel">
+									<div class="tariff-small__slide">
+										<div class="tariff-small__slide-icon">
+											<img src="images/smt.png" alt="">
+										</div>
+										<p>Услуга «Управление просмотром»<br>на 2 месяца совершенно бесплатно.</p>
+									</div>
+									<div class="tariff-small__slide">
+										<div class="tariff-small__slide-icon">
+											<img src="images/smt.png" alt="">
+										</div>
+										<p>Услуга «Управление просмотром»<br>на 2 месяца совершенно бесплатно.</p>
+									</div>
+									<div class="tariff-small__slide">
+										<div class="tariff-small__slide-icon">
+											<img src="images/smt.png" alt="">
+										</div>
+										<p>Услуга «Управление просмотром»<br>на 2 месяца совершенно бесплатно.</p>
+									</div>
+								</div>
+							</div>
 							<div class="tariff-small-line">
-								<div class="left">Скорость</div>
-								<div class="right">
+								<div class="left">
 									<span class="tariff-numbers">
 										<span class="num">100</span>
 										<span class="unit">
-											<span class="unit-top">руб.</span>
-											<span class="unit-bottom">мес.</span>
+											<span class="unit-top">мбит</span>
+											<span class="unit-bottom">сек.</span>
 										</span>
 									</span>
 								</div>
-							</div>
-							<div class="tariff-small-line">
-								<div class="left">Каналы</div>
-								<div class="right">
-									<span class="tariff-numbers">
-										<span class="num">172</span>
-									</span>
-								</div>
-							</div>
-							<div class="tariff-small-line strong">
-								<div class="left">Стоимость</div>
 								<div class="right">
 									<span class="tariff-numbers">
 										<span class="num">390</span>
@@ -376,9 +389,26 @@
 											<span class="unit-bottom">мес.</span>
 										</span>
 									</span>
-									<span class="tariff-cost-hint">С 3 месяца 995 руб./мес.</span>
 								</div>
 							</div>
+							<div class="tariff-small-line">
+								<div class="left">
+									<span class="tariff-numbers">
+										<span class="num">172</span>
+										<span class="unit">
+											<span class="unit-top">каналов</span>
+										</span>
+									</span>
+								</div>
+								<div class="right">
+									<span class="tariff-numbers">
+										<span class="tariff-cost-hint">С 3 месяца<br>1000 руб./мес.</span>
+									</span>
+								</div>
+							</div>
+							<a href="#" class="tariff-gift">
+								<span class="tariff-gift__badge">3</span>
+							</a>
 						</div>
 						<div class="tariff-radio">
 							<div class="check-radio checker">
@@ -433,28 +463,32 @@
 							<span class="tariff-cost-hint">С 3 месяца 700 руб./мес.</span>
 						</div>
 						<div class="tariff-small">
+							<div class="tariff-small__gallery">
+								<div class="tariff-small__carousel">
+									<div class="tariff-small__slide">
+										<div class="tariff-small__slide-icon">
+											<img src="images/smt.png" alt="">
+										</div>
+										<p>Услуга «Управление просмотром»<br>на 2 месяца совершенно бесплатно.</p>
+									</div>
+									<div class="tariff-small__slide">
+										<div class="tariff-small__slide-icon">
+											<img src="images/smt.png" alt="">
+										</div>
+										<p>Услуга «Управление просмотром»<br>на 2 месяца совершенно бесплатно.</p>
+									</div>
+								</div>
+							</div>
 							<div class="tariff-small-line">
-								<div class="left">Скорость</div>
-								<div class="right">
+								<div class="left">
 									<span class="tariff-numbers">
 										<span class="num">60</span>
 										<span class="unit">
-											<span class="unit-top">руб.</span>
-											<span class="unit-bottom">мес.</span>
+											<span class="unit-top">мбит</span>
+											<span class="unit-bottom">сек.</span>
 										</span>
 									</span>
 								</div>
-							</div>
-							<div class="tariff-small-line">
-								<div class="left">Каналы</div>
-								<div class="right">
-									<span class="tariff-numbers">
-										<span class="num">143</span>
-									</span>
-								</div>
-							</div>
-							<div class="tariff-small-line strong">
-								<div class="left">Стоимость</div>
 								<div class="right">
 									<span class="tariff-numbers">
 										<span class="num">390</span>
@@ -463,9 +497,26 @@
 											<span class="unit-bottom">мес.</span>
 										</span>
 									</span>
-									<span class="tariff-cost-hint">С 3 месяца 995 руб./мес.</span>
 								</div>
 							</div>
+							<div class="tariff-small-line">
+								<div class="left">
+									<span class="tariff-numbers">
+										<span class="num">115</span>
+										<span class="unit">
+											<span class="unit-top">каналов</span>
+										</span>
+									</span>
+								</div>
+								<div class="right">
+									<span class="tariff-numbers">
+										<span class="tariff-cost-hint">С 3 месяца<br>1000 руб./мес.</span>
+									</span>
+								</div>
+							</div>
+							<a href="#" class="tariff-gift">
+								<span class="tariff-gift__badge">2</span>
+							</a>
 						</div>
 						<div class="tariff-radio">
 							<div class="check-radio checker">
@@ -519,6 +570,62 @@
 							</span>
 							<span class="tariff-cost-hint">С 3 месяца 500 руб./мес.</span>
 						</div>
+						<div class="tariff-small">
+							<div class="tariff-small__gallery">
+								<div class="tariff-small__carousel">
+									<div class="tariff-small__slide">
+										<div class="tariff-small__slide-icon">
+											<img src="images/smt.png" alt="">
+										</div>
+										<p>Услуга «Управление просмотром»<br>на 2 месяца совершенно бесплатно.</p>
+									</div>
+									<div class="tariff-small__slide">
+										<div class="tariff-small__slide-icon">
+											<img src="images/smt.png" alt="">
+										</div>
+										<p>Услуга «Управление просмотром»<br>на 2 месяца совершенно бесплатно.</p>
+									</div>
+								</div>
+							</div>
+							<div class="tariff-small-line">
+								<div class="left">
+									<span class="tariff-numbers">
+										<span class="num">30</span>
+										<span class="unit">
+											<span class="unit-top">мбит</span>
+											<span class="unit-bottom">сек.</span>
+										</span>
+									</span>
+								</div>
+								<div class="right">
+									<span class="tariff-numbers">
+										<span class="num">390</span>
+										<span class="unit">
+											<span class="unit-top">руб.</span>
+											<span class="unit-bottom">мес.</span>
+										</span>
+									</span>
+								</div>
+							</div>
+							<div class="tariff-small-line">
+								<div class="left">
+									<span class="tariff-numbers">
+										<span class="num">115</span>
+										<span class="unit">
+											<span class="unit-top">каналов</span>
+										</span>
+									</span>
+								</div>
+								<div class="right">
+									<span class="tariff-numbers">
+										<span class="tariff-cost-hint">С 3 месяца<br>1000 руб./мес.</span>
+									</span>
+								</div>
+							</div>
+							<a href="#" class="tariff-gift">
+								<span class="tariff-gift__badge">2</span>
+							</a>
+						</div>
 						<div class="tariff-radio">
 							<div class="check-radio checker">
 								<div class="check-radio-container">
@@ -534,7 +641,7 @@
 				</section>
 
 
-	
+
 				<section class="tariff-section check-address">
 					<h3>Дополнительные пакеты телеканалов</h3>
 					<div class="tariff-section-description">Вы можете выбрать несколько пакетов</div>
@@ -572,8 +679,7 @@
 						</div>
 						<div class="tariff-small">
 							<div class="tariff-small-line">
-								<div class="left">Каналы</div>
-								<div class="right">
+								<div class="left">
 									<div class="tariff-channels-num">
 										<div class="tariff-value">+16</div>
 										<div class="tariff-big-description">
@@ -583,9 +689,6 @@
 										</div>
 									</div>
 								</div>
-							</div>
-							<div class="tariff-small-line strong">
-								<div class="left">Стоимость</div>
 								<div class="right">
 									<span class="tariff-numbers">
 										<span class="num">200</span>
@@ -609,9 +712,15 @@
 
 					<div class="tariff-line tariff-line-small clearfix">
 						<div class="tariff-title tariff-title__action">
-							<div class="tariff-title-container"><div class="tariff-title-cont">
-								<div class="title">HD</div>
-							</div></div>
+							<div class="tariff-title-container">
+								<div class="tariff-title-cont">
+									<div class="title">HD</div>
+								</div>
+								<a href="#" class="action-tooltip">
+									<span class="action-tooltip-image"></span>
+									<span class="action-tooltip-text">Тариф со скидкой на месяца. Акция действует до 20 июня</span>
+								</a>
+							</div>
 						</div>
 						<div class="tariff-channels-num">
 							<div class="tariff-value">+27</div>
@@ -632,8 +741,7 @@
 						</div>
 						<div class="tariff-small">
 							<div class="tariff-small-line">
-								<div class="left">Каналы</div>
-								<div class="right">
+								<div class="left">
 									<div class="tariff-channels-num">
 										<div class="tariff-value">+27</div>
 										<div class="tariff-big-description">
@@ -643,9 +751,6 @@
 										</div>
 									</div>
 								</div>
-							</div>
-							<div class="tariff-small-line strong">
-								<div class="left">Стоимость</div>
 								<div class="right">
 									<span class="tariff-numbers">
 										<span class="num">0</span>
@@ -669,9 +774,15 @@
 
 					<div class="tariff-line tariff-line-small clearfix">
 						<div class="tariff-title tariff-title__action">
-							<div class="tariff-title-container"><div class="tariff-title-cont">
-								<div class="title">Viasat Премиум HD</div>
-							</div></div>
+							<div class="tariff-title-container">
+								<div class="tariff-title-cont">
+									<div class="title">Viasat Премиум HD</div>
+								</div>
+								<a href="#" class="action-tooltip">
+									<span class="action-tooltip-image"></span>
+									<span class="action-tooltip-text">Тариф со скидкой на месяца. Акция действует до 20 июня</span>
+								</a>
+							</div>
 						</div>
 						<div class="tariff-channels-num">
 							<div class="tariff-value">+6</div>
@@ -682,18 +793,17 @@
 							</div>
 						</div>
 						<div class="tariff-cost tariff-cost-phone">
-									<span class="tariff-numbers">
-										<span class="num">200</span>
-										<span class="unit">
-											<span class="unit-top">руб.</span>
-											<span class="unit-bottom">мес.</span>
-										</span>
-									</span>
+							<span class="tariff-numbers">
+								<span class="num">200</span>
+								<span class="unit">
+									<span class="unit-top">руб.</span>
+									<span class="unit-bottom">мес.</span>
+								</span>
+							</span>
 						</div>
 						<div class="tariff-small">
 							<div class="tariff-small-line">
-								<div class="left">Каналы</div>
-								<div class="right">
+								<div class="left">
 									<div class="tariff-channels-num">
 										<div class="tariff-value">+6</div>
 										<div class="tariff-big-description">
@@ -703,9 +813,6 @@
 										</div>
 									</div>
 								</div>
-							</div>
-							<div class="tariff-small-line strong">
-								<div class="left">Стоимость</div>
 								<div class="right">
 									<span class="tariff-numbers">
 										<span class="num">99</span>
@@ -752,8 +859,7 @@
 						</div>
 						<div class="tariff-small">
 							<div class="tariff-small-line">
-								<div class="left">Каналы</div>
-								<div class="right">
+								<div class="left">
 									<div class="tariff-channels-num">
 										<div class="tariff-value">+2</div>
 										<div class="tariff-big-description">
@@ -763,9 +869,6 @@
 										</div>
 									</div>
 								</div>
-							</div>
-							<div class="tariff-small-line strong">
-								<div class="left">Стоимость</div>
 								<div class="right">
 									<span class="tariff-numbers">
 										<span class="num">149</span>
@@ -812,8 +915,7 @@
 						</div>
 						<div class="tariff-small">
 							<div class="tariff-small-line">
-								<div class="left">Каналы</div>
-								<div class="right">
+								<div class="left">
 									<div class="tariff-channels-num">
 										<div class="tariff-value">+2</div>
 										<div class="tariff-big-description">
@@ -823,9 +925,6 @@
 										</div>
 									</div>
 								</div>
-							</div>
-							<div class="tariff-small-line strong">
-								<div class="left">Стоимость</div>
 								<div class="right">
 									<span class="tariff-numbers">
 										<span class="num">200</span>
@@ -872,8 +971,7 @@
 						</div>
 						<div class="tariff-small">
 							<div class="tariff-small-line">
-								<div class="left">Каналы</div>
-								<div class="right">
+								<div class="left">
 									<div class="tariff-channels-num">
 										<div class="tariff-value">+5</div>
 										<div class="tariff-big-description">
@@ -883,9 +981,6 @@
 										</div>
 									</div>
 								</div>
-							</div>
-							<div class="tariff-small-line strong">
-								<div class="left">Стоимость</div>
 								<div class="right">
 									<span class="tariff-numbers">
 										<span class="num">200</span>
@@ -912,8 +1007,8 @@
 						<a href="#" class="blue-link">Смотрите список</a>
 					</div>
 				</section>
-			
-			
+
+
 
 				<section class="tariff-section">
 					<div class="tariff-section-header">
@@ -954,10 +1049,15 @@
 
 					<div class="tariff-line tariff-line-small clearfix">
 						<div class="tariff-title sevice-title">
-							<div class="tariff-title-container"><div class="tariff-title-cont">
-								<div class="title">ТВ-приставка</div>
-								<div class="description">для первого ТВ</div>
-							</div></div>
+							<div class="tariff-title-container">
+								<label class="checkbox checker checked">
+									<input type="checkbox" id="other-3">
+								</label>
+								<div class="tariff-title-cont">
+									<div class="title">ТВ-приставка</div>
+									<div class="description">для первого ТВ</div>
+								</div>
+							</div>
 						</div>
 						<div class="tariff-channels-num tariff-channels-change">
 							<div class="radiobox">
@@ -986,7 +1086,9 @@
 						</div>
 						<div class="tariff-small">
 							<div class="tariff-small-line strong">
-								<div class="left">Стоимость</div>
+								<div class="left">
+									<div class="tariff-small-label">стоимость</div>
+								</div>
 								<div class="right">
 									<span class="tariff-numbers">
 										<span class="num">200</span>
@@ -1010,10 +1112,15 @@
 
 					<div class="tariff-line tariff-line-small clearfix">
 						<div class="tariff-title sevice-title">
-							<div class="tariff-title-container"><div class="tariff-title-cont">
-								<div class="title">ТВ-приставка</div>
-								<div class="description">для второго ТВ</div>
-							</div></div>
+							<label class="checkbox checker checked">
+								<input type="checkbox" id="other-3">
+							</label>
+							<div class="tariff-title-container">
+								<div class="tariff-title-cont">
+									<div class="title">ТВ-приставка</div>
+									<div class="description">для второго ТВ</div>
+								</div>
+							</div>
 						</div>
 						<div class="tariff-channels-num tariff-channels-change">
 							<div class="radiobox">
@@ -1042,7 +1149,9 @@
 						</div>
 						<div class="tariff-small">
 							<div class="tariff-small-line strong">
-								<div class="left">Стоимость</div>
+								<div class="left">
+									<div class="tariff-small-label">стоимость</div>
+								</div>
 								<div class="right">
 									<span class="tariff-numbers">
 										<span class="num">200</span>
@@ -1066,9 +1175,14 @@
 
 					<div class="tariff-line tariff-line-small clearfix">
 						<div class="tariff-title sevice-title">
-							<div class="tariff-title-container"><div class="tariff-title-cont">
-								<div class="title">Wi-Fi роутер</div>
-							</div></div>
+							<div class="tariff-title-container">
+								<label class="checkbox checker checked">
+									<input type="checkbox" id="other-3">
+								</label>
+								<div class="tariff-title-cont">
+									<div class="title">Wi-Fi роутер</div>
+								</div>
+							</div>
 						</div>
 						<div class="tariff-channels-num tariff-channels-change">
 							<div class="radiobox">
@@ -1097,7 +1211,9 @@
 						</div>
 						<div class="tariff-small">
 							<div class="tariff-small-line strong">
-								<div class="left">Стоимость</div>
+								<div class="left">
+									<div class="tariff-small-label">стоимость</div>
+								</div>
 								<div class="right">
 									<span class="tariff-numbers">
 										<span class="num">200</span>
@@ -1266,33 +1382,22 @@
 
 
 
-	
+
 
 
 
 				<section class="tariff-total">
 					<h3>Итого:</h3>
-					
+
 					<div class="tariff-total-small">
 						<div class="tariff-small">
 							<div class="tariff-small-line strong">
-								<div class="left">Разовый платеж</div>
+								<div class="left">
+									<div class="tariff-small-label">Разовый платеж</div>
+								</div>
 								<div class="right">
 									<span class="tariff-numbers">
 										<span class="num">4 690</span>
-										<span class="unit">
-											<span class="unit-top">руб.</span>
-										</span>
-									</span>
-								</div>
-							</div>
-						</div>
-						<div class="tariff-small">
-							<div class="tariff-small-line strong">
-								<div class="left">Ежемесячный платеж</div>
-								<div class="right">
-									<span class="tariff-numbers">
-										<span class="num">898</span>
 										<span class="unit">
 											<span class="unit-top">руб.</span>
 											<span class="unit-bottom">мес.</span>
@@ -1303,12 +1408,31 @@
 						</div>
 						<div class="tariff-small">
 							<div class="tariff-small-line strong">
-								<div class="left">Стоимость</div>
+								<div class="left">
+									<div class="tariff-small-label">Ежемесячный платеж</div>
+								</div>
+								<div class="right">
+									<span class="tariff-numbers">
+										<span class="num">900</span>
+										<span class="unit">
+											<span class="unit-top">руб.</span>
+											<span class="unit-bottom">мес.</span>
+										</span>
+									</span>
+								</div>
+							</div>
+						</div>
+						<div class="tariff-small">
+							<div class="tariff-small-line strong">
+								<div class="left">
+									<div class="tariff-small-label">стоимость</div>
+								</div>
 								<div class="right">
 									<span class="tariff-numbers">
 										<span class="num">5 590</span>
 										<span class="unit">
 											<span class="unit-top">руб.</span>
+											<span class="unit-bottom">мес.</span>
 										</span>
 									</span>
 								</div>
@@ -1377,7 +1501,7 @@
 							<li>любые виды продаж и получение денежных средств инженером-монтажником от абонента;</li>
 							<li>оформление соответствующих выполняемым работам договоров, дополнительных соглашений, актов и других необходимых документов.</li>
 						</ul>
-						
+
 						<p>В абонентскую плату также входят следующие дополнительные сервисы:</p>
 						<ul>
 							<li>доступ к ресурсам локального сегмента Сети Оператора (игровые и файловые сервера, чаты, форумы и пр.);</li>
@@ -1407,7 +1531,7 @@
 								</div>
 							</div>
 						</div>
-						
+
 						<div class="extract-block">
 							<h4>Доп. пакеты телеканаловы</h4>
 							<div class="tariff-small">

@@ -117,13 +117,3 @@
 .slick-arrow.slick-hidden {
     display: none;
 }
-
-.slick-arrow {
-  font-size: 0;
-  background: none;
-  border: 0;
-  padding: 0;
-  cursor: pointer;
-  z-index: 9;
-  margin: 0;
-}

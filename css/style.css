@@ -1587,7 +1587,7 @@ body {
 	font-size: 18px;
 }
 .tariff-title .description {
-	color: #6c747b;
+	color: #859293;
 	font-size: 10px;
 	text-transform: uppercase;
 }
@@ -4338,6 +4338,8 @@ ymaps.ymaps-2-1-23-balloon-overlay {
 
 
 
+.tariff-small,
+.tariff-gift,
 .tariff-small-line,
 .tariff-total-small,
 .total-small-links,
@@ -5592,7 +5594,7 @@ div.extract,
 
 	.super-title {
 		margin-top: 22px;
-		padding-bottom: 43px;
+		padding-bottom: 0;
 	}
 	.super-title .title {
 		font: 30px/40px 'Myriad Pro Light',sans-serif;
@@ -5749,35 +5751,45 @@ div.extract,
 		width: 100%;
 	}
 
+	.tariff-small,
 	.tariff-small-line {
 		display: block;
 	}
 
+	.tariff-bonus {
+		display: none;
+	}
+
 	.tariff-small-line {
 		overflow: hidden;
+		padding: 0 20px;
 	}
 	.tariff-small-line .left {
 		float: left;
-		font-weight: bold;
-		font-size: 10px;
-		color: #6c747b;
-		text-transform: uppercase;
-		margin: 25px 0 0 20px;
+		color: #859293;
 	}
 	.tariff-small-line .right {
 		float: right;
 		margin-right: 20px;
 	}
 
+
+
 	.tariff-numbers {
 		position: relative;
 		margin: 15px 0 0;
 	}
-	.tariff-small-line .tariff-numbers {
-		left: -40px;
-		margin: 15px 0 0 -25px;
-		text-align: right;
+	.tariff-small-line .tariff-numbers .unit {
+		/*left: -40px;*/
+		/*margin: 15px 0 0 -25px;*/
+		/*text-align: right;*/
+		min-width: 20px;
 	}
+
+	.tariff-small-line .left .tariff-numbers .num {
+		color: #859293;
+	}
+
 	.tariff-numbers .num {
 		font-size: 26px;
 	}
@@ -5792,11 +5804,121 @@ div.extract,
 		text-align: right;
 		text-transform: none;
 		font-size: 10px;
+		line-height: 12px;
 		color: rgba(33, 39, 44, .7);
-		margin: -4px 20px 0 0;
+		/*margin: 5px 20px 0 0;*/
+		padding-top: 10px;
 	}
 	.check-radio {
 		margin-top: 15px;
+	}
+
+	.service-other .radiobox {
+		margin-top: 16px;
+	}
+
+	.tariff-line_selected {
+		outline: 2px solid #99d510;
+	}
+
+	.tariff-gift {
+		display: block;
+		position: absolute;
+		right: 0;
+		top: 0;
+		width: 60px;
+		height: 50px;
+	}
+
+	.tariff-gift::before {
+		content: '';
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		margin-top: -11px;
+		margin-left: -11px;
+		background: url('../images/tariff-gift.png') center no-repeat;
+		-webkit-background-size: 22px;
+		background-size: 22px;
+		width: 22px;
+		height: 22px;
+	}
+
+	.tariff-gift__badge {
+		position: absolute;
+		right: 14px;
+		bottom: 14px;
+		background: #99d510;
+		width: 14px;
+		height: 14px;
+		border-radius: 50%;
+		display: block;
+		text-align: center;
+		font-size: 10px;
+		color: #fff;
+		font-weight: bold;
+		line-height: 14px;
+	}
+
+	.tariff-small__gallery {
+		overflow: hidden;
+		display: none;
+		padding: 0 2px;
+	}
+
+	.tariff-small__gallery_visible {
+		display: block;
+	}
+
+	.tariff-small__carousel {
+		background: #fff;
+		padding: 20px 0 45px;
+		position: relative;
+		border-bottom: 1px solid #e5e8e8;
+	}
+
+	.tariff-small__carousel .slick-dots {
+		font-size: 0;
+		line-height: 0;
+		position: absolute;
+		left: 0;
+		bottom: 20px;
+		width: 100%;
+		text-align: center;
+	}
+
+	.tariff-small__carousel .slick-dots li {
+		display: inline-block;
+		vertical-align: top;
+		margin: 0 4px;
+	}
+
+	.tariff-small__carousel .slick-dots button {
+		font-size: 0;
+		width: 10px;
+		height: 10px;
+		border-radius: 50%;
+		border: 2px solid #b6c4ca;
+		background: transparent;
+		display: block;
+		cursor: pointer;
+	}
+
+	.tariff-small__carousel .slick-active button {
+		background: #99d510;
+		border: none;
+	}
+
+	.tariff-small__slide {
+		font-size: 14px;
+		color: #90969b;
+		text-align: center;
+		padding: 0 20px;
+	}
+
+	.tariff-small__slide-icon img {
+		margin: 0 auto;
+		margin-bottom: 10px;
 	}
 
 	.tariff-small-line .tariff-channels-num {
@@ -5828,19 +5950,44 @@ div.extract,
 		color: #465050;
 	}
 
+	.tariff-title .checkbox {
+		position: absolute;
+		right: 20px;
+		top: 13px;
+		display: block !important;
+	}
+
 	h3 {
 		font-size: 26px;
 		margin-bottom: 8px;
 	}
 
+	.tariff-small-label {
+		font-weight: bold;
+		font-size: 10px;
+		text-transform: uppercase;
+		color: #6c747b;
+		margin-top: 10px;
+	}
+
+
 	.service-other .tariff-numbers {
 		float: right;
-		margin-top: 12px;
+		margin-top: 20px;
+		margin-right: 20px;
 	}
 
 	.tariff-channels-num.tariff-channels-change {
 		display: block;
 		float: none;
+		width: 100%;
+		text-align: center;
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+	.tariff-small-line.strong .tariff-numbers {
+		margin-top: 0;
 	}
 
 	.tariff-channels-num.tariff-channels-change .radiobox label {
@@ -5880,15 +6027,19 @@ div.extract,
 		margin: 0 -20px 22px;
 		display: block;
 	}
+	.tariff-total-small .tariff-numbers .num {
+		font-size: 30px;
+	}
+	.tariff-total-small .tariff-numbers .unit {
+		margin-top: 0;
+	}
 	.tariff-total-small .tariff-small {
 		position: relative;
 	}
 	.tariff-total-small .tariff-small:first-child .tariff-numbers {
 		margin-top: 0;
 	}
-	.tariff-total-small .tariff-small:first-child .left  {
-		margin-top: 10px;
-	}
+
 	.tariff-total-small .tariff-small:nth-child(1):before {
 		content: '';
 		width: 20px;
@@ -5896,17 +6047,20 @@ div.extract,
 		background: url('../images/tariff-total-plus.png') no-repeat;
 		background-size: 20px 20px;
 		position: absolute;
-		top: 100%;
+		top: 30px;
 		left: 20px;
 	}
-	.tariff-total-small .tariff-small:nth-child(3):before {
+	.tariff-total-small .tariff-small {
+		padding-bottom: 8px;
+	}
+	.tariff-total-small .tariff-small:nth-child(2):before {
 		content: '';
 		width: 20px;
 		height: 20px;
 		background: url('../images/tariff-total-well.png') no-repeat;
 		background-size: 20px 20px;
 		position: absolute;
-		top: 0;
+		top: 30px;
 		left: 20px;
 	}
 	.total-small-links {
@@ -5960,7 +6114,7 @@ div.extract,
 	.hidden .product-selection {
 		display: block;
 	}
-	
+
 	.ps-num {
 		font-size: 10px;
 	}
@@ -6452,7 +6606,7 @@ div.extract,
 		width: auto;
 	}
 	.tariff-radio {
-		width: auto;
+		display: none;
 	}
 	.home-bonus.bottom-banner {
 		height: auto;
@@ -6589,6 +6743,20 @@ div.extract,
 	.search-text {
 		width: 280px;
 		background-position: 247px 16px;
+	}
+
+
+	.tariff-section .other-item {
+		margin-bottom: 20px !important;
+	}
+
+	.tariff-section .other-item,
+	.tariff-section .other-content .description {
+		height: auto !important;
+	}
+
+	.tariff-section .other-spacer {
+		display: none;
 	}
 }
 
@@ -6959,4 +7127,13 @@ div.extract,
 	width: 7px;
 	height: 12px;
 	background: url('../images/equip-prev.png') no-repeat;
+}
+
+
+.tariff-title-cont {
+	font-family: 'Myriad Pro', sans-serif;
+}
+
+.tariff-title .checkbox {
+	display: none;
 }

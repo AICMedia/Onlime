@@ -1,6 +1,19 @@
 $(document).ready(function() {
 // start
-	
+
+	$('.tariff-small__carousel').slick({
+		dots: true,
+		arrows: false
+	});
+
+	$(document).on('click', '.tariff-gift', function (e) {
+		e.preventDefault();
+		$(this).parent().find('.tariff-small__gallery').toggleClass('tariff-small__gallery_visible');
+		$(this).parent().find('.tariff-small__carousel').get(0).slick.setPosition();
+
+		console.log();
+	});
+
 
 	var myMap;
 	function initMap() {
@@ -88,7 +101,7 @@ $(document).ready(function() {
 			});
 			// Добавляем многоугольник на карту.
 			myMap.geoObjects.add(myPolygon);
-			
+
 			var stateMonitor = new ymaps.Monitor(myPolygon.editor.state);
 				stateMonitor.add("drawing", function (newValue) {
 					myPolygon.options.set("strokeColor", newValue ? '#89d30a' : '#0000FF');
@@ -331,7 +344,7 @@ $(document).ready(function() {
 
 	if( isOpera &&  old) {
 		circleLight();
-	} else if (!document.createElement('canvas').getContext) { 
+	} else if (!document.createElement('canvas').getContext) {
 		circleLight();
 	} else {
 		$('.num-circle-animate').circliful({
@@ -357,7 +370,7 @@ $(document).ready(function() {
 			);
 		});
 	}
-	
+
 
 	$('body').on('click', '.open-link', function() {
 		clickMenu( $(this), false );
@@ -394,7 +407,7 @@ $(document).ready(function() {
 				if( ! $head.siblings('.fill').length ){
 					$head.addClass('dropdown').after('<div class="fill"></div>');
 				}
-				
+
 				$head.siblings('.fill').fadeIn();
 			}
 		}
@@ -409,7 +422,7 @@ $(document).ready(function() {
 			$sub.slideUp();
 			$head.removeClass('dropdown').siblings('.fill').fadeOut(500)
 		}
-		
+
 	}
 
 	$('.checker').on('click', function() {
@@ -514,7 +527,7 @@ $(document).ready(function() {
 		event.stopPropagation();
 	});
 
-		
+
 	$('.form-block .other-content').on('click', '.title', function() {
 	   var $input = $(this).parents('.other-content').siblings('.checkbox').find('input[type="checkbox"], input[type="radio"]');
 	   if($input.attr('type') == 'checkbox') {
@@ -540,7 +553,7 @@ $(document).ready(function() {
 		$this.siblings('.fill-background').fadeIn();
 		$('#' + hash + '').fadeIn();
 		$('body').addClass('wrapper-slide');
-		
+
 		if( $parent.length ) {
 			$parent.hide();
 			$('body').append('<div class="popup-children-arrow"></div>');
@@ -651,7 +664,7 @@ $(document).ready(function() {
 	$('.help-more').on('click', '.btn-light', function() {
 		var $this = $(this),
 			$parent = $this.parents('.help-list');
-		
+
 		if( $parent.hasClass('visible') ) {
 			$parent.removeClass('visible').find('.hidden').slideUp();
 			$this.find('span').text('Показать все вопросы');
@@ -728,7 +741,7 @@ $(document).ready(function() {
 			$article.slideDown();
 		}
 	})
-	
+
 	window.onresize = function()  {
 		$('.topbar-more-popup, .popup, .fill, .fill-background, .popup-nav').fadeOut();
 		$('body').removeClass('wrapper-slide');
@@ -935,5 +948,4 @@ function persuadeWords(number, one, two, five) {
         return two;
     }
     return five;
-} 
-
+}
