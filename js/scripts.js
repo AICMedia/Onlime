@@ -6,6 +6,10 @@ $(document).ready(function() {
 		arrows: false
 	});
 
+	$(document).on('click', '.tariff-line', function () {
+		$(this).addClass('tariff-line_selected').siblings().removeClass('tariff-line_selected')
+	});
+
 	$(document).on('click', '.tariff-gift', function (e) {
 		e.preventDefault();
 		$(this).parent().find('.tariff-small__gallery').toggleClass('tariff-small__gallery_visible');
