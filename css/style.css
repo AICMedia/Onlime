@@ -5591,6 +5591,9 @@ div.extract,
 		display: none;
 	}
 
+	.tariff-line {
+		cursor: pointer;
+	}
 
 	.super-title {
 		margin-top: 22px;

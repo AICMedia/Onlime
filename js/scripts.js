@@ -6,7 +6,7 @@ $(document).ready(function() {
 		arrows: false
 	});
 
-	$(document).on('click', '.tariff-line', function () {
+	$(document).on('click', '.tariff-line_radio', function () {
 		$(this).addClass('tariff-line_selected').siblings().removeClass('tariff-line_selected')
 	});
 
