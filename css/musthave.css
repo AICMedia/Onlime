@@ -1,0 +1,304 @@
+.p-features__row {
+  margin-left: -13px;
+  margin-right: -13px;
+}
+.p-features__col {
+  float: left;
+  width: 50%;
+  padding: 0 13px;
+}
+@media screen and (max-width: 800px) {
+  .p-features__col {
+    width: 100%;
+  }
+}
+.p-feature {
+  text-align: center;
+  padding: 30px;
+  border: 1px solid #e9ecec;
+  margin-bottom: 26px;
+}
+.p-feature__icon {
+  font-size: 0;
+  height: 60px;
+  line-height: 60px;
+}
+.p-feature__icon > img {
+  vertical-align: middle;
+}
+.p-feature__name {
+  font-family: 'Myriad Pro', sans-serif;
+  font-size: 26px;
+  line-height: 1;
+  margin: 20px 0 15px;
+}
+.p-feature__description {
+  color: #90969b;
+  line-height: 22px;
+}
+.p-feature__action {
+  margin-top: 35px;
+}
+.p-tariff h3 {
+  font-family: 'Myriad Pro Light', sans-serif;
+}
+.tariff-qoute {
+  font-size: 14px;
+  line-height: 22px;
+  color: #6c747b;
+  opacity: .7;
+}
+.square-badge {
+  font-size: 10px;
+  text-transform: uppercase;
+  height: 20px;
+  line-height: 20px;
+  display: inline-block;
+  vertical-align: middle;
+  padding: 0 10px;
+  color: #fff;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #acdd00), to(#7fc925));
+  background-image: -webkit-linear-gradient(top, #acdd00 0, #7fc925 100%);
+  background-image: linear-gradient(top, #acdd00 0, #7fc925 100%);
+  margin-top: -6px;
+  margin-left: 20px;
+}
+@media screen and (max-width: 800px) {
+  .square-badge {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+}
+@media screen and (max-width: 800px) {
+  br {
+    display: none;
+  }
+}
+.b-tariff__table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0 20px;
+}
+.b-tariff__table tr > th {
+  font-size: 10px;
+  text-transform: uppercase;
+  text-align: left;
+  color: #6c747b;
+}
+.b-tariff__table tr > th:first-child {
+  padding-left: 0;
+}
+.b-tariff__table tr > th,
+.b-tariff__table tr > td {
+  padding: 0 20px;
+}
+.b-tariff__table tr > td {
+  background: #f7f8f8;
+  height: 72px;
+  vertical-align: middle;
+}
+.b-tariff__table tr > td:first-child {
+  border-right: 1px solid #e5e8e8;
+}
+.b-tariff__table tr > td .btn-light > span {
+  background: #f7f8f8;
+}
+.b-tariff__name {
+  font-size: 24px;
+  line-height: 1;
+  font-family: 'Myriad Pro', sans-serif;
+}
+.b-tariff__description {
+  color: #6c747b;
+  font-size: 10px;
+  text-transform: uppercase;
+  opacity: .7;
+}
+.tariff-table__section {
+  border-top: 1px solid #e7eaea;
+  margin: -30px -25px;
+  padding: 30px 25px;
+}
+.tariff-table__section:first-child {
+  border-top: 0;
+}
+.tariff-table__section:last-child {
+  padding-bottom: 10px;
+}
+.tariff-table__name > h2 {
+  display: inline-block;
+}
+.b-price {
+  margin-top: 8px;
+  white-space: nowrap;
+}
+.b-price_light {
+  opacity: .5;
+}
+.b-price__value {
+  display: inline-block;
+  vertical-align: top;
+  font-size: 44px;
+  font-family: 'Myriad Pro Light', sans-serif;
+  line-height: 1;
+}
+.b-price__unit {
+  display: inline-block;
+  padding-top: 1px;
+  vertical-align: top;
+  font-size: 14px;
+  line-height: 1;
+  margin-left: 4px;
+}
+.b-price__unit-top,
+.b-price__unit-bottom {
+  display: block;
+  padding: 2px 0;
+  height: 18px;
+  line-height: 10px;
+}
+.b-price__unit-bottom {
+  border-top: 1px solid #e5e8e8;
+}
+.p_light {
+  color: #90969b;
+  font-size: 14px;
+  line-height: 22px;
+}
+.p_light > a {
+  color: #0091ff;
+}
+.ap-options {
+  padding-bottom: 50px;
+  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #f7f8f8), to(#ffffff));
+  background-image: -webkit-linear-gradient(bottom, #f7f8f8 0, #ffffff 100%);
+  background-image: linear-gradient(bottom, #f7f8f8 0, #ffffff 100%);
+}
+.ap-options__heading h2 {
+  float: left;
+  line-height: 42px;
+}
+.ap-options__heading .radiobox {
+  float: right;
+}
+@media screen and (max-width: 800px) {
+  .ap-options__heading .radiobox {
+    float: none;
+  }
+}
+.ap-options__tab {
+  border: 1px solid #e7e7e7;
+  padding: 25px;
+  background: #fff;
+}
+.ap-options__icon {
+  float: left;
+  width: 65px;
+}
+.ap-options__description {
+  padding-left: 65px;
+}
+.ap-options-nav {
+  margin: 40px 0 15px;
+  list-style: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  text-align: justify;
+  -ms-text-justify: distribute-all-lines;
+  text-justify: distribute-all-lines;
+}
+.ap-options-nav > li {
+  display: inline-block;
+  vertical-align: top;
+}
+.ap-options-nav > li > a {
+  color: #2d91ff;
+  font-family: 'Myriad Pro', sans-serif;
+  font-size: 18px;
+  line-height: 1;
+  display: inline-block;
+  border-bottom: 1px dashed;
+}
+.ap-options-nav > li.active > a {
+  color: #000;
+  border-bottom: none;
+}
+.ap-options-nav::after {
+  content: '';
+  width: 100%;
+  display: inline-block;
+  font-size: 0;
+  line-height: 0;
+}
+.sp-examples__row {
+  margin: 0 -20px;
+}
+.sp-examples__col {
+  float: left;
+  width: 33.333%;
+  padding: 0 20px;
+}
+@media screen and (max-width: 800px) {
+  .sp-examples__col {
+    width: 100%;
+  }
+}
+.sp-example {
+  margin-bottom: 30px;
+}
+@media screen and (max-width: 800px) {
+  .sp-example {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+}
+.sp-example__icon {
+  margin: 25px 0;
+}
+.b-article {
+  padding: 120px 0;
+}
+.b-article_gradient {
+  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #f7f8f8), to(#ffffff));
+  background-image: -webkit-linear-gradient(bottom, #f7f8f8 0, #ffffff 100%);
+  background-image: linear-gradient(bottom, #f7f8f8 0, #ffffff 100%);
+}
+.b-article_bottom {
+  margin-bottom: -52px;
+}
+.b-article__row {
+  margin: 0 -40px;
+}
+.b-article__col {
+  padding: 0 40px;
+  float: left;
+  width: 50%;
+}
+@media screen and (max-width: 800px) {
+  .b-article__col {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 800px) {
+  .b-article__image {
+    display: none;
+  }
+}
+.b-article__image > img {
+  width: 100%;
+}
+.b-article__name {
+  font-size: 50px;
+  line-height: 1;
+  margin-bottom: 20px;
+}
+.b-article__content {
+  color: #859293;
+  font-size: 18px;
+  line-height: 30px;
+  margin-bottom: 20px;
+}
+
+/*# sourceMappingURL=musthave.css.map */

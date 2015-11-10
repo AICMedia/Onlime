@@ -1,0 +1,372 @@
+.p-features {
+
+  &__row {
+  	margin-left: -13px;
+  	margin-right: -13px;
+  }
+
+  &__col {
+  	float: left;
+  	width: 50%;
+  	padding: 0 13px;
+
+    @media screen and (max-width: 800px) {
+      width: 100%;
+    }
+  }
+}
+
+.p-feature {
+	text-align: center;
+	padding: 30px;
+	border: 1px solid #e9ecec;
+	margin-bottom: 26px;
+
+  &__icon {
+  	font-size: 0;
+  	height: 60px;
+  	line-height: 60px;
+
+    > img {
+    	vertical-align: middle;
+    }
+  }
+
+  &__name {
+  	font-family: 'Myriad Pro', sans-serif;
+  	font-size: 26px;
+  	line-height: 1;
+  	margin: 20px 0 15px;
+  }
+
+  &__description {
+  	color: #90969b;
+  	line-height: 22px;
+  }
+
+  &__action {
+  	margin-top: 35px;
+  }
+}
+
+
+.p-tariff {
+  h3 {
+    font-family: 'Myriad Pro Light', sans-serif;
+  }
+}
+
+.tariff-qoute {
+  font-size: 14px;
+  line-height: 22px;
+  color: #6c747b;
+  opacity: .7;
+}
+
+
+.square-badge {
+  font-size: 10px;
+  text-transform: uppercase;
+  height: 20px;
+  line-height: 20px;
+  display: inline-block;
+  vertical-align: middle;
+  padding: 0 10px;
+  color: #fff;
+  background-image: linear-gradient(top, #acdd00 0, #7fc925 100%);
+  margin-top: -6px;
+  margin-left: 20px;
+
+  @media screen and (max-width: 800px) {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+}
+
+
+@media screen and (max-width: 800px) {
+  br {
+    display: none;
+  }
+}
+
+
+.b-tariff {
+  &__table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0 20px;
+
+    tr > th {
+      font-size: 10px;
+      text-transform: uppercase;
+      text-align: left;
+      color: #6c747b;
+
+      &:first-child {
+        padding-left: 0;
+      }
+    }
+
+    tr > th,
+    tr > td {
+      padding: 0 20px;
+    }
+
+    tr > td {
+      background: #f7f8f8;
+      height: 72px;
+      vertical-align: middle;
+
+      &:first-child {
+        border-right: 1px solid #e5e8e8;
+      }
+
+      .btn-light > span {
+        background: #f7f8f8;
+      }
+    }
+  }
+
+  &__name {
+    font-size: 24px;
+    line-height: 1;
+    font-family: 'Myriad Pro', sans-serif;
+  }
+
+  &__description {
+    color: #6c747b;
+    font-size: 10px;
+    text-transform: uppercase;
+    opacity: .7;
+  }
+}
+
+.tariff-table {
+  &__section {
+    border-top: 1px solid #e7eaea;
+    margin: -30px -25px;
+    padding: 30px 25px;
+
+    &:first-child {
+      border-top: 0;
+    }
+
+    &:last-child {
+      padding-bottom: 10px;
+    }
+  }
+
+  &__name {
+    > h2 {
+      display: inline-block;
+    }
+  }
+}
+
+
+.b-price {
+  margin-top: 8px;
+  white-space: nowrap;
+
+  &_light {
+    opacity: .5;
+  }
+
+  &__value {
+    display: inline-block;
+    vertical-align: top;
+    font-size: 44px;
+    font-family: 'Myriad Pro Light', sans-serif;
+    line-height: 1;
+  }
+
+  &__unit {
+    display: inline-block;
+    padding-top: 1px;
+    vertical-align: top;
+    font-size: 14px;
+    line-height: 1;
+    margin-left: 4px;
+  }
+
+  &__unit-top,
+  &__unit-bottom {
+    display: block;
+    padding: 2px 0;
+    height: 18px;
+    line-height: 10px;
+  }
+
+  &__unit-bottom {
+    border-top: 1px solid #e5e8e8;
+  }
+}
+
+
+.p {
+  &_light {
+    color: #90969b;
+    font-size: 14px;
+    line-height: 22px;
+
+    > a {
+      color: #0091ff;
+    }
+  }
+}
+
+
+.ap-options {
+  padding-bottom: 50px;
+  background-image: linear-gradient(bottom, #f7f8f8 0, #fff 100%);
+
+  &__heading {
+    h2 {
+      float: left;
+      line-height: 42px;
+    }
+    .radiobox {
+      float: right;
+
+      @media screen and (max-width: 800px) {
+        float: none;
+      }
+    }
+  }
+
+  &__tab {
+    border: 1px solid #e7e7e7;
+    padding: 25px;
+    background: #fff;
+  }
+
+  &__icon {
+    float: left;
+    width: 65px;
+  }
+
+  &__description {
+    padding-left: 65px;
+  }
+}
+
+.ap-options-nav {
+  margin: 40px 0 15px;
+  list-style: none;
+
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  text-align: justify;
+  -ms-text-justify: distribute-all-lines;
+  text-justify: distribute-all-lines;
+
+  > li {
+    display: inline-block;
+    vertical-align: top;
+
+    > a {
+      color: #2d91ff;
+      font-family: 'Myriad Pro', sans-serif;
+      font-size: 18px;
+      line-height: 1;
+      display: inline-block;
+      border-bottom: 1px dashed;
+    }
+
+    &.active > a {
+      color: #000;
+      border-bottom: none;
+    }
+  }
+
+  &::after {
+    content: '';
+    width: 100%;
+    display: inline-block;
+    font-size: 0;
+    line-height: 0
+  }
+}
+
+
+.sp-examples {
+  &__row {
+    margin: 0 -20px;
+  }
+
+  &__col {
+    float: left;
+    width: 33.333%;
+    padding: 0 20px;
+
+    @media screen and (max-width: 800px) {
+      width: 100%;
+    }
+  }
+}
+
+.sp-example {
+  margin-bottom: 30px;
+
+  @media screen and (max-width: 800px) {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+
+  &__icon {
+    margin: 25px 0;
+  }
+}
+
+
+.b-article {
+  padding: 120px 0;
+
+  &_gradient {
+    background-image: linear-gradient(bottom, #f7f8f8 0, #fff 100%);
+  }
+
+  &_bottom {
+    margin-bottom: -52px;
+  }
+
+  &__row {
+    margin: 0 -40px;
+  }
+
+  &__col {
+    padding: 0 40px;
+    float: left;
+    width: 50%;
+
+    @media screen and (max-width: 800px) {
+      width: 100%;
+    }
+  }
+
+  &__image {
+    @media screen and (max-width: 800px) {
+      display: none;
+    }
+
+    > img {
+      width: 100%;
+    }
+  }
+
+  &__name {
+    font-size: 50px;
+    line-height: 1;
+    margin-bottom: 20px;
+  }
+
+  &__content {
+    color: #859293;
+    font-size: 18px;
+    line-height: 30px;
+    margin-bottom: 20px;
+  }
+}

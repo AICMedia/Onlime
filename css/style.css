@@ -767,6 +767,7 @@ body {
 .home-phone .banner-description {
 	font-size: 18px;
 	letter-spacing: -.025em;
+	width: 100%;
 }
 .banner-bottom {
 	margin-top: 64px;
