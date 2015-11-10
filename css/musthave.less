@@ -1,0 +1,49 @@
+.p-features {
+  &__row {
+  	margin-left: -13px;
+  	margin-right: -13px;
+  }
+
+  &__col {
+  	float: left;
+  	width: 50%;
+  	padding: 0 13px;
+
+    @media screen and (max-width: 800px) {
+      width: 100%;
+    }
+  }
+}
+
+.p-feature {
+	text-align: center;
+	padding: 30px;
+	border: 1px solid #e9ecec;
+	margin-bottom: 26px;
+
+  &__icon {
+  	font-size: 0;
+  	height: 60px;
+  	line-height: 60px;
+
+    > img {
+    	vertical-align: middle;
+    }
+  }
+
+  &__name {
+  	font-family: 'Myriad Pro', sans-serif;
+  	font-size: 26px;
+  	line-height: 1;
+  	margin: 20px 0 15px;
+  }
+
+  &__description {
+  	color: #90969b;
+  	line-height: 22px;
+  }
+
+  &__action {
+  	margin-top: 35px;
+  }
+}

@@ -1,0 +1,878 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Домашний телефон</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=1">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/musthave.css">
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery.teslalign.js"></script>
+  <script src="js/jquery.circliful.min.js"></script>
+  <script src="js/jquery.formstyler.min.js"></script>
+  <script src="js/scripts.js"></script>
+  <!--[if lt IE 9]>
+  <link rel="stylesheet" href="css/ie.css">
+  <script src="js/html5.js"></script>
+  <![endif]-->
+</head>
+<body>
+  <div class="wrapper">
+    <section class="topbar">
+      <div class="topbar-container">
+        <div class="line clearfix">
+          <a href="#" class="topbar-link topbar-link__sibling">Корпоративным клиентам</a>
+          <a href="#" class="topbar-link">Проверка скорости</a>
+          <a href="#" class="topbar-link">Onlime-Бонус</a>
+          <div class="topbar-support">
+            <span><span>поддержка</span>/<span class="current">подключение</span></span>
+            <strong>8 800 707 80 01</strong>
+            <strong class="current">8 800 707 80 00</strong>
+          </div>
+        </div>
+        <!-- Шапка для мобилок -->
+        <div class="topbar-more">
+          <a href="#" class="topbar-more-link"><span>Еще разделы</span></a>
+          <div class="topbar-more-popup">
+            <nav>
+              <a href="#"><span>Корпоративным клиентам</span></a>
+              <a href="#"><span>Onlime-бонус</span></a>
+            </nav>
+            <ul>
+              <li><span>Поддержка</span> <a href="tel:88007078001">8 800 707 80 01</a></li>
+              <li><span>Подключение</span> <a href="tel:88007078000">8 800 707 80 00</a></li>
+            </ul>
+          </div>
+        </div>
+        <!-- Конец шапки для мобилок -->
+        <div class="right-links">
+          <div class="right-link popup-link" data-id="login-popup">
+            <span class="ico ico-profile">Личный кабинет</span>
+            <span class="bg"></span>
+          </div>
+          <div class="right-link popup-link" data-id="payment-popup">
+            <span class="ico ico-payment">Оплатить</span>
+            <span class="bg"></span>
+          </div>
+
+          <div class="fill-background"></div>
+
+          <div id="payment-popup" class="popup">
+            <div class="popup-close"></div>
+            <div class="form-block">
+              <input type="text" class="form-text" placeholder="Номер лицевого счета">
+            </div>
+            <div class="form-block">
+              <input type="text" class="form-text" placeholder="Сумма (рубли)">
+            </div>
+            <div class="form-block">
+              <div class="other-item">
+                <label class="checkbox checker">
+                  <input type="checkbox" id="rules-check">
+                </label>
+                <div for="other-1" class="other-content">
+                  <div class="title">Я согласен</div>
+                  <span class="description">с <a href="#" class="blue-link">Правилами оплаты услуг связи</a></span>
+                </div>
+              </div>
+            </div>
+            <div class="form-submit">
+              <button type="submit" class="btn"><span>Перейти к оплате</span></button>
+            </div>
+          </div>
+
+          <div id="login-popup" class="popup">
+            <div class="popup-close"></div>
+            <div class="form-block">
+              <input type="text" class="form-text" placeholder="Логин">
+            </div>
+            <div class="form-block">
+              <input type="password" class="form-text" placeholder="Пароль">
+            </div>
+            <div class="form-block form-block__remind">
+              <a href="#" class="blue-link">Забыли логин или пароль?</a>
+            </div>
+            <div class="form-submit">
+              <button type="submit" class="btn"><span>Войти в личный кабинет</span></button>
+            </div>
+          </div>
+
+          <!-- Всплывашки для мобилок -->
+          <div id="menu-popup" class="popup popup-parent">
+            <div class="popup-close"></div>
+            <h4>Меню</h4>
+            <ul>
+              <li class="current"><a href="#"><span>Интернет</span></a></li>
+              <li><a href="#"><span>Телевидение</span></a></li>
+              <li><a href="#" class="popup-link" data-id="menu-internet-tv"><span>Интернет+ТВ</span></a></li>
+              <li><a href="#"><span>Домашний телефон</span></a></li>
+              <li><a href="#"><span>Интернет-магазин</span></a></li>
+            </ul>
+          </div>
+
+          <div id="menu-internet-tv" class="popup popup-children">
+            <div class="popup-close"></div>
+            <h4>Интрнет+ТВ</h4>
+            <ul>
+              <li><a href="#"><span>Тарифы</span></a></li>
+              <li><a href="#"><span>Домашний телефон</span></a></li>
+              <li><a href="#"><span>Дополнительные телеканалы</span></a></li>
+              <li><a href="#"><span>Оборудование</span></a></li>
+              <li><a href="#"><span>Дополнительные услуги</span></a></li>
+            </ul>
+
+            <a href="#" class="offer">
+              <span class="offer-title">Приведи друга и выйграй iPad</span>
+              <span class="offer-description">Каждый месяц — новый победитель!</span>
+
+              <span class="offer-btn">
+                <span><i>Подробнее</i></span>
+              </span>
+
+              <span class="offer-image" style="background-image: url('images/del/offer-4.png')"></span>
+              <span class="offer-image offer-image-hover" style="background-image: url('images/del/offer-4-hover.png')"></span>
+            </a>
+
+            <div class="popup-children-arrow"></div>
+          </div>
+          <!-- Конец всплывашек для мобилок -->
+
+        </div>
+      </div>
+    </section>
+
+    <header class="header">
+      <div class="line">
+        <a href="#" class="logo">
+          <img src="images/logo.png" width="208" height="60" alt="">
+        </a>
+        <div class="header-menu-small popup-link" data-id="menu-popup"></div>
+        <nav class="header-menu">
+          <ul>
+            <li class="current"><a href="#"><span>Интернет</span></a></li>
+            <li><a href="#"><span>Телевидение</span></a></li>
+            <li><a href="#internet-tv" class="open-link"><span>Интернет+ТВ</span></a></li>
+            <li><a href="#"><span>Домашний телефон</span></a></li>
+            <li><a href="#"><span>Интернет-магазин</span></a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="popup-nav" id="internet-tv">
+        <div class="line clearfix">
+          <div class="popup-nav-close"></div>
+          <h3>Интернет+ТВ</h3>
+          <nav>
+            <ul>
+              <li><a href="#"><span>Тарифы</span></a></li>
+              <li><a href="#"><span>Домашний телефон</span></a></li>
+              <li><a href="#"><span>Дополнительные телеканалы</span></a></li>
+              <li><a href="#"><span>Оборудование</span></a></li>
+              <li><a href="#"><span>Дополнительные услуги</span></a></li>
+            </ul>
+          </nav>
+          <div class="popup-questions">
+            <h4>Частые вопросы</h4>
+            <ul>
+              <li><a href="#" class="blue-link">Как можно проверить состояние Лицевого Счета?</a></li>
+              <li><a href="#" class="blue-link">Я хочу подключить второй компьютер к Интернету. Что мне для этого нужно?</a></li>
+            </ul>
+          </div>
+          <a href="#" class="offer">
+            <span class="offer-title">Приведи друга и выйграй iPad</span>
+            <span class="offer-description">Каждый месяц — новый победитель!</span>
+
+            <span class="offer-btn">
+              <span><i>Подбробнее</i></span>
+            </span>
+
+            <span class="offer-image" style="background-image: url('images/del/offer-4.png')"></span>
+            <span class="offer-image offer-image-hover" style="background-image: url('images/del/offer-4-hover.png')"></span>
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <section class="sub-header">
+      <div class="line">
+        <nav class="breadcrumb">
+          <a href="#" class="home"></a>
+          <a href="#"><span>Домашний телефон</span></a>
+        </nav>
+      </div>
+    </section>
+
+    <section class="bottom-banner home-phone">
+      <div class="line banner">
+        <div class="banner-image"></div>
+        <div class="banner-content">
+          <div class="banner-label">Телефония</div>
+          <div class="banner-title">Домашний телефон<br><nobr>от Onlime</nobr></div>
+          <div class="banner-description">
+            Заказать услугу вы можете через личный кабинет<br>
+            или заполнив заявку на интернет или интернет + ТВ на сайте.
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="line change-title">
+      <div class="title">Домашний телефон</div>
+    </section>
+
+    <section class="line_small section-top p-features">
+      <div class="p-features__row clearfix">
+        <div class="p-features__col">
+          <div class="p-feature">
+            <div class="p-feature__icon">
+              <img src="images/p-feature-1.png" srcset="images/p-feature-1.2x.png 2x" alt="" />
+            </div>
+            <div class="p-feature__name">Доступные тарифы</div>
+            <p class="p-feature__description">Самая дешевая телефонная связь,<br>а также отсутствие платы за Абонентскую<br>линию – оплачиваются только разговоры!</p>
+            <div class="p-feature__action">
+              <a href="#" class="btn">
+                <span>Подключить услугу</span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="p-features__col">
+          <div class="p-feature">
+            <div class="p-feature__icon">
+              <img src="images/p-feature-2.png" srcset="images/p-feature-2.2x.png 2x" alt="" />
+            </div>
+            <div class="p-feature__name">Дополнительные услуги</div>
+            <p class="p-feature__description">Абонентам доступен набор бесплатных<br>и платных услуг, которыми они могут<br>управлять в режиме Онлайн</p>
+            <div class="p-feature__action">
+              <a href="#" class="btn">
+                <span>Подключить услугу</span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="p-features__col">
+          <div class="p-feature">
+            <div class="p-feature__icon">
+              <img src="images/p-feature-2.png" srcset="images/p-feature-2.2x.png 2x" alt="" />
+            </div>
+            <div class="p-feature__name">Ноль внутри сети</div>
+            <p class="p-feature__description">Звоните на номера абонентов Ростелеком<br>по всей России по цене от 0 рублей!* Подробная<br>информация в разделе дополнительных опций</p>
+            <div class="p-feature__action">
+              <a href="#" class="btn">
+                <span>Подключить услугу</span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="p-features__col">
+          <div class="p-feature">
+            <div class="p-feature__icon">
+              <img src="images/p-feature-2.png" srcset="images/p-feature-2.2x.png 2x" alt="" />
+            </div>
+            <div class="p-feature__name">Свое оборудование</div>
+            <p class="p-feature__description">Персональное оборудование и мобильные<br>устройства Абонента могут быть<br>подключены к сети ОнЛайм</p>
+            <div class="p-feature__action">
+              <a href="#" class="btn">
+                <span>Подключить услугу</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+
+
+
+    <section class="line_small tariff-table">
+
+
+      <form method="post" action="#">
+
+
+        <section class="tariff-section check-address">
+          <h3>Тарифы</h3>
+
+
+          <div class="tariff-line-header">
+            <div class="one-second">Название тарифа</div>
+            <div class="two-second">Исходящий вызов</div>
+            <div class="three-second">Сверх трафика</div>
+            <div class="four">Абон. плата</div>
+          </div>
+          <div class="tariff-line clearfix">
+            <div class="tariff-title">
+              <div class="tariff-title-container"><div class="tariff-title-cont">
+                <div class="title">Повременный</div>
+              </div></div>
+            </div>
+            <div class="tariff-outbound">
+              <span class="tariff-numbers">
+                <span class="num">0,46</span>
+                <span class="unit">
+                  <span class="unit-top">руб.</span>
+                  <span class="unit-bottom">мин.</span>
+                </span>
+              </span>
+            </div>
+            <div class="tariff-excess">
+              <span class="tariff-numbers">
+                <span class="num">0</span>
+                <span class="unit">
+                  <span class="unit-top">руб.</span>
+                  <span class="unit-bottom">мин.</span>
+                </span>
+              </span>
+            </div>
+            <div class="tariff-cost">
+              <span class="tariff-numbers">
+                <span class="num">0</span>
+                <span class="unit">
+                  <span class="unit-top">руб.</span>
+                  <span class="unit-bottom">мес.</span>
+                </span>
+              </span>
+            </div>
+            <!-- Вывод для маленьких экранов -->
+            <div class="tariff-small">
+              <div class="tariff-small-line">
+                <div class="left">Исходящий вызов</div>
+                <div class="right">
+                  <span class="tariff-numbers">
+                    <span class="num">0,46</span>
+                    <span class="unit">
+                      <span class="unit-top">руб.</span>
+                      <span class="unit-bottom">мес.</span>
+                    </span>
+                  </span>
+                </div>
+              </div>
+              <div class="tariff-small-line">
+                <div class="left">Сверх трафика</div>
+                <div class="right">
+                  <span class="tariff-numbers">
+                    <span class="num">0</span>
+                    <span class="unit">
+                      <span class="unit-top">руб.</span>
+                      <span class="unit-bottom">мес.</span>
+                    </span>
+                  </span>
+                </div>
+              </div>
+              <div class="tariff-small-line">
+                <div class="left">Абон. плата</div>
+                <div class="right">
+                  <span class="tariff-numbers">
+                    <span class="num">0</span>
+                    <span class="unit">
+                      <span class="unit-top">руб.</span>
+                      <span class="unit-bottom">мес.</span>
+                    </span>
+                  </span>
+                </div>
+              </div>
+            </div>
+            <!-- Конец вывода для маленьких экранов -->
+          </div>
+
+          <div class="tariff-line clearfix">
+            <div class="tariff-title">
+              <div class="tariff-title-container"><div class="tariff-title-cont">
+                <div class="title">Комбинированный</div>
+                <div class="description"><b>300 минут</b> городских соединений</div>
+              </div></div>
+            </div>
+            <div class="tariff-outbound">
+              <span class="tariff-numbers">
+                <span class="num">0</span>
+                <span class="unit">
+                  <span class="unit-top">руб.</span>
+                  <span class="unit-bottom">мин.</span>
+                </span>
+              </span>
+            </div>
+            <div class="tariff-excess">
+              <span class="tariff-numbers">
+                <span class="num">0,38</span>
+                <span class="unit">
+                  <span class="unit-top">руб.</span>
+                  <span class="unit-bottom">мин.</span>
+                </span>
+              </span>
+            </div>
+            <div class="tariff-cost">
+              <span class="tariff-numbers">
+                <span class="num">0</span>
+                <span class="unit">
+                  <span class="unit-top">руб.</span>
+                  <span class="unit-bottom">мес.</span>
+                </span>
+              </span>
+            </div>
+            <!-- Вывод для маленьких экранов -->
+            <div class="tariff-small">
+              <div class="tariff-small-line">
+                <div class="left">Исходящий вызов</div>
+                <div class="right">
+                  <span class="tariff-numbers">
+                    <span class="num">0</span>
+                    <span class="unit">
+                      <span class="unit-top">руб.</span>
+                      <span class="unit-bottom">мес.</span>
+                    </span>
+                  </span>
+                </div>
+              </div>
+              <div class="tariff-small-line">
+                <div class="left">Сверх трафика</div>
+                <div class="right">
+                  <span class="tariff-numbers">
+                    <span class="num">0,38</span>
+                    <span class="unit">
+                      <span class="unit-top">руб.</span>
+                      <span class="unit-bottom">мес.</span>
+                    </span>
+                  </span>
+                </div>
+              </div>
+              <div class="tariff-small-line">
+                <div class="left">Абон. плата</div>
+                <div class="right">
+                  <span class="tariff-numbers">
+                    <span class="num">0</span>
+                    <span class="unit">
+                      <span class="unit-top">руб.</span>
+                      <span class="unit-bottom">мес.</span>
+                    </span>
+                  </span>
+                </div>
+              </div>
+            </div>
+            <!-- Конец вывода для маленьких экранов -->
+          </div>
+
+          <div class="tariff-line clearfix">
+            <div class="tariff-title">
+              <div class="tariff-title-container"><div class="tariff-title-cont">
+                <div class="title">Безлимитный</div>
+              </div></div>
+            </div>
+            <div class="tariff-outbound">
+              <span class="tariff-numbers">
+                <span class="num">0</span>
+                <span class="unit">
+                  <span class="unit-top">руб.</span>
+                  <span class="unit-bottom">мин.</span>
+                </span>
+              </span>
+            </div>
+            <div class="tariff-excess">
+              <span class="tariff-numbers">
+                <span class="num">0</span>
+                <span class="unit">
+                  <span class="unit-top">руб.</span>
+                  <span class="unit-bottom">мин.</span>
+                </span>
+              </span>
+            </div>
+            <div class="tariff-cost">
+              <span class="tariff-numbers">
+                <span class="num">0</span>
+                <span class="unit">
+                  <span class="unit-top">руб.</span>
+                  <span class="unit-bottom">мес.</span>
+                </span>
+              </span>
+            </div>
+            <!-- Вывод для маленьких экранов -->
+            <div class="tariff-small">
+              <div class="tariff-small-line">
+                <div class="left">Исходящий вызов</div>
+                <div class="right">
+                  <span class="tariff-numbers">
+                    <span class="num">0</span>
+                    <span class="unit">
+                      <span class="unit-top">руб.</span>
+                      <span class="unit-bottom">мес.</span>
+                    </span>
+                  </span>
+                </div>
+              </div>
+              <div class="tariff-small-line">
+                <div class="left">Сверх трафика</div>
+                <div class="right">
+                  <span class="tariff-numbers">
+                    <span class="num">0</span>
+                    <span class="unit">
+                      <span class="unit-top">руб.</span>
+                      <span class="unit-bottom">мес.</span>
+                    </span>
+                  </span>
+                </div>
+              </div>
+              <div class="tariff-small-line">
+                <div class="left">Абон. плата</div>
+                <div class="right">
+                  <span class="tariff-numbers">
+                    <span class="num">0</span>
+                    <span class="unit">
+                      <span class="unit-top">руб.</span>
+                      <span class="unit-bottom">мес.</span>
+                    </span>
+                  </span>
+                </div>
+              </div>
+            </div>
+            <!-- Конец вывода для маленьких экранов -->
+          </div>
+        </section>
+
+
+
+
+        <section class="tariff-total">
+          <h3>На междугороднюю и международную связь</h3>
+
+          <div class="tariff-line-header">
+            <div class="one-second">Название тарифа</div>
+            <div class="two-fourth">Междугородние</div>
+            <div class="three-fourth">Межународные</div>
+          </div>
+
+          <div class="tariff-line tariff-line-small clearfix">
+            <div class="tariff-title">
+              <div class="tariff-title-container"><div class="tariff-title-cont">
+                <div class="title">Единый</div>
+              </div></div>
+            </div>
+            <div class="tariff-outbound tariff-outbound__long">
+              <span class="tariff-numbers">
+                <span class="num">2,20</span>
+                <span class="unit">
+                  <span class="unit-top">руб.</span>
+                  <span class="unit-bottom">мин.</span>
+                </span>
+              </span>
+            </div>
+            <div class="tariff-excess tariff-excess__long">
+              <span class="tariff-numbers">
+                <span class="num">9,50</span>
+                <span class="unit">
+                  <span class="unit-top">руб.</span>
+                  <span class="unit-bottom">мин.</span>
+                </span>
+              </span>
+            </div>
+            <!-- Вывод для маленьких экранов -->
+            <div class="tariff-small">
+              <div class="tariff-small-line">
+                <div class="left">Междугородние</div>
+                <div class="right">
+                  <span class="tariff-numbers">
+                    <span class="num">2,20</span>
+                    <span class="unit">
+                      <span class="unit-top">руб.</span>
+                      <span class="unit-bottom">мес.</span>
+                    </span>
+                  </span>
+                </div>
+              </div>
+              <div class="tariff-small-line">
+                <div class="left">Межународные</div>
+                <div class="right">
+                  <span class="tariff-numbers">
+                    <span class="num">9,50</span>
+                    <span class="unit">
+                      <span class="unit-top">руб.</span>
+                      <span class="unit-bottom">мес.</span>
+                    </span>
+                  </span>
+                </div>
+              </div>
+            </div>
+            <!-- Конец вывода для маленьких экранов -->
+            <div class="tariff-more">
+              <a href="#" class="btn-light"><span>Подробнее о тарифе</span></a>
+            </div>
+          </div>
+
+          <div class="tariff-line tariff-line-small clearfix">
+            <div class="tariff-title">
+              <div class="tariff-title-container"><div class="tariff-title-cont">
+                <div class="title">Ветер перемен</div>
+              </div></div>
+            </div>
+            <div class="tariff-outbound tariff-outbound__long">
+              <span class="tariff-numbers">
+                <span class="num">3,50</span>
+                <span class="unit">
+                  <span class="unit-top">руб.</span>
+                  <span class="unit-bottom">мин.</span>
+                </span>
+              </span>
+            </div>
+            <div class="tariff-excess tariff-excess__long">
+              <span class="tariff-numbers">
+                <span class="num">7,88</span>
+                <span class="unit">
+                  <span class="unit-top">руб.</span>
+                  <span class="unit-bottom">мин.</span>
+                </span>
+              </span>
+            </div>
+            <!-- Вывод для маленьких экранов -->
+            <div class="tariff-small">
+              <div class="tariff-small-line">
+                <div class="left">Междугородние</div>
+                <div class="right">
+                  <span class="tariff-numbers">
+                    <span class="num">3,50</span>
+                    <span class="unit">
+                      <span class="unit-top">руб.</span>
+                      <span class="unit-bottom">мес.</span>
+                    </span>
+                  </span>
+                </div>
+              </div>
+              <div class="tariff-small-line">
+                <div class="left">Межународные</div>
+                <div class="right">
+                  <span class="tariff-numbers">
+                    <span class="num">7,88</span>
+                    <span class="unit">
+                      <span class="unit-top">руб.</span>
+                      <span class="unit-bottom">мес.</span>
+                    </span>
+                  </span>
+                </div>
+              </div>
+            </div>
+            <!-- Конец вывода для маленьких экранов -->
+            <div class="tariff-more">
+              <a href="#" class="btn-light"><span>Подробнее о тарифе</span></a>
+            </div>
+          </div>
+
+          <div class="tariff-line tariff-line-small clearfix">
+            <div class="tariff-title">
+              <div class="tariff-title-container"><div class="tariff-title-cont">
+                <div class="title">Международный</div>
+              </div></div>
+            </div>
+            <div class="tariff-outbound tariff-outbound__long">
+              <span class="tariff-numbers">
+                <span class="num">2,25</span>
+                <span class="unit">
+                  <span class="unit-top">руб.</span>
+                  <span class="unit-bottom">мин.</span>
+                </span>
+              </span>
+            </div>
+            <div class="tariff-excess tariff-excess__long">
+              <span class="tariff-numbers">
+                <span class="num">6,30</span>
+                <span class="unit">
+                  <span class="unit-top">руб.</span>
+                  <span class="unit-bottom">мин.</span>
+                </span>
+              </span>
+            </div>
+            <!-- Вывод для маленьких экранов -->
+            <div class="tariff-small">
+              <div class="tariff-small-line">
+                <div class="left">Междугородние</div>
+                <div class="right">
+                  <span class="tariff-numbers">
+                    <span class="num">2,25</span>
+                    <span class="unit">
+                      <span class="unit-top">руб.</span>
+                      <span class="unit-bottom">мес.</span>
+                    </span>
+                  </span>
+                </div>
+              </div>
+              <div class="tariff-small-line">
+                <div class="left">Межународные</div>
+                <div class="right">
+                  <span class="tariff-numbers">
+                    <span class="num">6,30</span>
+                    <span class="unit">
+                      <span class="unit-top">руб.</span>
+                      <span class="unit-bottom">мес.</span>
+                    </span>
+                  </span>
+                </div>
+              </div>
+            </div>
+            <!-- Конец вывода для маленьких экранов -->
+            <div class="tariff-more">
+              <a href="#" class="btn-light"><span>Подробнее о тарифе</span></a>
+            </div>
+          </div>
+
+          <div class="tariff-line tariff-line-small clearfix">
+            <div class="tariff-title">
+              <div class="tariff-title-container"><div class="tariff-title-cont">
+                <div class="title">Предварительный выбор Ростелеком</div>
+              </div></div>
+            </div>
+            <div class="tariff-outbound tariff-outbound__long">
+              <span class="tariff-numbers">
+                <span class="num">2,20</span>
+                <span class="unit">
+                  <span class="unit-top">руб.</span>
+                  <span class="unit-bottom">мин.</span>
+                </span>
+              </span>
+            </div>
+            <div class="tariff-excess tariff-excess__long">
+              <span class="tariff-numbers">
+                <span class="num">9,50</span>
+                <span class="unit">
+                  <span class="unit-top">руб.</span>
+                  <span class="unit-bottom">мин.</span>
+                </span>
+              </span>
+            </div>
+            <!-- Вывод для маленьких экранов -->
+            <div class="tariff-small">
+              <div class="tariff-small-line">
+                <div class="left">Междугородние</div>
+                <div class="right">
+                  <span class="tariff-numbers">
+                    <span class="num">2,20</span>
+                    <span class="unit">
+                      <span class="unit-top">руб.</span>
+                      <span class="unit-bottom">мес.</span>
+                    </span>
+                  </span>
+                </div>
+              </div>
+              <div class="tariff-small-line">
+                <div class="left">Межународные</div>
+                <div class="right">
+                  <span class="tariff-numbers">
+                    <span class="num">9,50</span>
+                    <span class="unit">
+                      <span class="unit-top">руб.</span>
+                      <span class="unit-bottom">мес.</span>
+                    </span>
+                  </span>
+                </div>
+              </div>
+            </div>
+            <!-- Конец вывода для маленьких экранов -->
+            <div class="tariff-more">
+              <a href="#" class="btn-light"><span>Подробнее о тарифе</span></a>
+            </div>
+          </div>
+
+          <div class="tariff-line tariff-line-small clearfix">
+            <div class="tariff-title">
+              <div class="tariff-title-container"><div class="tariff-title-cont">
+                <div class="title">Выбор Ростелеком при каждом звонке</div>
+              </div></div>
+            </div>
+            <div class="tariff-outbound tariff-outbound__long">
+              <span class="tariff-numbers">
+                <span class="num">2,20</span>
+                <span class="unit">
+                  <span class="unit-top">руб.</span>
+                  <span class="unit-bottom">мин.</span>
+                </span>
+              </span>
+            </div>
+            <div class="tariff-excess tariff-excess__long">
+              <span class="tariff-numbers">
+                <span class="num">9,50</span>
+                <span class="unit">
+                  <span class="unit-top">руб.</span>
+                  <span class="unit-bottom">мин.</span>
+                </span>
+              </span>
+            </div>
+            <!-- Вывод для маленьких экранов -->
+            <div class="tariff-small">
+              <div class="tariff-small-line">
+                <div class="left">Междугородние</div>
+                <div class="right">
+                  <span class="tariff-numbers">
+                    <span class="num">2,20</span>
+                    <span class="unit">
+                      <span class="unit-top">руб.</span>
+                      <span class="unit-bottom">мес.</span>
+                    </span>
+                  </span>
+                </div>
+              </div>
+              <div class="tariff-small-line">
+                <div class="left">Межународные</div>
+                <div class="right">
+                  <span class="tariff-numbers">
+                    <span class="num">9,50</span>
+                    <span class="unit">
+                      <span class="unit-top">руб.</span>
+                      <span class="unit-bottom">мес.</span>
+                    </span>
+                  </span>
+                </div>
+              </div>
+            </div>
+            <!-- Конец вывода для маленьких экранов -->
+            <div class="tariff-more">
+              <a href="#" class="btn-light"><span>Подробнее о тарифе</span></a>
+            </div>
+          </div>
+
+
+
+        </section>
+
+
+      </form>
+    </section>
+
+    <footer class="footer">
+      <div class="line clearfix">
+        <div class="footer-right">
+          <div class="footer-search">
+            <input type="text" class="search-text" placeholder="Что-то ищите?">
+          </div>
+          <div class="social-links">
+            <a href="#" class="facebook"></a>
+            <a href="#" class="twitter"></a>
+            <a href="#" class="vk"></a>
+            <a href="#" class="youtube"></a>
+          </div>
+        </div>
+        <div class="footer-menus">
+          <nav>
+            <ul>
+              <li><a href="#">Тарифы и услуги</a></li>
+              <li><a href="#">Дополнительные услуги</a></li>
+              <li><a href="#">Оборудование</a></li>
+              <li><a href="#">Список каналов</a></li>
+              <li><a href="#">Onlime-бонус</a></li>
+            </ul>
+            <ul>
+              <li><a href="#">Офисы</a></li>
+              <li><a href="#">О компании</a></li>
+              <li><a href="#">Документы</a></li>
+              <li><a href="#">Вакансии</a></li>
+              <li><a href="#">Акции</a></li>
+            </ul>
+            <ul>
+              <li><a href="#">Помощь</a></li>
+              <li><a href="#">FAQ</a></li>
+              <li><a href="#">Форум</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="footer-copy">© 2015 ОАО «Ростелеком». Все права защищены.</div>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
