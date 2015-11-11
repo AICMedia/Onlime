@@ -1,6 +1,10 @@
 $(document).ready(function() {
 // start
 
+	$('.movies-group__carousel').slick({});
+	$('.movies__carousel').slick({
+		dots: true
+	});
 	$('.tariff-small__carousel').slick({
 		dots: true,
 		arrows: false

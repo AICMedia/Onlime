@@ -1,0 +1,900 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Интернет</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=1">
+  <link rel="stylesheet" href="css/slick.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/musthave.css">
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery.teslalign.js"></script>
+  <script src="js/jquery.circliful.min.js"></script>
+  <script src="js/jquery.formstyler.min.js"></script>
+  <script src="js/slick.min.js"></script>
+
+  <script src="js/scripts.js"></script>
+  <!--[if lt IE 9]>
+  <link rel="stylesheet" href="css/ie.css">
+  <script src="js/html5.js"></script>
+  <![endif]-->
+</head>
+<body>
+  <div class="wrapper">
+    <section class="topbar">
+      <div class="topbar-container">
+        <div class="line clearfix">
+          <a href="#" class="topbar-link topbar-link__sibling">Корпоративным клиентам</a>
+          <a href="#" class="topbar-link">Проверка скорости</a>
+          <a href="#" class="topbar-link">Onlime-Бонус</a>
+          <div class="topbar-support">
+            <span><span>поддержка</span>/<span class="current">подключение</span></span>
+            <strong>8 800 707 80 01</strong>
+            <strong class="current">8 800 707 80 00</strong>
+          </div>
+        </div>
+        <!-- Шапка для мобилок -->
+        <div class="topbar-more">
+          <a href="#" class="topbar-more-link"><span>Еще разделы</span></a>
+          <div class="topbar-more-popup">
+            <nav>
+              <a href="#"><span>Корпоративным клиентам</span></a>
+              <a href="#"><span>Onlime-бонус</span></a>
+            </nav>
+            <ul>
+              <li><span>Поддержка</span> <a href="tel:88007078001">8 800 707 80 01</a></li>
+              <li><span>Подключение</span> <a href="tel:88007078000">8 800 707 80 00</a></li>
+            </ul>
+          </div>
+        </div>
+        <!-- Конец шапки для мобилок -->
+        <div class="topbar-more">
+          <a href="#"><span>Еще разделы</span></a>
+        </div>
+        <div class="right-links">
+          <div class="right-link popup-link" data-id="login-popup">
+            <span class="ico ico-profile">Личный кабинет</span>
+            <span class="bg"></span>
+          </div>
+          <div class="right-link popup-link" data-id="payment-popup">
+            <span class="ico ico-payment">Оплатить</span>
+            <span class="bg"></span>
+          </div>
+
+          <div class="fill-background"></div>
+
+          <div id="payment-popup" class="popup">
+            <div class="popup-close"></div>
+            <div class="form-block">
+              <input type="text" class="form-text" placeholder="Номер лицевого счета">
+            </div>
+            <div class="form-block">
+              <input type="text" class="form-text" placeholder="Сумма (рубли)">
+            </div>
+            <div class="form-block">
+              <div class="other-item">
+                <label class="checkbox checker">
+                  <input type="checkbox" id="rules-check">
+                </label>
+                <div for="other-1" class="other-content">
+                  <div class="title">Я согласен</div>
+                  <span class="description">с <a href="#" class="blue-link">Правилами оплаты услуг связи</a></span>
+                </div>
+              </div>
+            </div>
+            <div class="form-submit">
+              <button type="submit" class="btn"><span>Перейти к оплате</span></button>
+            </div>
+          </div>
+
+          <div id="login-popup" class="popup">
+            <div class="popup-close"></div>
+            <div class="form-block">
+              <input type="text" class="form-text" placeholder="Логин">
+            </div>
+            <div class="form-block">
+              <input type="password" class="form-text" placeholder="Пароль">
+            </div>
+            <div class="form-block form-block__remind">
+              <a href="#" class="blue-link">Забыли логин или пароль?</a>
+            </div>
+            <div class="form-submit">
+              <button type="submit" class="btn"><span>Войти в личный кабинет</span></button>
+            </div>
+          </div>
+
+          <!-- Всплывашки для мобилок -->
+          <div id="menu-popup" class="popup popup-parent">
+            <div class="popup-close"></div>
+            <h4>Меню</h4>
+            <ul>
+              <li class="current"><a href="#"><span>Интернет</span></a></li>
+              <li><a href="#"><span>Телевидение</span></a></li>
+              <li><a href="#" class="popup-link" data-id="menu-internet-tv"><span>Интернет+ТВ</span></a></li>
+              <li><a href="#"><span>Домашний телефон</span></a></li>
+              <li><a href="#"><span>Интернет-магазин</span></a></li>
+            </ul>
+          </div>
+
+          <div id="menu-internet-tv" class="popup popup-children">
+            <div class="popup-close"></div>
+            <h4>Интрнет+ТВ</h4>
+            <ul>
+              <li><a href="#"><span>Тарифы</span></a></li>
+              <li><a href="#"><span>Домашний телефон</span></a></li>
+              <li><a href="#"><span>Дополнительные телеканалы</span></a></li>
+              <li><a href="#"><span>Оборудование</span></a></li>
+              <li><a href="#"><span>Дополнительные услуги</span></a></li>
+            </ul>
+
+            <a href="#" class="offer">
+              <span class="offer-title">Приведи друга и выйграй iPad</span>
+              <span class="offer-description">Каждый месяц — новый победитель!</span>
+
+              <span class="offer-btn">
+                <span><i>Подробнее</i></span>
+              </span>
+
+              <span class="offer-image" style="background-image: url('images/del/offer-4.png')"></span>
+              <span class="offer-image offer-image-hover" style="background-image: url('images/del/offer-4-hover.png')"></span>
+            </a>
+
+            <div class="popup-children-arrow"></div>
+          </div>
+          <!-- Конец всплывашек для мобилок -->
+
+        </div>
+      </div>
+    </section>
+
+    <header class="header">
+      <div class="line clearfix">
+        <a href="#" class="logo">
+          <img src="images/logo.png" width="208" height="60" alt="">
+        </a>
+        <div class="header-menu-small popup-link" data-id="menu-popup"></div>
+        <nav class="header-menu">
+          <ul>
+            <li class="current"><a href="#"><span>Интернет</span></a></li>
+            <li><a href="#"><span>Телевидение</span></a></li>
+            <li><a href="#internet-tv" class="open-link"><span>Интернет+ТВ</span></a></li>
+            <li><a href="#"><span>Домашний телефон</span></a></li>
+            <li><a href="#"><span>Интернет-магазин</span></a></li>
+          </ul>
+        </nav>
+        <div class="header-menu-small"></div>
+      </div>
+      <div class="popup-nav" id="internet-tv">
+        <div class="line clearfix">
+          <div class="popup-nav-close"></div>
+          <h3>Интернет+ТВ</h3>
+          <nav>
+            <ul>
+              <li><a href="#"><span>Тарифы</span></a></li>
+              <li><a href="#"><span>Домашний телефон</span></a></li>
+              <li><a href="#"><span>Дополнительные телеканалы</span></a></li>
+              <li><a href="#"><span>Оборудование</span></a></li>
+              <li><a href="#"><span>Дополнительные услуги</span></a></li>
+            </ul>
+          </nav>
+          <div class="popup-questions">
+            <h4>Частые вопросы</h4>
+            <ul>
+              <li><a href="#" class="blue-link">Как можно проверить состояние Лицевого Счета?</a></li>
+              <li><a href="#" class="blue-link">Я хочу подключить второй компьютер к Интернету. Что мне для этого нужно?</a></li>
+            </ul>
+          </div>
+          <a href="#" class="offer">
+            <span class="offer-title">Приведи друга и выйграй iPad</span>
+            <span class="offer-description">Каждый месяц — новый победитель!</span>
+
+            <span class="offer-btn">
+              <span><i>Подбробнее</i></span>
+            </span>
+
+            <span class="offer-image" style="background-image: url('images/del/offer-4.png')"></span>
+            <span class="offer-image offer-image-hover" style="background-image: url('images/del/offer-4-hover.png')"></span>
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <section class="sub-header">
+      <div class="line">
+        <nav class="breadcrumb">
+          <a href="#" class="home"></a>
+          <a href="#"><span>Интернет</span></a>
+        </nav>
+      </div>
+    </section>
+
+    <section class="movies section_with_fill">
+      <div class="line_small">
+        <div class="movies__carousel">
+          <div class="movies__slide">
+            <div class="movie movie_premiere">
+              <div class="layout-grid__row">
+                <div class="layout-grid__column movie__column-left">
+                  <div class="movie__cover" style="background-image: url('images/example-movie-3.2x.jpg');">
+                    <a href="#" class="movie__play">
+                      <span>Трейлер</span>
+                    </a>
+                  </div>
+                </div>
+                <div class="layout-grid__column movie__column-right">
+                  <div class="movie__container">
+                    <div class="movie__container-row clearfix movie-info">
+                      <div class="movie-info__column">
+                        <span class="movie-info__value">2013</span>
+                      </div>
+                      <div class="movie-info__column">
+                        <span class="movie-info__value">Триллер, драмма, криминал</span>
+                      </div>
+                      <div class="movie-info__column">
+                        <span class="movie-info__country">
+                          <img src="images/flag.png" srcset="images/flag.2x.png 2x" alt="" />
+                        </span>
+                        <span class="movie-info__value">США</span>
+                      </div>
+                    </div>
+                    <div class="movie__container-row clearfix">
+                      <div class="movie__age-limit">
+                        <span>16+</span>
+                      </div>
+                      <div class="movie__length">
+                        <span>02:03</span>
+                      </div>
+                      <div class="movie__name">Шерлок</div>
+                    </div>
+                    <div class="movie__container-row clearfix">
+                      <div class="movie__description">
+                        <p>«Ше́рлок», также известен как «Ше́рлок Холмс» — британский телесериал компании Hartswood Films, снятый... <a href="#">Подробнее</a></p>
+                      </div>
+                    </div>
+                    <div class="movie__container-row clearfix">
+                      <div class="movie-rating">
+                        <div class="movie-rating__agency">
+                          <img src="images/kinopoisk.png" srcset="images/kinopoisk.2x.png 2x" alt="" />
+                        </div>
+                        <ul class="movie-rating__stars clearfix">
+                          <li class="movie-rating__star"></li>
+                          <li class="movie-rating__star"></li>
+                          <li class="movie-rating__star"></li>
+                          <li class="movie-rating__star"></li>
+                          <li class="movie-rating__star"></li>
+                          <li class="movie-rating__star"></li>
+                          <li class="movie-rating__star"></li>
+                          <li class="movie-rating__star movie-rating__star_empty"></li>
+                          <li class="movie-rating__star movie-rating__star_empty"></li>
+                          <li class="movie-rating__star movie-rating__star_empty"></li>
+                        </ul>
+                        <div class="movie-rating__value">7.0</div>
+
+                      </div>
+                      <div class="movie-rating">
+                        <div class="movie-rating__agency">
+                          <img src="images/imdb.png" srcset="images/imdb.2x.png 2x" alt="" />
+                        </div>
+                        <div class="movie-rating__value">7.0</div>
+                      </div>
+                    </div>
+                    <div class="movie__container-row clearfix">
+                      <a href="#" class="btn movie__btn movie__btn_buy">
+                        <span>Купить 1 серию за 299 ₽</span>
+                      </a>
+                      <a href="#" class="btn movie__btn movie__btn_rent">
+                        <span>На прокат за 50 ₽</span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="movies__slide">
+            <div class="movie movie_premiere">
+              <div class="layout-grid__row">
+                <div class="layout-grid__column movie__column-left">
+                  <div class="movie__cover" style="background-image: url('images/example-movie-3.2x.jpg');">
+                    <a href="#" class="movie__play">
+                      <span>Трейлер</span>
+                    </a>
+                  </div>
+                </div>
+                <div class="layout-grid__column movie__column-right">
+                  <div class="movie__container">
+                    <div class="movie__container-row clearfix movie-info">
+                      <div class="movie-info__column">
+                        <span class="movie-info__value">2013</span>
+                      </div>
+                      <div class="movie-info__column">
+                        <span class="movie-info__value">Триллер, драмма, криминал</span>
+                      </div>
+                      <div class="movie-info__column">
+                        <span class="movie-info__country">
+                          <img src="images/flag.png" srcset="images/flag.2x.png 2x" alt="" />
+                        </span>
+                        <span class="movie-info__value">США</span>
+                      </div>
+                    </div>
+                    <div class="movie__container-row clearfix">
+                      <div class="movie__age-limit">
+                        <span>16+</span>
+                      </div>
+                      <div class="movie__length">
+                        <span>02:03</span>
+                      </div>
+                      <div class="movie__name">Шерлок</div>
+                    </div>
+                    <div class="movie__container-row clearfix">
+                      <div class="movie__description">
+                        <p>«Ше́рлок», также известен как «Ше́рлок Холмс» — британский телесериал компании Hartswood Films, снятый... <a href="#">Подробнее</a></p>
+                      </div>
+                    </div>
+                    <div class="movie__container-row clearfix">
+                      <div class="movie-rating">
+                        <div class="movie-rating__agency">
+                          <img src="images/kinopoisk.png" srcset="images/kinopoisk.2x.png 2x" alt="" />
+                        </div>
+                        <ul class="movie-rating__stars clearfix">
+                          <li class="movie-rating__star"></li>
+                          <li class="movie-rating__star"></li>
+                          <li class="movie-rating__star"></li>
+                          <li class="movie-rating__star"></li>
+                          <li class="movie-rating__star"></li>
+                          <li class="movie-rating__star"></li>
+                          <li class="movie-rating__star"></li>
+                          <li class="movie-rating__star movie-rating__star_empty"></li>
+                          <li class="movie-rating__star movie-rating__star_empty"></li>
+                          <li class="movie-rating__star movie-rating__star_empty"></li>
+                        </ul>
+                        <div class="movie-rating__value">7.0</div>
+
+                      </div>
+                      <div class="movie-rating">
+                        <div class="movie-rating__agency">
+                          <img src="images/imdb.png" srcset="images/imdb.2x.png 2x" alt="" />
+                        </div>
+                        <div class="movie-rating__value">7.0</div>
+                      </div>
+                    </div>
+                    <div class="movie__container-row clearfix">
+                      <a href="#" class="btn movie__btn movie__btn_buy">
+                        <span>Купить 1 серию за 299 ₽</span>
+                      </a>
+                      <a href="#" class="btn movie__btn movie__btn_rent">
+                        <span>На прокат за 50 ₽</span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="layout-grid line_small">
+      <div class="layout-grid__row">
+        <div class="layout-grid__column layout-grid__column_3_4">
+          <div class="movies-group">
+            <div class="movies-group__head clearfix">
+              <h2 class="movies-group__name">Новинки кино</h2>
+              <a href="#" class="movies-group__refresh"></a>
+            </div>
+            <div class="movies-group__body">
+              <div class="layout-grid__row">
+                <div class="layout-grid__column layout-grid__column_1_3">
+                  <div class="movies-snippet movies-snippet_premiere">
+                    <div class="movies-snippet__cover">
+                      <a href="#">
+                        <img src="images/example-movie.jpg" srcset="images/example-movie.2x.jpg 2x" alt="" />
+                      </a>
+                    </div>
+                    <div class="movies-snippet__content">
+                      <a href="#" class="movies-snippet__name">Батальонъ</a>
+                      <span class="movies-snippet__genre">Драма, военный</span>
+                    </div>
+                    <div class="clearfix">
+                      <a href="#" class="movies-snippet__link">На прокат 100 ₽</a>
+                      <span class="movies-snippet__rating">8,9</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="layout-grid__column layout-grid__column_1_3">
+                  <div class="movies-snippet">
+                    <div class="movies-snippet__cover">
+                      <a href="#">
+                        <img src="images/example-movie-2.jpg" srcset="images/example-movie-2.2x.jpg 2x" alt="" />
+                      </a>
+                    </div>
+                    <div class="movies-snippet__content">
+                      <a href="#" class="movies-snippet__name">Ходячие мертвецы</a>
+                      <span class="movies-snippet__genre">Драма, военный</span>
+                    </div>
+                    <div class="clearfix">
+                      <a href="#" class="movies-snippet__link">На прокат 100 ₽</a>
+                      <span class="movies-snippet__rating">8,9</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="layout-grid__column layout-grid__column_1_3">
+                  <div class="movies-snippet">
+                    <div class="movies-snippet__cover">
+                      <a href="#">
+                        <img src="images/example-movie.jpg" srcset="images/example-movie.2x.jpg 2x" alt="" />
+                      </a>
+                    </div>
+                    <div class="movies-snippet__content">
+                      <a href="#" class="movies-snippet__name">Батальонъ</a>
+                      <span class="movies-snippet__genre">Драма, военный</span>
+                    </div>
+                    <div class="clearfix">
+                      <a href="#" class="movies-snippet__link">На прокат 100 ₽</a>
+                      <span class="movies-snippet__rating">8,9</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="movies-group__footer">
+              <a href="#" class="btn-light movies-group__more">
+                <span>Показать ещё</span>
+              </a>
+            </div>
+          </div>
+          <div class="movies-group">
+            <div class="movies-group__head clearfix">
+              <h2 class="movies-group__name">Популярные</h2>
+            </div>
+            <div class="movies-group__body movies-group__carousel">
+              <div class="movies-group__slide">
+                <div class="layout-grid__row">
+                  <div class="layout-grid__column layout-grid__column_1_3">
+                    <div class="movies-snippet movies-snippet_premiere">
+                      <div class="movies-snippet__cover">
+                        <a href="#">
+                          <img src="images/example-movie.jpg" srcset="images/example-movie.2x.jpg 2x" alt="" />
+                        </a>
+                      </div>
+                      <div class="movies-snippet__content">
+                        <a href="#" class="movies-snippet__name">Батальонъ</a>
+                        <span class="movies-snippet__genre">Драма, военный</span>
+                      </div>
+                      <div class="clearfix">
+                        <a href="#" class="movies-snippet__link">На прокат 100 ₽</a>
+                        <span class="movies-snippet__rating">8,9</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="layout-grid__column layout-grid__column_1_3">
+                    <div class="movies-snippet">
+                      <div class="movies-snippet__cover">
+                        <a href="#">
+                          <img src="images/example-movie.jpg" srcset="images/example-movie.2x.jpg 2x" alt="" />
+                        </a>
+                      </div>
+                      <div class="movies-snippet__content">
+                        <a href="#" class="movies-snippet__name">Батальонъ</a>
+                        <span class="movies-snippet__genre">Драма, военный</span>
+                      </div>
+                      <div class="clearfix">
+                        <a href="#" class="movies-snippet__link">На прокат 100 ₽</a>
+                        <span class="movies-snippet__rating">8,9</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="layout-grid__column layout-grid__column_1_3">
+                    <div class="movies-snippet">
+                      <div class="movies-snippet__cover">
+                        <a href="#">
+                          <img src="images/example-movie.jpg" srcset="images/example-movie.2x.jpg 2x" alt="" />
+                        </a>
+                      </div>
+                      <div class="movies-snippet__content">
+                        <a href="#" class="movies-snippet__name">Батальонъ</a>
+                        <span class="movies-snippet__genre">Драма, военный</span>
+                      </div>
+                      <div class="clearfix">
+                        <a href="#" class="movies-snippet__link">На прокат 100 ₽</a>
+                        <span class="movies-snippet__rating">8,9</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="layout-grid__row">
+                  <div class="layout-grid__column layout-grid__column_1_3">
+                    <div class="movies-snippet">
+                      <div class="movies-snippet__cover">
+                        <a href="#">
+                          <img src="images/example-movie.jpg" srcset="images/example-movie.2x.jpg 2x" alt="" />
+                        </a>
+                      </div>
+                      <div class="movies-snippet__content">
+                        <a href="#" class="movies-snippet__name">Батальонъ</a>
+                        <span class="movies-snippet__genre">Драма, военный</span>
+                      </div>
+                      <div class="clearfix">
+                        <a href="#" class="movies-snippet__link">На прокат 100 ₽</a>
+                        <span class="movies-snippet__rating">8,9</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="layout-grid__column layout-grid__column_1_3">
+                    <div class="movies-snippet">
+                      <div class="movies-snippet__cover">
+                        <a href="#">
+                          <img src="images/example-movie-2.jpg" srcset="images/example-movie-2.2x.jpg 2x" alt="" />
+                        </a>
+                      </div>
+                      <div class="movies-snippet__content">
+                        <a href="#" class="movies-snippet__name">Батальонъ</a>
+                        <span class="movies-snippet__genre">Драма, военный</span>
+                      </div>
+                      <div class="clearfix">
+                        <a href="#" class="movies-snippet__link">На прокат 100 ₽</a>
+                        <span class="movies-snippet__rating">8,9</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="layout-grid__column layout-grid__column_1_3">
+                    <div class="movies-snippet">
+                      <div class="movies-snippet__cover">
+                        <a href="#">
+                          <img src="images/example-movie.jpg" srcset="images/example-movie.2x.jpg 2x" alt="" />
+                        </a>
+                      </div>
+                      <div class="movies-snippet__content">
+                        <a href="#" class="movies-snippet__name">Батальонъ</a>
+                        <span class="movies-snippet__genre">Драма, военный</span>
+                      </div>
+                      <div class="clearfix">
+                        <a href="#" class="movies-snippet__link">На прокат 100 ₽</a>
+                        <span class="movies-snippet__rating">8,9</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="movies-group__slide">
+                <div class="layout-grid__row">
+                  <div class="layout-grid__column layout-grid__column_1_3">
+                    <div class="movies-snippet">
+                      <div class="movies-snippet__cover">
+                        <a href="#">
+                          <img src="images/example-movie.jpg" srcset="images/example-movie.2x.jpg 2x" alt="" />
+                        </a>
+                      </div>
+                      <div class="movies-snippet__content">
+                        <a href="#" class="movies-snippet__name">Батальонъ</a>
+                        <span class="movies-snippet__genre">Драма, военный</span>
+                      </div>
+                      <div class="clearfix">
+                        <a href="#" class="movies-snippet__link">На прокат 100 ₽</a>
+                        <span class="movies-snippet__rating">8,9</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="layout-grid__column layout-grid__column_1_3">
+                    <div class="movies-snippet">
+                      <div class="movies-snippet__cover">
+                        <a href="#">
+                          <img src="images/example-movie.jpg" srcset="images/example-movie.2x.jpg 2x" alt="" />
+                        </a>
+                      </div>
+                      <div class="movies-snippet__content">
+                        <a href="#" class="movies-snippet__name">Батальонъ</a>
+                        <span class="movies-snippet__genre">Драма, военный</span>
+                      </div>
+                      <div class="clearfix">
+                        <a href="#" class="movies-snippet__link">На прокат 100 ₽</a>
+                        <span class="movies-snippet__rating">8,9</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="layout-grid__column layout-grid__column_1_3">
+                    <div class="movies-snippet">
+                      <div class="movies-snippet__cover">
+                        <a href="#">
+                          <img src="images/example-movie.jpg" srcset="images/example-movie.2x.jpg 2x" alt="" />
+                        </a>
+                      </div>
+                      <div class="movies-snippet__content">
+                        <a href="#" class="movies-snippet__name">Батальонъ</a>
+                        <span class="movies-snippet__genre">Драма, военный</span>
+                      </div>
+                      <div class="clearfix">
+                        <a href="#" class="movies-snippet__link">На прокат 100 ₽</a>
+                        <span class="movies-snippet__rating">8,9</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="layout-grid__row">
+                  <div class="layout-grid__column layout-grid__column_1_3">
+                    <div class="movies-snippet">
+                      <div class="movies-snippet__cover">
+                        <a href="#">
+                          <img src="images/example-movie.jpg" srcset="images/example-movie.2x.jpg 2x" alt="" />
+                        </a>
+                      </div>
+                      <div class="movies-snippet__content">
+                        <a href="#" class="movies-snippet__name">Батальонъ</a>
+                        <span class="movies-snippet__genre">Драма, военный</span>
+                      </div>
+                      <div class="clearfix">
+                        <a href="#" class="movies-snippet__link">На прокат 100 ₽</a>
+                        <span class="movies-snippet__rating">8,9</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="layout-grid__column layout-grid__column_1_3">
+                    <div class="movies-snippet">
+                      <div class="movies-snippet__cover">
+                        <a href="#">
+                          <img src="images/example-movie.jpg" srcset="images/example-movie.2x.jpg 2x" alt="" />
+                        </a>
+                      </div>
+                      <div class="movies-snippet__content">
+                        <a href="#" class="movies-snippet__name">Батальонъ</a>
+                        <span class="movies-snippet__genre">Драма, военный</span>
+                      </div>
+                      <div class="clearfix">
+                        <a href="#" class="movies-snippet__link">На прокат 100 ₽</a>
+                        <span class="movies-snippet__rating">8,9</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="layout-grid__column layout-grid__column_1_3">
+                    <div class="movies-snippet">
+                      <div class="movies-snippet__cover">
+                        <a href="#">
+                          <img src="images/example-movie.jpg" srcset="images/example-movie.2x.jpg 2x" alt="" />
+                        </a>
+                      </div>
+                      <div class="movies-snippet__content">
+                        <a href="#" class="movies-snippet__name">Батальонъ</a>
+                        <span class="movies-snippet__genre">Драма, военный</span>
+                      </div>
+                      <div class="clearfix">
+                        <a href="#" class="movies-snippet__link">На прокат 100 ₽</a>
+                        <span class="movies-snippet__rating">8,9</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="movies-group">
+            <div class="movies-group__head clearfix">
+              <h2 class="movies-group__name">Сериалы</h2>
+            </div>
+            <div class="movies-group__body movies-group__carousel">
+              <div class="movies-group__slide">
+                <div class="layout-grid__row">
+                  <div class="layout-grid__column layout-grid__column_1_3">
+                    <div class="movies-snippet">
+                      <div class="movies-snippet__cover">
+                        <a href="#">
+                          <img src="images/example-movie.jpg" srcset="images/example-movie.2x.jpg 2x" alt="" />
+                        </a>
+                      </div>
+                      <div class="movies-snippet__content">
+                        <a href="#" class="movies-snippet__name">Батальонъ</a>
+                        <span class="movies-snippet__genre">Драма, военный</span>
+                      </div>
+                      <div class="clearfix">
+                        <a href="#" class="movies-snippet__link">На прокат 100 ₽</a>
+                        <span class="movies-snippet__rating">8,9</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="layout-grid__column layout-grid__column_1_3">
+                    <div class="movies-snippet">
+                      <div class="movies-snippet__cover">
+                        <a href="#">
+                          <img src="images/example-movie.jpg" srcset="images/example-movie.2x.jpg 2x" alt="" />
+                        </a>
+                      </div>
+                      <div class="movies-snippet__content">
+                        <a href="#" class="movies-snippet__name">Батальонъ</a>
+                        <span class="movies-snippet__genre">Драма, военный</span>
+                      </div>
+                      <div class="clearfix">
+                        <a href="#" class="movies-snippet__link">На прокат 100 ₽</a>
+                        <span class="movies-snippet__rating">8,9</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="layout-grid__column layout-grid__column_1_3">
+                    <div class="movies-snippet">
+                      <div class="movies-snippet__cover">
+                        <a href="#">
+                          <img src="images/example-movie.jpg" srcset="images/example-movie.2x.jpg 2x" alt="" />
+                        </a>
+                      </div>
+                      <div class="movies-snippet__content">
+                        <a href="#" class="movies-snippet__name">Батальонъ</a>
+                        <span class="movies-snippet__genre">Драма, военный</span>
+                      </div>
+                      <div class="clearfix">
+                        <a href="#" class="movies-snippet__link">На прокат 100 ₽</a>
+                        <span class="movies-snippet__rating">8,9</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="layout-grid__row">
+                  <div class="layout-grid__column layout-grid__column_1_3">
+                    <div class="movies-snippet">
+                      <div class="movies-snippet__cover">
+                        <a href="#">
+                          <img src="images/example-movie.jpg" srcset="images/example-movie.2x.jpg 2x" alt="" />
+                        </a>
+                      </div>
+                      <div class="movies-snippet__content">
+                        <a href="#" class="movies-snippet__name">Батальонъ</a>
+                        <span class="movies-snippet__genre">Драма, военный</span>
+                      </div>
+                      <div class="clearfix">
+                        <a href="#" class="movies-snippet__link">На прокат 100 ₽</a>
+                        <span class="movies-snippet__rating">8,9</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="layout-grid__column layout-grid__column_1_3">
+                    <div class="movies-snippet">
+                      <div class="movies-snippet__cover">
+                        <a href="#">
+                          <img src="images/example-movie.jpg" srcset="images/example-movie.2x.jpg 2x" alt="" />
+                        </a>
+                      </div>
+                      <div class="movies-snippet__content">
+                        <a href="#" class="movies-snippet__name">Батальонъ</a>
+                        <span class="movies-snippet__genre">Драма, военный</span>
+                      </div>
+                      <div class="clearfix">
+                        <a href="#" class="movies-snippet__link">На прокат 100 ₽</a>
+                        <span class="movies-snippet__rating">8,9</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="layout-grid__column layout-grid__column_1_3">
+                    <div class="movies-snippet">
+                      <div class="movies-snippet__cover">
+                        <a href="#">
+                          <img src="images/example-movie.jpg" srcset="images/example-movie.2x.jpg 2x" alt="" />
+                        </a>
+                      </div>
+                      <div class="movies-snippet__content">
+                        <a href="#" class="movies-snippet__name">Батальонъ</a>
+                        <span class="movies-snippet__genre">Драма, военный</span>
+                      </div>
+                      <div class="clearfix">
+                        <a href="#" class="movies-snippet__link">На прокат 100 ₽</a>
+                        <span class="movies-snippet__rating">8,9</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="movies-group__slide">
+                <div class="layout-grid__row">
+                  <div class="layout-grid__column layout-grid__column_1_3">
+                    <div class="movies-snippet">
+                      <div class="movies-snippet__cover">
+                        <a href="#">
+                          <img src="images/example-movie.jpg" srcset="images/example-movie.2x.jpg 2x" alt="" />
+                        </a>
+                      </div>
+                      <div class="movies-snippet__content">
+                        <a href="#" class="movies-snippet__name">Батальонъ</a>
+                        <span class="movies-snippet__genre">Драма, военный</span>
+                      </div>
+                      <div class="clearfix">
+                        <a href="#" class="movies-snippet__link">На прокат 100 ₽</a>
+                        <span class="movies-snippet__rating">8,9</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="layout-grid__column layout-grid__column_1_3">
+                    <div class="movies-snippet">
+                      <div class="movies-snippet__cover">
+                        <a href="#">
+                          <img src="images/example-movie.jpg" srcset="images/example-movie.2x.jpg 2x" alt="" />
+                        </a>
+                      </div>
+                      <div class="movies-snippet__content">
+                        <a href="#" class="movies-snippet__name">Батальонъ</a>
+                        <span class="movies-snippet__genre">Драма, военный</span>
+                      </div>
+                      <div class="clearfix">
+                        <a href="#" class="movies-snippet__link">На прокат 100 ₽</a>
+                        <span class="movies-snippet__rating">8,9</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="layout-grid__column layout-grid__column_1_3">
+                    <div class="movies-snippet">
+                      <div class="movies-snippet__cover">
+                        <a href="#">
+                          <img src="images/example-movie.jpg" srcset="images/example-movie.2x.jpg 2x" alt="" />
+                        </a>
+                      </div>
+                      <div class="movies-snippet__content">
+                        <a href="#" class="movies-snippet__name">Батальонъ</a>
+                        <span class="movies-snippet__genre">Драма, военный</span>
+                      </div>
+                      <div class="clearfix">
+                        <a href="#" class="movies-snippet__link">На прокат 100 ₽</a>
+                        <span class="movies-snippet__rating">8,9</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="layout-grid__row">
+                  <div class="layout-grid__column layout-grid__column_1_3">
+                    <div class="movies-snippet">
+                      <div class="movies-snippet__cover">
+                        <a href="#">
+                          <img src="images/example-movie.jpg" srcset="images/example-movie.2x.jpg 2x" alt="" />
+                        </a>
+                      </div>
+                      <div class="movies-snippet__content">
+                        <a href="#" class="movies-snippet__name">Батальонъ</a>
+                        <span class="movies-snippet__genre">Драма, военный</span>
+                      </div>
+                      <div class="clearfix">
+                        <a href="#" class="movies-snippet__link">На прокат 100 ₽</a>
+                        <span class="movies-snippet__rating">8,9</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="layout-grid__column layout-grid__column_1_3">
+                    <div class="movies-snippet">
+                      <div class="movies-snippet__cover">
+                        <a href="#">
+                          <img src="images/example-movie.jpg" srcset="images/example-movie.2x.jpg 2x" alt="" />
+                        </a>
+                      </div>
+                      <div class="movies-snippet__content">
+                        <a href="#" class="movies-snippet__name">Батальонъ</a>
+                        <span class="movies-snippet__genre">Драма, военный</span>
+                      </div>
+                      <div class="clearfix">
+                        <a href="#" class="movies-snippet__link">На прокат 100 ₽</a>
+                        <span class="movies-snippet__rating">8,9</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="layout-grid__column layout-grid__column_1_3">
+                    <div class="movies-snippet">
+                      <div class="movies-snippet__cover">
+                        <a href="#">
+                          <img src="images/example-movie.jpg" srcset="images/example-movie.2x.jpg 2x" alt="" />
+                        </a>
+                      </div>
+                      <div class="movies-snippet__content">
+                        <a href="#" class="movies-snippet__name">Батальонъ</a>
+                        <span class="movies-snippet__genre">Драма, военный</span>
+                      </div>
+                      <div class="clearfix">
+                        <a href="#" class="movies-snippet__link">На прокат 100 ₽</a>
+                        <span class="movies-snippet__rating">8,9</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="layout-grid__column layout-grid__column_1_4"></div>
+      </div>
+    </section>
+
+  </body>
+</html>
