@@ -492,7 +492,7 @@
   margin: 0 10px;
 }
 .movies__sticky {
-  padding: 86px 0 0;
+  padding-top: 86px;
 }
 .movies__carousel .slick-list {
   margin-left: -10px;
