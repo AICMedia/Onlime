@@ -1,6 +1,17 @@
 $(document).ready(function() {
 // start
 
+	$('.movies-filter__slider').slider({
+		range: true,
+		min: 1920,
+		max: 2016,
+		values: [1980, 2010],
+		slide: function (event, ui) {
+			$('.movies-filter__range-from').html(ui.values[0]);
+			$('.movies-filter__range-to').html(ui.values[1]);
+		}
+	});
+
 	$('.movies-group__carousel').slick({});
 	$('.movies__carousel').slick({
 		dots: true
