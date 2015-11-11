@@ -301,7 +301,7 @@
   margin-bottom: 20px;
 }
 .layout-grid__row {
-  margin: 0 -12px;
+  margin: 0 -10px;
 }
 .layout-grid__row::after,
 .layout-grid__row::before {
@@ -312,7 +312,7 @@
   clear: both;
 }
 .layout-grid__column {
-  padding: 0 12px;
+  padding: 0 10px;
   float: left;
 }
 .layout-grid__column_right {
@@ -417,10 +417,10 @@
   margin-bottom: 20px;
 }
 .movies-group__slide {
-  margin: 0 12px;
+  margin: 0 10px;
 }
 .movies-group__carousel .slick-list {
-  margin: 0 -12px;
+  margin: 0 -10px;
 }
 .movies-group__carousel .slick-arrow {
   position: absolute;
@@ -483,11 +483,11 @@
   background-image: linear-gradient(bottom, #f7f8f8 0, #ffffff 100%);
 }
 .movies__slide {
-  margin: 0 12px;
+  margin: 0 10px;
 }
 .movies__carousel .slick-list {
-  margin-left: -12px;
-  margin-right: -12px;
+  margin-left: -10px;
+  margin-right: -10px;
 }
 .movies__carousel .slick-dots {
   display: none !important;
@@ -580,6 +580,14 @@
 .movie__age-limit > span {
   opacity: .4;
 }
+.movie__container {
+  padding-left: 15px;
+}
+@media screen and (max-width: 800px) {
+  .movie__container {
+    padding-left: 0;
+  }
+}
 .movie__length {
   color: #90969b;
   position: relative;
@@ -666,7 +674,7 @@
   margin-left: 10px;
 }
 .movie__column-left {
-  width: 504px;
+  width: 500px;
 }
 .movie__column-right {
   width: 420px;
@@ -744,7 +752,7 @@
 }
 .movie-rating__stars,
 .movie-rating__agency {
-  margin-right: 12px;
+  margin-right: 10px;
 }
 .movie-rating__agency,
 .movie-rating__stars,

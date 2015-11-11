@@ -375,7 +375,7 @@
 
 .layout-grid {
   &__row {
-    margin: 0 -12px;
+    margin: 0 -10px;
 
     &::after,
     &::before {
@@ -389,7 +389,7 @@
   }
 
   &__column {
-    padding: 0 12px;
+    padding: 0 10px;
     float: left;
 
     &_right {
@@ -517,12 +517,12 @@
   }
 
   &__slide {
-    margin: 0 12px;
+    margin: 0 10px;
   }
 
   &__carousel {
     .slick-list {
-      margin: 0 -12px;
+      margin: 0 -10px;
     }
 
     .slick-arrow {
@@ -595,13 +595,13 @@
   background-image: linear-gradient(bottom, #f7f8f8 0, #fff 100%);
 
   &__slide {
-    margin: 0 12px;
+    margin: 0 10px;
   }
 
   &__carousel {
     .slick-list {
-      margin-left: -12px;
-      margin-right: -12px;
+      margin-left: -10px;
+      margin-right: -10px;
     }
 
     .slick-dots {
@@ -703,6 +703,14 @@
     }
   }
 
+  &__container {
+    padding-left: 15px;
+
+    @media screen and (max-width: 800px) {
+      padding-left: 0;
+    }
+  }
+
   &__length {
     color: #90969b;
     position: relative;
@@ -798,7 +806,7 @@
   }
 
   &__column-left {
-    width: 504px;
+    width: 500px;
   }
 
   &__column-right {
@@ -895,7 +903,7 @@
 
   &__stars,
   &__agency {
-    margin-right: 12px;
+    margin-right: 10px;
   }
 
   &__agency,
