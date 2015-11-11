@@ -5,9 +5,12 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=1">
   <link rel="stylesheet" href="css/slick.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/musthave.css">
+
   <script src="js/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.js"></script>
   <script src="js/jquery.teslalign.js"></script>
   <script src="js/jquery.circliful.min.js"></script>
   <script src="js/jquery.formstyler.min.js"></script>
@@ -378,7 +381,7 @@
 
     <section class="layout-grid line_small">
       <div class="layout-grid__row">
-        <div class="layout-grid__column layout-grid__column_3_4">
+        <div class="layout-grid__column layout-grid__column_640">
           <div class="movies-group">
             <div class="movies-group__head clearfix">
               <h2 class="movies-group__name">Новинки кино</h2>
@@ -892,7 +895,70 @@
             </div>
           </div>
         </div>
-        <div class="layout-grid__column layout-grid__column_1_4"></div>
+        <div class="layout-grid__column layout-grid__column_240  movies__sticky">
+          <form class="" action="index.html" method="post">
+            <div class="movies-search">
+              <input type="text" name="name" value="" placeholder="Найти фильм, сериал ....">
+            </div>
+            <div class="movies-filter">
+              <div class="movies-filter__row">
+                <ul class="radio-select">
+                  <li>
+                    <input id="type_1" type="radio" name="type" value="type_1" checked>
+                    <label for="type_1">Все фильмы</label>
+                  </li>
+                  <li>
+                    <input id="type_2" type="radio" name="type" value="type_2">
+                    <label for="type_2">Сериалы</label>
+                  </li>
+                  <li>
+                    <input id="type_3" type="radio" name="type" value="type_3">
+                    <label for="type_3">Новинки</label>
+                  </li>
+                  <li>
+                    <input id="type_4" type="radio" name="type" value="type_4">
+                    <label for="type_4">Рекомендации</label>
+                  </li>
+                </ul>
+              </div>
+              <div class="movies-filter__row">
+                <select class="styler" name="" data-placeholder="Подписки">
+                  <option></option>
+                  <option value="1">Подписка №1</option>
+                  <option value="2">Подписка №2</option>
+                  <option value="3">Подписка №3</option>
+                </select>
+              </div>
+              <div class="movies-filter__row">
+                <select class="styler" name="" data-placeholder="Жанр">
+                  <option></option>
+                  <option value="2">Боевик</option>
+                  <option value="1">Детектив</option>
+                  <option value="1">Комедия</option>
+                  <option value="3">Фантастика</option>
+                </select>
+              </div>
+              <div class="movies-filter__row">
+                <select class="styler" name="" data-placeholder="Страна">
+                  <option></option>
+                  <option value="3">СССР</option>
+                  <option value="1">Россия</option>
+                  <option value="2">США</option>
+                  <option value="3">Франция</option>
+                </select>
+              </div>
+              <div class="movies-filter__row">
+                <div class="movies-filter__range">
+                  <label for="">Год премьеры: <span class="movies-filter__range-from">1980</span> – <span class="movies-filter__range-to">2010</span></label>
+                  <div class="movies-filter__slider"></div>
+                </div>
+              </div>
+              <div class="movies-filter__row">
+                <input class="movies-filter__reset" type="reset" value="Очистить фильтры">
+              </div>
+            </div>
+          </form>
+        </div>
       </div>
     </section>
 
