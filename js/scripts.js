@@ -1,6 +1,25 @@
 $(document).ready(function() {
 // start
 
+	$(document).on('click', '.movies-filter__handle-btn', function (event) {
+		event.preventDefault();
+		$('.movies-filter__properties').toggleClass('visible');
+		$('.movies-filter__overlay').toggleClass('visible');
+	});
+
+	$(document).on('click', '.movies-filter__overlay, .movies-filter__apply-btn', function (event) {
+		event.preventDefault();
+		$('.movies-filter__overlay').removeClass('visible');
+		$('.movies-filter__properties').removeClass('visible');
+	});
+
+
+	$(document).on('focusin', '.search', function (event) {
+		$(this).addClass('search_focusin');
+	}).on('focusout', '.search', function (event) {
+		$(this).removeClass('search_focusin');
+	})
+
 	$('.movies-filter__slider').slider({
 		range: true,
 		min: 1920,
