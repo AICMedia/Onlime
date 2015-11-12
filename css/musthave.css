@@ -1,42 +1,28 @@
-.p-features__row {
-  margin-left: -13px;
-  margin-right: -13px;
-}
-.p-features__col {
-  float: left;
-  width: 50%;
-  padding: 0 13px;
-}
-@media screen and (max-width: 800px) {
-  .p-features__col {
-    width: 100%;
-  }
-}
-.p-feature {
+.phone-feature {
   text-align: center;
   padding: 30px;
   border: 1px solid #e9ecec;
   margin-bottom: 26px;
 }
-.p-feature__icon {
+.phone-feature__icon {
   font-size: 0;
   height: 60px;
   line-height: 60px;
 }
-.p-feature__icon > img {
+.phone-feature__icon > img {
   vertical-align: middle;
 }
-.p-feature__name {
+.phone-feature__name {
   font-family: 'Myriad Pro', sans-serif;
   font-size: 26px;
   line-height: 1;
   margin: 20px 0 15px;
 }
-.p-feature__description {
+.phone-feature__description {
   color: #90969b;
   line-height: 22px;
 }
-.p-feature__action {
+.phone-feature__action {
   margin-top: 35px;
 }
 .p-tariff h3 {
@@ -190,6 +176,10 @@
   border: 1px solid #e7e7e7;
   padding: 25px;
   background: #fff;
+  display: none;
+}
+.ap-options__tab.active {
+  display: block;
 }
 .ap-options__icon {
   float: left;
@@ -232,29 +222,24 @@
   font-size: 0;
   line-height: 0;
 }
-.sp-examples__row {
-  margin: 0 -20px;
+.phone-service__name {
+  font: 18px/24px 'Myriad Pro Regular', sans-serif;
 }
-.sp-examples__col {
-  float: left;
-  width: 33.333%;
-  padding: 0 20px;
+.phone-service__description {
+  color: #90969b;
+  font-size: 14px;
+  line-height: 22px;
 }
-@media screen and (max-width: 800px) {
-  .sp-examples__col {
-    width: 100%;
-  }
-}
-.sp-example {
-  margin-bottom: 30px;
+.phone-service__description a {
+  color: #0091ff;
 }
 @media screen and (max-width: 800px) {
-  .sp-example {
+  .phone-service {
     text-align: center;
     margin-bottom: 50px;
   }
 }
-.sp-example__icon {
+.phone-service__icon {
   margin: 25px 0;
 }
 .b-article {
@@ -267,19 +252,6 @@
 }
 .b-article_bottom {
   margin-bottom: -52px;
-}
-.b-article__row {
-  margin: 0 -40px;
-}
-.b-article__col {
-  padding: 0 40px;
-  float: left;
-  width: 50%;
-}
-@media screen and (max-width: 800px) {
-  .b-article__col {
-    width: 100%;
-  }
 }
 @media screen and (max-width: 800px) {
   .b-article__image {
