@@ -3,14 +3,14 @@ $(document).ready(function() {
 
 	$(document).on('click', '.movies-filter__handle-btn', function (event) {
 		event.preventDefault();
-		$('.movies-filter__properties').toggleClass('visible');
-		$('.movies-filter__overlay').toggleClass('visible');
+		$('.movies-filter__properties-wrapper').toggleClass('visible');
+
+
 	});
 
 	$(document).on('click', '.movies-filter__overlay, .movies-filter__apply-btn', function (event) {
 		event.preventDefault();
-		$('.movies-filter__overlay').removeClass('visible');
-		$('.movies-filter__properties').removeClass('visible');
+		$('.movies-filter__properties-wrapper').removeClass('visible');
 	});
 
 
