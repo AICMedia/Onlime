@@ -51,9 +51,6 @@
           </div>
         </div>
         <!-- Конец шапки для мобилок -->
-        <div class="topbar-more">
-          <a href="#"><span>Еще разделы</span></a>
-        </div>
         <div class="right-links">
           <div class="right-link popup-link" data-id="login-popup">
             <span class="ico ico-profile">Личный кабинет</span>
@@ -217,14 +214,14 @@
           <div class="movies__slide">
             <div class="movie movie_premiere">
               <div class="layout-grid__row">
-                <div class="layout-grid__column movie__column-left">
+                <div class="layout-grid__column layout-grid__column_480">
                   <div class="movie__cover" style="background-image: url('images/example-movie-3.2x.jpg');">
                     <a href="#" class="movie__play">
                       <span>Трейлер</span>
                     </a>
                   </div>
                 </div>
-                <div class="layout-grid__column movie__column-right">
+                <div class="layout-grid__column layout-grid__column_400">
                   <div class="movie__container">
                     <div class="movie__container-row clearfix movie-info">
                       <div class="movie-info__column">
@@ -381,6 +378,99 @@
 
     <section class="layout-grid line_small">
       <div class="layout-grid__row">
+        <div class="layout-grid__column layout-grid__column_240 layout-grid__column_right">
+          <div class="movies-filter">
+            <div class="movies-filter__overlay"></div>
+            <form action="" method="post">
+              <div class="movies-filter__search search">
+                <input class="search__input" type="text" name="name" value="" placeholder="Найти фильм, сериал ....">
+                <input class="search__submit" type="submit" value="">
+              </div>
+              <div class="movies-filter__handle layout-grid__visible_xs">
+                <a href="#" class="movies-filter__handle-btn simple-btn">Фильтры</a>
+              </div>
+              <div class="movies-filter__properties">
+                <div class="movies-filter__apply layout-grid__visible_xs">
+                  <a href="#" class="btn movies-filter__apply-btn" tabindex="0">
+                    <span>Применить фильтры</span>
+                  </a>
+                </div>
+                <div class="movies-filter__row">
+                  <ul class="radio-select">
+                    <li>
+                      <input id="type_1" type="radio" name="type" value="type_1" checked>
+                      <label for="type_1">Все фильмы</label>
+                    </li>
+                    <li>
+                      <input id="type_2" type="radio" name="type" value="type_2">
+                      <label for="type_2">Сериалы</label>
+                    </li>
+                    <li>
+                      <input id="type_3" type="radio" name="type" value="type_3">
+                      <label for="type_3">Новинки</label>
+                    </li>
+                    <li>
+                      <input id="type_4" type="radio" name="type" value="type_4">
+                      <label for="type_4">Рекомендации</label>
+                    </li>
+                  </ul>
+                </div>
+                <div class="movies-filter__row">
+                  <select class="styler" name="" data-placeholder="Подписки">
+                    <option></option>
+                    <option value="1">Подписка №1</option>
+                    <option value="2">Подписка №2</option>
+                    <option value="3">Подписка №3</option>
+                  </select>
+                </div>
+                <div class="movies-filter__row">
+                  <select class="styler" name="" data-placeholder="Жанр">
+                    <option></option>
+                    <option value="2">Боевик</option>
+                    <option value="1">Детектив</option>
+                    <option value="1">Комедия</option>
+                    <option value="3">Фантастика</option>
+                  </select>
+                </div>
+                <div class="movies-filter__row">
+                  <select class="styler" name="" data-placeholder="Страна">
+                    <option></option>
+                    <option value="3">СССР</option>
+                    <option value="1">Россия</option>
+                    <option value="2">США</option>
+                    <option value="3">Франция</option>
+                  </select>
+                </div>
+                <div class="movies-filter__row movies-filter__row_wide">
+                  <div class="layout-grid__row">
+                    <div class="layout-grid__column-xs layout-grid__column_1_2">
+                      <input id="HD" class="styler" type="checkbox" name="name" value="">
+                      <label for="HD">HD</label>
+                    </div>
+                    <div class="layout-grid__column-xs layout-grid__column_1_2">
+                      <input id="3D" class="styler" type="checkbox" name="name" value="">
+                      <label for="3D">3D</label>
+                    </div>
+                  </div>
+                </div>
+                <div class="movies-filter__row">
+                  <div class="movies-filter__range">
+                    <label for="">Год премьеры: <span class="movies-filter__range-from">1980</span> – <span class="movies-filter__range-to">2010</span></label>
+                    <div class="movies-filter__slider"></div>
+                  </div>
+                </div>
+                <div class="movies-filter__row">
+                  <input class="movies-filter__reset" type="reset" value="Очистить фильтры">
+                </div>
+                <div class="movies-filter__apply layout-grid__visible_xs">
+                  <a href="#" class="btn movies-filter__apply-btn" tabindex="0">
+                    <span>Применить фильтры</span>
+                  </a>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
         <div class="layout-grid__column layout-grid__column_640">
           <div class="movies-group">
             <div class="movies-group__head clearfix">
@@ -893,71 +983,12 @@
                 </div>
               </div>
             </div>
+            <div class="movies-group__footer">
+              <a href="#" class="btn-light movies-group__more">
+                <span>Все сериалы</span>
+              </a>
+            </div>
           </div>
-        </div>
-        <div class="layout-grid__column layout-grid__column_240  movies__sticky">
-          <form class="" action="index.html" method="post">
-            <div class="movies-search">
-              <input type="text" name="name" value="" placeholder="Найти фильм, сериал ....">
-            </div>
-            <div class="movies-filter">
-              <div class="movies-filter__row">
-                <ul class="radio-select">
-                  <li>
-                    <input id="type_1" type="radio" name="type" value="type_1" checked>
-                    <label for="type_1">Все фильмы</label>
-                  </li>
-                  <li>
-                    <input id="type_2" type="radio" name="type" value="type_2">
-                    <label for="type_2">Сериалы</label>
-                  </li>
-                  <li>
-                    <input id="type_3" type="radio" name="type" value="type_3">
-                    <label for="type_3">Новинки</label>
-                  </li>
-                  <li>
-                    <input id="type_4" type="radio" name="type" value="type_4">
-                    <label for="type_4">Рекомендации</label>
-                  </li>
-                </ul>
-              </div>
-              <div class="movies-filter__row">
-                <select class="styler" name="" data-placeholder="Подписки">
-                  <option></option>
-                  <option value="1">Подписка №1</option>
-                  <option value="2">Подписка №2</option>
-                  <option value="3">Подписка №3</option>
-                </select>
-              </div>
-              <div class="movies-filter__row">
-                <select class="styler" name="" data-placeholder="Жанр">
-                  <option></option>
-                  <option value="2">Боевик</option>
-                  <option value="1">Детектив</option>
-                  <option value="1">Комедия</option>
-                  <option value="3">Фантастика</option>
-                </select>
-              </div>
-              <div class="movies-filter__row">
-                <select class="styler" name="" data-placeholder="Страна">
-                  <option></option>
-                  <option value="3">СССР</option>
-                  <option value="1">Россия</option>
-                  <option value="2">США</option>
-                  <option value="3">Франция</option>
-                </select>
-              </div>
-              <div class="movies-filter__row">
-                <div class="movies-filter__range">
-                  <label for="">Год премьеры: <span class="movies-filter__range-from">1980</span> – <span class="movies-filter__range-to">2010</span></label>
-                  <div class="movies-filter__slider"></div>
-                </div>
-              </div>
-              <div class="movies-filter__row">
-                <input class="movies-filter__reset" type="reset" value="Очистить фильтры">
-              </div>
-            </div>
-          </form>
         </div>
       </div>
     </section>
