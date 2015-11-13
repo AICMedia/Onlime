@@ -1094,11 +1094,24 @@
       }
 
       &__dropdown {
-        border-top: 1px solid #b6c4ca;
+				position: relative !important;
+				margin: 0;
+				box-shadow: none;
+
+				ul {
+					max-height: 200px !important;
+					background: #f7f8f8;
+				}
 
         li {
           border-left: 0;
           border-right: 0;
+
+					&:last-child,
+					&:first-child {
+						border-radius: 0;
+						border-bottom: 0;
+					}
         }
       }
 
@@ -1290,8 +1303,11 @@
       display: block;
       cursor: pointer;
       padding: 0 20px;
-      transition: .2s ease;
-      transition-property: background-color;
+
+			&:hover {
+				background-color: #83cb20;
+				color: #fff;
+			}
     }
 
     > input {

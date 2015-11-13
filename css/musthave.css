@@ -925,11 +925,24 @@
   padding-right: 20px;
 }
 .movies-filter__row .jq-selectbox__dropdown {
-  border-top: 1px solid #b6c4ca;
+  position: relative !important;
+  margin: 0;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+.movies-filter__row .jq-selectbox__dropdown ul {
+  max-height: 200px !important;
+  background: #f7f8f8;
 }
 .movies-filter__row .jq-selectbox__dropdown li {
   border-left: 0;
   border-right: 0;
+}
+.movies-filter__row .jq-selectbox__dropdown li:last-child,
+.movies-filter__row .jq-selectbox__dropdown li:first-child {
+  -webkit-border-radius: 0;
+          border-radius: 0;
+  border-bottom: 0;
 }
 .movies-filter__row .jq-selectbox__trigger {
   border: none;
@@ -1096,10 +1109,10 @@
   display: block;
   cursor: pointer;
   padding: 0 20px;
-  -webkit-transition: .2s ease;
-          transition: .2s ease;
-  -webkit-transition-property: background-color;
-          transition-property: background-color;
+}
+.radio-select > li > label:hover {
+  background-color: #83cb20;
+  color: #fff;
 }
 .radio-select > li > input {
   display: none;
