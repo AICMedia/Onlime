@@ -108,6 +108,9 @@
         background: #f7f8f8;
       }
     }
+    @media screen and (max-width: 800px) {
+      display: none;
+    }
   }
 
   &__name {
@@ -136,6 +139,29 @@
 
     &:last-child {
       padding-bottom: 10px;
+    }
+
+    .tariff-small {
+      background: #f7f8f8;
+      margin: 20px 0;
+      padding-bottom: 10px;
+    }
+
+    .tariff-small-line {
+      margin-top: 10px;
+      // padding-top: 10px;
+      // padding-bottom: 10px;
+      .btn-light {
+        margin: 10px 0;
+        width: 100% !important;
+        padding: 2px;
+
+        > span {
+          text-align: center;
+          width:  100% !important;
+          margin: 0;
+        }
+      }
     }
   }
 
