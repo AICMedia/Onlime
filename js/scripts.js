@@ -428,7 +428,7 @@ $(document).ready(function() {
 			    		$('.ny_footer').css({height: 380}, 0);
 						$('.ny_footer .n_0, .ny_footer .add_move').removeClass('active');
 			    	} else {
-					    if(counter.getNext() > 40 && counter.getNext() < 600){
+					    if(counter.getNext() > 40 && counter.getNext() < 60){
 						    	$('.ny_footer .n_3').addClass('go');
 						    	$('.ny_footer .n_2').addClass('go');
 					    	setTimeout(function() {
