@@ -431,7 +431,7 @@ $(document).ready(function() {
 					    if(counter.getNext() > 80 && counter.getNext() < 120){
 						    	$('.ny_footer .n_3').addClass('go');
 						    	$('.ny_footer .n_2').addClass('go');
-					    	setTimeout(function() {
+					    	setTimeout(function(400) {
 						    	$('.ny_footer .n_3').removeClass('go');
 						    	$('.ny_footer .n_2').removeClass('go');
 					    	},450);
