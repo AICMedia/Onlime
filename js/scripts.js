@@ -435,8 +435,8 @@ $(document).ready(function() {
 						    	$('.ny_footer .n_3').removeClass('go');
 						    	$('.ny_footer .n_2').removeClass('go');
 						setTimeout(function(){
-						    	$('.ny_footer .n_3').removeClass('go');
-						    	$('.ny_footer .n_2').removeClass('go');
+						    	$('.ny_footer .n_3').addClass('go');
+						    	$('.ny_footer .n_2').addClass('go');
 						setTimeout(function(){
 						    	$('.ny_footer .n_3').removeClass('go');
 						    	$('.ny_footer .n_2').removeClass('go');
