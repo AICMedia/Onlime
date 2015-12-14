@@ -340,6 +340,127 @@ $(document).ready(function() {
 	toggleBlockPrice();
 	alignPocket();
 
+
+	newYear();
+
+
+
+	//NY
+	function newYear(){
+
+	lock = 0;
+
+	  var winh = $(window).height(),
+	  	  heightstart = winh-380;
+
+	  $('.ny_footer').height(380);
+
+	  $('.ny_footer .n_0').height(winh);
+		
+
+		function makeCounter() {
+		  currentCount = 1;
+
+		  return {
+		    getNext: function() {
+		      return currentCount++;
+		    },
+
+		    reset: function() {
+		      currentCount = 1;
+		    }
+		  };
+		}
+
+		var counter = makeCounter();	
+
+
+
+	  $(window).scroll(function() {
+
+		if(lock==0){
+			lock = 1
+			// Функция для добавления обработчика событий
+			function addHandler(object, event, handler, useCapture) {
+			    if (object.addEventListener) {
+			        object.addEventListener(event, handler, useCapture ? useCapture : false);
+			    } else if (object.attachEvent) {
+			        object.attachEvent('on' + event, handler);
+			    } else alert("Add handler is not supported");
+			}
+			// Добавляем обработчики
+			/* Gecko */
+			addHandler(window, 'DOMMouseScroll', wheel);
+			/* Opera */
+			addHandler(window, 'mousewheel', wheel);
+			/* IE */
+			addHandler(document, 'mousewheel', wheel);
+			// Обработчик события
+			function wheel(event) {
+			    var delta; // Направление скролла
+			    // -1 - скролл вниз
+			    // 1  - скролл вверх
+			    event = event || window.event;
+			    // Opera и IE работают со свойством wheelDelta
+			    if (event.wheelDelta) {
+			        delta = event.wheelDelta / 120;
+			        // В Опере значение wheelDelta такое же, но с противоположным знаком
+			        if (window.opera) delta = -delta;
+			    // В реализации Gecko получим свойство detail
+			    } else if (event.detail) {
+			        delta = -event.detail / 3;
+			    }
+
+
+
+/*
+
+
+
+
+
+
+*/
+
+				if($(window).scrollTop()+$(window).height()>=$(document).height()){
+					if(delta>0){
+			    		counter.reset();
+			    		$('.ny_footer').css({height: 380}, 0);
+						$('.ny_footer .n_0, .ny_footer .add_move').removeClass('active');
+			    	} else {
+					    if(counter.getNext() > 20 && counter.getNext() < 40){
+						    	$('.ny_footer .n_3').addClass('go');
+						    	$('.ny_footer .n_2').addClass('go');
+					    	setTimeout(function() {
+						    	$('.ny_footer .n_3').removeClass('go');
+						    	$('.ny_footer .n_2').removeClass('go');
+					    	},250);
+					    } else if (counter.getNext() > 40 && counter.getNext() < 60) {							
+							$('.ny_footer').css({height: winh}, 0);
+							$('.ny_footer .n_0, .ny_footer .add_move').addClass('active');
+							var el = $('.ny_footer');
+							$('.ny').animate({ scrollTop: el.offset().top }, 400);
+					    }
+			    	}
+					
+				} 
+
+
+
+			}
+
+
+		}
+
+
+
+	  });
+	  
+
+
+	}
+
+
 	$('body').on('click', '.map-link, .coating-close', toggleCoating);
 
 	$('.disabled-block').find('input[type="checkbox"]').prop('disabled', true);

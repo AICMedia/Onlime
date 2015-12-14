@@ -8319,3 +8319,113 @@ div.extract,
 }
 
 /*# sourceMappingURL=musthave.css.map */
+
+
+/*New Year*/
+
+.ny {
+	position: relative;
+}
+
+.ny .tariff-table {
+	background: #fff;
+}
+
+.ny .wrapper {
+	position: relative;
+	z-index: 2;
+	background: #fff;
+}
+
+.ny .start-banners-slider:before {
+	display: block;
+	content: '';
+	position: absolute;
+	bottom: 0px;
+	width: 100%;
+	height: 100px;
+	z-index: 2;
+	background: url('../images/snow_top.png') 50% 0 no-repeat;
+}
+
+.ny_cover {
+	padding-top: 25px;
+	background: url('../images/ny_top.jpg') 50% 0 no-repeat,
+			  	url('../images/ny_pattern.jpg') 50% 469px no-repeat;
+}
+
+.ny_cover .offers {
+	margin-top: 0px;
+}
+
+.ny_footer {
+	position: relative;
+	overflow: hidden;
+	width: 100%;
+	z-index: 1;
+}
+
+.ny_footer .n_0 {
+	bottom: -8%;
+	position: absolute;
+	width: 100%;
+	background: url('../images/onlime-hny.jpg') 50% 0 no-repeat;
+	background-size: auto 100%;
+	transition-duration: 0.4s;
+}
+
+.ny_footer .add_move {
+	position: absolute;
+	bottom: 0px;
+	height: 100%;
+	width: 100%;
+	transition-duration: 2s;
+}
+
+
+.ny_footer .n_1 {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	bottom: 10px;
+	background: url('../images/snow_bottom_0.png') 50% 100% no-repeat;
+	transition-duration: 0.25s;
+}
+
+.ny_footer .n_2 {
+	position: absolute;
+	height: 133px;
+	width: 100%;
+	bottom: 10px;
+	background: url('../images/snow_bottom_1.png') 50% 0% no-repeat;
+	transition-duration: 0.25s;
+}
+
+.ny_footer .n_3 {
+	position: absolute;
+	height: 261px;
+	width: 100%;
+	bottom: 100px;
+	background: url('../images/snow_bottom_2.png') 50% 0% no-repeat;
+	transition-duration: 0.25s;
+}
+
+.ny_footer .n_3.go {
+	bottom: 200px;
+}
+
+.ny_footer .n_2.go {
+	bottom: 50px;
+}
+
+
+.ny_footer .n_0.active {
+	bottom: 0px;
+}
+
+.ny_footer .add_move.active {
+	bottom: 1000px;
+}
+
+
+		
