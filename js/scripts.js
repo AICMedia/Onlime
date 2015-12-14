@@ -428,14 +428,20 @@ $(document).ready(function() {
 			    		$('.ny_footer').css({height: 380}, 0);
 						$('.ny_footer .n_0, .ny_footer .add_move').removeClass('active');
 			    	} else {
-					    if(counter.getNext() > 40 && counter.getNext() < 60){
+					    if(counter.getNext() > 20 && counter.getNext() < 40){
 						    	$('.ny_footer .n_3').addClass('go');
 						    	$('.ny_footer .n_2').addClass('go');
 					    	setTimeout(function() {
 						    	$('.ny_footer .n_3').removeClass('go');
 						    	$('.ny_footer .n_2').removeClass('go');
+						setTimeout(function(){
+						    	$('.ny_footer .n_3').removeClass('go');
+						    	$('.ny_footer .n_2').removeClass('go');
+						setTimeout(function(){
+						    	$('.ny_footer .n_3').removeClass('go');
+						    	$('.ny_footer .n_2').removeClass('go');
 					    	},250);
-					    } else if (counter.getNext() > 60 && counter.getNext() < 80) {							
+					    } else if (counter.getNext() > 40 && counter.getNext() < 60) {							
 							$('.ny_footer').css({height: winh}, 0);
 							$('.ny_footer .n_0, .ny_footer .add_move').addClass('active');
 							var el = $('.ny_footer');
