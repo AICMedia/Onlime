@@ -434,13 +434,7 @@ $(document).ready(function() {
 					    	setTimeout(function() {
 						    	$('.ny_footer .n_3').removeClass('go');
 						    	$('.ny_footer .n_2').removeClass('go');
-						setTimeout(function(){
-						    	$('.ny_footer .n_3').addClass('go');
-						    	$('.ny_footer .n_2').addClass('go');
-						setTimeout(function(){
-						    	$('.ny_footer .n_3').removeClass('go');
-						    	$('.ny_footer .n_2').removeClass('go');
-					    	},250);
+					    	},450);
 					    } else if (counter.getNext() > 40 && counter.getNext() < 60) {							
 							$('.ny_footer').css({height: winh}, 0);
 							$('.ny_footer .n_0, .ny_footer .add_move').addClass('active');
