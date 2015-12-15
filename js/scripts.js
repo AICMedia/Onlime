@@ -380,53 +380,36 @@ $(document).ready(function() {
 
 		if(lock==0){
 			lock = 1
-			// Функция для добавления обработчика событий
-			function addHandler(object, event, handler, useCapture) {
-			    if (object.addEventListener) {
-			        object.addEventListener(event, handler, useCapture ? useCapture : false);
-			    } else if (object.attachEvent) {
-			        object.attachEvent('on' + event, handler);
-			    } else alert("Add handler is not supported");
-			}
-			// Добавляем обработчики
-			/* Gecko */
-			addHandler(window, 'DOMMouseScroll', wheel);
-			/* Opera */
-			addHandler(window, 'mousewheel', wheel);
-			/* IE */
-			addHandler(document, 'mousewheel', wheel);
-			// Обработчик события
-			function wheel(event) {
-			    var delta; // Направление скролла
-			    // -1 - скролл вниз
-			    // 1  - скролл вверх
-			    event = event || window.event;
-			    // Opera и IE работают со свойством wheelDelta
-			    if (event.wheelDelta) {
-			        delta = event.wheelDelta / 120;
-			        // В Опере значение wheelDelta такое же, но с противоположным знаком
-			        if (window.opera) delta = -delta;
-			    // В реализации Gecko получим свойство detail
-			    } else if (event.detail) {
-			        delta = -event.detail / 3;
-			    }
 
+		// Основная Функция mousewheel
+		function wheel(event){
+		        var delta = 0;
+		        if (!event) event = window.event; // Событие IE.
+		        // Установим кроссбраузерную delta
+		        if (event.wheelDelta) { 
+		                // IE, Opera, safari, chrome - кратность дельта равна 120
+		                delta = event.wheelDelta/120;
+		        } else if (event.detail) { 
+		                // Mozilla, кратность дельта равна 3
+		                delta = -event.detail/3;
+		        }
+		        // Вспомогательня функция обработки mousewheel
+		        if (delta && typeof handle == 'function') {
+		                handle(delta);
+		                // Отменим текущее событие - событие поумолчанию (скролинг окна).
+		                if (event.preventDefault)
+		                        event.preventDefault();
+		                event.returnValue = false; // для IE
+		        }
 
-
-/*
-
-
-
-
-
-
-*/
 
 				if($(window).scrollTop()+$(window).height()>=$(document).height()){
 					if(delta>0){
 			    		counter.reset();
 			    		$('.ny_footer').css({height: 380}, 0);
 						$('.ny_footer .n_0, .ny_footer .add_move').removeClass('active');
+
+
 			    	} else {
 					    if(counter.getNext() > 20 && counter.getNext() < 40){
 						    	$('.ny_footer .n_3').addClass('go');
@@ -452,12 +435,14 @@ $(document).ready(function() {
 
 		}
 
-
+		// Инициализация события mousewheel
+		if (window.addEventListener) // mozilla, safari, chrome
+		    window.addEventListener('DOMMouseScroll', wheel, false);
+		// IE, Opera.
+		window.onmousewheel = document.onmousewheel = wheel;
 
 	  });
 	  
-
-
 	}
 
 
