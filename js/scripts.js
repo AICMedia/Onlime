@@ -395,7 +395,6 @@ $(document).ready(function() {
 		        }
 
 
-console.log(counter.getNext())
 				if($(window).scrollTop()+$(window).height()>=$(document).height()){
 					if(delta>0){
 			    		counter.reset();
