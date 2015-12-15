@@ -8389,7 +8389,7 @@ div.extract,
 	width: 100%;
 	bottom: 10px;
 	background: url('../images/snow_bottom_0.png') 50% 100% no-repeat;
-	transition-duration: 1.25s;
+	transition-duration: 0.25s;
 }
 
 .ny_footer .n_2 {
@@ -8398,7 +8398,7 @@ div.extract,
 	width: 100%;
 	bottom: 10px;
 	background: url('../images/snow_bottom_1.png') 50% 0% no-repeat;
-	transition-duration: 1.25s;
+	transition-duration: 0.25s;
 }
 
 .ny_footer .n_3 {
@@ -8407,7 +8407,7 @@ div.extract,
 	width: 100%;
 	bottom: 100px;
 	background: url('../images/snow_bottom_2.png') 50% 0% no-repeat;
-	transition-duration: 1.25s;
+	transition-duration: 0.25s;
 }
 
 .ny_footer .n_3.go {
