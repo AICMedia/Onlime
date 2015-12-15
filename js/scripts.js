@@ -393,31 +393,41 @@ $(document).ready(function() {
 		                // Mozilla, кратность дельта равна 3
 		                delta = -event.detail/3;
 		        }
+
+
 console.log(counter.getNext())
 				if($(window).scrollTop()+$(window).height()>=$(document).height()){
 					if(delta>0){
 			    		counter.reset();
 			    		$('.ny_footer').css({height: 380}, 0);
 						$('.ny_footer .n_0, .ny_footer .add_move').removeClass('active');
-
-
 			    	} else {
-					    if(counter.getNext() > 20 && counter.getNext() < 40){
+					    if(counter.getNext() > 50 && counter.getNext() < 100){
 						    	$('.ny_footer .n_3').addClass('go');
 						    	$('.ny_footer .n_2').addClass('go');
 					    	setTimeout(function() {
 						    	$('.ny_footer .n_3').removeClass('go');
 						    	$('.ny_footer .n_2').removeClass('go');
 					    	},250);
-					    } else if (counter.getNext() > 40 && counter.getNext() < 60) {							
+					    } else if (counter.getNext() > 100 && counter.getNext() < 150) {							
+						    	$('.ny_footer .n_3').addClass('go');
+						    	$('.ny_footer .n_2').addClass('go');
+					    	setTimeout(function() {
+						    	$('.ny_footer .n_3').removeClass('go');
+						    	$('.ny_footer .n_2').removeClass('go');
+					    	},250);
+					    } else if (counter.getNext() > 150 && counter.getNext() < 200) {							
 							$('.ny_footer').css({height: winh}, 0);
 							$('.ny_footer .n_0, .ny_footer .add_move').addClass('active');
 							var el = $('.ny_footer');
 							$('.ny').animate({ scrollTop: el.offset().top }, 400);
 					    }
+
 			    	}
 					
-				} 
+				} else {
+		    		counter.reset();
+				}
 
 
 
