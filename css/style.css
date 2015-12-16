@@ -8411,11 +8411,15 @@ div.extract,
 }
 
 .ny_footer .n_3.go {
-	bottom: 200px;
+	bottom: 250px;
 }
 
 .ny_footer .n_2.go {
-	bottom: 50px;
+	bottom: 150px;
+}
+
+.ny_footer .n_1.go {
+	bottom: 100px;
 }
 
 

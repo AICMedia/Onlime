@@ -401,21 +401,16 @@ $(document).ready(function() {
 			    		$('.ny_footer').css({height: 380}, 0);
 						$('.ny_footer .n_0, .ny_footer .add_move').removeClass('active');
 			    	} else {
-					    if(counter.getNext() > 50 && counter.getNext() < 100){
+					    if(counter.getNext() > 50 && counter.getNext() < 100){							
 						    	$('.ny_footer .n_3').addClass('go');
 						    	$('.ny_footer .n_2').addClass('go');
+						    	$('.ny_footer .n_1').addClass('go');
 					    	setTimeout(function() {
 						    	$('.ny_footer .n_3').removeClass('go');
 						    	$('.ny_footer .n_2').removeClass('go');
+						    	$('.ny_footer .n_1').removeClass('go');
 					    	},250);
-					    } else if (counter.getNext() > 100 && counter.getNext() < 150) {							
-						    	$('.ny_footer .n_3').addClass('go');
-						    	$('.ny_footer .n_2').addClass('go');
-					    	setTimeout(function() {
-						    	$('.ny_footer .n_3').removeClass('go');
-						    	$('.ny_footer .n_2').removeClass('go');
-					    	},250);
-					    } else if (counter.getNext() > 150 && counter.getNext() < 200) {							
+					    } else if (counter.getNext() > 100 && counter.getNext() < 200) {							
 							$('.ny_footer').css({height: winh}, 0);
 							$('.ny_footer .n_0, .ny_footer .add_move').addClass('active');
 							var el = $('.ny_footer');
