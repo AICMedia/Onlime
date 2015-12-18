@@ -8431,5 +8431,16 @@ div.extract,
 	bottom: 1000px;
 }
 
+.ny_footer b {
+	display: block;
+	position: absolute;
+	bottom: 0px;
+	left: 50%;
+	height: 100px;
+	width: 80px;
+	margin-left: -40px;
+	cursor: pointer;
+}
+
 
 		

@@ -374,7 +374,13 @@ $(document).ready(function() {
 
 		var counter = makeCounter();	
 
-
+		$('.ny_footer b').click(function() {
+			$('.ny_footer').css({height: winh}, 0);
+			$('.ny_footer .n_0, .ny_footer .add_move').addClass('active');
+			var el = $('.ny_footer');
+			$('.ny').animate({ scrollTop: el.offset().top }, 400);
+			$(this).hide();
+		});
 
 	  $(window).scroll(function() {
 
@@ -400,6 +406,7 @@ $(document).ready(function() {
 			    		counter.reset();
 			    		$('.ny_footer').css({height: 380}, 0);
 						$('.ny_footer .n_0, .ny_footer .add_move').removeClass('active');
+						$('.ny_footer b').show();
 			    	} else {
 					    if(counter.getNext() > 50 && counter.getNext() < 100){							
 						    	$('.ny_footer .n_3').addClass('go');
