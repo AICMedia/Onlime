@@ -54,6 +54,10 @@ $(document).ready(function() {
 		$(this).addClass('tariff-line_selected').siblings().removeClass('tariff-line_selected')
 	});
 
+	$(document).on('click', '.tariff-line_checkbox', function () {
+		$(this).toggleClass('tariff-line_selected')
+	});
+
 	$(document).on('click', '.tariff-gift', function (e) {
 		e.preventDefault();
 		$(this).parent().find('.tariff-small__gallery').toggleClass('tariff-small__gallery_visible');
@@ -721,6 +725,7 @@ $(document).ready(function() {
 	$('body').on('click', '.popup-close, .fill-background', function() {
 		$('.fill-background, .popup').fadeOut();
 		$('body').removeClass('wrapper-slide');
+		$('.popup-children-arrow').remove();
 	});
 
 	$('body').on('click', '.popup-children-arrow', function() {
@@ -904,6 +909,11 @@ $(document).ready(function() {
 		$('.open-link').removeClass('opened');
 		$('body').find('.popup-children-arrow').fadeOut();
 		alignPocket();
+		alignNews();
+		alignBonus();
+		alignServ();
+		alignPrize();
+		alignOther();
 	}
 
 	var $various = $('.various');

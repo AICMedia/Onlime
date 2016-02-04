@@ -57,7 +57,7 @@
 					<div class="fill-background"></div>
 					
 					<div id="payment-popup" class="popup">
-						<div class="popup-close"></div>
+						<div class="popup-close static"></div>
 						<div class="form-block">
 							<input type="text" class="form-text" placeholder="Номер лицевого счета">
 						</div>
@@ -81,7 +81,7 @@
 					</div>
 
 					<div id="login-popup" class="popup">
-						<div class="popup-close"></div>
+						<div class="popup-close static"></div>
 						<div class="form-block">
 							<input type="text" class="form-text" placeholder="Логин">
 						</div>
@@ -256,6 +256,7 @@
 				<form method="post" action="#" class="clearfix">
 					<input type="text" class="form-text check-address-street" placeholder="Название улицы">
 					<input type="text" class="form-text check-address-home" placeholder="Дом">
+					<input type="text" name="entrance" class="form-text check-address-porch" placeholder="Подъезд" size="7">
 					<button type="submit" class="btn"><span>Проверить адрес</span></button>
 				</form>
 				<a href="javascript://" class="coating-close fake-link">Закрыть карту</a>
@@ -1036,31 +1037,18 @@
 	
 
 
-
-			<section class="tariff-total">
+				<section class="tariff-total">
 					<h3>Итого:</h3>
 
-					<!-- Итого для смартфонов -->
 					<div class="tariff-total-small">
 						<div class="tariff-small">
 							<div class="tariff-small-line strong">
-								<div class="left">Разовый платеж</div>
+								<div class="left">
+									<div class="tariff-small-label">Разовый платеж</div>
+								</div>
 								<div class="right">
 									<span class="tariff-numbers">
 										<span class="num">4 690</span>
-										<span class="unit">
-											<span class="unit-top">руб.</span>
-										</span>
-									</span>
-								</div>
-							</div>
-						</div>
-						<div class="tariff-small">
-							<div class="tariff-small-line strong">
-								<div class="left">Ежемесячный платеж</div>
-								<div class="right">
-									<span class="tariff-numbers">
-										<span class="num">898</span>
 										<span class="unit">
 											<span class="unit-top">руб.</span>
 											<span class="unit-bottom">мес.</span>
@@ -1071,28 +1059,44 @@
 						</div>
 						<div class="tariff-small">
 							<div class="tariff-small-line strong">
-								<div class="left">Стоимость</div>
+								<div class="left">
+									<div class="tariff-small-label">Ежемесячный платеж</div>
+								</div>
+								<div class="right">
+									<span class="tariff-numbers">
+										<span class="num">900</span>
+										<span class="unit">
+											<span class="unit-top">руб.</span>
+											<span class="unit-bottom">мес.</span>
+										</span>
+									</span>
+								</div>
+							</div>
+						</div>
+						<div class="tariff-small">
+							<div class="tariff-small-line strong">
+								<div class="left">
+									<div class="tariff-small-label">стоимость</div>
+								</div>
 								<div class="right">
 									<span class="tariff-numbers">
 										<span class="num">5 590</span>
 										<span class="unit">
 											<span class="unit-top">руб.</span>
+											<span class="unit-bottom">мес.</span>
 										</span>
 									</span>
 								</div>
 							</div>
 						</div>
 					</div>
-					<!-- Конец итого для смартфонов -->
 
 					<a href="#" class="btn"><span>Продолжить</span></a>
-					
-					<!-- Ссылки для смартфонов -->
+
 					<div class="total-small-links">
 						<a href="#" class="fake-link works-list-link">Перечень работ</a>
 						<a href="#" class="fake-link extract-link">Подробная выписка</a>
 					</div>
-					<!-- Конец ссылок для смартфонов -->
 
 					<div class="tariff-total-container clearfix">
 						<div class="tariff-total-item first">

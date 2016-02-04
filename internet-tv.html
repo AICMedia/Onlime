@@ -5,6 +5,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=1">
 	<link rel="stylesheet" href="css/slick.css">
+	<link rel="stylesheet" href="css/animations.css">
 	<link rel="stylesheet" href="css/style.css">
 	<script src="js/jquery.min.js"></script>
 	<script src="js/jquery.teslalign.js"></script>
@@ -60,7 +61,7 @@
 					<div class="fill-background"></div>
 
 					<div id="payment-popup" class="popup">
-						<div class="popup-close"></div>
+						<div class="popup-close static"></div>
 						<h4>Оплатить</h4>
 						<div class="form-block">
 							<input type="text" class="form-text" placeholder="Номер лицевого счета">
@@ -85,7 +86,7 @@
 					</div>
 
 					<div id="login-popup" class="popup">
-						<div class="popup-close"></div>
+						<div class="popup-close static"></div>
 						<h4>Личный кабинет</h4>
 						<div class="form-block">
 							<input type="text" class="form-text" placeholder="Логин">
@@ -265,6 +266,7 @@
 				<form method="post" action="#" class="clearfix">
 					<input type="text" class="form-text check-address-street" placeholder="Название улицы">
 					<input type="text" class="form-text check-address-home" placeholder="Дом">
+					<input type="text" name="entrance" class="form-text check-address-porch" placeholder="Подъезд" size="7">
 					<button type="submit" class="btn"><span>Проверить адрес</span></button>
 				</form>
 				<a href="javascript://" class="coating-close fake-link">Закрыть карту</a>
@@ -349,7 +351,7 @@
 							<span class="tariff-cost-hint">С 3 месяца 995 руб./мес.</span>
 						</div>
 						<div class="tariff-small">
-							<div class="tariff-small__gallery hidden">
+<!-- 							<div class="tariff-small__gallery hidden">
 								<div class="tariff-small__carousel">
 									<div class="tariff-small__slide">
 										<div class="tariff-small__slide-icon">
@@ -370,7 +372,7 @@
 										<p>Услуга «Управление просмотром»<br>на 2 месяца совершенно бесплатно.</p>
 									</div>
 								</div>
-							</div>
+							</div> -->
 							<div class="tariff-small-line">
 								<div class="left">
 									<span class="tariff-numbers">
@@ -406,9 +408,9 @@
 									</span>
 								</div>
 							</div>
-							<a href="#" class="tariff-gift">
+<!-- 							<a href="#" class="tariff-gift">
 								<span class="tariff-gift__badge">3</span>
-							</a>
+							</a> -->
 						</div>
 						<div class="tariff-radio">
 							<div class="check-radio checker">
@@ -444,12 +446,22 @@
 						</div>
 						<div class="tariff-bonus">
 							<div class="bonus-ico toltip">
-								<img src="images/del/bonus-ico-yandex.png" width="25" height="17" alt="">
-								<span class="tip">Яндекс.Диск<br>Плюс 40 гигабайт</span>
-							</div>
-							<div class="bonus-ico toltip">
-								<img src="images/del/bonus-ico-kasper.png" width="17" height="16" alt="">
-								<span class="tip">Антивирус Касперского<br>2 месяца бесплатно</span>
+								<img src="http://www.onlime.ru/images/del/onlime_benefits_gif.gif" alt="" class="floating">
+								<b class="counter">3</b>
+								<span class="tip pullUp">
+									<p>
+										<img src="/images/onlime_benefit_05.png" class="tossing" width="25" height="25" alt="">
+										<span>
+											<a href="/tv/actions/41/" target="_blank" style="color:white">Услуга «Управление просмотром» на 2 месяца совершенно бесплатно.</a>
+										</span>
+									</p>
+									<p>
+										<img src="/images/onlime_benefit_06.png" class="tossing" width="25" height="25" alt="">
+										<span>
+											<a href="/tv/actions/48/" target="_blank" style="color:white">«Amedia Premium» или «Наш футбол» 2 месяца совершенно бесплатно</a>
+										</span>
+									</p>
+								</span>
 							</div>
 						</div>
 						<div class="tariff-cost tariff-cost-phone">
@@ -467,15 +479,15 @@
 								<div class="tariff-small__carousel">
 									<div class="tariff-small__slide">
 										<div class="tariff-small__slide-icon">
-											<img src="images/smt.png" alt="">
+											<img src="/images/onlime_benefit_05.png" alt="">
 										</div>
-										<p>Услуга «Управление просмотром»<br>на 2 месяца совершенно бесплатно.</p>
+										<p>Услуга «Управление просмотром» на 2 месяца совершенно бесплатно.</p>
 									</div>
 									<div class="tariff-small__slide">
 										<div class="tariff-small__slide-icon">
-											<img src="images/smt.png" alt="">
+											<img src="/images/onlime_benefit_06.png" alt="">
 										</div>
-										<p>Услуга «Управление просмотром»<br>на 2 месяца совершенно бесплатно.</p>
+										<p>«Amedia Premium» или «Наш футбол» 2 месяца совершенно бесплатно</p>
 									</div>
 								</div>
 							</div>
@@ -550,15 +562,7 @@
 						<div class="tariff-channels">
 							<div class="num-circle-animate" data-text="115" data-total="172" data-part="115"></div>
 						</div>
-						<div class="tariff-bonus">
-							<div class="bonus-ico toltip">
-								<img src="images/del/bonus-ico-yandex.png" width="25" height="17" alt="">
-								<span class="tip">Яндекс.Диск<br>Плюс 40 гигабайт</span>
-							</div>
-							<div class="bonus-ico toltip">
-								<img src="images/del/bonus-ico-kasper.png" width="17" height="16" alt="">
-								<span class="tip">Антивирус Касперского<br>2 месяца бесплатно</span>
-							</div>
+						<div class="tariff-bonus clearfix">
 						</div>
 						<div class="tariff-cost tariff-cost-phone">
 							<span class="tariff-numbers">
@@ -571,7 +575,7 @@
 							<span class="tariff-cost-hint">С 3 месяца 500 руб./мес.</span>
 						</div>
 						<div class="tariff-small">
-							<div class="tariff-small__gallery">
+<!-- 							<div class="tariff-small__gallery">
 								<div class="tariff-small__carousel">
 									<div class="tariff-small__slide">
 										<div class="tariff-small__slide-icon">
@@ -586,7 +590,7 @@
 										<p>Услуга «Управление просмотром»<br>на 2 месяца совершенно бесплатно.</p>
 									</div>
 								</div>
-							</div>
+							</div> -->
 							<div class="tariff-small-line">
 								<div class="left">
 									<span class="tariff-numbers">
@@ -622,9 +626,9 @@
 									</span>
 								</div>
 							</div>
-							<a href="#" class="tariff-gift">
+<!-- 							<a href="#" class="tariff-gift">
 								<span class="tariff-gift__badge">2</span>
-							</a>
+							</a> -->
 						</div>
 						<div class="tariff-radio">
 							<div class="check-radio checker">
@@ -654,7 +658,7 @@
 					</div>
 
 					<form method="post" action="#">
-					<div class="tariff-line tariff-line-small clearfix">
+					<div class="tariff-line tariff-line-small clearfix tariff-line_checkbox">
 						<div class="tariff-title">
 							<div class="tariff-title-container"><div class="tariff-title-cont">
 								<div class="title">Твое кино</div>
@@ -710,7 +714,7 @@
 						</div>
 					</div>
 
-					<div class="tariff-line tariff-line-small clearfix">
+					<div class="tariff-line tariff-line-small clearfix tariff-line_checkbox">
 						<div class="tariff-title tariff-title__action">
 							<div class="tariff-title-container">
 								<div class="tariff-title-cont">
@@ -772,7 +776,7 @@
 						</div>
 					</div>
 
-					<div class="tariff-line tariff-line-small clearfix">
+					<div class="tariff-line tariff-line-small clearfix tariff-line_checkbox">
 						<div class="tariff-title tariff-title__action">
 							<div class="tariff-title-container">
 								<div class="tariff-title-cont">
@@ -834,7 +838,7 @@
 						</div>
 					</div>
 
-					<div class="tariff-line tariff-line-small clearfix">
+					<div class="tariff-line tariff-line-small clearfix tariff-line_checkbox">
 						<div class="tariff-title">
 							<div class="tariff-title-container"><div class="tariff-title-cont">
 								<div class="title">Amedia Premium</div>
@@ -890,7 +894,7 @@
 						</div>
 					</div>
 
-					<div class="tariff-line tariff-line-small clearfix">
+					<div class="tariff-line tariff-line-small clearfix tariff-line_checkbox">
 						<div class="tariff-title">
 							<div class="tariff-title-container"><div class="tariff-title-cont">
 								<div class="title">Наш футбол</div>
@@ -946,7 +950,7 @@
 						</div>
 					</div>
 
-					<div class="tariff-line tariff-line-small clearfix">
+					<div class="tariff-line tariff-line-small clearfix tariff-line_checkbox">
 						<div class="tariff-title">
 							<div class="tariff-title-container"><div class="tariff-title-cont">
 								<div class="title">Взрослый</div>

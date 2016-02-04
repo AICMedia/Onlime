@@ -1505,7 +1505,7 @@ body {
 	margin-right: 15px;
 }
 .check-address-street {
-	width: 426px;
+	width: 378px;
 }
 .check-address-home {
 	width: 124px
@@ -1513,7 +1513,7 @@ body {
 .check-address .btn {
 	height: 53px;
 	line-height: 55px;
-	width: 260px;
+	width: 205px;
 }
 
 
@@ -2977,7 +2977,8 @@ table.extract .tariff-numbers .num {
 
 
 .bonus-ico {
-	float: left;
+	/*float: left;*/
+	display: inline-block;
 	height: 92px;
 	line-height: 92px;
 	margin: 0 9px 0 19px;
@@ -3009,6 +3010,7 @@ table.extract .tariff-numbers .num {
 .tariff-bonus {
 	width: 80px;
 	float: left;
+	text-align: center;
 	min-height: 1px;
 }
 .tariff-bonus__long {
@@ -3025,13 +3027,41 @@ table.extract .tariff-numbers .num {
 .toltip img {
 	opacity: .7;
 }
+.toltip .counter{
+	position: absolute;
+	top: 51px;
+	left: 16px;
+	display: block;
+	color: #fff;
+	border: 2px solid #fff;
+	background: #82ca23;
+	font-size: 10px;
+	width: 17px;
+	height: 17px;
+	border-radius: 17px;
+	line-height: 12px;
+	text-align: center;
+}
+.toltip.hover .tip P {
+	position: relative;
+	padding: 0 0 1.3em 45px;
+}
+.toltip.hover .tip SPAN {
+	display: block;
+	padding: 0 0 0.3em 0;
+}
+.toltip.hover .tip IMG {
+	position: absolute;
+	top:0;
+	left: 0;
+}
 .toltip:hover img {
 	opacity: 1;
 }
 .toltip.hover .tip {
 	background: rgba(36, 41, 42, .75);
-	width: 190px;
-	padding: 10px;
+	width: 260px;
+	padding: 25px 20px 5px 20px;
 	bottom: 38px;
 	right: 50%;
 	border-radius: 3px;
@@ -3040,8 +3070,8 @@ table.extract .tariff-numbers .num {
 	z-index: 5;
 	font: 15px/18px 'Myriad Pro',sans-serif;
 	color: #fff;
-	text-align: center;
-	margin: 0 -95px 0 0;
+	margin: 0 -130px 0 0;
+	text-align: left;
 }
 .tariff-bonus .toltip .tip {
 	bottom: 68px;
@@ -3213,7 +3243,7 @@ table.extract .tariff-numbers .num {
 	width: 450px;
 	white-space: normal;
 	position: relative;
-	height: 54px;
+	/*height: 54px;*/
 	margin-top: 0;
 }
 .popover-content,
@@ -5670,8 +5700,13 @@ div.extract,
 		width: 100%;
 	}
 	.check-address-home {
-		width: 130px;
+		width: 132px;
 		margin-top: 20px;
+	}
+	.check-address-porch{
+		width: 132px;
+		margin-top: 20px;
+		margin-right: 0 !important;
 	}
 	.check-address .btn {
 		width: 100%;
@@ -5792,6 +5827,43 @@ div.extract,
 
 	.tariff-small-line .left .tariff-numbers .num {
 		color: #859293;
+	}
+
+	.tariff-section .tariff-small-line{
+		display: table;
+		width: 100%;
+		margin-bottom: 15px;
+	}
+	.tariff-section .tariff-small-line:last-child,
+	.tariff-section .tariff-small-line:last-of-type{
+		margin-bottom: 0;
+	}
+	.tariff-section .tariff-small-line .left,
+	.tariff-section .tariff-small-line .right{
+		display: table-cell;
+		vertical-align: middle;
+		float: none;
+	}
+	.tariff-section .tariff-small-line .right{
+		text-align: right;
+	}
+	.tariff-section .tariff-small-line .tariff-numbers{
+		margin-top: 0;
+	}
+	.tariff-section .tariff-small-line{
+		margin-top: 15px;
+	}
+	.tariff-section .tariff-small-line + .tariff-small-line{
+		margin-top: 0px;
+	}
+	.tariff-section .tariff-small-line .tariff-channels-num{
+		float: none;
+	}
+	.tariff-section .tariff-small-line .tariff-value{
+		margin-top: 0;
+	}
+	.tariff-section .tariff-line-small .tariff-big-description span{
+		margin-top: 0;
 	}
 
 	.tariff-numbers .num {
@@ -6228,6 +6300,11 @@ div.extract,
 		height: 20px;
 		background: url('../images/popup-close-small.png') no-repeat;
 	}
+	.popup-close.static{
+		position: static;
+		margin-bottom: 15px;
+		float: right;
+	}
 
 
 	.topbar-more-popup {
@@ -6235,7 +6312,7 @@ div.extract,
 	}
 
 	.popup-children .offer {
-		width: 280px;
+		width: 100%;
 		overflow: hidden;
 	}
 	.offer-btn {

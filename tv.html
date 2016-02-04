@@ -4,11 +4,14 @@
 	<title>Телевидение</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=1">
+	<link rel="stylesheet" href="css/slick.css">
+	<link rel="stylesheet" href="css/animations.css">
 	<link rel="stylesheet" href="css/style.css">
 	<script src="js/jquery.min.js"></script>
 	<script src="js/jquery.teslalign.js"></script>
 	<script src="js/jquery.circliful.min.js"></script>
 	<script src="js/jquery.formstyler.min.js"></script>
+	<script src="js/slick.min.js"></script>
 	<script src="js/scripts.js"></script>
 	<!--[if lt IE 9]>
 	<link rel="stylesheet" href="css/ie.css">
@@ -57,7 +60,7 @@
 					<div class="fill-background"></div>
 					
 					<div id="payment-popup" class="popup">
-						<div class="popup-close"></div>
+						<div class="popup-close static"></div>
 						<div class="form-block">
 							<input type="text" class="form-text" placeholder="Номер лицевого счета">
 						</div>
@@ -81,7 +84,7 @@
 					</div>
 
 					<div id="login-popup" class="popup">
-						<div class="popup-close"></div>
+						<div class="popup-close static"></div>
 						<div class="form-block">
 							<input type="text" class="form-text" placeholder="Логин">
 						</div>
@@ -256,6 +259,7 @@
 				<form method="post" action="#" class="clearfix">
 					<input type="text" class="form-text check-address-street" placeholder="Название улицы">
 					<input type="text" class="form-text check-address-home" placeholder="Дом">
+					<input type="text" name="entrance" class="form-text check-address-porch" placeholder="Подъезд" size="7">
 					<button type="submit" class="btn"><span>Проверить адрес</span></button>
 				</form>
 				<a href="javascript://" class="coating-close fake-link">Закрыть карту</a>
@@ -289,45 +293,49 @@
 						 </span>
 					</div>
 
+
+
 					<div class="tariff-line-header">
 						<div class="one">Название тарифа</div>
 						<div class="two">Скорость</div>
-						<div class="three">&nbsp;</div>
+						<div class="three">Каналы</div>
 						<div class="four">Стоимость</div>
 					</div>
-
-					<div class="tariff-line clearfix">
+					<div class="tariff-line tariff-line_radio tariff-line_selected clearfix">
 						<div class="tariff-title">
 							<div class="tariff-title-container"><div class="tariff-title-cont">
-								<div class="title">Максимальный</div>
+								<div class="title">2 в 1 Продвинутый</div>
 							</div></div>
 							<a href="#" class="action-tooltip">
 								<span class="action-tooltip-image"></span>
 								<span class="action-tooltip-text">Тариф со скидкой на месяца. Акция действует до 20 июня</span>
 							</a>
 						</div>
-						<div class="tariff-speed tariff-speed__long">
+						<div class="tariff-speed">
 							<span class="tariff-numbers">
-								<div class="num-circle-animate" data-text="209" data-total="209" data-part="209"></div>
+								<div class="num-circle-animate" data-text="100" data-total="100" data-part="100"></div>
 								<span class="unit">
 									<span class="unit-top">мбит.</span>
 									<span class="unit-bottom">сек.</span>
 								</span>
 							</span>
 						</div>
-						<div class="tariff-bonus tariff-bonus__long clearfix">
-							<div class="bonus-ico toltip">
+						<div class="tariff-channels">
+							<div class="tariff-value num-circle-animate" data-text="172" data-total="172" data-part="172"></div>
+						</div>
+						<div class="tariff-bonus clearfix">
+							<!-- <div class="bonus-ico toltip">
 								<img src="images/del/bonus-ico-yandex.png" width="25" height="17" alt="">
 								<span class="tip">Яндекс.Диск<br>Плюс 40 гигабайт</span>
 							</div>
 							<div class="bonus-ico toltip">
 								<img src="images/del/bonus-ico-kasper.png" width="17" height="16" alt="">
 								<span class="tip">Антивирус Касперского<br>2 месяца бесплатно</span>
-							</div>
+							</div> -->
 						</div>
 						<div class="tariff-cost tariff-cost-phone">
 							<span class="tariff-numbers">
-								<span class="num">1 300</span>
+								<span class="num">390</span>
 								<span class="unit">
 									<span class="unit-top">руб.</span>
 									<span class="unit-bottom">мес.</span>
@@ -335,35 +343,68 @@
 							</span>
 							<span class="tariff-cost-hint">С 3 месяца 995 руб./мес.</span>
 						</div>
-						<!-- Вывод для маленьких экранов -->
 						<div class="tariff-small">
+<!-- 							<div class="tariff-small__gallery hidden">
+								<div class="tariff-small__carousel">
+									<div class="tariff-small__slide">
+										<div class="tariff-small__slide-icon">
+											<img src="images/smt.png" alt="">
+										</div>
+										<p>Услуга «Управление просмотром»<br>на 2 месяца совершенно бесплатно.</p>
+									</div>
+									<div class="tariff-small__slide">
+										<div class="tariff-small__slide-icon">
+											<img src="images/smt.png" alt="">
+										</div>
+										<p>Услуга «Управление просмотром»<br>на 2 месяца совершенно бесплатно.</p>
+									</div>
+									<div class="tariff-small__slide">
+										<div class="tariff-small__slide-icon">
+											<img src="images/smt.png" alt="">
+										</div>
+										<p>Услуга «Управление просмотром»<br>на 2 месяца совершенно бесплатно.</p>
+									</div>
+								</div>
+							</div> -->
 							<div class="tariff-small-line">
-								<div class="left">Скорость</div>
-								<div class="right">
+								<div class="left">
 									<span class="tariff-numbers">
-										<span class="num">209</span>
+										<span class="num">100</span>
 										<span class="unit">
-											<span class="unit-top">мбит.</span>
+											<span class="unit-top">мбит</span>
 											<span class="unit-bottom">сек.</span>
 										</span>
 									</span>
 								</div>
-							</div>
-							<div class="tariff-small-line strong">
-								<div class="left">Стоимость</div>
 								<div class="right">
 									<span class="tariff-numbers">
-										<span class="num">1 300</span>
+										<span class="num">390</span>
 										<span class="unit">
 											<span class="unit-top">руб.</span>
 											<span class="unit-bottom">мес.</span>
 										</span>
 									</span>
-									<span class="tariff-cost-hint">С 3 месяца 995 руб./мес.</span>
 								</div>
 							</div>
+							<div class="tariff-small-line">
+								<div class="left">
+									<span class="tariff-numbers">
+										<span class="num">172</span>
+										<span class="unit">
+											<span class="unit-top">каналов</span>
+										</span>
+									</span>
+								</div>
+								<div class="right">
+									<span class="tariff-numbers">
+										<span class="tariff-cost-hint">С 3 месяца<br>1000 руб./мес.</span>
+									</span>
+								</div>
+							</div>
+<!-- 							<a href="#" class="tariff-gift">
+								<span class="tariff-gift__badge">3</span>
+							</a> -->
 						</div>
-						<!-- Конец вывода для маленьких экранов -->
 						<div class="tariff-radio">
 							<div class="check-radio checker">
 								<div class="check-radio-container">
@@ -374,241 +415,226 @@
 						</div>
 					</div>
 
-					<div class="tariff-line clearfix">
+					<div class="tariff-line tariff-line_radio clearfix">
 						<div class="tariff-title">
 							<div class="tariff-title-container"><div class="tariff-title-cont">
-								<div class="title">Продвинутый</div>
+								<div class="title">2 в 1 Оптимальный</div>
 							</div></div>
 							<a href="#" class="action-tooltip">
 								<span class="action-tooltip-image"></span>
 								<span class="action-tooltip-text">Тариф со скидкой на месяца. Акция действует до 20 июня</span>
 							</a>
 						</div>
-						<div class="tariff-speed tariff-speed__long">
+						<div class="tariff-speed">
 							<span class="tariff-numbers">
-								<div class="num-circle-animate" data-text="172" data-total="209" data-part="172"></div>
+								<div class="num-circle-animate" data-text="60" data-total="100" data-part="60"></div>
 								<span class="unit">
 									<span class="unit-top">мбит.</span>
 									<span class="unit-bottom">сек.</span>
 								</span>
 							</span>
 						</div>
-						<div class="tariff-bonus tariff-bonus__long clearfix">
+						<div class="tariff-channels">
+							<div class="num-circle-animate" data-text="143" data-total="172" data-part="143"></div>
+						</div>
+						<div class="tariff-bonus">
 							<div class="bonus-ico toltip">
-								<img src="images/del/bonus-ico-yandex.png" width="25" height="17" alt="">
-								<span class="tip">Яндекс.Диск<br>Плюс 40 гигабайт</span>
-							</div>
-							<div class="bonus-ico toltip">
-								<img src="images/del/bonus-ico-kasper.png" width="17" height="16" alt="">
-								<span class="tip">Антивирус Касперского<br>2 месяца бесплатно</span>
+								<img src="http://www.onlime.ru/images/del/onlime_benefits_gif.gif" alt="" class="floating">
+								<b class="counter">3</b>
+								<span class="tip pullUp">
+									<p>
+										<img src="/images/onlime_benefit_05.png" class="tossing" width="25" height="25" alt="">
+										<span>
+											<a href="/tv/actions/41/" target="_blank" style="color:white">Услуга «Управление просмотром» на 2 месяца совершенно бесплатно.</a>
+										</span>
+									</p>
+									<p>
+										<img src="/images/onlime_benefit_06.png" class="tossing" width="25" height="25" alt="">
+										<span>
+											<a href="/tv/actions/48/" target="_blank" style="color:white">«Amedia Premium» или «Наш футбол» 2 месяца совершенно бесплатно</a>
+										</span>
+									</p>
+								</span>
 							</div>
 						</div>
 						<div class="tariff-cost tariff-cost-phone">
 							<span class="tariff-numbers">
-								<span class="num">500</span>
+								<span class="num">390</span>
 								<span class="unit">
 									<span class="unit-top">руб.</span>
 									<span class="unit-bottom">мес.</span>
 								</span>
 							</span>
-							<span class="tariff-cost-hint">С 3 месяца 995 руб./мес.</span>
+							<span class="tariff-cost-hint">С 3 месяца 700 руб./мес.</span>
 						</div>
-						<!-- Вывод для маленьких экранов -->
 						<div class="tariff-small">
+							<div class="tariff-small__gallery">
+								<div class="tariff-small__carousel">
+									<div class="tariff-small__slide">
+										<div class="tariff-small__slide-icon">
+											<img src="/images/onlime_benefit_05.png" alt="">
+										</div>
+										<p>Услуга «Управление просмотром» на 2 месяца совершенно бесплатно.</p>
+									</div>
+									<div class="tariff-small__slide">
+										<div class="tariff-small__slide-icon">
+											<img src="/images/onlime_benefit_06.png" alt="">
+										</div>
+										<p>«Amedia Premium» или «Наш футбол» 2 месяца совершенно бесплатно</p>
+									</div>
+								</div>
+							</div>
 							<div class="tariff-small-line">
-								<div class="left">Скорость</div>
-								<div class="right">
+								<div class="left">
 									<span class="tariff-numbers">
-										<span class="num">172</span>
+										<span class="num">60</span>
 										<span class="unit">
-											<span class="unit-top">мбит.</span>
+											<span class="unit-top">мбит</span>
 											<span class="unit-bottom">сек.</span>
 										</span>
 									</span>
 								</div>
-							</div>
-							<div class="tariff-small-line strong">
-								<div class="left">Стоимость</div>
 								<div class="right">
 									<span class="tariff-numbers">
-										<span class="num">500</span>
+										<span class="num">390</span>
 										<span class="unit">
 											<span class="unit-top">руб.</span>
 											<span class="unit-bottom">мес.</span>
 										</span>
 									</span>
-									<span class="tariff-cost-hint">С 3 месяца 995 руб./мес.</span>
 								</div>
 							</div>
+							<div class="tariff-small-line">
+								<div class="left">
+									<span class="tariff-numbers">
+										<span class="num">115</span>
+										<span class="unit">
+											<span class="unit-top">каналов</span>
+										</span>
+									</span>
+								</div>
+								<div class="right">
+									<span class="tariff-numbers">
+										<span class="tariff-cost-hint">С 3 месяца<br>1000 руб./мес.</span>
+									</span>
+								</div>
+							</div>
+							<a href="#" class="tariff-gift">
+								<span class="tariff-gift__badge">2</span>
+							</a>
 						</div>
-						<!-- Конец вывода для маленьких экранов -->
 						<div class="tariff-radio">
 							<div class="check-radio checker">
 								<div class="check-radio-container">
 									<span>Выбран</span>
 								</div>
-								<input type="radio" name="tarif-2" checked>
+								<input type="radio" name="tarif-1">
 							</div>
 						</div>
 					</div>
 
-					<div class="tariff-line clearfix">
+					<div class="tariff-line tariff-line_radio clearfix">
 						<div class="tariff-title">
 							<div class="tariff-title-container"><div class="tariff-title-cont">
-								<div class="title">Оптимальный</div>
+								<div class="title">2 в 1 Стартовый</div>
 							</div></div>
 							<a href="#" class="action-tooltip">
 								<span class="action-tooltip-image"></span>
 								<span class="action-tooltip-text">Тариф со скидкой на месяца. Акция действует до 20 июня</span>
 							</a>
 						</div>
-						<div class="tariff-speed tariff-speed__long">
+						<div class="tariff-speed">
 							<span class="tariff-numbers">
-								<div class="num-circle-animate" data-text="143" data-total="209" data-part="143"></div>
+								<div class="num-circle-animate" data-text="30" data-total="100" data-part="30"></div>
 								<span class="unit">
 									<span class="unit-top">мбит.</span>
-									<span class="unit-bottom">сек.</span>
+										<span class="unit-bottom">сек.</span>
 								</span>
 							</span>
 						</div>
-						<div class="tariff-bonus tariff-bonus__long clearfix">
-							<div class="bonus-ico toltip">
-								<img src="images/del/bonus-ico-yandex.png" width="25" height="17" alt="">
-								<span class="tip">Яндекс.Диск<br>Плюс 40 гигабайт</span>
-							</div>
-							<div class="bonus-ico toltip">
-								<img src="images/del/bonus-ico-kasper.png" width="17" height="16" alt="">
-								<span class="tip">Антивирус Касперского<br>2 месяца бесплатно</span>
-							</div>
+						<div class="tariff-channels">
+							<div class="num-circle-animate" data-text="115" data-total="172" data-part="115"></div>
+						</div>
+						<div class="tariff-bonus clearfix">
 						</div>
 						<div class="tariff-cost tariff-cost-phone">
 							<span class="tariff-numbers">
-								<span class="num">400</span>
+								<span class="num">390</span>
 								<span class="unit">
 									<span class="unit-top">руб.</span>
 									<span class="unit-bottom">мес.</span>
 								</span>
 							</span>
-							<span class="tariff-cost-hint">С 3 месяца 995 руб./мес.</span>
+							<span class="tariff-cost-hint">С 3 месяца 500 руб./мес.</span>
 						</div>
-						<!-- Вывод для маленьких экранов -->
 						<div class="tariff-small">
+<!-- 							<div class="tariff-small__gallery">
+								<div class="tariff-small__carousel">
+									<div class="tariff-small__slide">
+										<div class="tariff-small__slide-icon">
+											<img src="images/smt.png" alt="">
+										</div>
+										<p>Услуга «Управление просмотром»<br>на 2 месяца совершенно бесплатно.</p>
+									</div>
+									<div class="tariff-small__slide">
+										<div class="tariff-small__slide-icon">
+											<img src="images/smt.png" alt="">
+										</div>
+										<p>Услуга «Управление просмотром»<br>на 2 месяца совершенно бесплатно.</p>
+									</div>
+								</div>
+							</div> -->
 							<div class="tariff-small-line">
-								<div class="left">Скорость</div>
-								<div class="right">
+								<div class="left">
 									<span class="tariff-numbers">
-										<span class="num">143</span>
+										<span class="num">30</span>
 										<span class="unit">
-											<span class="unit-top">мбит.</span>
+											<span class="unit-top">мбит</span>
 											<span class="unit-bottom">сек.</span>
 										</span>
 									</span>
 								</div>
-							</div>
-							<div class="tariff-small-line strong">
-								<div class="left">Стоимость</div>
 								<div class="right">
 									<span class="tariff-numbers">
-										<span class="num">400</span>
+										<span class="num">390</span>
 										<span class="unit">
 											<span class="unit-top">руб.</span>
 											<span class="unit-bottom">мес.</span>
 										</span>
 									</span>
-									<span class="tariff-cost-hint">С 3 месяца 995 руб./мес.</span>
 								</div>
 							</div>
-						</div>
-						<!-- Конец вывода для маленьких экранов -->
-						<div class="tariff-radio">
-							<div class="check-radio checker">
-								<div class="check-radio-container">
-									<span>Выбран</span>
-								</div>
-								<input type="radio" name="tarif-3" checked>
-							</div>
-						</div>
-					</div>
-
-					<div class="tariff-line clearfix">
-						<div class="tariff-title">
-							<div class="tariff-title-container"><div class="tariff-title-cont">
-								<div class="title">Стартовый</div>
-							</div></div>
-							<a href="#" class="action-tooltip">
-								<span class="action-tooltip-image"></span>
-								<span class="action-tooltip-text">Тариф со скидкой на месяца. Акция действует до 20 июня</span>
-							</a>
-						</div>
-						<div class="tariff-speed tariff-speed__long">
-							<span class="tariff-numbers">
-								<div class="num-circle-animate" data-text="116" data-total="209" data-part="116"></div>
-								<span class="unit">
-									<span class="unit-top">мбит.</span>
-									<span class="unit-bottom">сек.</span>
-								</span>
-							</span>
-						</div>
-						<div class="tariff-bonus tariff-bonus__long clearfix">
-							<div class="bonus-ico toltip">
-								<img src="images/del/bonus-ico-yandex.png" width="25" height="17" alt="">
-								<span class="tip">Яндекс.Диск<br>Плюс 40 гигабайт</span>
-							</div>
-							<div class="bonus-ico toltip">
-								<img src="images/del/bonus-ico-kasper.png" width="17" height="16" alt="">
-								<span class="tip">Антивирус Касперского<br>2 месяца бесплатно</span>
-							</div>
-						</div>
-						<div class="tariff-cost tariff-cost-phone">
-							<span class="tariff-numbers">
-								<span class="num">320</span>
-								<span class="unit">
-									<span class="unit-top">руб.</span>
-									<span class="unit-bottom">мес.</span>
-								</span>
-							</span>
-							<span class="tariff-cost-hint">С 3 месяца 995 руб./мес.</span>
-						</div>
-						<!-- Вывод для маленьких экранов -->
-						<div class="tariff-small">
 							<div class="tariff-small-line">
-								<div class="left">Скорость</div>
-								<div class="right">
+								<div class="left">
 									<span class="tariff-numbers">
-										<span class="num">116</span>
+										<span class="num">115</span>
 										<span class="unit">
-											<span class="unit-top">мбит.</span>
-											<span class="unit-bottom">сек.</span>
+											<span class="unit-top">каналов</span>
 										</span>
 									</span>
 								</div>
-							</div>
-							<div class="tariff-small-line strong">
-								<div class="left">Стоимость</div>
 								<div class="right">
 									<span class="tariff-numbers">
-										<span class="num">320</span>
-										<span class="unit">
-											<span class="unit-top">руб.</span>
-											<span class="unit-bottom">мес.</span>
-										</span>
+										<span class="tariff-cost-hint">С 3 месяца<br>1000 руб./мес.</span>
 									</span>
-									<span class="tariff-cost-hint">С 3 месяца 995 руб./мес.</span>
 								</div>
 							</div>
+<!-- 							<a href="#" class="tariff-gift">
+								<span class="tariff-gift__badge">2</span>
+							</a> -->
 						</div>
-						<!-- Конец вывода для маленьких экранов -->
 						<div class="tariff-radio">
 							<div class="check-radio checker">
 								<div class="check-radio-container">
 									<span>Выбран</span>
 								</div>
-								<input type="radio" name="tarif-4" checked>
+								<input type="radio" name="tarif-1">
 							</div>
 						</div>
 					</div>
-
-					
+					<div class="tariff-hint">
+						<a href="#" class="blue-link">Архивные тарифы</a>
+					</div>
 				</section>
 
 
@@ -1282,62 +1308,66 @@
 
 
 
-		<section class="tariff-total">
+				<section class="tariff-total">
 					<h3>Итого:</h3>
 
-					<!-- Итого для смартфонов -->
-										<div class="tariff-total-small">
-											<div class="tariff-small">
-												<div class="tariff-small-line strong">
-													<div class="left">Разовый платеж</div>
-													<div class="right">
-														<span class="tariff-numbers">
-															<span class="num">4 690</span>
-															<span class="unit">
-																<span class="unit-top">руб.</span>
-															</span>
-														</span>
-													</div>
-												</div>
-											</div>
-											<div class="tariff-small">
-												<div class="tariff-small-line strong">
-													<div class="left">Ежемесячный платеж</div>
-													<div class="right">
-														<span class="tariff-numbers">
-															<span class="num">898</span>
-															<span class="unit">
-																<span class="unit-top">руб.</span>
-																<span class="unit-bottom">мес.</span>
-															</span>
-														</span>
-													</div>
-												</div>
-											</div>
-											<div class="tariff-small">
-												<div class="tariff-small-line strong">
-													<div class="left">Стоимость</div>
-													<div class="right">
-														<span class="tariff-numbers">
-															<span class="num">5 590</span>
-															<span class="unit">
-																<span class="unit-top">руб.</span>
-															</span>
-														</span>
-													</div>
-												</div>
-											</div>
-										</div>
-										<!-- Конец итого для смартфонов -->
+					<div class="tariff-total-small">
+						<div class="tariff-small">
+							<div class="tariff-small-line strong">
+								<div class="left">
+									<div class="tariff-small-label">Разовый платеж</div>
+								</div>
+								<div class="right">
+									<span class="tariff-numbers">
+										<span class="num">4 690</span>
+										<span class="unit">
+											<span class="unit-top">руб.</span>
+											<span class="unit-bottom">мес.</span>
+										</span>
+									</span>
+								</div>
+							</div>
+						</div>
+						<div class="tariff-small">
+							<div class="tariff-small-line strong">
+								<div class="left">
+									<div class="tariff-small-label">Ежемесячный платеж</div>
+								</div>
+								<div class="right">
+									<span class="tariff-numbers">
+										<span class="num">900</span>
+										<span class="unit">
+											<span class="unit-top">руб.</span>
+											<span class="unit-bottom">мес.</span>
+										</span>
+									</span>
+								</div>
+							</div>
+						</div>
+						<div class="tariff-small">
+							<div class="tariff-small-line strong">
+								<div class="left">
+									<div class="tariff-small-label">стоимость</div>
+								</div>
+								<div class="right">
+									<span class="tariff-numbers">
+										<span class="num">5 590</span>
+										<span class="unit">
+											<span class="unit-top">руб.</span>
+											<span class="unit-bottom">мес.</span>
+										</span>
+									</span>
+								</div>
+							</div>
+						</div>
+					</div>
 
-										<a href="#" class="btn"><span>Продолжить</span></a>
-										
-										<!-- Ссылки для смартфонов -->
-										<div class="total-small-links">
-											<a href="#" class="fake-link works-list-link">Перечень работ</a>
-											<a href="#" class="fake-link extract-link">Подробная выписка</a>
-										</div>
-										<!-- Конец ссылок для смартфонов -->
+					<a href="#" class="btn"><span>Продолжить</span></a>
+
+					<div class="total-small-links">
+						<a href="#" class="fake-link works-list-link">Перечень работ</a>
+						<a href="#" class="fake-link extract-link">Подробная выписка</a>
+					</div>
 
 					<div class="tariff-total-container clearfix">
 						<div class="tariff-total-item first">
