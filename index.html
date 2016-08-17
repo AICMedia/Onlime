@@ -20,6 +20,610 @@
 	<![endif]-->
 </head>
 <body class="ny">
+
+<style>
+	.popup_outer_link {
+		position: fixed;
+		width: 100%;
+		height: 100%;
+		z-index: 1100;
+		background: #fff;
+		display: none;
+	}
+
+	.popup_header {
+		height: 111px;
+		width: 100%;
+    	position: absolute;
+    	padding: 0px 50px;
+    	top: 0;
+		left: 0;
+		z-index: 2;
+		background:#fff url("images/sub-header-bg.png") repeat-x scroll left bottom;
+	}
+
+	.popup_content {
+		position: relative;
+		padding: 111px 0px 50px 0px;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100vh;
+		overflow: auto;
+		z-index: 1;
+		box-sizing: border-box;
+	}
+
+	.popup_close {
+	    float: right;
+	    margin-top: 38px;
+	    line-height: 32px;
+	    font-size: 18px;
+	    color: #859293;
+	    cursor: pointer;
+	}
+
+	.popup_close SPAN {
+	    margin-right: 20px;
+	}
+
+	@media screen and (max-width: 800px) {
+
+		.popup_header {
+	    	padding: 0px;
+	    	height: 80px;
+		}
+
+		.popup_content {
+			padding: 80px 0px 30px 0px;
+		}
+
+		.popup_header .logo IMG {
+		    width: 150px;
+		    height: auto;
+		}
+
+		.popup_header .logo {
+		    margin-top: 18px;
+		}
+
+		.popup_close {
+		    margin-top: 29px;
+		}
+
+		.popup_close IMG {
+		    width: 20px;
+		    height: 20px;
+		}
+
+		.popup_close SPAN {
+		    display: none;
+		}
+	}
+
+</style>
+
+<script type="text/javascript" charset="utf-8">
+  
+$(document).ready(function() {
+
+  $('.popup_show').on('click',function(){
+  	$('.popup_outer_link').fadeIn();
+  });
+
+   $('.popup_close').on('click',function(){
+  	$('.popup_outer_link').fadeOut();
+  });
+
+});
+
+</script>
+
+<div class="popup_outer_link">
+	<div class="popup_header">
+		<div class="line">
+			<a class="logo" href="#">
+				<img width="208" height="60" alt="" src="images/logo.png">
+			</a>
+			<div class="popup_close"><span>Закрыть</span><img width="32" height="32" alt="" src="images/popup-close-big.png"></div>
+		</div>
+	</div>
+	<div class="popup_content">
+
+	   	<section class="line super-title">
+			<div class="title">Оборудование</div>
+		</section>
+
+		<section class="line_small tabs-block">
+			<nav class="tabs-nav">
+				<a href="#" class="current">
+					<span class="out"><span class="in">
+						<span class="title">Интернет</span>
+					</span></span>
+				</a>
+				<a href="#">
+					<span class="out"><span class="in">
+						<span class="title">Телевидение</span>
+					</span></span>
+				</a>
+				<a href="#">
+					<span class="out"><span class="in">
+						<span class="title">Домашний телефон</span>
+					</span></span>
+				</a>
+			</nav>
+
+			<div class="tabs-outline tabs-outline-toggle">
+				
+				<div class="tab-area current">
+					
+					<div class="equip-list">
+						
+						<!-- Эквип -->
+						<div class="equip clearfix">
+							<div class="equip-image">
+								<img src="images/del/equip-1.jpg" height="154" width="193" alt="">
+							</div>
+							<div class="equip-content">
+								<h2>Upvel UR-315 BN</h2>
+								<div class="equip-info">
+									<strong>Оборудование премиум-класса</strong>
+									<ul>
+										<li><a href="#" class="fimware blue-link"><span>Прошивки</span></a></li>
+										<li><a href="#" class="settings blue-link"><span>Настройка</span></a></li>
+									</ul>
+								</div>
+								<div class="equip-description">
+									<div class="equip-little">
+										<p>Upvel UR-315 BN поддержит высокие скорости интернет-соединения, а также обеспечит безопасность и конфиденциальность передаваемых данных. <a href="#" class="fake-link equip-desc-link">Подробнее</a></p>
+									</div>
+									<div class="equip-full">
+										<p>Upvel UR-315 BN поддержит высокие скорости интернет-соединения, а также обеспечит безопасность и конфиденциальность передаваемых данных.</p>
+										<p>Используя самые современные алгоритмы сжатия голоса и обеспечения качества сервиса, VOIP-шлюз QVI-2101 обеспечивает превосходное качество передачи речи.</p>
+										
+										<h4>Интерфейсы</h4>
+										<dl>
+											<dt>Аналоговые интерфейсы</dt>
+											<dd>1 FXS</dd>
+											<dt>Сетевые интерфейсы</dt>
+											<dd>1 LAN, 1 WAN</dd>
+										</dl>
+
+										<h4>Голос, Факс</h4>
+										<dl>
+											<dt>Голосовые кодеки</dt>
+											<dd>G.711</dd>
+											<dt>Прддержка ФАКС</dt>
+											<dd>Да</dd>
+											<dt>Сигнальный протокол</dt>
+											<dd>SIP</dd>
+										</dl>
+
+										<h4>Физические параметры</h4>
+										<dl>
+											<dt>Питание</dt>
+											<dd>12VDC</dd>
+										</dl>
+
+										<h4>Эксплутация</h4>
+										<dl>
+											<dt>Рабочая температура</dt>
+											<dd>0-40°C</dd>
+											<dt>Влажность</dt>
+											<dd>10%-90%</dd>
+											<dt>Размеры (мм)</dt>
+											<dd>96×68×23</dd>
+											<dt>Вес</dt>
+											<dd>0.15kg</dd>
+										</dl>
+										<a href="#" class="fake-link equip-desc-link">Свернуть подробности</a>
+									</div>
+								</div>
+								<section class="tariff-total">
+									<a href="#" class="btn"><span>Приобрести</span></a>
+									<div class="tariff-total-container clearfix">
+										<div class="tariff-total-item">
+											<div class="tariff-total-type">Покупка</div>
+											<span class="tariff-numbers">
+												<span class="num">3 590</span>
+												<span class="unit">
+													<span class="unit-top">руб.</span>
+													<span class="unit-bottom"></span>
+												</span>
+											</span>
+										</div>
+										<div class="tariff-total-item">
+											<div class="tariff-total-type">Аренда</div>
+											<span class="tariff-numbers">
+												<span class="num">99</span>
+												<span class="unit">
+													<span class="unit-top">руб.</span>
+													<span class="unit-bottom">мес.</span>
+												</span>
+											</span>
+										</div>
+									</div>
+								</section>
+							</div>
+						</div>
+						<!-- Конец эквипа -->
+
+						<!-- Эквип -->
+						<div class="equip clearfix">
+							<div class="equip-image">
+								<img src="images/del/equip-2.jpg" height="132" width="151" alt="">
+							</div>
+							<div class="equip-content">
+								<h2>D-Link DIR-620</h2>
+								<div class="equip-info">
+									<strong>Станадатрное оборудование</strong>
+									<ul>
+										<li><a href="#" class="fimware blue-link"><span>Прошивки</span></a></li>
+										<li><a href="#" class="settings blue-link"><span>Настройка</span></a></li>
+									</ul>
+								</div>
+								<div class="equip-description">
+									<div class="equip-little">
+										<p>Upvel UR-315 BN поддержит высокие скорости интернет-соединения, а также обеспечит безопасность и конфиденциальность передаваемых данных. <a href="#" class="fake-link equip-desc-link">Подробнее</a></p>
+									</div>
+									<div class="equip-full">
+										<p>Upvel UR-315 BN поддержит высокие скорости интернет-соединения, а также обеспечит безопасность и конфиденциальность передаваемых данных.</p>
+										<p>Используя самые современные алгоритмы сжатия голоса и обеспечения качества сервиса, VOIP-шлюз QVI-2101 обеспечивает превосходное качество передачи речи.</p>
+										
+										<h4>Интерфейсы</h4>
+										<dl>
+											<dt>Аналоговые интерфейсы</dt>
+											<dd>1 FXS</dd>
+											<dt>Сетевые интерфейсы</dt>
+											<dd>1 LAN, 1 WAN</dd>
+										</dl>
+
+										<h4>Голос, Факс</h4>
+										<dl>
+											<dt>Голосовые кодеки</dt>
+											<dd>G.711</dd>
+											<dt>Прддержка ФАКС</dt>
+											<dd>Да</dd>
+											<dt>Сигнальный протокол</dt>
+											<dd>SIP</dd>
+										</dl>
+
+										<h4>Физические параметры</h4>
+										<dl>
+											<dt>Питание</dt>
+											<dd>12VDC</dd>
+										</dl>
+
+										<h4>Эксплутация</h4>
+										<dl>
+											<dt>Рабочая температура</dt>
+											<dd>0-40°C</dd>
+											<dt>Влажность</dt>
+											<dd>10%-90%</dd>
+											<dt>Размеры (мм)</dt>
+											<dd>96×68×23</dd>
+											<dt>Вес</dt>
+											<dd>0.15kg</dd>
+										</dl>
+										<a href="#" class="fake-link equip-desc-link">Свернуть подробности</a>
+									</div>
+								</div>
+								<section class="tariff-total">
+									<a href="#" class="btn"><span>Приобрести</span></a>
+									<div class="tariff-total-container clearfix">
+										<div class="tariff-total-item">
+											<div class="tariff-total-type">Покупка</div>
+											<span class="tariff-numbers">
+												<span class="num">3 590</span>
+												<span class="unit">
+													<span class="unit-top">руб.</span>
+													<span class="unit-bottom"></span>
+												</span>
+											</span>
+										</div>
+										<div class="tariff-total-item">
+											<div class="tariff-total-type">Аренда</div>
+											<span class="tariff-numbers">
+												<span class="num">99</span>
+												<span class="unit">
+													<span class="unit-top">руб.</span>
+													<span class="unit-bottom">мес.</span>
+												</span>
+											</span>
+										</div>
+									</div>
+								</section>
+							</div>
+						</div>
+						<!-- Конец эквипа -->
+
+						<div class="equip-archive">
+							<a href="#" class="fake-link">Архивные предложения</a>
+						</div>
+
+
+					</div>
+
+				</div>
+
+				<div class="tab-area">
+					
+					<div class="equip-list">
+						
+						<!-- Эквип -->
+						<div class="equip clearfix">
+							<div class="equip-image">
+								<img src="images/del/equip-4.jpg" height="109" width="177" alt="">
+							</div>
+							<div class="equip-content">
+								<h2>ТВ-приставка «Стандарт»</h2>
+								<div class="equip-info">
+									<strong>Для интерактивного ТВ</strong>
+								</div>
+								<div class="equip-description">
+									<div class="equip-little">
+										<p>Upvel UR-315 BN поддержит высокие скорости интернет-соединения, а также обеспечит безопасность и конфиденциальность передаваемых данных. <a href="#" class="fake-link equip-desc-link">Подробнее</a></p>
+									</div>
+									<div class="equip-full">
+										<p>Upvel UR-315 BN поддержит высокие скорости интернет-соединения, а также обеспечит безопасность и конфиденциальность передаваемых данных.</p>
+										<p>Используя самые современные алгоритмы сжатия голоса и обеспечения качества сервиса, VOIP-шлюз QVI-2101 обеспечивает превосходное качество передачи речи.</p>
+										
+										<h4>Интерфейсы</h4>
+										<dl>
+											<dt>Аналоговые интерфейсы</dt>
+											<dd>1 FXS</dd>
+											<dt>Сетевые интерфейсы</dt>
+											<dd>1 LAN, 1 WAN</dd>
+										</dl>
+
+										<h4>Голос, Факс</h4>
+										<dl>
+											<dt>Голосовые кодеки</dt>
+											<dd>G.711</dd>
+											<dt>Прддержка ФАКС</dt>
+											<dd>Да</dd>
+											<dt>Сигнальный протокол</dt>
+											<dd>SIP</dd>
+										</dl>
+
+										<h4>Физические параметры</h4>
+										<dl>
+											<dt>Питание</dt>
+											<dd>12VDC</dd>
+										</dl>
+
+										<h4>Эксплутация</h4>
+										<dl>
+											<dt>Рабочая температура</dt>
+											<dd>0-40°C</dd>
+											<dt>Влажность</dt>
+											<dd>10%-90%</dd>
+											<dt>Размеры (мм)</dt>
+											<dd>96×68×23</dd>
+											<dt>Вес</dt>
+											<dd>0.15kg</dd>
+										</dl>
+										<a href="#" class="fake-link equip-desc-link">Свернуть подробности</a>
+									</div>
+								</div>
+								<section class="tariff-total">
+									<a href="#" class="btn"><span>Приобрести</span></a>
+									<div class="tariff-total-container clearfix">
+										<div class="tariff-total-item">
+											<div class="tariff-total-type">Покупка</div>
+											<span class="tariff-numbers">
+												<span class="num">3 590</span>
+												<span class="unit">
+													<span class="unit-top">руб.</span>
+													<span class="unit-bottom"></span>
+												</span>
+											</span>
+										</div>
+										<div class="tariff-total-item">
+											<div class="tariff-total-type">Аренда</div>
+											<span class="tariff-numbers">
+												<span class="num">99</span>
+												<span class="unit">
+													<span class="unit-top">руб.</span>
+													<span class="unit-bottom">мес.</span>
+												</span>
+											</span>
+										</div>
+									</div>
+								</section>
+							</div>
+						</div>
+						<!-- Конец эквипа -->
+
+						<!-- Эквип -->
+						<div class="equip clearfix">
+							<div class="equip-image">
+								<img src="images/del/equip-5.jpg" height="190" width="140" alt="">
+							</div>
+							<div class="equip-content">
+								<h2>OnLime TeleCARD</h2>
+								<div class="equip-info">
+									<strong>Для цифрового ТВ</strong>
+									<ul>
+										<li><a href="#" class="video blue-link"><span>Видео</span></a></li>
+									</ul>
+								</div>
+								<div class="equip-description">
+									<div class="equip-little">
+										<p>Upvel UR-315 BN поддержит высокие скорости интернет-соединения, а также обеспечит безопасность и конфиденциальность передаваемых данных. <a href="#" class="fake-link equip-desc-link">Подробнее</a></p>
+									</div>
+									<div class="equip-full">
+										<p>Upvel UR-315 BN поддержит высокие скорости интернет-соединения, а также обеспечит безопасность и конфиденциальность передаваемых данных.</p>
+										<p>Используя самые современные алгоритмы сжатия голоса и обеспечения качества сервиса, VOIP-шлюз QVI-2101 обеспечивает превосходное качество передачи речи.</p>
+										
+										<h4>Интерфейсы</h4>
+										<dl>
+											<dt>Аналоговые интерфейсы</dt>
+											<dd>1 FXS</dd>
+											<dt>Сетевые интерфейсы</dt>
+											<dd>1 LAN, 1 WAN</dd>
+										</dl>
+
+										<h4>Голос, Факс</h4>
+										<dl>
+											<dt>Голосовые кодеки</dt>
+											<dd>G.711</dd>
+											<dt>Прддержка ФАКС</dt>
+											<dd>Да</dd>
+											<dt>Сигнальный протокол</dt>
+											<dd>SIP</dd>
+										</dl>
+
+										<h4>Физические параметры</h4>
+										<dl>
+											<dt>Питание</dt>
+											<dd>12VDC</dd>
+										</dl>
+
+										<h4>Эксплутация</h4>
+										<dl>
+											<dt>Рабочая температура</dt>
+											<dd>0-40°C</dd>
+											<dt>Влажность</dt>
+											<dd>10%-90%</dd>
+											<dt>Размеры (мм)</dt>
+											<dd>96×68×23</dd>
+											<dt>Вес</dt>
+											<dd>0.15kg</dd>
+										</dl>
+										<a href="#" class="fake-link equip-desc-link">Свернуть подробности</a>
+									</div>
+								</div>
+								<section class="tariff-total">
+									<a href="#" class="btn"><span>Приобрести</span></a>
+									<div class="tariff-total-container clearfix">
+										<div class="tariff-total-item">
+											<div class="tariff-total-type">Покупка</div>
+											<span class="tariff-numbers">
+												<span class="num">3 590</span>
+												<span class="unit">
+													<span class="unit-top">руб.</span>
+													<span class="unit-bottom"></span>
+												</span>
+											</span>
+										</div>
+										<div class="tariff-total-item">
+											<div class="tariff-total-type">Аренда</div>
+											<span class="tariff-numbers">
+												<span class="num">99</span>
+												<span class="unit">
+													<span class="unit-top">руб.</span>
+													<span class="unit-bottom">мес.</span>
+												</span>
+											</span>
+										</div>
+									</div>
+								</section>
+							</div>
+						</div>
+						<!-- Конец эквипа -->
+
+						<div class="equip-archive">
+							<a href="#" class="fake-link">Архивные предложения</a>
+						</div>
+
+
+					</div>
+
+				</div>
+
+				<div class="tab-area">
+					
+					<div class="equip-list">
+						
+						<!-- Эквип -->
+						<div class="equip clearfix">
+							<div class="equip-image">
+								<img src="images/del/equip-3.jpg" height="112" width="189" alt="">
+							</div>
+							<div class="equip-content">
+								<h2>QTECH QVI-2101</h2>
+								<div class="equip-description">
+									<div class="equip-little">
+										<p>Upvel UR-315 BN поддержит высокие скорости интернет-соединения, а также обеспечит безопасность и конфиденциальность передаваемых данных. <a href="#" class="fake-link equip-desc-link">Подробнее</a></p>
+									</div>
+									<div class="equip-full">
+										<p>Upvel UR-315 BN поддержит высокие скорости интернет-соединения, а также обеспечит безопасность и конфиденциальность передаваемых данных.</p>
+										<p>Используя самые современные алгоритмы сжатия голоса и обеспечения качества сервиса, VOIP-шлюз QVI-2101 обеспечивает превосходное качество передачи речи.</p>
+										
+										<h4>Интерфейсы</h4>
+										<dl>
+											<dt>Аналоговые интерфейсы</dt>
+											<dd>1 FXS</dd>
+											<dt>Сетевые интерфейсы</dt>
+											<dd>1 LAN, 1 WAN</dd>
+										</dl>
+
+										<h4>Голос, Факс</h4>
+										<dl>
+											<dt>Голосовые кодеки</dt>
+											<dd>G.711</dd>
+											<dt>Прддержка ФАКС</dt>
+											<dd>Да</dd>
+											<dt>Сигнальный протокол</dt>
+											<dd>SIP</dd>
+										</dl>
+
+										<h4>Физические параметры</h4>
+										<dl>
+											<dt>Питание</dt>
+											<dd>12VDC</dd>
+										</dl>
+
+										<h4>Эксплутация</h4>
+										<dl>
+											<dt>Рабочая температура</dt>
+											<dd>0-40°C</dd>
+											<dt>Влажность</dt>
+											<dd>10%-90%</dd>
+											<dt>Размеры (мм)</dt>
+											<dd>96×68×23</dd>
+											<dt>Вес</dt>
+											<dd>0.15kg</dd>
+										</dl>
+										<a href="#" class="fake-link equip-desc-link">Свернуть подробности</a>
+									</div>
+								</div>
+								<section class="tariff-total">
+									<div class="tariff-total-container clearfix">
+										<div class="tariff-total-item">
+											<div class="tariff-total-type">Покупка</div>
+											<span class="tariff-numbers">
+												<span class="num">0</span>
+												<span class="unit">
+													<span class="unit-top">руб.</span>
+													<span class="unit-bottom"></span>
+												</span>
+											</span>
+										</div>
+									</div>
+								</section>
+							</div>
+						</div>
+						<!-- Конец эквипа -->
+
+
+						<div class="equip-archive">
+							<a href="#" class="fake-link">Архивные предложения</a>
+						</div>
+
+
+					</div>
+
+				</div>
+
+			</div>
+		</section>
+
+
+	</div>
+</div>
+
 	<div class="wrapper">
 		<section class="topbar">
 			<div class="topbar-container">
@@ -213,7 +817,7 @@
 								</div>
 								<div class="banner-bottom">
 									<a href="#" class="btn"><span>Подключить</span></a>
-									<a href="#" class="more-arrow">Узнать больше</a>
+									<a href="#" class="more-arrow popup_show">Узнать больше</a>
 								</div>
 							</div>
 						</div>
@@ -232,7 +836,7 @@
 								</div>
 								<div class="banner-bottom">
 									<a href="#" class="btn"><span>Подключить</span></a>
-									<a href="#" class="more-arrow">Узнать больше</a>
+									<a href="#" class="more-arrow popup_show">Узнать больше</a>
 								</div>
 							</div>
 						</div>
@@ -260,7 +864,7 @@
 								</div>
 								<div class="banner-bottom">
 									<a href="#" class="btn"><span>Подключить</span></a>
-									<a href="#" class="more-arrow">Узнать больше</a>
+									<a href="#" class="more-arrow popup_show">Узнать больше</a>
 								</div>
 							</div>
 						</div>
